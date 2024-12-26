@@ -50,45 +50,50 @@ func (l *Log)setFilter(filter string) {
 	}
 }
 
-func (l *Log)Debug(content string) {
+func (l *Log)Debugf(format string, v... interface{}) {
 	if !l.debug {
 		return
 	}
 	// **develop**
 	// multiWriter := io.MultiWriter(os.Stdout, logFile) -> 옵션 값에 따라 파일로 저장하는 로직으로 수정 예정
 	timestamp, file, line := getLogInfo()
+	content := fmt.Sprintf(format, v...)
 	fmt.Fprintf(os.Stdout,LOGFORMAT, timestamp, Green,"DEBUG", Reset, file, line, content)
 }
 
-func (l *Log)Info(content string) {
+func (l *Log)Infof(format string, v... interface{}) {
 	if !l.info {
 		return
 	}
 	timestamp, file, line := getLogInfo()
+	content := fmt.Sprintf(format, v...)
 	fmt.Fprintf(os.Stdout,LOGFORMAT, timestamp, Blue,"INFO", Reset, file, line, content)
 }
 
-func (l *Log)Warn(content string) {
+func (l *Log)Warnf(format string, v... interface{}) {
 	if !l.warn {
 		return
 	}
 	timestamp, file, line := getLogInfo()
+	content := fmt.Sprintf(format, v...)
 	fmt.Fprintf(os.Stdout,LOGFORMAT, timestamp, Yellow, "WARN", Reset, file, line, content)
 }
 
-func (l *Log)Error(content string) {
+func (l *Log)Errorf(format string, v... interface{}) {
 	if !l.error {
 		return
 	}
 	timestamp, file, line := getLogInfo()
+	content := fmt.Sprintf(format, v...)
 	fmt.Fprintf(os.Stdout,LOGFORMAT, timestamp, Magenta, "ERROR", Reset, file, line, content)
 }
 
-func (l *Log)Fatal(content string) {
+func (l *Log)Fatalf(format string, v... interface{}) {
 	if !l.fatal {
 		return
 	} 
 	timestamp, file, line := getLogInfo()
+	content := fmt.Sprintf(format, v...)
 	fmt.Fprintf(os.Stdout,LOGFORMAT, timestamp, Red, "FATAL", Reset, file, line, content)
 }
 
