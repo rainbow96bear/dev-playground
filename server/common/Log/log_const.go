@@ -1,4 +1,4 @@
-package Log
+package Common
 
 const (
 	DefaultFilter = "11111"
