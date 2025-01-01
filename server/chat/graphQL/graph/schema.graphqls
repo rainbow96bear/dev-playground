@@ -1,0 +1,62 @@
+type UserInfo {
+  id: ID!
+  user_id: String!
+  nickname: String!
+  password: String!
+  profile_image: String
+}
+
+type ChatRoom {
+  id: ID!
+  members: [UserInfo!]!
+  messages: [String!]!
+}
+
+type Message {
+  id: ID!
+  chatRoomID: ID!
+  timestamp: String!
+  messageType: String!
+  content: String!
+  from: String!
+  to: String!
+}
+
+type Query {
+  searchUser(user_id: String!): UserInfo
+  FriendsList(user_id: String!): [UserInfo!]!
+  ChatRooms(user_id: String!): [ChatRoom!]!
+  ChatMessages(chatRoomID: ID!): [Message!]!
+}
+
+input Login {
+  user_id: String!
+  password: String!
+}
+input UserInput {
+  user_id: String!
+  nickname: String!
+  password: String!
+  profile_image: String
+}
+
+input MessageInput {
+  chatRoomID: ID!
+  timestamp: String!
+  messageType: String!
+  content: String!
+  from: String!
+  to: String!
+}
+
+type Mutation {
+  login(login: Login!): UserInfo!
+  addUser(userInfo: UserInput!): UserInfo
+  addFriend(user_id: String!): UserInfo!
+  createChatRoom(user_id: String!): ChatRoom!
+  sendMessage(message: MessageInput!): Message
+}
+
+type Subscription {
+  messageSent(to: String!): Message! # 특정 채팅방 메시지 구독
+}
