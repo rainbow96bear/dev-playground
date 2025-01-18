@@ -1,19 +1,26 @@
-#searchButton {
-	background: var(--wallerElement1);
-	border: none;
-	border-radius: 12px; /* 둥근 모서리 */
-	padding: 12px 24px; /* 버튼 크기 */
-	font-size: 16px; /* 글자 크기 */
-	cursor: pointer;
-	box-shadow:
-		inset 4px 4px 8px rgba(255, 255, 255, 0.7),
-		inset -4px -4px 8px rgba(0, 0, 0, 0.1);
-	transition: all 0.3s ease;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'MaplestoryLight', sans-serif;
 }
 
-#searchButton:active {
-	box-shadow:
-		inset 4px 4px 8px rgba(0, 0, 0, 0.1),
-		inset -4px -4px 8px rgba(255, 255, 255, 0.7); /* 클릭 시 안쪽 그림자 */
-	transform: translateY(4px); /* 눌리는 느낌을 강조 */
+#main_box {
+	width: 100%;
+	height: fit-content;
+}
+header {
+	width: 100%;
+}
+main {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+footer {
+	width: 100%;
+}
+
+#app_container {
+	max-width: 70%;
 }

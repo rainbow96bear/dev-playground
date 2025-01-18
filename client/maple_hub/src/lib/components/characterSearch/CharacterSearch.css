@@ -1,0 +1,36 @@
+.searchBox {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 3px solid var(--waterElement1);
+	border-radius: 10px;
+	width: 100%;
+	padding: 5px;
+}
+
+input {
+	outline: none;
+	flex-grow: 1;
+	height: 100%;
+	border: none;
+	padding: 5px;
+}
+
+#searchButton {
+	background: var(--waterElement1);
+	border: none;
+	border-radius: 12px;
+	padding: 5px 10px;
+	font-size: 1rem;
+	cursor: pointer;
+	box-shadow:
+		inset 4px 4px 8px rgba(255, 255, 255, 0.7),
+		inset -4px -4px 8px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease;
+}
+
+#searchButton:active {
+	box-shadow:
+		inset 4px 4px 8px rgba(0, 0, 0, 0.1),
+		inset -4px -4px 8px rgba(255, 255, 255, 0.7);
+}

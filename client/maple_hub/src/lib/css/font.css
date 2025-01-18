@@ -1,0 +1,15 @@
+/* Maplestory Bold 폰트 정의 */
+@font-face {
+	font-family: 'MaplestoryBold';
+	src: url('./Maplestory_Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+/* Maplestory Light 폰트 정의 */
+@font-face {
+	font-family: 'MaplestoryLight';
+	src: url('./Maplestory_Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

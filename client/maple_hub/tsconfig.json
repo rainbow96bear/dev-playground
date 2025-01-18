@@ -15,6 +15,7 @@
 		"paths": {
 			"$lib": ["lib"],
 			"$lib/*": ["lib/*"]
-		}
+		},
+		"verbatimModuleSyntax": false
 	}
 }

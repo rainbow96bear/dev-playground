@@ -1,8 +1,4 @@
-// src/lib/store.ts
 import { writable } from 'svelte/store';
+import { CharacterInfo } from '$lib/types';
 
-// characterInfo를 저장할 store
-export const character_info = writable<any>(null);
-
-// characterImg를 저장할 store
-export const charater_img = writable<string>('');
+export const characterInfo = writable<CharacterInfo | null>(null);
