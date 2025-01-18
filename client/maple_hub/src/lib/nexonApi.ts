@@ -6,7 +6,7 @@ const nexonAPI = axios.create({
 	baseURL: api_url,
 	headers: {
 		Accept: 'application/json',
-		'x-nxopen-api-key': process.env.VITE_NEXON_API_KEY
+		'x-nxopen-api-key': import.meta.env.VITE_NEXON_API_KEY
 	}
 });
 
