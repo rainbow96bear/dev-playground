@@ -1,4 +1,5 @@
 import { writable } from 'svelte/store';
-import { CharacterInfo } from '$lib/types';
+import { T_CharacterInfo } from '$lib/types/index';
 
-export const characterInfo = writable<CharacterInfo | null>(null);
+export const characterInfo = writable<T_CharacterInfo | null>(null);
+export const characterWalkMotion = writable(2);

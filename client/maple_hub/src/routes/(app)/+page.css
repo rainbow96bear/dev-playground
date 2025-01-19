@@ -1,26 +1,19 @@
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	font-family: 'MaplestoryLight', sans-serif;
+.title {
+	font-size: 2rem;
+	padding: 10px;
 }
 
-#main_box {
-	width: 100%;
-	height: fit-content;
+.text_main_info {
+	flex-grow: 1;
 }
-header {
-	width: 100%;
-}
-main {
+
+.sunday_event {
 	width: 100%;
 	display: flex;
-	justify-content: center;
-}
-footer {
-	width: 100%;
+	flex-direction: column;
+	align-items: center;
 }
 
-#app_container {
-	max-width: 70%;
+img {
+	width: 100%;
 }

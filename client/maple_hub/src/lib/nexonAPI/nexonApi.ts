@@ -39,3 +39,27 @@ export const getChareterInfo = async (ocid: string) => {
 		alert('캐릭터 정보를 불러오는데 실패 했습니다.\n아이디를 확인해주세요.');
 	}
 };
+
+export const getEventList = async () => {
+	try {
+		const eventList = (await nexonAPI('/maplestory/v1/notice-event')).data;
+		return eventList;
+	} catch {
+		alert('이벤트 리스트를 불러오는데 실패 했습니다.');
+	}
+};
+
+export const getSundayEvent = async (notice_id: number) => {
+	try {
+		const sundayEvent = (
+			await nexonAPI('/maplestory/v1/notice-event/detail', {
+				params: {
+					notice_id: notice_id
+				}
+			})
+		).data;
+		return sundayEvent;
+	} catch {
+		alert('썬데이 정보를 불러오는데 실패 했습니다.');
+	}
+};

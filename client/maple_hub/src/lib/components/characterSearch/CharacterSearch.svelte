@@ -1,27 +1,27 @@
-<script  lang="ts">
-  import { getCharaterOcid, getChareterInfo } from "$lib/nexonApi";
-  import { characterInfo } from '$lib/store';
-  import "./CharacterSearch.css"
+<script lang="ts">
+  import { goto } from "$app/navigation";
+
+  import "./CharacterSearch.css";
 
   let characterName = "";
 
-  const fetchCharacterInfo = async () => {
-    try {
-      const resOcidObj = await getCharaterOcid(characterName);
-      if (resOcidObj) {
-        const ocid = resOcidObj.ocid;
-        const resCharacterInfoObj = await getChareterInfo(ocid);
-        characterInfo.set(resCharacterInfoObj);
-      } else {
-        console.log("Ocid를 가져오는 데 실패했습니다.");
-      }
-    } catch (error) {
-      console.error("오류가 발생했습니다:", error);
+  const handleSubmit = (event: Event) => {
+    event.preventDefault(); // 폼 기본 동작 방지
+    if (characterName.trim()) {
+      goto(`/character/info?name=${encodeURIComponent(characterName)}`);
+    } else {
+      alert("캐릭터 이름을 입력하세요.");
     }
   };
 </script>
 
 <div class="searchBox">
-  <input type="text" bind:value={characterName} placeholder="캐릭터를 검색하세요" />
-  <button id="searchButton" on:click={fetchCharacterInfo}>검색</button>
+  <form on:submit={handleSubmit}>
+    <input 
+      type="text" 
+      bind:value={characterName} 
+      placeholder="캐릭터를 검색하세요" 
+    />
+    <button id="searchButton" type="submit">검색</button>
+  </form>
 </div>
