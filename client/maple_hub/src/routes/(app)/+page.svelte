@@ -1,6 +1,6 @@
 <script lang="ts">
     import { onMount } from "svelte";
-    import { invalidate, invalidateAll } from '$app/navigation';
+    import { invalidate } from '$app/navigation';
     import "./+page.css";
 
     export let data: any;
@@ -11,6 +11,7 @@
     let imgHeight = 0;
     let responsiveCoords: string | null = null;
     let isLoading = false;
+    let isAbled = false;
 
     // 초기 데이터 처리
     const processData = () => {
@@ -64,7 +65,16 @@
     });
 
     const refreshData = async () => {
-        await invalidate('sunday_event');
+        isLoading = true
+        isAbled = true
+        const response = await fetch('/', {
+          method: 'POST',
+          body: new URLSearchParams({ action: 'invalidateCache' })
+        });
+        isLoading = false;
+        setTimeout(() => {
+            isAbled = false
+        }, 5000);
     };
 
   
@@ -74,7 +84,7 @@
 <div class="sunday_event">
     <div class="button_box">
         <div>선데이 메이플 새로 고침</div>
-        <button on:click={refreshData} class="refresh-button" aria-label="데이터 새로고침" class:rotating={isLoading}></button>
+        <button on:click={refreshData} class="refresh-button" aria-label="데이터 새로고침" class:rotating={isLoading} disabled={isAbled}></button>
     </div>
     
 

@@ -55,6 +55,11 @@ img {
 		inset 4px 4px 8px rgba(0, 0, 0, 0.1),
 		inset -4px -4px 8px rgba(255, 255, 255, 0.7);
 }
+
+.refresh-button:disabled {
+	opacity: 0.5;
+}
+
 .button_box {
 	width: 100%;
 	display: flex;
