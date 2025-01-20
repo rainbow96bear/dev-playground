@@ -9,6 +9,7 @@
     event.preventDefault(); // 폼 기본 동작 방지
     if (characterName.trim()) {
       goto(`/character/info?name=${encodeURIComponent(characterName)}`);
+      characterName=""
     } else {
       alert("캐릭터 이름을 입력하세요.");
     }

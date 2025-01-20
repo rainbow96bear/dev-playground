@@ -6,8 +6,8 @@
 	background-color: #ffffff; /* 카드 배경색 */
 	padding: 20px; /* 내부 여백 */
 	margin: 15px auto; /* 외부 여백 */
-	max-width: 600px; /* 카드의 최대 너비 */
-	width: 100%; /* 반응형 너비 */
+	/* max-width: 600px;  */
+	width: 100%;
 	transition:
 		transform 0.2s ease,
 		box-shadow 0.2s ease; /* 호버 효과를 위한 트랜지션 */
@@ -23,7 +23,10 @@
 .main_info {
 	width: 100%;
 }
-
+.main_info img {
+	width: 10%;
+	min-width: 100px;
+}
 .display_flex {
 	display: flex;
 	flex-direction: row;

@@ -1,34 +1,47 @@
 <script lang="ts">
     import { onMount } from "svelte";
+    import { invalidate, invalidateAll } from '$app/navigation';
     import "./+page.css";
 
     export let data: any;
-
-    const imgSrcMatch = data.contents.match(/<img[^>]+src="([^"]+)"/);
-    const areaMatch = data.contents.match(/<area[^>]+href="([^"]+)"[^>]+coords="([^"]+)"/);
-
-    const imgSrc = imgSrcMatch ? imgSrcMatch[1] : null;
-    const areaHref = areaMatch ? areaMatch[1] : null;
-    const areaCoords = areaMatch ? areaMatch[2] : null;
-
+    let imgSrc: string | null = null;
+    let areaHref: string | null = null;
+    let areaCoords: string | null = null;
     let imgWidth = 0;
     let imgHeight = 0;
-    let responsiveCoords = areaCoords;
+    let responsiveCoords: string | null = null;
+    let isLoading = false;
 
+    // 초기 데이터 처리
+    const processData = () => {
+        if (data != null && data.contents != null) {
+            const imgSrcMatch = data?.contents.match(/<img[^>]+src="([^"]+)"/);
+            const areaMatch = data?.contents.match(/<area[^>]+href="([^"]+)"[^>]+coords="([^"]+)"/);
+
+            imgSrc = imgSrcMatch ? imgSrcMatch[1] : null;
+            areaHref = areaMatch ? areaMatch[1] : null;
+            areaCoords = areaMatch ? areaMatch[2] : null;
+
+            // 비율에 맞는 coords 계산
+            if (areaCoords && imgWidth) {
+                responsiveCoords = getResponsiveCoords(areaCoords, imgWidth);
+            }
+        }
+    };
+
+    // 비율에 맞는 coords를 계산하는 함수
     const getResponsiveCoords = (coords: string, imgWidth: number): string => {
         const coordsArray = coords.split(',').map(Number);
-        const newCoords = coordsArray.map((coord, index) => {
-            if (index % 2 === 0) {
-                return Math.round(coord * (imgWidth / 876));  // 비율 곱하기
-            } else {
-                return Math.round(coord * (imgWidth / 876));  // y 좌표도 비슷하게 처리
-            }
-        });
+        const newCoords = coordsArray.map((coord) =>
+            Math.round(coord * (imgWidth / 876))
+        );
         return newCoords.join(',');
     };
 
+    // 페이지 로드 시 데이터 처리 및 크기 조정
     onMount(() => {
         const imgElement = document.querySelector('img') as HTMLImageElement;
+
         if (imgElement) {
             imgWidth = imgElement.offsetWidth;
             imgHeight = imgElement.offsetHeight;
@@ -50,16 +63,38 @@
         });
     });
 
+    const refreshData = async () => {
+        await invalidate('sunday_event');
+    };
+
+  
+    processData();
 </script>
 
 <div class="sunday_event">
-    <div>
-        <!-- img만 있을 경우 렌더링 -->
-        <img src={imgSrc} alt="스페셜 썬데이 메이플" usemap="#map">
+    <div class="button_box">
+        <div>선데이 메이플 새로 고침</div>
+        <button on:click={refreshData} class="refresh-button" aria-label="데이터 새로고침" class:rotating={isLoading}></button>
+    </div>
+    
+
+    {#if data}
+        {#if imgSrc}
+            <img src={imgSrc} alt="스페셜 썬데이 메이플" usemap="#map">
+        {/if}
+        
         {#if areaHref && areaCoords}
             <map name="map">
-                <area target="_blank" href={areaHref} coords={responsiveCoords} shape="rect">
+                <area
+                    target="_blank"
+                    href={areaHref}
+                    coords={responsiveCoords}
+                    shape="rect"
+                    alt="스페셜 썬데이 메이플 이벤트"
+                >
             </map>
+        {:else}
+            <div class="explain">아직 썬데이 메이플 이벤트가 올라오지 않았습니다.</div>
         {/if}
-    </div>
+    {/if}
 </div>

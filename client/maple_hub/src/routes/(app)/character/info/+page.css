@@ -10,6 +10,7 @@
 }
 
 .fade-in {
+	width: 100%;
 	animation: slideUpFadeIn 0.5s forwards;
 	transition:
 		opacity 0.3s ease,
