@@ -1,4 +1,4 @@
-export type T_CharacterInfo = {
+export type T_CharacterInfoObj = {
 	character_image: string;
 	character_level: number;
 	character_name: string;
@@ -28,3 +28,9 @@ export type T_Event_Detail = {
 	date_event_start: string;
 	date_event_end: string;
 };
+
+export type T_OcideObj = {
+	ocid: string;
+};
+
+export type T_EquippedItems = {};

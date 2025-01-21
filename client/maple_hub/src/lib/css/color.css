@@ -1,7 +1,8 @@
 :root {
-	--mushroom1: #e7e94f;
-	--mushroom2: #e6b342;
-	--mushroom3: #cd7d31;
+	--mushroom1: rgb(255, 240, 155);
+	--mushroom2: #ffd270;
+	--mushroom3: #ffaf63;
+	--mushroom4: #cd7d31;
 
 	--waterElement1: #c1e8dd;
 

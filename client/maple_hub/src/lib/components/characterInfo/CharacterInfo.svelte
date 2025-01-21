@@ -1,18 +1,23 @@
 <script lang="ts">
   import { characterInfo, characterWalkMotion } from "$lib/store";
   import "./CharacterInfo.css";
+  import { onDestroy } from "svelte";
+  import Switch from "../Switch/Switch.svelte";
+  import Symbols from "./symbols/Symbols.svelte";
+  import EquippedItems from "./equippedItems/EquippedItems.svelte";
+  import HexaSkills from "./hexaSkills/HexaSkills.svelte";
 
   const MotionQuery = "?action=A0";
   const MotionTerm = 150;
   const MotionCount = 4;
 
   let motionIndex = 0;
+  let intervalId: NodeJS.Timeout | null = null;
+  let isDataReady = false;
+  let selectedComponent = "EquippedItems";
 
   $: currentInfo = $characterInfo;
   $: motionNum = $characterWalkMotion;
-
-  let intervalId: NodeJS.Timeout | null = null;
-  let isDataReady = false;
 
   const startImageSequence = () => {
     if (intervalId) {
@@ -29,9 +34,6 @@
     startImageSequence();
   }
 
-  import { onDestroy } from "svelte";
-  import Switch from "../Switch/Switch.svelte";
-
   onDestroy(() => {
     if (intervalId) clearInterval(intervalId);
   });
@@ -40,9 +42,9 @@
     characterWalkMotion.set((motionNum === 2 ? 3 : 2));
   };
 
-  const birthDay = (date:string)=> {
-    return date.slice(2, 10)
-  }
+  const selectComponent = (componentName: string) => {
+    selectedComponent = componentName;
+  };
 </script>
 
 {#if isDataReady}
@@ -54,6 +56,7 @@
         <div class="text_main_info">
           <div id="nickname">{currentInfo.character_name}</div>
           <div>{currentInfo.character_class} | Lv.{currentInfo.character_level}</div>
+          <div>{currentInfo.world_name} / {currentInfo.character_guild_name}</div>
           <div class="display_flex">
             <div>모션 선택</div>
             <div class="switch">
@@ -62,13 +65,39 @@
           </div>
         </div>
       </div>
-      <ul class="details-list">
-          <li>생일 : {birthDay(currentInfo.character_date_create)}</li>
-          <li>길드 : {currentInfo.character_guild_name}</li>
-          <li>서버 : {currentInfo.world_name}</li>
-          <li>최근 7일간 접속 : {currentInfo.access_flag}</li>
-          <li>해방 퀘스트 완료 여부 : {currentInfo.liberation_quest_clear_flag}</li>
-      </ul>
+      <div>
+        <div id="function_button_box">
+          <button
+            class:selected={selectedComponent === 'EquippedItems'}
+            on:click={() => selectComponent('EquippedItems')}
+          >
+            장비
+          </button>
+          <button
+            class:selected={selectedComponent === 'HexaSkills'}
+            on:click={() => selectComponent('HexaSkills')}
+          >
+            헥사 스킬
+          </button>
+          <button
+            class:selected={selectedComponent === 'Symbols'}
+            on:click={() => selectComponent('Symbols')}
+          >
+            심볼
+          </button>
+        </div>
+        <div id="sub_info_box">
+          {#if selectedComponent === 'EquippedItems'}
+            <EquippedItems />
+          {/if}
+          {#if selectedComponent === 'HexaSkills'}
+            <HexaSkills />
+          {/if}
+          {#if selectedComponent === 'Symbols'}
+            <Symbols />
+          {/if}
+        </div>
+      </div>
     </div>
   {/if}
 {/if}

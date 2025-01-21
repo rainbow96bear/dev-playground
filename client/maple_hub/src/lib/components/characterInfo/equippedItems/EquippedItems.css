@@ -1,0 +1,25 @@
+.item_explain_box {
+	display: flex;
+	border: 1px solid gray;
+	border-radius: 5px;
+	font-size: 0.8rem;
+}
+
+.sample_info_box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.item_img_box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 35px;
+	height: 35px;
+}
+.item_img {
+	/* min-width: 4rem; */
+	max-width: 20px;
+	height: auto;
+}
