@@ -63,3 +63,48 @@ export const getSundayEvent = async (notice_id: number) => {
 		alert('썬데이 정보를 불러오는데 실패 했습니다.');
 	}
 };
+
+export const getEquippedItems = async (ocid: string) => {
+	try {
+		const equippedItems = (
+			await nexonAPI('/maplestory/v1/character/item-equipment', {
+				params: {
+					ocid: ocid
+				}
+			})
+		).data;
+		return equippedItems;
+	} catch (error) {
+		console.log('착용중인 아이템 정보를 불러오지 못했습니다.\n[ERROR]:', error);
+	}
+};
+
+export const getEquippedSymbols = async (ocid: string) => {
+	try {
+		const equippedSymbols = (
+			await nexonAPI('/maplestory/v1/character/symbol-equipment', {
+				params: {
+					ocid: ocid
+				}
+			})
+		).data;
+		return equippedSymbols;
+	} catch (error) {
+		console.log('착용중인 심볼 정보를 불러오지 못했습니다.\n[ERROR] : ', error);
+	}
+};
+
+export const getHexaMatrix = async (ocid: string) => {
+	try {
+		const equippedSymbols = (
+			await nexonAPI('/maplestory/v1/character/hexamatrix', {
+				params: {
+					ocid: ocid
+				}
+			})
+		).data;
+		return equippedSymbols;
+	} catch (error) {
+		console.log('헥사 매트릭스 정보를 불러오지 못했습니다.\n[ERROR] : ', error);
+	}
+};
