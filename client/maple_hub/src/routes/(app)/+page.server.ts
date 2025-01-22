@@ -4,7 +4,7 @@ import { getEventList, getSundayEvent } from '$lib/nexonAPI/nexonApi';
 import type { PageServerLoad } from './$types';
 import type { T_Event_Detail } from '$lib/types';
 import { deleteCache, getCache, setCache } from '$lib/cache/cache';
-import { day } from '$lib/constants';
+import { Days } from '$lib/constants';
 
 const sunday_event_key = 'sunday_event';
 
@@ -41,7 +41,7 @@ const reqSundayEvent = async () => {
 			if (event.title && event.title.includes('스페셜 썬데이 메이플')) {
 				if (new Date(event.date_event_end) >= new Date()) {
 					const resSundayEventObj: T_Event_Detail = await getSundayEvent(event.notice_id);
-					setCache(sunday_event_key, resSundayEventObj, day);
+					setCache(sunday_event_key, resSundayEventObj, Days);
 					return resSundayEventObj; // 데이터 반환
 				}
 				break;

@@ -3,14 +3,14 @@
     import { page } from '$app/stores';
     import "./EquippedItems.css"
     let equippedItems: any;
-  
+
     onMount(async () => {
       const characterName = $page.url.searchParams.get('name');
       if (characterName == undefined){
         return
       }
       
-        const res = await fetch(`/api/data?name=${characterName}`);
+        const res = await fetch(`/api/data/equipped_items?name=${characterName}`);
         if (res.ok) {
           equippedItems = await res.json();
         } else {
@@ -31,7 +31,10 @@
         </div>
         <div class="sample_info_box">
             <div>{item?.item_name}</div>
-            <div>{item?.potential_option_grade} {item?.additional_potential_option_grade}</div>
+            <div id="potential_level_box">
+              <div class={PotentialOptionToEng[item?.potential_option_grade]}>{item?.potential_option_grade}</div> 
+              <div class={PotentialOptionToEng[item?.additional_potential_option_grade]}>{item?.additional_potential_option_grade}</div>
+            </div>
         </div>
     </div>
     {/each}

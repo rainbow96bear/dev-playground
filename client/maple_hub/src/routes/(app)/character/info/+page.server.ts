@@ -2,7 +2,7 @@ import { error } from '@sveltejs/kit';
 import { getCharaterOcid, getChareterInfo } from '$lib/nexonAPI/nexonApi';
 import type { PageServerLoad } from './$types';
 import { getCache, setCache } from '$lib/cache/cache';
-import { day, minute } from '$lib/constants';
+import { Days, Minuts } from '$lib/constants';
 import { T_CharacterInfoObj } from '$lib/types';
 
 export const load: PageServerLoad = async ({ url }) => {
@@ -18,7 +18,7 @@ export const load: PageServerLoad = async ({ url }) => {
 			if (resOcidObj == undefined) {
 				throw error(404, '캐릭터 정보를 찾을 수 없습니다.');
 			}
-			setCache(characterName, resOcidObj.ocid, day);
+			setCache(characterName, resOcidObj.ocid, Days);
 			ocid = resOcidObj.ocid;
 		}
 		let characterInfoObj: T_CharacterInfoObj = getCache(ocid + '-info');
@@ -27,7 +27,7 @@ export const load: PageServerLoad = async ({ url }) => {
 			if (resCharacterInfoObj == undefined) {
 				throw error(404, '캐릭터 정보를 찾을 수 없습니다.');
 			}
-			setCache(ocid + '-info', resCharacterInfoObj, 15 * minute);
+			setCache(ocid + '-info', resCharacterInfoObj, 15 * Minuts);
 			characterInfoObj = resCharacterInfoObj;
 		}
 
