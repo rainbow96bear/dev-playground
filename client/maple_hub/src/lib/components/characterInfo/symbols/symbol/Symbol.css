@@ -1,0 +1,26 @@
+#symbol_container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.symbol_img_box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	width: 35px;
+	height: 35px;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.symbol_level {
+	font-size: 0.6rem;
+}

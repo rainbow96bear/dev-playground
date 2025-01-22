@@ -1,0 +1,11 @@
+#symbol_container {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.symbol_box {
+	display: flex;
+	flex-wrap: wrap;
+	width: 48%; /* 2개 박스를 한 줄에 배치할 수 있도록 50%보다 약간 작게 설정 */
+}
