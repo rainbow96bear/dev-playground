@@ -3,7 +3,7 @@
 	box-shadow:
 		0 4px 6px rgba(0, 0, 0, 0.1),
 		0 1px 3px rgba(0, 0, 0, 0.08); /* 명암 효과 */
-	background-color: #ffffff; /* 카드 배경색 */
+	background-color: #fdfdfd; /* 카드 배경색 */
 	padding: 20px; /* 내부 여백 */
 	margin: 15px auto; /* 외부 여백 */
 	/* max-width: 600px;  */

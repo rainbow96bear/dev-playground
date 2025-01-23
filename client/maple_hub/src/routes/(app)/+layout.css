@@ -16,7 +16,7 @@ footer {
 }
 
 #main_box {
-	min-width: 400px;
+	/* min-width: 400px; */
 	width: 100%;
 	min-height: 100vh;
 	display: flex;

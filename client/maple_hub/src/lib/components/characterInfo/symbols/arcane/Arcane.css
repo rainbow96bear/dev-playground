@@ -1,53 +1,64 @@
-#symbol_box {
+#arcane_symbol_box {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	border-radius: 10px;
 	overflow: hidden;
+	width: 50px;
+	height: 100%;
 }
 
-.symbol_img_box {
+.arcane_symbol_img_box {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
-	width: 35px;
-	height: 35px;
-	background-color:var(--arcane_img_box_background);
+	width: 100%;
+	padding: 4px;
+	background-color: var(--arcane_img_box_background);
 	border: 3px solid var(--arcane_img_box_outside);
 	border-radius: 10px 10px 0px 0px;
 }
 
-img { 
+.arcane_img {
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
 }
 
-.symbol_level {
-	color : var(--arcane_level_color);
+.arcane_symbol_level {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--arcane_level_color);
 	background-color: var(--arcane_level_background);
 	font-weight: 900;
-	font-size: 0.6rem;
+	font-size: 0.8rem;
+	width: 100%;
+	padding: 2px;
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
 }
 
-.gauge_box { 
-	border : none;
-	background-color:var(--arcane_gauge_background);
+.arcane_gauge_box {
+	width: 100%;
+	border: none;
+	background-color: var(--arcane_gauge_background);
+	padding: 4px;
 }
 
-.gague_base {
-    width: 100%;
-    height: 30px;
-	background-color:var(--arcane_gauge_base);
-    border-radius:5px;
-    overflow: hidden;
+.arcane_gague_base {
+	width: 100%;
+	height: 10px;
+	background-color: var(--arcane_gauge_base);
+	border-radius: 4px;
+	overflow: hidden;
 }
 
-.gauge_bar {
+.arcane_gauge_bar {
 	height: 100%;
 	width: 0%;
-	background-color: var(--arcane_gauge_color1);
+	background-color: var(--arcane_gauge_bar);
 }

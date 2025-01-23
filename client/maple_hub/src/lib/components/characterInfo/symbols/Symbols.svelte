@@ -1,12 +1,13 @@
-<script>
+<script lang="ts">
   import { onMount } from 'svelte';
   import { page } from '$app/stores';
   import { ArcaneSymbolIconList, AuthenticSymbolIconList } from '$lib/constants';
   import Arcane from './arcane/Arcane.svelte';
+  import Authentic from './authentic/Authentic.svelte';
   import "./Symbols.css";
 
-  let arcaneLevels = [0, 0, 0, 0, 0, 0];
-  let authenticLevels = [0, 0, 0, 0, 0, 0];
+  let arcaneList: any[] = [{},{},{},{},{},{}];
+  let authenticList: any[] = [{},{},{},{},{},{}];
 
   onMount(async () => {
     const characterName = $page.url.searchParams.get('name');
@@ -15,22 +16,36 @@
     const res = await fetch(`/api/data/equipped_symbols?name=${characterName}`);
     if (res.ok) {
       const symbols = await res.json();
-      symbols.symbol.forEach(symbol => {
-        switch (symbol.symbol_name) {
-          case "소멸의 여로": arcaneLevels[0] = symbol.symbol_level; break;
-          case "츄츄 아일랜드": arcaneLevels[1] = symbol.symbol_level; break;
-          case "레헬른": arcaneLevels[2] = symbol.symbol_level; break;
-          case "아르카나": arcaneLevels[3] = symbol.symbol_level; break;
-          case "모라스": arcaneLevels[4] = symbol.symbol_level; break;
-          case "에스페라": arcaneLevels[5] = symbol.symbol_level; break;
-          case "세르니움": authenticLevels[0] = symbol.symbol_level; break;
-          case "아르크스": authenticLevels[1] = symbol.symbol_level; break;
-          case "오디움": authenticLevels[2] = symbol.symbol_level; break;
-          case "도원경": authenticLevels[3] = symbol.symbol_level; break;
-          case "아르테리아": authenticLevels[4] = symbol.symbol_level; break;
-          case "카르시온": authenticLevels[5] = symbol.symbol_level; break;
+      symbols?.symbol.forEach(symbol => {
+        console.log(symbol.symbol_name); // symbol_name 확인
+
+        if (symbol.symbol_name.includes("소멸의 여로")) {
+          arcaneList[0] = symbol;
+        } else if (symbol.symbol_name.includes("츄츄 아일랜드")) {
+          arcaneList[1] = symbol;
+        } else if (symbol.symbol_name.includes("레헬른")) {
+          arcaneList[2] = symbol;
+        } else if (symbol.symbol_name.includes("아르카나")) {
+          arcaneList[3] = symbol;
+        } else if (symbol.symbol_name.includes("모라스")) {
+          arcaneList[4] = symbol;
+        } else if (symbol.symbol_name.includes("에스페라")) {
+          arcaneList[5] = symbol;
+        } else if (symbol.symbol_name.includes("세르니움")) {
+          authenticList[0] = symbol;
+        } else if (symbol.symbol_name.includes("아르크스")) {
+          authenticList[1] = symbol;
+        } else if (symbol.symbol_name.includes("오디움")) {
+          authenticList[2] = symbol;
+        } else if (symbol.symbol_name.includes("도원경")) {
+          authenticList[3] = symbol;
+        } else if (symbol.symbol_name.includes("아르테리아")) {
+          authenticList[4] = symbol;
+        } else if (symbol.symbol_name.includes("카르시온")) {
+          authenticList[5] = symbol;
         }
       });
+      console.log(authenticList);  // arcaneList 출력
     } else {
       console.error('Failed to load equipped symbols');
     }
@@ -39,13 +54,13 @@
 
 <div id="symbol_container">
   <div class="symbol_box">
-    {#each arcaneLevels as level, index}
-      <Arcane symbol_icon={ArcaneSymbolIconList[index]} symbol_level={level}></Arcane>
+    {#each arcaneList as symbol, index}
+      <Arcane symbol={symbol} icon={ArcaneSymbolIconList[index]}></Arcane>
     {/each}
   </div>
   <div class="symbol_box">
-    {#each authenticLevels as level, index}
-      <Authentic symbol_icon={AuthenticSymbolIconList[index]} symbol_level={level}></Authentic>
+    {#each authenticList as symbol, index}
+      <Authentic symbol={symbol} icon={AuthenticSymbolIconList[index]}></Authentic>
     {/each}
   </div>
 </div>

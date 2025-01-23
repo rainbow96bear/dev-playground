@@ -22,19 +22,20 @@
 	--legendary_background: #d4f0d4;
 	--legendary_color: #005500;
 
-	--arcane_img_box_outside: #F0D963;
-	--arcane_img_box_background:#494D50;
+	--arcane_img_box_outside: #f0d963;
+	--arcane_img_box_background: #494d50;
 
-	--arcane_level_background:#454348;
-	--arcane_level_color:#E0A02A;
+	--arcane_level_background: #454348;
+	--arcane_level_color: #e0a02a;
 
-	--arcane_gauge_color1:#F2A800;
-	--arcane_gauge_color2:#F6D522;
-	--arcane_gauge_background:#5A5A5A;
-	--arcane_gauge_base:#393B3A;
+	--arcane_gauge_bar: #f2a800;
+	--arcane_gauge_background: #5a5a5a;
+	--arcane_gauge_base: #393b3a;
 
-	--authentic-outside:#BDD4ED;
-	--authentic-left:#719ED0;
-	--authentic-right:#5789C8;
+	--authentic-outside: #bdd4ed;
+	--authentic-left: #719ed0;
+	--authentic-right: #5789c8;
 
+	--authentic_gauge_bar: #eae9ff;
+	--authentic_gauge_base: #506e98;
 }
