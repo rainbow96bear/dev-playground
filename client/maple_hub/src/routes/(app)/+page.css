@@ -27,11 +27,11 @@ img {
 }
 
 .refresh-button {
-	background-color: var(--waterElement1);
+	background-color: var(--water_element1);
 	border: none;
 	padding: 20px;
 	margin-left: 10px;
-	border: 3px solid var(--waterElement1);
+	border: 3px solid var(--water_element1);
 	border-radius: 50%;
 	background-image: url('/refresh-icon.svg');
 	background-size: 60%;

@@ -56,27 +56,27 @@
 }
 
 .rare {
-	background-color: var(--rare-background);
-	border: 1px solid var(--rare-color);
-	color: var(--rare-color);
+	background-color: var(--rare_background);
+	border: 1px solid var(--rare_color);
+	color: var(--rare_color);
 }
 
 .epic {
-	background-color: var(--epic-background);
-	border: 1px solid var(--epic-color);
-	color: var(--epic-color);
+	background-color: var(--epic_background);
+	border: 1px solid var(--epic_color);
+	color: var(--epic_color);
 }
 
 .unique {
-	background-color: var(--unique-background);
-	border: 1px solid var(--unique-color);
-	color: var(--unique-color);
+	background-color: var(--unique_background);
+	border: 1px solid var(--unique_color);
+	color: var(--unique_color);
 }
 
 .legendary {
-	background-color: var(--legendary-background);
-	border: 1px solid var(--legendary-color);
-	color: var(--legendary-color);
+	background-color: var(--legendary_background);
+	border: 1px solid var(--legendary_color);
+	color: var(--legendary_color);
 }
 
 /* 화면이 좁아지면 1줄에 최대 4개씩 배치 */

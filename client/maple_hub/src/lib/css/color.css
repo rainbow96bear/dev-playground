@@ -4,21 +4,37 @@
 	--mushroom3: #ffaf63;
 	--mushroom4: #cd7d31;
 
-	--waterElement1: #c1e8dd;
+	--water_element1: #c1e8dd;
 
 	--main_box: #d1d4d6;
 
 	--base_background: #e4edff;
 
-	--rare-background: #d4f7f6;
-	--rare-color: #004d66;
+	--rare_background: #d4f7f6;
+	--rare_color: #004d66;
 
-	--epic-background: #f7c5e6;
-	--epic-color: #c96bff;
+	--epic_background: #f7c5e6;
+	--epic_color: #c96bff;
 
-	--unique-background: #fef6c3;
-	--unique-color: #ffae34; /* 글씨 색을 더 부드럽고 조화로운 노란색으로 변경 */
+	--unique_background: #fef6c3;
+	--unique_color: #ffae34;
 
-	--legendary-background: #d4f0d4;
-	--legendary-color: #005500;
+	--legendary_background: #d4f0d4;
+	--legendary_color: #005500;
+
+	--arcane_img_box_outside: #F0D963;
+	--arcane_img_box_background:#494D50;
+
+	--arcane_level_background:#454348;
+	--arcane_level_color:#E0A02A;
+
+	--arcane_gauge_color1:#F2A800;
+	--arcane_gauge_color2:#F6D522;
+	--arcane_gauge_background:#5A5A5A;
+	--arcane_gauge_base:#393B3A;
+
+	--authentic-outside:#BDD4ED;
+	--authentic-left:#719ED0;
+	--authentic-right:#5789C8;
+
 }
