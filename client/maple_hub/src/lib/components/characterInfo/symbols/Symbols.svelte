@@ -17,7 +17,6 @@
     if (res.ok) {
       const symbols = await res.json();
       symbols?.symbol.forEach(symbol => {
-        console.log(symbol.symbol_name); // symbol_name 확인
 
         if (symbol.symbol_name.includes("소멸의 여로")) {
           arcaneList[0] = symbol;
@@ -45,7 +44,6 @@
           authenticList[5] = symbol;
         }
       });
-      console.log(authenticList);  // arcaneList 출력
     } else {
       console.error('Failed to load equipped symbols');
     }

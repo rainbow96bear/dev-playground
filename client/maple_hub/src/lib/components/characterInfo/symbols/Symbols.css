@@ -4,11 +4,12 @@
 	gap: 5px; /* 아이템 간의 간격 */
 	width: 100%;
 	height: fit-content;
+	flex-wrap: wrap;
 }
 
 .symbol_box {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr); /* 3개의 아이템씩 배치 */
-	gap: 5px; /* 각 아이템 간의 간격 */
+	gap: 10px; /* 각 아이템 간의 간격 */
 	height: fit-content;
 }
