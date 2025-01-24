@@ -14,8 +14,9 @@
 	align-items: center;
 }
 
-img {
-	width: 100%;
+#sunday_img {
+	min-width: 360px;
+	width: 70%;
 }
 @keyframes rotate {
 	from {

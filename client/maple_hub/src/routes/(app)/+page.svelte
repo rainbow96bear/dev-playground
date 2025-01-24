@@ -1,110 +1,120 @@
 <script lang="ts">
     import { onMount } from "svelte";
-    import { invalidate } from '$app/navigation';
     import "./+page.css";
 
     export let data: any;
+    let areas: any[] = [];
     let imgSrc: string | null = null;
-    let areaHref: string | null = null;
-    let areaCoords: string | null = null;
     let imgWidth = 0;
-    let imgHeight = 0;
-    let responsiveCoords: string | null = null;
     let isLoading = false;
     let isAbled = false;
 
-    // 초기 데이터 처리
+    // 데이터 처리 함수
     const processData = () => {
         if (data != null && data.contents != null) {
             const imgSrcMatch = data?.contents.match(/<img[^>]+src="([^"]+)"/);
-            const areaMatch = data?.contents.match(/<area[^>]+href="([^"]+)"[^>]+coords="([^"]+)"/);
-
             imgSrc = imgSrcMatch ? imgSrcMatch[1] : null;
-            areaHref = areaMatch ? areaMatch[1] : null;
-            areaCoords = areaMatch ? areaMatch[2] : null;
-
-            // 비율에 맞는 coords 계산
-            if (areaCoords && imgWidth) {
-                responsiveCoords = getResponsiveCoords(areaCoords, imgWidth);
-            }
+            
+            const areaMatches = [...data.contents.matchAll(/<area[^>]+href="([^"]+)"[^>]+coords="([^"]+)"/g)];
+            areas = areaMatches.map(match => ({
+                href: match[1],        // href 속성 값
+                coords: match[2],      // coords 속성 값
+                responsiveCoords: match[2], // 기본 coords로 초기값 설정
+            }));
         }
     };
 
-    // 비율에 맞는 coords를 계산하는 함수
+    // 반응형 coords 계산 함수
     const getResponsiveCoords = (coords: string, imgWidth: number): string => {
         const coordsArray = coords.split(',').map(Number);
-        const newCoords = coordsArray.map((coord) =>
-            Math.round(coord * (imgWidth / 876))
-        );
+        const newCoords = coordsArray.map(coord => Math.round(coord * (imgWidth / 876)));
         return newCoords.join(',');
     };
 
-    // 페이지 로드 시 데이터 처리 및 크기 조정
+    // coords 업데이트 함수
+    const updateResponsiveCoords = () => {
+        if (imgWidth > 0) {
+            areas = areas.map(area => ({
+                ...area,
+                responsiveCoords: getResponsiveCoords(area.coords, imgWidth),
+            }));
+        }
+    };
+
     onMount(() => {
         const imgElement = document.querySelector('img') as HTMLImageElement;
 
         if (imgElement) {
-            imgWidth = imgElement.offsetWidth;
-            imgHeight = imgElement.offsetHeight;
+            imgElement.onload = () => {
+                imgWidth = imgElement.offsetWidth;
+                updateResponsiveCoords();
+            };
 
-            if (areaCoords) {
-                responsiveCoords = getResponsiveCoords(areaCoords, imgWidth);
+            // 이미지가 이미 로드된 경우 처리
+            if (imgElement.complete) {
+                imgWidth = imgElement.offsetWidth;
+                updateResponsiveCoords();
             }
         }
 
+        // 리사이즈 이벤트 핸들러 추가
         window.addEventListener('resize', () => {
             if (imgElement) {
                 imgWidth = imgElement.offsetWidth;
-                imgHeight = imgElement.offsetHeight;
-
-                if (areaCoords) {
-                    responsiveCoords = getResponsiveCoords(areaCoords, imgWidth);
-                }
+                updateResponsiveCoords();
             }
         });
+
+        // 이벤트 핸들러 정리
+        return () => {
+            window.removeEventListener('resize', updateResponsiveCoords);
+        };
     });
 
+    // 데이터 새로고침 함수
     const refreshData = async () => {
-        isLoading = true
-        isAbled = true
-        const response = await fetch('/', {
-          method: 'POST',
-          body: new URLSearchParams({ action: 'invalidateCache' })
+        isLoading = true;
+        isAbled = true;
+        await fetch('/', {
+            method: 'POST',
+            body: new URLSearchParams({ action: 'invalidateCache' }),
         });
         isLoading = false;
         setTimeout(() => {
-            isAbled = false
+            isAbled = false;
         }, 5000);
     };
 
-  
+    // 데이터 처리 실행
     processData();
 </script>
 
 <div class="sunday_event">
     <div class="button_box">
         <div>선데이 메이플 새로 고침</div>
-        <button on:click={refreshData} class="refresh-button" aria-label="데이터 새로고침" class:rotating={isLoading} disabled={isAbled}></button>
+        <button
+            on:click={refreshData}
+            class="refresh-button"
+            aria-label="데이터 새로고침"
+            class:rotating={isLoading}
+            disabled={isAbled}
+        ></button>
     </div>
-    
 
-    {#if data}
-        {#if imgSrc}
-            <img src={imgSrc} alt="스페셜 썬데이 메이플" usemap="#map">
-        {/if}
-        
-        {#if areaHref && areaCoords}
-            <map name="map">
+    {#if imgSrc}
+        <img id="sunday_img" src={imgSrc} alt="스페셜 썬데이 메이플" usemap="#map">
+        <map name="map">
+            {#each areas as area, index (index)}
                 <area
                     target="_blank"
-                    href={areaHref}
-                    coords={responsiveCoords}
+                    href={area.href}
+                    coords={area.responsiveCoords}
                     shape="rect"
                     alt="스페셜 썬데이 메이플 이벤트"
-                >
-            </map>
-        {:else}
-            <div class="explain">아직 썬데이 메이플 이벤트가 올라오지 않았습니다.</div>
-        {/if}
+                />
+            {/each}
+        </map>
+    {:else}
+        <div class="explain">아직 썬데이 메이플 이벤트가 올라오지 않았습니다.</div>
     {/if}
 </div>
