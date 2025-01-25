@@ -3,7 +3,6 @@
 	justify-content: center;
 	max-width: 200px;
 	flex-wrap: wrap;
-	margin-top: 5px;
 }
 
 .star {
@@ -22,6 +21,7 @@
 		2% 35%,
 		39% 35%
 	);
+	margin-top: 5px;
 }
 
 .star-container .star:nth-child(5n) {

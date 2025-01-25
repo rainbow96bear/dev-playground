@@ -9,6 +9,9 @@
 </script>
 <div id="main_box">
     <header>
+      <div>
+        <div>시뮬레이션</div>
+      </div>
     </header>
     
     <main>
