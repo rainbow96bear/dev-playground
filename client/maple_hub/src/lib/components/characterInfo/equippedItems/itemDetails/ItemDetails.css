@@ -83,3 +83,7 @@
 .exceptional_detail {
 	color: #a35854;
 }
+
+.soul_name {
+	color: var(--mushroom2);
+}

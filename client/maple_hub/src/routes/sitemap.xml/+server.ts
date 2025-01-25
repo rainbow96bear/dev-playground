@@ -1,26 +1,36 @@
-// src/routes/sitemap.xml/+server.ts
+import type { RequestHandler } from './$types';
 
-import { getPages } from '$lib/sitemap/pages'; // 페이지 목록을 가져오는 함수 (예시)
+const nowDay = new Date().toISOString().split('T')[0];
+const lastmodDay = '2025-01-01';
 
-export const GET = async () => {
-  const pages = await getPages(); // 페이지 목록을 동적으로 가져옴
+export const GET: RequestHandler = async () => {
+	const baseUrl = 'https://maplebox.netlify.app'; // 사이트의 기본 URL
 
-  // 페이지 목록을 바탕으로 XML을 작성
-  const xml = pages.map((page: { url: string; lastmod: string; priority: string }) => `
-    <url>
-      <loc>https://your-domain.com${page.url}</loc>
-      <lastmod>${page.lastmod}</lastmod>
-      <priority>${page.priority}</priority>
-    </url>
-  `).join('');
+	const pages = [
+		{ path: '/', lastmod: lastmodDay },
+		{ path: '/character/info', lastmod: lastmodDay }
+	];
 
-  // Sitemap XML 형식으로 응답
-  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    ${xml}
-  </urlset>`;
+	const sitemap = `
+    <?xml version="1.0" encoding="UTF-8" ?>
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+      ${pages
+				.map(
+					(page) => `
+        <url>
+          <loc>${baseUrl}${page.path}</loc>
+          <lastmod>${page.lastmod}</lastmod>
+        </url>
+      `
+				)
+				.join('')}
+    </urlset>
+  `;
 
-  return new Response(sitemap, {
-    headers: { 'Content-Type': 'application/xml' }
-  });
+	return new Response(sitemap, {
+		headers: {
+			'Content-Type': 'application/xml',
+			'Cache-Control': 'no-cache'
+		}
+	});
 };

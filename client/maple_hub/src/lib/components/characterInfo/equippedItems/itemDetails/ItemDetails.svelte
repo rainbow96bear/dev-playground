@@ -292,4 +292,14 @@
             {item.item_description}
         </div>
     {/if}
+    {#if item.soul_name != null}
+        <div class="divider">
+            <div class="soul_name">
+                {item.soul_name}
+            </div>
+            <div>
+                {item.soul_option}
+            </div>
+        </div>
+    {/if}
 </div>
