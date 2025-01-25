@@ -5,16 +5,18 @@
 }
 
 .item_explain_box {
-	display: flex;
 	flex: 1;
+	height: fit-content;
 	border: 1px solid gray;
 	border-radius: 5px;
-	font-size: 0.8rem;
 	padding: 5px;
+	flex-basis: calc(25% - 10px);
+}
+
+.item_simple_info {
+	display: flex;
+	font-size: 0.8rem;
 	gap: 10px;
-	/* 각 항목이 최소 25%의 너비를 가지도록 설정 */
-	flex-basis: calc(25% - 10px); /* 기본적으로 1줄에 4개 배치 */
-	box-sizing: border-box; /* padding을 포함한 너비를 계산 */
 }
 
 .sample_info_box {

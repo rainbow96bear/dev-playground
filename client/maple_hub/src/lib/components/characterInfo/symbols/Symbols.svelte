@@ -6,7 +6,7 @@
   import Authentic from './authentic/Authentic.svelte';
   import "./Symbols.css";
 
-  const rootURL = `${window.location.protocol}//${window.location.host}`;
+  const rootURL = import.meta.env.VITE_ROOT_URL;
 
   let arcaneList: any[] = [{},{},{},{},{},{}];
   let authenticList: any[] = [{},{},{},{},{},{}];

@@ -1,0 +1,29 @@
+.item_option {
+	display: flex;
+}
+
+.option_pointer {
+	color: #66ffff;
+}
+.add_option {
+	color: #73ca73;
+}
+
+.base_option {
+	padding-left: 5px;
+	color: white;
+	display: flex;
+	gap: 3px;
+}
+
+.etc_option {
+	color: #afadff;
+}
+
+.starforce_option {
+	color: var(--unique_color);
+}
+
+.cuttable_count {
+	color: var(--unique_color);
+}

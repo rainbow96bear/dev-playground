@@ -1,0 +1,48 @@
+.potential_option_grade_detail_box {
+	display: flex;
+	gap: 3px;
+	padding-bottom: 4px;
+}
+
+.potential_option_detail_icon {
+	color: white;
+	border: 1px solid white;
+	border-radius: 3px;
+	width: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 1;
+}
+
+.rare_detail_icon {
+	background-color: #66ffff;
+}
+
+.epic_detail_icon {
+	background-color: var(--epic_color);
+}
+
+.unique_detail_icon {
+	background-color: var(--unique_color);
+}
+
+.legendary_detail_icon {
+	background-color: #73ca73;
+}
+
+.rare_detail {
+	color: #66ffff;
+}
+
+.epic_detail {
+	color: var(--epic_color);
+}
+
+.unique_detail {
+	color: var(--unique_color);
+}
+
+.legendary_detail {
+	color: #73ca73;
+}
