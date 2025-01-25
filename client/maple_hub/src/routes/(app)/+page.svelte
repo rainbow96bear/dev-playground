@@ -3,6 +3,10 @@
     import "./+page.css";
 
     export let data: any;
+
+    const title = "maple box";
+    const description = "maple box의 메인 페이지\n썬데이 메이플 업로드 확인";
+
     let areas: any[] = [];
     let imgSrc: string | null = null;
     let imgWidth = 0;
@@ -88,6 +92,16 @@
     // 데이터 처리 실행
     processData();
 </script>
+
+<svelte:head>
+  <title>{title}</title>
+  <meta name="description" content="{description}">
+  <meta property="og:title" content="{title} 메인 페이지">
+  <meta property="og:description" content="{description}">
+  <meta property="og:url" content="{import.meta.env.BASE_URL}">
+  <meta property="twitter:title" content="{title} 메인 페이지">
+  <meta property="twitter:description" content="{description}">
+</svelte:head>
 
 <div class="sunday_event">
     <div class="button_box">
