@@ -9,12 +9,14 @@
 	border: 1px solid gray;
 	border-radius: 5px;
 	padding: 5px;
+	width: 100%;
 }
 .item_explain_box_height {
 	height: 100%;
 }
 
 .item_simple_info {
+	width: 100%;
 	display: flex;
 	font-size: 0.8rem;
 	gap: 10px;
