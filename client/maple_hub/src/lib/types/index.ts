@@ -136,3 +136,26 @@ export interface T_Symbol {
 	symbol_growth_count: number;
 	symbol_require_growth_count: number;
 }
+
+type Rank = 'rare' | 'epic' | 'unique' | 'legendary';
+
+export type Option = {
+	name: string;
+	weight: number;
+};
+
+type RankOptions = {
+	firstOption: Option[];
+	secondOption: Option[];
+	thirdOption: Option[];
+};
+
+export type CubeOptionChance = {
+	[cubeType: string]: {
+		[equipmentType: string]: {
+			[levelRange: string]: {
+				[rank in Rank]: RankOptions;
+			};
+		};
+	};
+};

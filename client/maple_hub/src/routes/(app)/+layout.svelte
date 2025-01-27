@@ -4,13 +4,23 @@
     import "./+page.css";
   
     import { characterInfo } from "$lib/store";
+	import { goto } from "$app/navigation";
   
     $: currentInfo = $characterInfo;
 </script>
 <div id="main_box">
     <header>
       <div>
-        <div>시뮬레이션</div>
+        홈
+      </div>
+      <button onclick={()=>{goto("/simulation/cube")}}>
+        큐브 시뮬레이션
+      </button>
+      <div>
+        환생의 불꽃 시뮬레이션
+      </div>
+      <div>
+        스타포스 시뮬레이션
       </div>
     </header>
     
