@@ -1,20 +1,21 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
     import CharacterInfo from '$lib/components/characterInfo/CharacterInfo.svelte';
     import { characterInfo } from "$lib/store";
-	import { onDestroy } from 'svelte';
     import "./+page.css";
 
     const characterName = $page.url.searchParams.get('name');
     const description = "캐릭터의 착용 장비, 헥사 스킬, 심볼에 대한 정보"
 
     export let data: any; 
-    $: if (data) {
+
+    $: if ( Object.keys(data).length > 0) {
         characterInfo.set(data);
+    }else if ($characterInfo){
+        goto(`/character/info?name=${$characterInfo?.character_name}`)
     }
-    onDestroy(() => {
-        characterInfo.set(null);
-    });
+
 </script>
 
 <svelte:head>
@@ -28,5 +29,9 @@
 </svelte:head>
 
 <div class="{characterInfo ? 'fade-in' : ''}">
-    <CharacterInfo/>
+    {#if  Object.keys(data).length > 0}
+        <CharacterInfo/>
+    {:else}
+        캐릭터 이름을 검색해주세요.
+    {/if}
 </div>

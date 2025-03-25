@@ -7,11 +7,7 @@ import { T_CharacterInfoObj } from '$lib/types';
 
 export const load: PageServerLoad = async ({ url }) => {
 	const characterName = url.searchParams.get('name');
-	if (!characterName) {
-		throw error(400, '캐릭터 이름이 제공되지 않았습니다.');
-	}
-
-	try {
+	if (characterName) {
 		let ocid = getCache(characterName);
 		if (ocid == undefined) {
 			const resOcidObj = await getCharaterOcid(characterName);
@@ -30,9 +26,8 @@ export const load: PageServerLoad = async ({ url }) => {
 			setCache(ocid + '-info', resCharacterInfoObj, 15 * Minuts);
 			characterInfoObj = resCharacterInfoObj;
 		}
-
 		return characterInfoObj;
-	} catch (err) {
-		throw error(500, '캐릭터 정보를 가져오는 데 실패했습니다.');
+	} else {
+		return;
 	}
 };
