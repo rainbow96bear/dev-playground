@@ -5,6 +5,7 @@
 	import ItemOption from "./itemOption/ItemOption.svelte";
 	import PotentialOption from "./potentialOption/PotentialOption.svelte";
 	import StarForce from "./starForce/StarForce.svelte";
+	import EquipmentIcon from "$lib/components/equipmentIcon/EquipmentIcon.svelte";
     
     export let item;
     let expire_date;
@@ -47,9 +48,7 @@
         </div>
     </div>
     <div class="item_img_req_box divider">
-        <div class="img_detail_box center {PotentialOptionToEng[item?.potential_option_grade]}_img_border">
-            <img class="img_detail" src={item.item_icon} alt="item img"/>
-        </div>
+        <EquipmentIcon item={item}></EquipmentIcon>
         <div class="req_level">
             REQ LEV : {item.item_base_option.base_equipment_level}
         </div>

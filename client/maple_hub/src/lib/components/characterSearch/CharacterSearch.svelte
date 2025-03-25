@@ -1,18 +1,35 @@
 <script lang="ts">
   import { goto } from "$app/navigation";
+  import { page } from '$app/stores';
 
   import "./CharacterSearch.css";
-
+  
   let characterName = "";
-
   const handleSubmit = (event: Event) => {
-    event.preventDefault(); // 폼 기본 동작 방지
-    if (characterName.trim()) {
-      goto(`/character/info?name=${encodeURIComponent(characterName)}`);
-      characterName=""
-    } else {
-      alert("캐릭터 이름을 입력하세요.");
+    event.preventDefault();
+
+    switch ($page.url.pathname) {
+          case "/":
+          case "/character/info":
+              if (characterName) {
+                  goto(`/character/info?name=${encodeURIComponent(characterName)}`);
+                  characterName=""
+              } else {
+                  console.warn("characterName이 비어 있습니다.");
+              }
+              break;
+          case "/simulation/cube" : 
+              if (characterName) {
+                  goto(`/simulation/cube?name=${encodeURIComponent(characterName)}`);
+                  characterName=""
+              } else {
+                  goto(`/simulation/cube`);
+              }
+              break;
+          default:
+              console.log("다른 경로입니다.");
     }
+  
   };
 </script>
 

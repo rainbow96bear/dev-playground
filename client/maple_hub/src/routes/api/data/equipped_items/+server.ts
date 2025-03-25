@@ -1,9 +1,9 @@
 import { getCache, setCache } from '$lib/cache/cache';
 import { Minuts } from '$lib/constants';
+import { equippedItems_key } from '$lib/constants/cache';
 import { getEquippedItems } from '$lib/nexonAPI/nexonApi';
 import { json } from '@sveltejs/kit';
 
-const equippedItems_key = '-equippedItems';
 export async function GET({ url }: { url: URL }) {
 	const name = url.searchParams.get('name');
 

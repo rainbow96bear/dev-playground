@@ -83,6 +83,5 @@
 
 .arcane_gauge_bar {
 	height: 100%;
-	width: 0%;
 	background-color: var(--arcane_gauge_bar);
 }
