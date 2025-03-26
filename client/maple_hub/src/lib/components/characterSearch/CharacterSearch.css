@@ -1,43 +1,72 @@
 .searchBox {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
-	border: 3px solid var(--water_element1);
-	border-radius: 10px;
-	background-color: white;
+	border: 2px solid var(--water_element1);
+	border-radius: 20px;
+	background-color: #ffffff;
 	width: 100%;
-	grid-row: 1;
-	padding: 5px;
-	margin-bottom: 15px;
+	padding: 8px 12px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: box-shadow 0.3s ease-in-out;
+}
+
+.searchBox:focus-within {
+	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 form {
 	display: flex;
 	width: 100%;
+	align-items: center;
 }
+
 input {
-	outline: none;
 	flex-grow: 1;
-	height: 100%;
+	height: 40px;
 	border: none;
-	padding: 5px;
+	font-size: 1rem;
+	padding: 0px;
+	border-radius: 10px;
+	background: transparent;
+	outline: none;
+	transition: all 0.3s ease;
 }
 
 #searchButton {
 	background: var(--water_element1);
+	color: white;
 	border: none;
-	border-radius: 12px;
-	padding: 5px 10px;
+	border-radius: 10px;
+	padding: 10px 15px;
 	font-size: 1rem;
+	font-weight: bold;
 	cursor: pointer;
-	box-shadow:
-		inset 4px 4px 8px rgba(255, 255, 255, 0.7),
-		inset -4px -4px 8px rgba(0, 0, 0, 0.1);
 	transition: all 0.3s ease;
 }
 
+#searchButton:hover {
+	background: #0056b3;
+}
+
 #searchButton:active {
+	transform: scale(0.95);
 	box-shadow:
 		inset 4px 4px 8px rgba(0, 0, 0, 0.1),
 		inset -4px -4px 8px rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 480px) {
+	.searchBox {
+		max-width: 100%;
+		padding: 6px 10px;
+	}
+
+	input {
+		font-size: 0.9rem;
+	}
+
+	#searchButton {
+		padding: 8px 12px;
+		font-size: 0.9rem;
+	}
 }

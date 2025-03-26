@@ -1,23 +1,53 @@
 header {
 	width: 100%;
-	height: 75px;
-	background-color: white;
+	height: 70px;
+	background: linear-gradient(to right, #ffffff, #f8f9fa);
 	display: flex;
-	padding: 0px 10px;
+	align-items: center;
+	padding: 0 20px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	border-bottom: 2px solid #e9ecef;
 }
 
 header > button {
-	font-size: 1.1rem;
+	font-size: 1rem;
+	font-weight: bold;
+	color: #495057;
 	border: none;
-	background-color: rgba(0, 0, 0, 0);
+	background: none;
 	display: flex;
 	align-items: center;
-	margin: 0px 10px;
+	gap: 6px;
+	padding: 8px 12px;
+	margin: 0 8px;
 	cursor: pointer;
+	border-radius: 6px;
+	transition: all 0.3s ease-in-out;
 }
 
 header > button:hover {
-	text-decoration: underline;
+	background: rgba(0, 123, 255, 0.1);
+	color: #007bff;
+	text-decoration: none;
+}
+
+header > button img {
+	width: 20px;
+	height: 20px;
+}
+
+@media (max-width: 600px) {
+	header {
+		flex-direction: column;
+		height: auto;
+		padding: 10px 0;
+	}
+
+	header > button {
+		width: 90%;
+		justify-content: center;
+		margin: 5px 0;
+	}
 }
 
 main {
@@ -46,7 +76,7 @@ footer {
 }
 
 .title {
-	font-size: 2rem;
+	font-size: 1.5rem;
 	width: 100%;
 	display: flex;
 	justify-content: center;

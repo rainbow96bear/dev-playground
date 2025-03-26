@@ -2,7 +2,7 @@
     import "./+layout.css"
     import CharacterSearch from '$lib/components/characterSearch/CharacterSearch.svelte';
     import potentialImg from "$lib/assets/potential.png"
-    import "./+page.css";
+    // import "./+page.css";
   
     import { characterInfo } from "$lib/store";
 	  import { goto } from "$app/navigation";

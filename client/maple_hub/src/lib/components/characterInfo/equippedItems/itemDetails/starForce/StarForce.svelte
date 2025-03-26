@@ -9,7 +9,7 @@
     onMount(() => {
         const reqLevelNum = parseInt(req_level, 10);
 
-        if (reqLevelNum <= 95) {
+        if (reqLevelNum < 95) {
             Max = 5;
         } else if (reqLevelNum <= 107) {
             Max = 8;
@@ -20,7 +20,7 @@
         } else if (reqLevelNum <= 137) {
             Max = 20;
         } else {
-            Max = 25;
+            Max = 30;
         }
     });
 </script>

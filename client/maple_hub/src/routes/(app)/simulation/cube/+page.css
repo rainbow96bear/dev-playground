@@ -2,24 +2,80 @@
 	padding: 0px 0px 10px 0px;
 	white-space: pre-line;
 }
+
 #cube_container {
 	display: flex;
-	/* justify-content: space-around; */
 	justify-content: center;
+	background: linear-gradient(to bottom right, #dce5f3, #b3c7e6);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+	border-radius: 12px;
 	flex-wrap: wrap;
-	gap: 10px;
+	gap: 20px;
+	padding: 25px;
+	transition: all 0.3s ease-in-out;
 }
 
 #cube_setting_box {
 	display: flex;
 	flex-direction: column;
-	padding: 10px 0px;
+	align-items: flex-start;
+	gap: 12px;
+	padding: 20px;
+	border-radius: 12px;
 	width: 100%;
-	gap: 10px;
+	max-width: 400px;
 }
 
-#cube_setting_box > select {
-	height: 25px;
+#cube_setting_box label {
+	font-weight: bold;
+	color: #343a40;
+	font-size: 1rem;
+}
+
+#cube_setting_box select {
+	width: 100%;
+	padding: 10px;
+	border: 2px solid #adb5bd;
+	border-radius: 8px;
+	font-size: 14px;
+	background-color: white;
+	color: #495057;
+	transition: all 0.3s ease-in-out;
+}
+
+#cube_setting_box select:focus {
+	outline: none;
+	border-color: #5d98d3;
+	box-shadow: 0 0 5px rgba(93, 152, 211, 0.5);
+}
+
+#cube_setting_box button {
+	width: 100%;
+	padding: 12px;
+	border: none;
+	border-radius: 8px;
+	background: linear-gradient(to right, #5d98d3, #74b4ff);
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+#cube_setting_box button:hover {
+	background: linear-gradient(to right, #74b4ff, #5d98d3);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+#cube_setting_box button:active {
+	background: linear-gradient(to right, #4a89d3, #5a9eff);
+	transform: scale(0.98);
+}
+
+#cube_setting_box select:focus {
+	outline: none;
+	border-color: #5d98d3;
+	box-shadow: 0 0 5px rgba(93, 152, 211, 0.5);
 }
 
 #cube_box {
@@ -38,12 +94,12 @@
 }
 
 .result_box {
-	background: linear-gradient(to bottom right, #b3d9ff 1%, #5d98d3);
+	background: linear-gradient(to bottom right, #b3d9ff, #5d98d3);
 	border: 2px solid skyblue;
-	border-radius: 5px;
+	border-radius: 8px;
 	color: white;
 	padding: 5px;
-	font-size: 0.9;
+	font-size: 1rem;
 	font-weight: bold;
 }
 
@@ -130,7 +186,7 @@
 	flex-direction: column;
 	background-color: #212c3f;
 	border: 2px solid #5d98d3;
-	border-radius: 5px;
+	border-radius: 8px;
 	padding: 5px;
 	gap: 2px;
 }
@@ -146,6 +202,8 @@
 		rgba(255, 255, 255, 0)
 	);
 	color: yellow;
+	font-weight: bold;
+	font-size: 1rem;
 }
 
 .cube_use_button_box {
@@ -163,8 +221,9 @@
 	border: 1px solid #86a334;
 	padding: 3px;
 	color: white;
+	font-weight: bold;
 	transition: all 0.1s ease;
-	box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1); /* 오목하게 보이도록 안쪽 그림자 추가 */
+	box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .cube_use_button:active {

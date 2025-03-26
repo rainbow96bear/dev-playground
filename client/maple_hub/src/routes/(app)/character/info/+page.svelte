@@ -32,6 +32,6 @@
     {#if  Object.keys(data).length > 0}
         <CharacterInfo/>
     {:else}
-        캐릭터 이름을 검색해주세요.
+        <div>캐릭터 이름을 검색해주세요.</div>
     {/if}
 </div>
