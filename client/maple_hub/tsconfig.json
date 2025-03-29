@@ -15,11 +15,6 @@
 		"noImplicitAny": false,
 		"moduleResolution": "bundler",
 		"types": ["svelte"],
-		"baseUrl": "./src",
-		"paths": {
-			"$lib": ["lib"],
-			"$lib/*": ["lib/*"]
-		},
 		"verbatimModuleSyntax": false
 	}
 }
