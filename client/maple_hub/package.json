@@ -36,6 +36,7 @@
 	},
 	"dependencies": {
 		"@sveltejs/adapter-netlify": "^4.4.0",
-		"axios": "^1.7.9"
+		"axios": "^1.7.9",
+		"marked": "^15.0.7"
 	}
 }
