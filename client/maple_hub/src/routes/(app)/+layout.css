@@ -7,13 +7,21 @@ header {
 	padding: 0 20px;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 	border-bottom: 2px solid #e9ecef;
+	position: relative;
 }
 
-header > button {
+nav {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+nav button {
 	font-size: 1rem;
 	font-weight: bold;
 	color: #495057;
 	border: none;
+	background: none;
 	background: none;
 	display: flex;
 	align-items: center;
@@ -25,28 +33,52 @@ header > button {
 	transition: all 0.3s ease-in-out;
 }
 
-header > button:hover {
+nav button:hover {
 	background: rgba(0, 123, 255, 0.1);
 	color: #007bff;
-	text-decoration: none;
 }
 
-header > button img {
+nav button img {
 	width: 20px;
 	height: 20px;
+	margin: 0px;
+}
+
+.hamburger {
+	display: none;
+	font-size: 1.8rem;
+	background: none;
+	border: none;
+	color: #495057;
+	cursor: pointer;
+	padding: 10px;
 }
 
 @media (max-width: 600px) {
-	header {
-		flex-direction: column;
-		height: auto;
-		padding: 10px 0;
+	.hamburger {
+		display: block;
 	}
 
-	header > button {
-		width: 90%;
-		justify-content: center;
-		margin: 5px 0;
+	nav {
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		top: 70px;
+		left: 0;
+		width: 100%;
+		background: white;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		border-bottom: 2px solid #e9ecef;
+	}
+
+	nav.open {
+		display: flex;
+	}
+
+	nav button {
+		width: 100%;
+		text-align: center;
+		padding: 12px;
 	}
 }
 
@@ -77,6 +109,7 @@ footer {
 
 .title {
 	font-size: 1.5rem;
+	font-size: 1.5rem;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -90,13 +123,4 @@ footer {
 		opacity: 0;
 		transform: translateY(-20px);
 	}
-}
-
-.fade-out {
-	animation: slideUpFadeOut 0.5s forwards;
-	transition:
-		opacity 0.3s ease,
-		transform 0.3s ease,
-		width 0.3s ease;
-	height: 0px;
 }
