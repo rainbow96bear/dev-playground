@@ -1,48 +1,33 @@
 <script lang="ts">
+  import "./+page.css"
   import { GradeUpProbability, MaxCeiling } from "$lib/constants/cube";
-  import redCubeData from "$lib/json/cubeProbability/redCube.json";
-  import blackCubeData from "$lib/json/cubeProbability/blackCube.json";
-  import masterCubeData from "$lib/json/cubeProbability/masterCube.json";
-  import meisterCubeData from "$lib/json/cubeProbability/meisterCube.json";
-  import strangeCubeData from "$lib/json/cubeProbability/strangeCube.json";
-  import editionalCubeData from "$lib/json/cubeProbability/editionalCube.json";
-  import strangeEditionalCubeData from "$lib/json/cubeProbability/strangeEditionalCube.json";
+  import { EquipmentTypeMap, PotentialOptionToEng, ReverseEquipmentTypeMap } from "$lib/constants";
+  import { InternalAPI } from "$lib/api";
+  import { onMount } from "svelte";
+  import Equipment from "$lib/components/equipment/Equipment.svelte";
+
+  import editionalImg from "$lib/assets/editional.png";
   import redCubeImg from "$lib/assets/redCube.png";
   import blackCubeImg from "$lib/assets/blackCube.png";
-  import potentialImg from "$lib/assets/potential.png";
   import masterCubeImg from "$lib/assets/masterCube.png";
   import meisterCubeImg from "$lib/assets/meisterCube.png";
   import editionalCubeImg from "$lib/assets/editionalCube.png";
   import whiteEditionalCubeImg from "$lib/assets/whiteEditionalCube.png";
   import arcaneSymbolImg from "$lib/assets/arcane_symbol.png";
-  import editionalImg from "$lib/assets/editional.png";
-  import Equipment from "$lib/components/equipment/Equipment.svelte";
-  import { itemInfoForCube } from "$lib/store";
+  import potentialImg from "$lib/assets/potential.png";
+	import { itemInfoForCube } from "$lib/store/index.js";
 
-  import "./+page.css";
-
-  const cubeDataMap = {
-    redCube: redCubeData,
-    blackCube: blackCubeData,
-    masterCube: masterCubeData,
-    meisterCube: meisterCubeData,
-    strangeCube: strangeCubeData,
-    editionalCube: editionalCubeData,
-    strangeEditionalCube: strangeEditionalCubeData
-  };
-  const gradeEngArr = ["rare", "epic", "unique", "legendary"];
-  const gradeKorArr = ["레어", "에픽", "유니크", "레전드리"];
-
-  let cubeType: string = "redCube"; // 기본 큐브 타입 설정
-  let cube = cubeDataMap[cubeType]; // 선택된 큐브 타입에 따라 Cube 데이터 가져오기
+  let cubeType: string = "redCube";
   let equipmentType: string = "weapon";
-  let levelRange: string ="0-9";
-  let levelRangeList = cube?.[equipmentType]
-  let gradeIndex: number = 0; // 초기 등급 설정
-  let gradeList = cube?.[equipmentType][levelRange];
+  let grade: string = "레어";
+  let gradeIndex: number = 0;
+  let levelRange: string = "0-9";
+  let cube: any = null;
+  let levelRangeArr: any = null;
 
-  let tempGradeIndex: number = 0;
   let tempEquipmentType: string = "weapon";
+  let tempGradeIndex: number = 0;
+  let tempGrade: string = "레어";
   let tempLevelRange:string = "0-9";
   
   let item_icon = arcaneSymbolImg;
@@ -56,10 +41,33 @@
   let selectedImage: string = redCubeImg; // 선택된 큐브 이미지
   export let data;
  
+  const fetchCubeData = async (fileName : string) => {
+    try {
+      const res = await InternalAPI(`/cubeData/${fileName}`);
+      if (res.status == 404) {
+        cube = null;
+        alert("해당 큐브는 " + grade + "등급을 재설정 할 수 없습니다.");
+        return;
+      }
+      cube = res.content
+    } catch (error) {
+      cube = null;
+      console.error('Cube 데이터를 가져오는 데 실패했습니다:', error);
+    }
+  };
+
+  const fetchLevelRange = async () => {
+    try {
+      const res = await InternalAPI('/cubeData/levelRange');
+      levelRangeArr = res.content
+    } catch (error) {
+      console.error('장비 별 레벨 범위를 가져오는 데 실패했습니다:', error);
+    }
+  }
+
   const setOption = () => {
-    const currentGrade = gradeEngArr[gradeIndex];
-    const cubeGrade = cube?.[equipmentType]?.[levelRange]?.[currentGrade];
-    if (!cubeGrade) {
+    const currentGrade = PotentialOptionToEng[grade];
+    if (!cube) {
       console.error("Invalid cube structure or grade not found:", {
         equipmentType,
         levelRange,
@@ -69,28 +77,34 @@
       option2 = null;
       option3 = null;
     } else {
-      option1 = getRandomOption(cubeGrade.firstOption || []);
-      option2 = getRandomOption(cubeGrade.secondOption || []);
-      option3 = getRandomOption(cubeGrade.thirdOption || []);
+      option1 = getRandomOption(cube.firstOption || []);
+      option2 = getRandomOption(cube.secondOption || []);
+      option3 = getRandomOption(cube.thirdOption || []);
     }
   };
 
-  const setItemforCube = (tempGradeIndex, tempEquipmentType, tempLevelRange) => {
+  const setItemforCube = () => {
     $itemInfoForCube = null;
     item_icon = arcaneSymbolImg;
     gradeIndex = tempGradeIndex;
+    grade = tempGrade;
     equipmentType = tempEquipmentType;
     levelRange = tempLevelRange;
-    levelRangeList = cube?.[tempEquipmentType] || {}; // 추가됨
+    updateCube(cubeType, selectedImage)
     setOption();
   };
 
 
-  const updateCube = (type: string, image: string) => {
+  const updateCube = async (type: string, image: string) => {
     cubeType = type;
-    cube = cubeDataMap[cubeType];
-    selectedImage = image;
-    levelRangeList = { ...cube?.[equipmentType] };
+    const cubeFileName = `${cubeType}_${PotentialOptionToEng[grade]}_${equipmentType}_${levelRange}`; // 예: cubeType이 "weapon"이면 "weapon.json"
+    try {
+      await fetchCubeData(cubeFileName);
+      selectedImage = image;
+      
+    } catch (error) {
+      console.error('Cube 데이터를 가져오는 데 실패했습니다:', error);
+    }
   };
 
   const gradeUp = (cubeType: string, grade: string) => {
@@ -100,7 +114,7 @@
 
     const probability = GradeUpProbability[cubeType][grade];
     const random = globalThis.Math.random();
-    const maxCeilingValue = MaxCeiling[cubeType][gradeEngArr[gradeIndex]];
+    const maxCeilingValue = MaxCeiling[cubeType][PotentialOptionToEng[grade]];
 
     if (
       random < probability ||
@@ -131,111 +145,63 @@
   };
 
   const useCube = () => {
-    const currentGrade = gradeEngArr[gradeIndex];
-    const cubeGrade = cube?.[equipmentType]?.[levelRange]?.[currentGrade];
-
-    if (!cubeGrade) {
-      alert("해당 큐브는 " + gradeKorArr[gradeIndex] + "등급을 재설정 할 수 없습니다.");
+    const currentGrade = PotentialOptionToEng[grade];
+    if (!cube) {
+      alert("해당 큐브는 " + grade + "등급을 재설정 할 수 없습니다.");
       return;
     }
 
     totalCount++;
     itemCount++;
-    executionCountList[gradeIndex]++;
+    switch (cubeType) {
+      case "redCube":
+      case "blackCube":
+        executionCountList[gradeIndex]++
+        break;
+    }
+
     setOption();
-    gradeUp(cubeType, gradeEngArr[gradeIndex]);
+    gradeUp(cubeType, currentGrade);
   };
 
   const translateEquipmentType = (item) => {
     item_icon = item.item_icon
     const slot = item?.item_equipment_slot;
-    switch (slot) {
-      case "무기":
-        return "weapon";
-      case "엠블렘":
-        return "emblem";
-      case "모자":
-        return "head";
-      case "상의":
-        return "top";
-      case "한벌옷":
-        return "suit";
-      case "하의":
-        return "bottom";
-      case "신발":
-        return "shoes";
-      case "장갑":
-        return "gloves";
-      case "망토":
-        return "cloak";
-      case "벨트":
-        return "belt";
-      case "어깨장식":
-        return "shoulder";
-      case "얼굴장식":
-        return "face";
-      case "눈장식":
-        return "eyes";
-      case "귀고리":
-        return "ears";
-      case "반지1":
-      case "반지2":
-      case "반지3":
-      case "반지4":
-        return "ring";
-      case "펜던트":
-      case "펜던트2":
-        return "pendant";
-      case "기계 심장":
-        return "heart";
-      case "훈장":
-        return "medal";
-      case "포켓 아이템":
-        return "pocket";
-      case "뱃지":
-        return "badge";
-      default:
-        switch (item.item_equipment_part) {
-          case "포스실드":
-          case "소울링":
-            return "forceOrSoul";
-          case "방패":
-            return "shield";
-          default:
-            return 'subweapon';
-        }
-    }
-    
+    return EquipmentTypeMap[slot]  
   };
 
-  $: {
-    if ($itemInfoForCube) {
-      equipmentType = translateEquipmentType($itemInfoForCube);
-      gradeIndex
-      switch(cubeType){
-        case "redCube" :
-        case "blackCube" :
-        case "masterCube" :
-        case "meisterCube" :
-        case "strangeCube" :
-          gradeIndex = gradeKorArr.indexOf($itemInfoForCube.potential_option_grade);
-          option1 = $itemInfoForCube.potential_option_1;
-          option2 = $itemInfoForCube.potential_option_2;
-          option3 = $itemInfoForCube.potential_option_3;
-        break;
-        case "editionalCube" :
-        case "whiteEditionalCube" :
-        case "strangeEditionalCube" :
-          gradeIndex = gradeKorArr.indexOf($itemInfoForCube.additional_potential_option_grade);
-          option1 = $itemInfoForCube.additional_potential_option_1;
-          option2 = $itemInfoForCube.additional_potential_option_2;
-          option3 = $itemInfoForCube.additional_potential_option_3;
-      }
-      itemCount = 0;
+  onMount(async () => {
+    const cubeFileName = `${cubeType}_${PotentialOptionToEng[grade]}_${equipmentType}_${levelRange}`;
+    await fetchCubeData(cubeFileName);
+    await fetchLevelRange();
+  });
+
+  $: if ($itemInfoForCube) {
+    const translatedType = translateEquipmentType($itemInfoForCube);
+    if (equipmentType !== translatedType) {
+      equipmentType = translatedType;
     }
+    
+    const newGradeIndex =  Object.keys(PotentialOptionToEng).indexOf($itemInfoForCube.potential_option_grade);
+    if (gradeIndex !== newGradeIndex) {
+      gradeIndex = newGradeIndex;
+    }
+    switch(cubeType){
+      case "redCube", "blackCube", "masterCube", "meisterCube", "strangeCube":
+        gradeIndex = Object.keys(PotentialOptionToEng).indexOf($itemInfoForCube.potential_option_grade);
+        option1 = $itemInfoForCube.potential_option_1;
+        option2 = $itemInfoForCube.potential_option_2;
+        option3 = $itemInfoForCube.potential_option_3;
+      break;
+      case "editionalCube", "whiteEditionalCube", "strangeEditionalCube" :
+        gradeIndex = Object.keys(PotentialOptionToEng).indexOf($itemInfoForCube.additional_potential_option_grade);
+        option1 = $itemInfoForCube.additional_potential_option_1;
+        option2 = $itemInfoForCube.additional_potential_option_2;
+        option3 = $itemInfoForCube.additional_potential_option_3;
+    }
+    itemCount = 0;
   }
   
-  $: levelRangeList = cube?.[tempEquipmentType] || {};
   
 </script>
 
@@ -254,19 +220,19 @@
     <div id="cube_box">
       <div id="cube_show_box">
         <div id="cube_type_box">
-          <img src={selectedImage} alt="selected cube img" />
+          <img src={selectedImage} alt="selected cube img" loading="lazy"/>
           <div>아이템의 <p>잠재능력</p>을 재설정합니다.</div>
         </div>
         <div id="cube_item_img_box">
           <div id="cube_item_effect">
             <div id="cube_item_outline">
-              <img src={item_icon} alt="selected cube img" />
+              <img src={item_icon} alt="selected cube img" loading="lazy"/>
             </div>
           </div>
           <div id="celing_gage_area"> 
-            {#if gradeIndex<3 && MaxCeiling[cubeType][gradeEngArr[gradeIndex]] > 0 }
+            {#if gradeIndex<3 && MaxCeiling[cubeType][PotentialOptionToEng[grade]] > 0 }
               <div id="celing_gauge_box">
-                <div id="celing_gauge_bar" style="width: {executionCountList[gradeIndex]/MaxCeiling[cubeType][gradeEngArr[gradeIndex]]*100}%"></div>
+                <div id="celing_gauge_bar" style="width: {executionCountList[gradeIndex]/MaxCeiling[cubeType][PotentialOptionToEng[grade]]*100}%"></div>
               </div>
             {/if}
           </div>
@@ -274,7 +240,7 @@
         <div class="result_box">
           result
           <div class="output_box">
-            <div class="grade_box">{gradeKorArr[gradeIndex]}</div>
+            <div class="grade_box">{grade}</div>
             <div>{option1}</div>
             <div>{option2}</div>
             <div>{option3}</div>
@@ -282,7 +248,7 @@
         </div>
       </div>
       <div class="cube_use_button_box">
-        <button class="cube_use_button" disabled={!option1 || !option2 || !option3} on:click={useCube}>한 번 더 사용하기</button>
+        <button class="cube_use_button" on:click={useCube}>한 번 더 사용하기</button>
       </div>
     </div>
   </div>
@@ -290,80 +256,71 @@
     <div id="cube_buttons">
       <div class="cube_groups">
         <button class="cube_select_button" on:click={() => updateCube("redCube", redCubeImg)}>
-          <img src={redCubeImg} alt="red cube img" />
+          <img src={redCubeImg} alt="red cube img" loading="lazy"/>
           레드 큐브
         </button>
         <button class="cube_select_button" on:click={() => updateCube("blackCube", blackCubeImg)}>
-          <img src={blackCubeImg} alt="black cube img" /><img src={potentialImg} alt="potential img" />
+          <img src={blackCubeImg} alt="black cube img" loading="lazy"/><img src={potentialImg} alt="potential img" />
           블랙 큐브
         </button>
         <button class="cube_select_button" on:click={() => updateCube("masterCube", masterCubeImg)}>
-          <img src={masterCubeImg} alt="master cube img" />
+          <img src={masterCubeImg} alt="master cube img" loading="lazy"/>
           장인의 큐브
         </button>
         <button class="cube_select_button" on:click={() => updateCube("meisterCube", meisterCubeImg)}>
-          <img src={meisterCubeImg} alt="meister cube img" />
+          <img src={meisterCubeImg} alt="meister cube img" loading="lazy"/>
           명장의 큐브
         </button>
       </div>
       <div class="cube_groups">
         <button class="cube_select_button" on:click={() => updateCube("editionalCube", editionalCubeImg)}>
-          <img src={editionalCubeImg} alt="editional cube img" /><img src={whiteEditionalCubeImg} alt="white editional cube img" /><img src={editionalImg} alt="editional img" />
+          <img src={editionalCubeImg} alt="editional cube img" loading="lazy"/><img src={whiteEditionalCubeImg} alt="white editional cube img" loading="lazy"/><img src={editionalImg} alt="editional img" loading="lazy"/>
           에디셔널 큐브
         </button>
       </div>
     </div>
-    {#if Object.keys(data).length > 0}
-      <Equipment equippedItems={data.item_equipment}></Equipment>
-    {/if}
+    {#await data}
+      <p>로딩 중...</p>
+    {:then loadedData}
+      {#if Object.keys(loadedData).length > 0}
+        <Equipment equippedItems={loadedData.item_equipment}></Equipment>
+      {/if}
+    {/await}
     <div id="cube_setting_box">
       <label for="gradeSelect">등급 선택:</label>
-      <select id="gradeSelect" bind:value={tempGradeIndex}>
-        {#each gradeEngArr as grade, index}
-          {#if gradeList?.[grade]} <!-- gradeList에 해당 등급이 존재하는 경우만 표시 -->
-            <option value={index}>{gradeKorArr[index]}</option>
-          {/if}
+      <select id="gradeSelect" bind:value={tempGrade}>
+        <option value="" disabled selected>등급을 선택해주세요</option>
+        {#each Object.entries(PotentialOptionToEng) as [korGrade, engGrade]}
+          <option value={korGrade}>{korGrade}</option>
         {/each}
       </select>
       
       <label for="equipment">부위 선택:</label>
       <select id="equipment" bind:value={tempEquipmentType}>
-        <option value="weapon">무기</option>
-        <option value="emblem">엠블렘</option>
-        <option value="subweapon">보조무기</option>
-        <option value="forceOrSoul">포스실드, 소울링</option>
-        <option value="shield">방패</option>
-        <option value="head">모자</option>
-        <option value="top">상의</option>
-        <option value="suit">한벌옷</option>
-        <option value="bottom">하의</option>
-        <option value="shoes">신발</option>
-        <option value="gloves">장갑</option>
-        <option value="cloak">망토</option>
-        <option value="belt">벨트</option>
-        <option value="shoulder">어깨장식</option>
-        <option value="face">얼굴장식</option>
-        <option value="eyes">눈장식</option>
-        <option value="ears">귀고리</option>
-        <option value="ring">반지</option>
-        <option value="pendant">팬던트</option>
-        <option value="heart">기계심장</option>
+        {#if levelRangeArr != null}
+          {#each Object.keys(levelRangeArr) as key}
+            <option value={key}>{ReverseEquipmentTypeMap[key]}</option>
+          {/each}
+        {/if}
       </select>
       
       <label for="req_level">레벨 입력:</label>
       <select id="req_level" bind:value={tempLevelRange}>
-        {#each Object.keys(levelRangeList).sort((a, b) => {
-          const numA = a.split('-').map(Number);
-          const numB = b.split('-').map(Number);
-          if (numA.length > 1 && numB.length > 1) {
+        <option value="" disabled selected>레벨을 선택해주세요</option>
+        {#if levelRangeArr != null}
+          {#each levelRangeArr[tempEquipmentType].sort((a, b) => {
+            const numA = a.split('-').map(Number);
+            const numB = b.split('-').map(Number);
+            if (numA.length > 1 && numB.length > 1) {
+              return numA[0] - numB[0];
+            }
             return numA[0] - numB[0];
-          }
-          return numA[0] - numB[0];
-        }) as levelRange}
-          <option value={levelRange}>{levelRange}</option>
-        {/each}
+          }) as levelRange}
+            <option value={levelRange}>{levelRange}</option>
+          {/each}
+        {/if}
       </select>
-      <button on:click={() => setItemforCube(tempGradeIndex, tempEquipmentType, tempLevelRange)}>설정 적용</button>
+      <button on:click={() => setItemforCube()}>설정 적용</button>
     </div>
   </div>
 </div>

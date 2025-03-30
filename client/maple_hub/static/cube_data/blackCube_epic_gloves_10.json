@@ -1,0 +1,248 @@
+{
+  "firstOption": [
+    {
+      "name": "STR : +2%",
+      "weight": 12.1951
+    },
+    {
+      "name": "DEX : +2%",
+      "weight": 12.1951
+    },
+    {
+      "name": "INT : +2%",
+      "weight": 12.1951
+    },
+    {
+      "name": "LUK : +2%",
+      "weight": 12.1951
+    },
+    {
+      "name": "최대 HP : +2%",
+      "weight": 12.1951
+    },
+    {
+      "name": "최대 MP : +2%",
+      "weight": 12.1951
+    },
+    {
+      "name": "방어력 : +2%",
+      "weight": 7.3171
+    },
+    {
+      "name": "올스탯 : +1%",
+      "weight": 4.878
+    },
+    {
+      "name": "몬스터 처치 시 15% 확률로 40의 HP 회복",
+      "weight": 7.3171
+    },
+    {
+      "name": "몬스터 처치 시 15% 확률로 40의 MP 회복",
+      "weight": 7.3171
+    }
+  ],
+  "secondOption": [
+    {
+      "name": "STR : +2",
+      "weight": 6
+    },
+    {
+      "name": "DEX : +2",
+      "weight": 6
+    },
+    {
+      "name": "INT : +2",
+      "weight": 6
+    },
+    {
+      "name": "LUK : +2",
+      "weight": 6
+    },
+    {
+      "name": "최대 HP : +10",
+      "weight": 6
+    },
+    {
+      "name": "최대 MP : +10",
+      "weight": 6
+    },
+    {
+      "name": "방어력 : +10",
+      "weight": 4.0000004768
+    },
+    {
+      "name": "STR : +1%",
+      "weight": 6
+    },
+    {
+      "name": "DEX : +1%",
+      "weight": 6
+    },
+    {
+      "name": "INT : +1%",
+      "weight": 6
+    },
+    {
+      "name": "LUK : +1%",
+      "weight": 6
+    },
+    {
+      "name": "최대 HP : +1%",
+      "weight": 4.0000004768
+    },
+    {
+      "name": "최대 MP : +1%",
+      "weight": 4.0000004768
+    },
+    {
+      "name": "방어력 : +1%",
+      "weight": 4.0000004768
+    },
+    {
+      "name": "올스탯 : +1",
+      "weight": 4.0000004768
+    },
+    {
+      "name": "STR : +2%",
+      "weight": 2.439
+    },
+    {
+      "name": "DEX : +2%",
+      "weight": 2.439
+    },
+    {
+      "name": "INT : +2%",
+      "weight": 2.439
+    },
+    {
+      "name": "LUK : +2%",
+      "weight": 2.439
+    },
+    {
+      "name": "최대 HP : +2%",
+      "weight": 2.439
+    },
+    {
+      "name": "최대 MP : +2%",
+      "weight": 2.439
+    },
+    {
+      "name": "방어력 : +2%",
+      "weight": 1.4634
+    },
+    {
+      "name": "올스탯 : +1%",
+      "weight": 0.9756
+    },
+    {
+      "name": "몬스터 처치 시 15% 확률로 40의 HP 회복",
+      "weight": 1.4634
+    },
+    {
+      "name": "몬스터 처치 시 15% 확률로 40의 MP 회복",
+      "weight": 1.4634
+    }
+  ],
+  "thirdOption": [
+    {
+      "name": "STR : +2",
+      "weight": 7.125
+    },
+    {
+      "name": "DEX : +2",
+      "weight": 7.125
+    },
+    {
+      "name": "INT : +2",
+      "weight": 7.125
+    },
+    {
+      "name": "LUK : +2",
+      "weight": 7.125
+    },
+    {
+      "name": "최대 HP : +10",
+      "weight": 7.125
+    },
+    {
+      "name": "최대 MP : +10",
+      "weight": 7.125
+    },
+    {
+      "name": "방어력 : +10",
+      "weight": 4.75
+    },
+    {
+      "name": "STR : +1%",
+      "weight": 7.125
+    },
+    {
+      "name": "DEX : +1%",
+      "weight": 7.125
+    },
+    {
+      "name": "INT : +1%",
+      "weight": 7.125
+    },
+    {
+      "name": "LUK : +1%",
+      "weight": 7.125
+    },
+    {
+      "name": "최대 HP : +1%",
+      "weight": 4.75
+    },
+    {
+      "name": "최대 MP : +1%",
+      "weight": 4.75
+    },
+    {
+      "name": "방어력 : +1%",
+      "weight": 4.75
+    },
+    {
+      "name": "올스탯 : +1",
+      "weight": 4.75
+    },
+    {
+      "name": "STR : +2%",
+      "weight": 0.6098
+    },
+    {
+      "name": "DEX : +2%",
+      "weight": 0.6098
+    },
+    {
+      "name": "INT : +2%",
+      "weight": 0.6098
+    },
+    {
+      "name": "LUK : +2%",
+      "weight": 0.6098
+    },
+    {
+      "name": "최대 HP : +2%",
+      "weight": 0.6098
+    },
+    {
+      "name": "최대 MP : +2%",
+      "weight": 0.6098
+    },
+    {
+      "name": "방어력 : +2%",
+      "weight": 0.3659
+    },
+    {
+      "name": "올스탯 : +1%",
+      "weight": 0.2439
+    },
+    {
+      "name": "몬스터 처치 시 15% 확률로 40의 HP 회복",
+      "weight": 0.3659
+    },
+    {
+      "name": "몬스터 처치 시 15% 확률로 40의 MP 회복",
+      "weight": 0.3659
+    }
+  ]
+}

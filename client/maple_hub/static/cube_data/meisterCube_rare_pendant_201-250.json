@@ -1,0 +1,268 @@
+{
+  "firstOption": [
+    {
+      "name": "STR : +13",
+      "weight": 4.7619
+    },
+    {
+      "name": "DEX : +13",
+      "weight": 4.7619
+    },
+    {
+      "name": "INT : +13",
+      "weight": 4.7619
+    },
+    {
+      "name": "LUK : +13",
+      "weight": 4.7619
+    },
+    {
+      "name": "최대 HP : +125",
+      "weight": 7.1429
+    },
+    {
+      "name": "최대 MP : +125",
+      "weight": 7.1429
+    },
+    {
+      "name": "방어력 : +125",
+      "weight": 7.1429
+    },
+    {
+      "name": "STR : +4%",
+      "weight": 4.7619
+    },
+    {
+      "name": "DEX : +4%",
+      "weight": 4.7619
+    },
+    {
+      "name": "INT : +4%",
+      "weight": 4.7619
+    },
+    {
+      "name": "LUK : +4%",
+      "weight": 4.7619
+    },
+    {
+      "name": "최대 HP : +4%",
+      "weight": 7.1429
+    },
+    {
+      "name": "최대 MP : +4%",
+      "weight": 7.1429
+    },
+    {
+      "name": "방어력 : +4%",
+      "weight": 7.1429
+    },
+    {
+      "name": "올스탯 : +6",
+      "weight": 4.7619
+    },
+    {
+      "name": "4초 당 25의 HP 회복",
+      "weight": 7.1429
+    },
+    {
+      "name": "4초 당 25의 MP 회복",
+      "weight": 7.1429
+    }
+  ],
+  "secondOption": [
+    {
+      "name": "STR : +6",
+      "weight": 9.8039
+    },
+    {
+      "name": "DEX : +6",
+      "weight": 9.8039
+    },
+    {
+      "name": "INT : +6",
+      "weight": 9.8039
+    },
+    {
+      "name": "LUK : +6",
+      "weight": 9.8039
+    },
+    {
+      "name": "최대 HP : +60",
+      "weight": 14.7059
+    },
+    {
+      "name": "최대 MP : +60",
+      "weight": 14.7059
+    },
+    {
+      "name": "방어력 : +60",
+      "weight": 14.7059
+    },
+    {
+      "name": "STR : +13",
+      "weight": 0.7937
+    },
+    {
+      "name": "DEX : +13",
+      "weight": 0.7937
+    },
+    {
+      "name": "INT : +13",
+      "weight": 0.7937
+    },
+    {
+      "name": "LUK : +13",
+      "weight": 0.7937
+    },
+    {
+      "name": "최대 HP : +125",
+      "weight": 1.1905
+    },
+    {
+      "name": "최대 MP : +125",
+      "weight": 1.1905
+    },
+    {
+      "name": "방어력 : +125",
+      "weight": 1.1905
+    },
+    {
+      "name": "STR : +4%",
+      "weight": 0.7937
+    },
+    {
+      "name": "DEX : +4%",
+      "weight": 0.7937
+    },
+    {
+      "name": "INT : +4%",
+      "weight": 0.7937
+    },
+    {
+      "name": "LUK : +4%",
+      "weight": 0.7937
+    },
+    {
+      "name": "최대 HP : +4%",
+      "weight": 1.1905
+    },
+    {
+      "name": "최대 MP : +4%",
+      "weight": 1.1905
+    },
+    {
+      "name": "방어력 : +4%",
+      "weight": 1.1905
+    },
+    {
+      "name": "올스탯 : +6",
+      "weight": 0.7937
+    },
+    {
+      "name": "4초 당 25의 HP 회복",
+      "weight": 1.1905
+    },
+    {
+      "name": "4초 당 25의 MP 회복",
+      "weight": 1.1905
+    }
+  ],
+  "thirdOption": [
+    {
+      "name": "STR : +6",
+      "weight": 9.8039
+    },
+    {
+      "name": "DEX : +6",
+      "weight": 9.8039
+    },
+    {
+      "name": "INT : +6",
+      "weight": 9.8039
+    },
+    {
+      "name": "LUK : +6",
+      "weight": 9.8039
+    },
+    {
+      "name": "최대 HP : +60",
+      "weight": 14.7059
+    },
+    {
+      "name": "최대 MP : +60",
+      "weight": 14.7059
+    },
+    {
+      "name": "방어력 : +60",
+      "weight": 14.7059
+    },
+    {
+      "name": "STR : +13",
+      "weight": 0.7937
+    },
+    {
+      "name": "DEX : +13",
+      "weight": 0.7937
+    },
+    {
+      "name": "INT : +13",
+      "weight": 0.7937
+    },
+    {
+      "name": "LUK : +13",
+      "weight": 0.7937
+    },
+    {
+      "name": "최대 HP : +125",
+      "weight": 1.1905
+    },
+    {
+      "name": "최대 MP : +125",
+      "weight": 1.1905
+    },
+    {
+      "name": "방어력 : +125",
+      "weight": 1.1905
+    },
+    {
+      "name": "STR : +4%",
+      "weight": 0.7937
+    },
+    {
+      "name": "DEX : +4%",
+      "weight": 0.7937
+    },
+    {
+      "name": "INT : +4%",
+      "weight": 0.7937
+    },
+    {
+      "name": "LUK : +4%",
+      "weight": 0.7937
+    },
+    {
+      "name": "최대 HP : +4%",
+      "weight": 1.1905
+    },
+    {
+      "name": "최대 MP : +4%",
+      "weight": 1.1905
+    },
+    {
+      "name": "방어력 : +4%",
+      "weight": 1.1905
+    },
+    {
+      "name": "올스탯 : +6",
+      "weight": 0.7937
+    },
+    {
+      "name": "4초 당 25의 HP 회복",
+      "weight": 1.1905
+    },
+    {
+      "name": "4초 당 25의 MP 회복",
+      "weight": 1.1905
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "firstOption": [
+    {
+      "name": "STR : +3%",
+      "weight": 10.4167
+    },
+    {
+      "name": "DEX : +3%",
+      "weight": 10.4167
+    },
+    {
+      "name": "INT : +3%",
+      "weight": 10.4167
+    },
+    {
+      "name": "LUK : +3%",
+      "weight": 10.4167
+    },
+    {
+      "name": "최대 HP : +3%",
+      "weight": 12.5
+    },
+    {
+      "name": "최대 MP : +3%",
+      "weight": 12.5
+    },
+    {
+      "name": "올스탯 : +2%",
+      "weight": 8.3333
+    },
+    {
+      "name": "STR : +32",
+      "weight": 2.08333
+    },
+    {
+      "name": "DEX : +32",
+      "weight": 2.08333
+    },
+    {
+      "name": "INT : +32",
+      "weight": 2.08333
+    },
+    {
+      "name": "LUK : +32",
+      "weight": 2.08333
+    },
+    {
+      "name": "피격 시 5% 확률로 데미지의 20% 무시",
+      "weight": 8.3333
+    },
+    {
+      "name": "HP 회복 아이템 및 회복 스킬 효율 : +10%",
+      "weight": 8.3333
+    }
+  ],
+  "secondOption": [
+    {
+      "name": "STR : +2%",
+      "weight": 9.7561
+    },
+    {
+      "name": "DEX : +2%",
+      "weight": 9.7561
+    },
+    {
+      "name": "INT : +2%",
+      "weight": 9.7561
+    },
+    {
+      "name": "LUK : +2%",
+      "weight": 9.7561
+    },
+    {
+      "name": "최대 HP : +2%",
+      "weight": 9.7561
+    },
+    {
+      "name": "최대 MP : +2%",
+      "weight": 9.7561
+    },
+    {
+      "name": "방어력 : +2%",
+      "weight": 5.8537
+    },
+    {
+      "name": "올스탯 : +1%",
+      "weight": 3.9024
+    },
+    {
+      "name": "몬스터 처치 시 15% 확률로 50의 HP 회복",
+      "weight": 5.8537
+    },
+    {
+      "name": "몬스터 처치 시 15% 확률로 50의 MP 회복",
+      "weight": 5.8537
+    },
+    {
+      "name": "STR : +3%",
+      "weight": 2.08333
+    },
+    {
+      "name": "DEX : +3%",
+      "weight": 2.08333
+    },
+    {
+      "name": "INT : +3%",
+      "weight": 2.08333
+    },
+    {
+      "name": "LUK : +3%",
+      "weight": 2.08333
+    },
+    {
+      "name": "최대 HP : +3%",
+      "weight": 2.5
+    },
+    {
+      "name": "최대 MP : +3%",
+      "weight": 2.5
+    },
+    {
+      "name": "올스탯 : +2%",
+      "weight": 1.6667
+    },
+    {
+      "name": "STR : +32",
+      "weight": 0.4167
+    },
+    {
+      "name": "DEX : +32",
+      "weight": 0.4167
+    },
+    {
+      "name": "INT : +32",
+      "weight": 0.4167
+    },
+    {
+      "name": "LUK : +32",
+      "weight": 0.4167
+    },
+    {
+      "name": "피격 시 5% 확률로 데미지의 20% 무시",
+      "weight": 1.6667
+    },
+    {
+      "name": "HP 회복 아이템 및 회복 스킬 효율 : +10%",
+      "weight": 1.6667
+    }
+  ],
+  "thirdOption": [
+    {
+      "name": "STR : +2%",
+      "weight": 11.5854
+    },
+    {
+      "name": "DEX : +2%",
+      "weight": 11.5854
+    },
+    {
+      "name": "INT : +2%",
+      "weight": 11.5854
+    },
+    {
+      "name": "LUK : +2%",
+      "weight": 11.5854
+    },
+    {
+      "name": "최대 HP : +2%",
+      "weight": 11.5854
+    },
+    {
+      "name": "최대 MP : +2%",
+      "weight": 11.5854
+    },
+    {
+      "name": "방어력 : +2%",
+      "weight": 6.9512
+    },
+    {
+      "name": "올스탯 : +1%",
+      "weight": 4.6341
+    },
+    {
+      "name": "몬스터 처치 시 15% 확률로 50의 HP 회복",
+      "weight": 6.9512
+    },
+    {
+      "name": "몬스터 처치 시 15% 확률로 50의 MP 회복",
+      "weight": 6.9512
+    },
+    {
+      "name": "STR : +3%",
+      "weight": 0.5208
+    },
+    {
+      "name": "DEX : +3%",
+      "weight": 0.5208
+    },
+    {
+      "name": "INT : +3%",
+      "weight": 0.5208
+    },
+    {
+      "name": "LUK : +3%",
+      "weight": 0.5208
+    },
+    {
+      "name": "최대 HP : +3%",
+      "weight": 0.625
+    },
+    {
+      "name": "최대 MP : +3%",
+      "weight": 0.625
+    },
+    {
+      "name": "올스탯 : +2%",
+      "weight": 0.4167
+    },
+    {
+      "name": "STR : +32",
+      "weight": 0.1042
+    },
+    {
+      "name": "DEX : +32",
+      "weight": 0.1042
+    },
+    {
+      "name": "INT : +32",
+      "weight": 0.1042
+    },
+    {
+      "name": "LUK : +32",
+      "weight": 0.1042
+    },
+    {
+      "name": "피격 시 5% 확률로 데미지의 20% 무시",
+      "weight": 0.4167
+    },
+    {
+      "name": "HP 회복 아이템 및 회복 스킬 효율 : +10%",
+      "weight": 0.4167
+    }
+  ]
+}
