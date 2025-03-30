@@ -1,0 +1,300 @@
+{
+  "firstOption": [
+    {
+      "name": "STR : +2",
+      "weight": 7.1429
+    },
+    {
+      "name": "DEX : +2",
+      "weight": 7.1429
+    },
+    {
+      "name": "INT : +2",
+      "weight": 7.1429
+    },
+    {
+      "name": "LUK : +2",
+      "weight": 7.1429
+    },
+    {
+      "name": "최대 HP : +10",
+      "weight": 7.1429
+    },
+    {
+      "name": "최대 MP : +10",
+      "weight": 7.1429
+    },
+    {
+      "name": "공격력 : +2",
+      "weight": 4.7619
+    },
+    {
+      "name": "마력 : +2",
+      "weight": 4.7619
+    },
+    {
+      "name": "STR : +1%",
+      "weight": 7.1429
+    },
+    {
+      "name": "DEX : +1%",
+      "weight": 7.1429
+    },
+    {
+      "name": "INT : +1%",
+      "weight": 7.1429
+    },
+    {
+      "name": "LUK : +1%",
+      "weight": 7.1429
+    },
+    {
+      "name": "공격력 : +1%",
+      "weight": 2.381
+    },
+    {
+      "name": "마력 : +1%",
+      "weight": 2.381
+    },
+    {
+      "name": "크리티컬 확률 : +4%",
+      "weight": 2.381
+    },
+    {
+      "name": "데미지 : +1%",
+      "weight": 2.381
+    },
+    {
+      "name": "올스탯 : +1",
+      "weight": 4.7619
+    },
+    {
+      "name": "공격 시 20% 확률로 20의 HP 회복",
+      "weight": 2.381
+    },
+    {
+      "name": "공격 시 20% 확률로 20의 MP 회복",
+      "weight": 2.381
+    }
+  ],
+  "secondOption": [
+    {
+      "name": "STR : +1",
+      "weight": 10.9091
+    },
+    {
+      "name": "DEX : +1",
+      "weight": 10.9091
+    },
+    {
+      "name": "INT : +1",
+      "weight": 10.9091
+    },
+    {
+      "name": "LUK : +1",
+      "weight": 10.9091
+    },
+    {
+      "name": "최대 HP : +5",
+      "weight": 10.9091
+    },
+    {
+      "name": "최대 MP : +5",
+      "weight": 10.9091
+    },
+    {
+      "name": "공격력 : +1",
+      "weight": 7.2727
+    },
+    {
+      "name": "마력 : +1",
+      "weight": 7.2727
+    },
+    {
+      "name": "STR : +2",
+      "weight": 1.4286
+    },
+    {
+      "name": "DEX : +2",
+      "weight": 1.4286
+    },
+    {
+      "name": "INT : +2",
+      "weight": 1.4286
+    },
+    {
+      "name": "LUK : +2",
+      "weight": 1.4286
+    },
+    {
+      "name": "최대 HP : +10",
+      "weight": 1.4286
+    },
+    {
+      "name": "최대 MP : +10",
+      "weight": 1.4286
+    },
+    {
+      "name": "공격력 : +2",
+      "weight": 0.9524
+    },
+    {
+      "name": "마력 : +2",
+      "weight": 0.9524
+    },
+    {
+      "name": "STR : +1%",
+      "weight": 1.4286
+    },
+    {
+      "name": "DEX : +1%",
+      "weight": 1.4286
+    },
+    {
+      "name": "INT : +1%",
+      "weight": 1.4286
+    },
+    {
+      "name": "LUK : +1%",
+      "weight": 1.4286
+    },
+    {
+      "name": "공격력 : +1%",
+      "weight": 0.4762
+    },
+    {
+      "name": "마력 : +1%",
+      "weight": 0.4762
+    },
+    {
+      "name": "크리티컬 확률 : +4%",
+      "weight": 0.4762
+    },
+    {
+      "name": "데미지 : +1%",
+      "weight": 0.4762
+    },
+    {
+      "name": "올스탯 : +1",
+      "weight": 0.9524
+    },
+    {
+      "name": "공격 시 20% 확률로 20의 HP 회복",
+      "weight": 0.4762
+    },
+    {
+      "name": "공격 시 20% 확률로 20의 MP 회복",
+      "weight": 0.4762
+    }
+  ],
+  "thirdOption": [
+    {
+      "name": "STR : +1",
+      "weight": 12.9545
+    },
+    {
+      "name": "DEX : +1",
+      "weight": 12.9545
+    },
+    {
+      "name": "INT : +1",
+      "weight": 12.9545
+    },
+    {
+      "name": "LUK : +1",
+      "weight": 12.9545
+    },
+    {
+      "name": "최대 HP : +5",
+      "weight": 12.9545
+    },
+    {
+      "name": "최대 MP : +5",
+      "weight": 12.9545
+    },
+    {
+      "name": "공격력 : +1",
+      "weight": 8.6364
+    },
+    {
+      "name": "마력 : +1",
+      "weight": 8.6364
+    },
+    {
+      "name": "STR : +2",
+      "weight": 0.3571
+    },
+    {
+      "name": "DEX : +2",
+      "weight": 0.3571
+    },
+    {
+      "name": "INT : +2",
+      "weight": 0.3571
+    },
+    {
+      "name": "LUK : +2",
+      "weight": 0.3571
+    },
+    {
+      "name": "최대 HP : +10",
+      "weight": 0.3571
+    },
+    {
+      "name": "최대 MP : +10",
+      "weight": 0.3571
+    },
+    {
+      "name": "공격력 : +2",
+      "weight": 0.2381
+    },
+    {
+      "name": "마력 : +2",
+      "weight": 0.2381
+    },
+    {
+      "name": "STR : +1%",
+      "weight": 0.3571
+    },
+    {
+      "name": "DEX : +1%",
+      "weight": 0.3571
+    },
+    {
+      "name": "INT : +1%",
+      "weight": 0.3571
+    },
+    {
+      "name": "LUK : +1%",
+      "weight": 0.3571
+    },
+    {
+      "name": "공격력 : +1%",
+      "weight": 0.119
+    },
+    {
+      "name": "마력 : +1%",
+      "weight": 0.119
+    },
+    {
+      "name": "크리티컬 확률 : +4%",
+      "weight": 0.119
+    },
+    {
+      "name": "데미지 : +1%",
+      "weight": 0.119
+    },
+    {
+      "name": "올스탯 : +1",
+      "weight": 0.2381
+    },
+    {
+      "name": "공격 시 20% 확률로 20의 HP 회복",
+      "weight": 0.119
+    },
+    {
+      "name": "공격 시 20% 확률로 20의 MP 회복",
+      "weight": 0.119
+    }
+  ]
+}

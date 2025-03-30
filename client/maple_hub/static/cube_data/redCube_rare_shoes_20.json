@@ -1,0 +1,284 @@
+{
+  "firstOption": [
+    {
+      "name": "STR : +2",
+      "weight": 6.8182
+    },
+    {
+      "name": "DEX : +2",
+      "weight": 6.8182
+    },
+    {
+      "name": "INT : +2",
+      "weight": 6.8182
+    },
+    {
+      "name": "LUK : +2",
+      "weight": 6.8182
+    },
+    {
+      "name": "최대 HP : +20",
+      "weight": 6.8182
+    },
+    {
+      "name": "최대 MP : +20",
+      "weight": 6.8182
+    },
+    {
+      "name": "이동속도 : +2",
+      "weight": 4.5455
+    },
+    {
+      "name": "점프력 : +2",
+      "weight": 4.5455
+    },
+    {
+      "name": "방어력 : +20",
+      "weight": 4.5455
+    },
+    {
+      "name": "STR : +1%",
+      "weight": 6.8182
+    },
+    {
+      "name": "DEX : +1%",
+      "weight": 6.8182
+    },
+    {
+      "name": "INT : +1%",
+      "weight": 6.8182
+    },
+    {
+      "name": "LUK : +1%",
+      "weight": 6.8182
+    },
+    {
+      "name": "최대 HP : +1%",
+      "weight": 4.5455
+    },
+    {
+      "name": "최대 MP : +1%",
+      "weight": 4.5455
+    },
+    {
+      "name": "방어력 : +1%",
+      "weight": 4.5455
+    },
+    {
+      "name": "올스탯 : +1",
+      "weight": 4.5455
+    }
+  ],
+  "secondOption": [
+    {
+      "name": "STR : +1",
+      "weight": 10.8
+    },
+    {
+      "name": "DEX : +1",
+      "weight": 10.8
+    },
+    {
+      "name": "INT : +1",
+      "weight": 10.8
+    },
+    {
+      "name": "LUK : +1",
+      "weight": 10.8
+    },
+    {
+      "name": "최대 HP : +10",
+      "weight": 10.8
+    },
+    {
+      "name": "최대 MP : +10",
+      "weight": 10.8
+    },
+    {
+      "name": "이동속도 : +1",
+      "weight": 7.2
+    },
+    {
+      "name": "점프력 : +1",
+      "weight": 7.2
+    },
+    {
+      "name": "방어력 : +10",
+      "weight": 10.8
+    },
+    {
+      "name": "STR : +2",
+      "weight": 0.6818
+    },
+    {
+      "name": "DEX : +2",
+      "weight": 0.6818
+    },
+    {
+      "name": "INT : +2",
+      "weight": 0.6818
+    },
+    {
+      "name": "LUK : +2",
+      "weight": 0.6818
+    },
+    {
+      "name": "최대 HP : +20",
+      "weight": 0.6818
+    },
+    {
+      "name": "최대 MP : +20",
+      "weight": 0.6818
+    },
+    {
+      "name": "이동속도 : +2",
+      "weight": 0.4545
+    },
+    {
+      "name": "점프력 : +2",
+      "weight": 0.4545
+    },
+    {
+      "name": "방어력 : +20",
+      "weight": 0.4545
+    },
+    {
+      "name": "STR : +1%",
+      "weight": 0.6818
+    },
+    {
+      "name": "DEX : +1%",
+      "weight": 0.6818
+    },
+    {
+      "name": "INT : +1%",
+      "weight": 0.6818
+    },
+    {
+      "name": "LUK : +1%",
+      "weight": 0.6818
+    },
+    {
+      "name": "최대 HP : +1%",
+      "weight": 0.4545
+    },
+    {
+      "name": "최대 MP : +1%",
+      "weight": 0.4545
+    },
+    {
+      "name": "방어력 : +1%",
+      "weight": 0.4545
+    },
+    {
+      "name": "올스탯 : +1",
+      "weight": 0.4545
+    }
+  ],
+  "thirdOption": [
+    {
+      "name": "STR : +1",
+      "weight": 11.88
+    },
+    {
+      "name": "DEX : +1",
+      "weight": 11.88
+    },
+    {
+      "name": "INT : +1",
+      "weight": 11.88
+    },
+    {
+      "name": "LUK : +1",
+      "weight": 11.88
+    },
+    {
+      "name": "최대 HP : +10",
+      "weight": 11.88
+    },
+    {
+      "name": "최대 MP : +10",
+      "weight": 11.88
+    },
+    {
+      "name": "이동속도 : +1",
+      "weight": 7.92
+    },
+    {
+      "name": "점프력 : +1",
+      "weight": 7.92
+    },
+    {
+      "name": "방어력 : +10",
+      "weight": 11.88
+    },
+    {
+      "name": "STR : +2",
+      "weight": 0.06818
+    },
+    {
+      "name": "DEX : +2",
+      "weight": 0.06818
+    },
+    {
+      "name": "INT : +2",
+      "weight": 0.06818
+    },
+    {
+      "name": "LUK : +2",
+      "weight": 0.06818
+    },
+    {
+      "name": "최대 HP : +20",
+      "weight": 0.06818
+    },
+    {
+      "name": "최대 MP : +20",
+      "weight": 0.06818
+    },
+    {
+      "name": "이동속도 : +2",
+      "weight": 0.04545
+    },
+    {
+      "name": "점프력 : +2",
+      "weight": 0.04545
+    },
+    {
+      "name": "방어력 : +20",
+      "weight": 0.04545
+    },
+    {
+      "name": "STR : +1%",
+      "weight": 0.06818
+    },
+    {
+      "name": "DEX : +1%",
+      "weight": 0.06818
+    },
+    {
+      "name": "INT : +1%",
+      "weight": 0.06818
+    },
+    {
+      "name": "LUK : +1%",
+      "weight": 0.06818
+    },
+    {
+      "name": "최대 HP : +1%",
+      "weight": 0.04545
+    },
+    {
+      "name": "최대 MP : +1%",
+      "weight": 0.04545
+    },
+    {
+      "name": "방어력 : +1%",
+      "weight": 0.04545
+    },
+    {
+      "name": "올스탯 : +1",
+      "weight": 0.04545
+    }
+  ]
+}

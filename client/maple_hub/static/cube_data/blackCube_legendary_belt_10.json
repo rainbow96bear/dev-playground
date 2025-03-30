@@ -1,0 +1,156 @@
+{
+  "firstOption": [
+    {
+      "name": "STR : +6%",
+      "weight": 14.8148
+    },
+    {
+      "name": "DEX : +6%",
+      "weight": 14.8148
+    },
+    {
+      "name": "INT : +6%",
+      "weight": 14.8148
+    },
+    {
+      "name": "LUK : +6%",
+      "weight": 14.8148
+    },
+    {
+      "name": "최대 HP : +6%",
+      "weight": 14.8148
+    },
+    {
+      "name": "최대 MP : +6%",
+      "weight": 14.8148
+    },
+    {
+      "name": "올스탯 : +3%",
+      "weight": 11.1111
+    }
+  ],
+  "secondOption": [
+    {
+      "name": "STR : +3%",
+      "weight": 10
+    },
+    {
+      "name": "DEX : +3%",
+      "weight": 10
+    },
+    {
+      "name": "INT : +3%",
+      "weight": 10
+    },
+    {
+      "name": "LUK : +3%",
+      "weight": 10
+    },
+    {
+      "name": "최대 HP : +3%",
+      "weight": 12
+    },
+    {
+      "name": "최대 MP : +3%",
+      "weight": 12
+    },
+    {
+      "name": "올스탯 : +2%",
+      "weight": 8.0000009537
+    },
+    {
+      "name": "HP 회복 아이템 및 회복 스킬 효율 : +10%",
+      "weight": 8.0000009537
+    },
+    {
+      "name": "STR : +6%",
+      "weight": 2.963
+    },
+    {
+      "name": "DEX : +6%",
+      "weight": 2.963
+    },
+    {
+      "name": "INT : +6%",
+      "weight": 2.963
+    },
+    {
+      "name": "LUK : +6%",
+      "weight": 2.963
+    },
+    {
+      "name": "최대 HP : +6%",
+      "weight": 2.963
+    },
+    {
+      "name": "최대 MP : +6%",
+      "weight": 2.963
+    },
+    {
+      "name": "올스탯 : +3%",
+      "weight": 2.2222
+    }
+  ],
+  "thirdOption": [
+    {
+      "name": "STR : +3%",
+      "weight": 11.875
+    },
+    {
+      "name": "DEX : +3%",
+      "weight": 11.875
+    },
+    {
+      "name": "INT : +3%",
+      "weight": 11.875
+    },
+    {
+      "name": "LUK : +3%",
+      "weight": 11.875
+    },
+    {
+      "name": "최대 HP : +3%",
+      "weight": 14.25
+    },
+    {
+      "name": "최대 MP : +3%",
+      "weight": 14.25
+    },
+    {
+      "name": "올스탯 : +2%",
+      "weight": 9.5
+    },
+    {
+      "name": "HP 회복 아이템 및 회복 스킬 효율 : +10%",
+      "weight": 9.5
+    },
+    {
+      "name": "STR : +6%",
+      "weight": 0.7407
+    },
+    {
+      "name": "DEX : +6%",
+      "weight": 0.7407
+    },
+    {
+      "name": "INT : +6%",
+      "weight": 0.7407
+    },
+    {
+      "name": "LUK : +6%",
+      "weight": 0.7407
+    },
+    {
+      "name": "최대 HP : +6%",
+      "weight": 0.7407
+    },
+    {
+      "name": "최대 MP : +6%",
+      "weight": 0.7407
+    },
+    {
+      "name": "올스탯 : +3%",
+      "weight": 0.5556
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "firstOption": [
+    {
+      "name": "STR : +4",
+      "weight": 5.5556
+    },
+    {
+      "name": "DEX : +4",
+      "weight": 5.5556
+    },
+    {
+      "name": "INT : +4",
+      "weight": 5.5556
+    },
+    {
+      "name": "LUK : +4",
+      "weight": 5.5556
+    },
+    {
+      "name": "최대 HP : +30",
+      "weight": 8.3333
+    },
+    {
+      "name": "최대 MP : +30",
+      "weight": 8.3333
+    },
+    {
+      "name": "방어력 : +30",
+      "weight": 8.3333
+    },
+    {
+      "name": "STR : +1%",
+      "weight": 5.5556
+    },
+    {
+      "name": "DEX : +1%",
+      "weight": 5.5556
+    },
+    {
+      "name": "INT : +1%",
+      "weight": 5.5556
+    },
+    {
+      "name": "LUK : +1%",
+      "weight": 5.5556
+    },
+    {
+      "name": "최대 HP : +1%",
+      "weight": 8.3333
+    },
+    {
+      "name": "최대 MP : +1%",
+      "weight": 8.3333
+    },
+    {
+      "name": "방어력 : +1%",
+      "weight": 8.3333
+    },
+    {
+      "name": "올스탯 : +2",
+      "weight": 5.5556
+    }
+  ],
+  "secondOption": [
+    {
+      "name": "STR : +2",
+      "weight": 11.753
+    },
+    {
+      "name": "DEX : +2",
+      "weight": 11.753
+    },
+    {
+      "name": "INT : +2",
+      "weight": 11.753
+    },
+    {
+      "name": "LUK : +2",
+      "weight": 11.753
+    },
+    {
+      "name": "최대 HP : +15",
+      "weight": 17.6294
+    },
+    {
+      "name": "최대 MP : +15",
+      "weight": 17.6294
+    },
+    {
+      "name": "방어력 : +15",
+      "weight": 17.6294
+    },
+    {
+      "name": "STR : +4",
+      "weight": 0.00555
+    },
+    {
+      "name": "DEX : +4",
+      "weight": 0.00555
+    },
+    {
+      "name": "INT : +4",
+      "weight": 0.00555
+    },
+    {
+      "name": "LUK : +4",
+      "weight": 0.00555
+    },
+    {
+      "name": "최대 HP : +30",
+      "weight": 0.008325
+    },
+    {
+      "name": "최대 MP : +30",
+      "weight": 0.008325
+    },
+    {
+      "name": "방어력 : +30",
+      "weight": 0.008325
+    },
+    {
+      "name": "STR : +1%",
+      "weight": 0.00555
+    },
+    {
+      "name": "DEX : +1%",
+      "weight": 0.00555
+    },
+    {
+      "name": "INT : +1%",
+      "weight": 0.00555
+    },
+    {
+      "name": "LUK : +1%",
+      "weight": 0.00555
+    },
+    {
+      "name": "최대 HP : +1%",
+      "weight": 0.008325
+    },
+    {
+      "name": "최대 MP : +1%",
+      "weight": 0.008325
+    },
+    {
+      "name": "방어력 : +1%",
+      "weight": 0.008325
+    },
+    {
+      "name": "올스탯 : +2",
+      "weight": 0.00555
+    }
+  ],
+  "thirdOption": [
+    {
+      "name": "STR : +2",
+      "weight": 11.753
+    },
+    {
+      "name": "DEX : +2",
+      "weight": 11.753
+    },
+    {
+      "name": "INT : +2",
+      "weight": 11.753
+    },
+    {
+      "name": "LUK : +2",
+      "weight": 11.753
+    },
+    {
+      "name": "최대 HP : +15",
+      "weight": 17.6294
+    },
+    {
+      "name": "최대 MP : +15",
+      "weight": 17.6294
+    },
+    {
+      "name": "방어력 : +15",
+      "weight": 17.6294
+    },
+    {
+      "name": "STR : +4",
+      "weight": 0.00555
+    },
+    {
+      "name": "DEX : +4",
+      "weight": 0.00555
+    },
+    {
+      "name": "INT : +4",
+      "weight": 0.00555
+    },
+    {
+      "name": "LUK : +4",
+      "weight": 0.00555
+    },
+    {
+      "name": "최대 HP : +30",
+      "weight": 0.008325
+    },
+    {
+      "name": "최대 MP : +30",
+      "weight": 0.008325
+    },
+    {
+      "name": "방어력 : +30",
+      "weight": 0.008325
+    },
+    {
+      "name": "STR : +1%",
+      "weight": 0.00555
+    },
+    {
+      "name": "DEX : +1%",
+      "weight": 0.00555
+    },
+    {
+      "name": "INT : +1%",
+      "weight": 0.00555
+    },
+    {
+      "name": "LUK : +1%",
+      "weight": 0.00555
+    },
+    {
+      "name": "최대 HP : +1%",
+      "weight": 0.008325
+    },
+    {
+      "name": "최대 MP : +1%",
+      "weight": 0.008325
+    },
+    {
+      "name": "방어력 : +1%",
+      "weight": 0.008325
+    },
+    {
+      "name": "올스탯 : +2",
+      "weight": 0.00555
+    }
+  ]
+}
