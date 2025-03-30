@@ -107,22 +107,21 @@
     }
   };
 
-  const gradeUp = (cubeType: string, grade: string) => {
-    if (GradeUpProbability[cubeType][grade] < 0) {
+  const gradeUp = (cubeType: string, currentGrade: string) => {
+    if (GradeUpProbability[cubeType][currentGrade] < 0) {
       return;
     }
 
-    const probability = GradeUpProbability[cubeType][grade];
+    const probability = GradeUpProbability[cubeType][currentGrade];
     const random = globalThis.Math.random();
-    const maxCeilingValue = MaxCeiling[cubeType][PotentialOptionToEng[grade]];
-
+    const maxCeilingValue = MaxCeiling[cubeType][currentGrade];
     if (
       random < probability ||
       (maxCeilingValue > 0 && executionCountList[gradeIndex] >= maxCeilingValue)
     ) {
       executionCountList[gradeIndex] = 0;
       gradeIndex++;
-
+      grade = Object.keys(PotentialOptionToEng)[gradeIndex];
       const cubeBox = document.getElementById("cube_item_img_box");
       if (cubeBox) {
         cubeBox.classList.add("flash-effect");
