@@ -9,11 +9,7 @@ export const GET: RequestHandler = async () => {
 	const nowDay = new Date().toISOString().split('T')[0];
 
 	try {
-		// 패치 노트 목록 가져오기
-		const patchRes = await InternalAPI('/patch_notes');
-		const patchVersions = patchRes.files?.map((file: string) => file.replace(/\.md$/, '')) || [];
-
-		// 캐릭터 이름 목록
+		const patchVersions = ['0.0.1', '0.0.2'];
 		const characterNames = ['도적', '아델', '방미헤', '베베', '나이트로드', '패스파인더', '섀도어'];
 
 		// 기본 페이지
