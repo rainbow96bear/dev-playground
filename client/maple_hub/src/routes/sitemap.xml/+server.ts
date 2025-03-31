@@ -1,7 +1,6 @@
 import type { RequestHandler } from './$types';
-import { InternalAPI } from '$lib/api';
 
-export const prerender = true;
+export const prerender = false;
 
 const baseUrl = 'https://maplebox.netlify.app';
 
