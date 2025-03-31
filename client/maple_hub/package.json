@@ -6,7 +6,8 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build:file-list": "node scripts/build_file_list.js",
-		"build": "npm run build:file-list && vite build",
+		"build:sitemap": "node scripts/generate_sitemap.js",
+		"build": "npm run build:file-list && npm run build:sitemap && vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
