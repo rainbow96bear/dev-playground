@@ -46,7 +46,6 @@ export const GET: RequestHandler = async () => {
 		// 모든 페이지 합치기
 		const allPages = [...pages, ...patchPages];
 
-		// XML 사이트맵 생성
 		const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   ${allPages
@@ -60,7 +59,7 @@ export const GET: RequestHandler = async () => {
   </url>`
 		)
 		.join('')}
-</urlset>`.trim();
+</urlset>`;
 
 		return new Response(sitemap, {
 			headers: {
