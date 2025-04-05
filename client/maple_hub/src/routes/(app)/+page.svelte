@@ -2,8 +2,8 @@
     import { onMount } from "svelte";
     import "./+page.css";
 
-    export let data: any;
-
+    export let data: { sundayEvent: any };
+    console.log(data.sundayEvent)
     const title = "maple box";
     const description = "maple box의 메인 페이지\n썬데이 메이플 업로드 확인";
 
@@ -15,15 +15,15 @@
 
     // 데이터 처리 함수
     const processData = () => {
-        if (data != null && data.contents != null) {
-            const imgSrcMatch = data?.contents.match(/<img[^>]+src="([^"]+)"/);
+        if (data?.sundayEvent?.contents) {
+            const imgSrcMatch = data.sundayEvent.contents.match(/<img[^>]+src="([^"]+)"/);
             imgSrc = imgSrcMatch ? imgSrcMatch[1] : null;
-            
-            const areaMatches = [...data.contents.matchAll(/<area[^>]+href="([^"]+)"[^>]+coords="([^"]+)"/g)];
+
+            const areaMatches = [...data.sundayEvent.contents.matchAll(/<area[^>]+href="([^"]+)"[^>]+coords="([^"]+)"/g)];
             areas = areaMatches.map(match => ({
-                href: match[1],        // href 속성 값
-                coords: match[2],      // coords 속성 값
-                responsiveCoords: match[2], // 기본 coords로 초기값 설정
+                href: match[1],
+                coords: match[2],
+                responsiveCoords: match[2],
             }));
         }
     };
@@ -46,8 +46,7 @@
     };
 
     onMount(() => {
-        const imgElement = document.querySelector('img') as HTMLImageElement;
-
+        const imgElement = document.getElementById('sunday_img') as HTMLImageElement;
         if (imgElement) {
             imgElement.onload = () => {
                 imgWidth = imgElement.offsetWidth;
@@ -60,7 +59,7 @@
                 updateResponsiveCoords();
             }
         }
-
+        
         // 리사이즈 이벤트 핸들러 추가
         window.addEventListener('resize', () => {
             if (imgElement) {
