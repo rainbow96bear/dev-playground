@@ -1,0 +1,35 @@
+.privacy-container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 2rem;
+	font-family: 'Pretendard', sans-serif;
+	line-height: 1.8;
+	color: #333;
+}
+
+.privacy-container h1 {
+	font-size: 2rem;
+	margin-bottom: 1.5rem;
+	border-bottom: 2px solid #ddd;
+	padding-bottom: 0.5rem;
+}
+
+.privacy-container h2 {
+	font-size: 1.25rem;
+	margin-top: 2rem;
+	margin-bottom: 0.75rem;
+	color: #222;
+}
+
+.privacy-container p {
+	margin-bottom: 1rem;
+}
+
+.privacy-container ul {
+	margin-bottom: 1rem;
+	padding-left: 1.5rem;
+}
+
+.privacy-container li {
+	list-style-type: disc;
+}

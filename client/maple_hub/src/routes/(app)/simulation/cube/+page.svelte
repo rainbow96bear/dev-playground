@@ -33,7 +33,14 @@
   let item_icon = arcaneSymbolImg;
   let totalCount = 0;
   let itemCount = 0;
-  let executionCountList = [0, 0, 0, 0];
+  let executionCountMap = {
+    redCube: [0, 0, 0, 0],
+    blackCube: [0, 0, 0, 0],
+    editionalCube: [0, 0, 0, 0],
+    mesoEditionalCube: [0, 0, 0, 0],
+    whiteEditionalCube: [0, 0, 0, 0],
+  };
+
   
   let option1: string | null = null;
   let option2: string | null = null;
@@ -86,6 +93,7 @@
   const setItemforCube = () => {
     $itemInfoForCube = null;
     item_icon = arcaneSymbolImg;
+    tempGradeIndex = Object.keys(PotentialOptionToEng).indexOf(tempGrade);
     gradeIndex = tempGradeIndex;
     grade = tempGrade;
     equipmentType = tempEquipmentType;
@@ -97,7 +105,8 @@
 
   const updateCube = async (type: string, image: string) => {
     cubeType = type;
-    const cubeFileName = `${cubeType}_${PotentialOptionToEng[grade]}_${equipmentType}_${levelRange}`; // 예: cubeType이 "weapon"이면 "weapon.json"
+    const actualCubeType = cubeType === "mesoEditionalCube" ? "editionalCube" : cubeType;
+    const cubeFileName = `${actualCubeType}_${PotentialOptionToEng[grade]}_${equipmentType}_${levelRange}`; // 예: cubeType이 "weapon"이면 "weapon.json"
     try {
       await fetchCubeData(cubeFileName);
       selectedImage = image;
@@ -108,20 +117,26 @@
   };
 
   const gradeUp = (cubeType: string, currentGrade: string) => {
-    if (GradeUpProbability[cubeType][currentGrade] < 0) {
+    const actualCubeType = cubeType === "mesoEditionalCube" ? "editionalCube" : cubeType;
+
+    if (GradeUpProbability[actualCubeType][currentGrade] < 0) {
       return;
     }
 
-    const probability = GradeUpProbability[cubeType][currentGrade];
+    const probability = GradeUpProbability[actualCubeType][currentGrade];
     const random = globalThis.Math.random();
-    const maxCeilingValue = MaxCeiling[cubeType][currentGrade];
+    const maxCeilingValue = MaxCeiling[cubeType][currentGrade]; // <- 여기만 cubeType 그대로 유지
+
+    const currentExecution = executionCountMap[cubeType][gradeIndex];
+
     if (
       random < probability ||
-      (maxCeilingValue > 0 && executionCountList[gradeIndex] >= maxCeilingValue)
+      (maxCeilingValue > 0 && currentExecution >= maxCeilingValue)
     ) {
-      executionCountList[gradeIndex] = 0;
+      executionCountMap[cubeType][gradeIndex] = 0;
       gradeIndex++;
       grade = Object.keys(PotentialOptionToEng)[gradeIndex];
+
       const cubeBox = document.getElementById("cube_item_img_box");
       if (cubeBox) {
         cubeBox.classList.add("flash-effect");
@@ -152,11 +167,9 @@
 
     totalCount++;
     itemCount++;
-    switch (cubeType) {
-      case "redCube":
-      case "blackCube":
-        executionCountList[gradeIndex]++
-        break;
+
+    if (executionCountMap[cubeType]!=null){
+      executionCountMap[cubeType][gradeIndex]++;
     }
 
     setOption();
@@ -231,7 +244,7 @@
           <div id="celing_gage_area"> 
             {#if gradeIndex<3 && MaxCeiling[cubeType][PotentialOptionToEng[grade]] > 0 }
               <div id="celing_gauge_box">
-                <div id="celing_gauge_bar" style="width: {executionCountList[gradeIndex]/MaxCeiling[cubeType][PotentialOptionToEng[grade]]*100}%"></div>
+                <div id="celing_gauge_bar" style="width: {executionCountMap[cubeType][gradeIndex]/MaxCeiling[cubeType][PotentialOptionToEng[grade]]*100}%"></div>
               </div>
             {/if}
           </div>
@@ -272,8 +285,12 @@
         </button>
       </div>
       <div class="cube_groups">
+        <button class="cube_select_button" on:click={() => updateCube("mesoEditionalCube", editionalImg)}>
+          <img src={editionalImg} alt="editional img" loading="lazy"/>
+          에디셔널 재설정
+        </button>
         <button class="cube_select_button" on:click={() => updateCube("editionalCube", editionalCubeImg)}>
-          <img src={editionalCubeImg} alt="editional cube img" loading="lazy"/><img src={whiteEditionalCubeImg} alt="white editional cube img" loading="lazy"/><img src={editionalImg} alt="editional img" loading="lazy"/>
+          <img src={editionalCubeImg} alt="editional cube img" loading="lazy"/><img src={whiteEditionalCubeImg} alt="white editional cube img" loading="lazy"/>
           에디셔널 큐브
         </button>
       </div>

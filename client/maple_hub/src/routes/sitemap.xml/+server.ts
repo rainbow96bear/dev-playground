@@ -17,6 +17,7 @@ export const GET: RequestHandler = async () => {
 			{ path: '/character/info', priority: 0.8, changefreq: 'monthly' },
 			{ path: '/simulation/cube', priority: 0.8, changefreq: 'monthly' },
 			{ path: '/patch_notes', priority: 0.9, changefreq: 'weekly' },
+			{ path: '/privacy', priority: 0.3, changefreq: 'yearly' },
 			...characterNames.map((name) => ({
 				path: `/character/info?name=${encodeURIComponent(name)}`,
 				priority: 0.7,

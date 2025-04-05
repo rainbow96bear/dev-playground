@@ -49,6 +49,28 @@
   </main>
   
   <footer>
-    <p>© 2025 Nexon API Example</p>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>About</h4>
+        <p>이 사이트는 메이플스토리 캐릭터 정보 및 시뮬레이션을 위한 비공식 웹사이트입니다.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="https://maplestory.nexon.com" target="_blank">메이플스토리 공식 사이트</a></li>
+          <li><a href="https://openapi.nexon.com/" target="_blank">Nexon Open API</a></li>
+          <li><a href="https://github.com/rainbow96bear/dev-playground/tree/master/client/maple_hub" target="_blank">GitHub</a></li>
+          <li><a href="/privacy">개인정보 처리방침</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>Email: contact@example.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Nexon API Example — 비공식 서비스이며, Nexon과 무관합니다.</p>
+    </div>
   </footer>
+  
 </div>

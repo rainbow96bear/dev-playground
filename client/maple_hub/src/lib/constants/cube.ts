@@ -58,10 +58,15 @@ export const MaxCeiling = {
 	strangeCube: {
 		rare: 0
 	},
+	mesoEditionalCube: {
+		rare: 62,
+		epic: 152,
+		unique: 214
+	},
 	editionalCube: {
-		rare: 25,
-		epic: 83,
-		unique: 500
+		rare: 31,
+		epic: 76,
+		unique: 214
 	},
 	strangeEditionalCube: {
 		rare: 0
