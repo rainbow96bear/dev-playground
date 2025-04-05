@@ -58,7 +58,7 @@
         <h4>Links</h4>
         <ul>
           <li><a href="https://maplestory.nexon.com" target="_blank">메이플스토리 공식 사이트</a></li>
-          <li><a href="https://openapi.nexon.com/" target="_blank">Nexon Open API</a></li>
+          <li><a href="https://openapi.nexon.com" target="_blank">Nexon Open API</a></li>
           <li><a href="https://github.com/rainbow96bear/dev-playground/tree/master/client/maple_hub" target="_blank">GitHub</a></li>
           <li><a href="/privacy">개인정보 처리방침</a></li>
         </ul>
