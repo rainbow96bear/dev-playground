@@ -3,7 +3,6 @@
     import "./+page.css";
 
     export let data: { sundayEvent: any };
-    console.log(data.sundayEvent)
     const title = "maple box";
     const description = "maple box의 메인 페이지\n썬데이 메이플 업로드 확인";
 

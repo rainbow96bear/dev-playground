@@ -8,7 +8,7 @@ export const GET: RequestHandler = async () => {
 	const nowDay = new Date().toISOString().split('T')[0];
 
 	try {
-		const patchVersions = ['0.0.3', '0.0.2', '0.0.1'];
+		const patchVersions = ['0.0.4', '0.0.3', '0.0.2', '0.0.1'];
 		const characterNames = ['도적', '아델', '방미헤', '베베', '나이트로드', '패스파인더', '섀도어'];
 
 		// 기본 페이지
@@ -16,6 +16,8 @@ export const GET: RequestHandler = async () => {
 			{ path: '/', priority: 1.0, changefreq: 'daily' },
 			{ path: '/character/info', priority: 0.8, changefreq: 'monthly' },
 			{ path: '/simulation/cube', priority: 0.8, changefreq: 'monthly' },
+			{ path: '/games', priority: 0.9, changefreq: 'weekly' },
+			{ path: '/games/applegame', priority: 0.9, changefreq: 'monthly' },
 			{ path: '/patch_notes', priority: 0.9, changefreq: 'weekly' },
 			{ path: '/privacy', priority: 0.3, changefreq: 'yearly' },
 			...characterNames.map((name) => ({

@@ -98,6 +98,7 @@
     grade = tempGrade;
     equipmentType = tempEquipmentType;
     levelRange = tempLevelRange;
+    itemCount = 0;
     updateCube(cubeType, selectedImage)
     setOption();
   };
@@ -193,19 +194,42 @@
     if (equipmentType !== translatedType) {
       equipmentType = translatedType;
     }
-    
+
     const newGradeIndex =  Object.keys(PotentialOptionToEng).indexOf($itemInfoForCube.potential_option_grade);
     if (gradeIndex !== newGradeIndex) {
       gradeIndex = newGradeIndex;
     }
+
     switch(cubeType){
-      case "redCube", "blackCube", "masterCube", "meisterCube", "strangeCube":
+      case "redCube":
+      case "blackCube":
+      case "masterCube":
+      case "meisterCube":
+      case "strangeCube":
+        if ($itemInfoForCube.potential_option_grade == null){
+          alert("아이템이 해당 잠재능력을 가지고 있지 않아 레어 등급을 부여합니다.")
+          grade = "레어"
+          gradeIndex=0;
+          setOption();
+          break;
+        }
+        grade = $itemInfoForCube.potential_option_grade
         gradeIndex = Object.keys(PotentialOptionToEng).indexOf($itemInfoForCube.potential_option_grade);
         option1 = $itemInfoForCube.potential_option_1;
         option2 = $itemInfoForCube.potential_option_2;
         option3 = $itemInfoForCube.potential_option_3;
       break;
-      case "editionalCube", "whiteEditionalCube", "strangeEditionalCube" :
+      case "editionalCube":
+      case "mesoEditionalCube":
+      case "strangeEditionalCube" :
+      if ($itemInfoForCube.additional_potential_option_grade == null){
+          alert("아이템이 해당 잠재능력을 가지고 있지 않아 레어 등급을 부여합니다.")
+          grade = "레어"
+          gradeIndex=0;
+          setOption();
+          break;
+        }
+        grade = $itemInfoForCube.additional_potential_option_grade
         gradeIndex = Object.keys(PotentialOptionToEng).indexOf($itemInfoForCube.additional_potential_option_grade);
         option1 = $itemInfoForCube.additional_potential_option_1;
         option2 = $itemInfoForCube.additional_potential_option_2;

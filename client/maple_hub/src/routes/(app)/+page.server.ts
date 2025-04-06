@@ -39,7 +39,6 @@ const reqSundayEvent = async () => {
 			if (event.title && event.title.includes('썬데이 메이플')) {
 				if (new Date(event.date_event_end) >= new Date()) {
 					const resSundayEventObj: T_Event_Detail = await getSundayEvent(event.notice_id);
-					console.log('resSundayEventObj : ', resSundayEventObj);
 					setCache(sunday_event_key, resSundayEventObj, Days);
 					return resSundayEventObj; // 데이터 반환
 				}

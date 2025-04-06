@@ -34,6 +34,7 @@
       <button on:click={() => goto("/simulation/cube")}>
         <img src={potentialImg} alt="cube_sample_img" />큐브 시뮬레이션
       </button>
+      <button on:click={() => goto("/games")}>미니게임</button>
       <button on:click={() => goto("/patch_notes")}>패치노트</button>
     </nav>
   </header>
@@ -65,7 +66,7 @@
       </div>
       <div class="footer-section">
         <h4>Contact</h4>
-        <p>Email: contact@example.com</p>
+        <p>Email: rainbow96bear@gmail.com</p>
       </div>
     </div>
     <div class="footer-bottom">
