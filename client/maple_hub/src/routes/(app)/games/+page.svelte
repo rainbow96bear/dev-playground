@@ -3,7 +3,7 @@
   
     const games = [
       {
-        title: '숫자 합치기 게임',
+        title: '사과 게임',
         path: '/games/applegame',
         description: '사과 게임\n숫자를 드래그해서 합이 10이 되면 사라지는 퍼즐 게임'
       },
