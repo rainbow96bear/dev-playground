@@ -2,7 +2,16 @@
 	font-family: 'Arial', sans-serif;
 	line-height: 1.8;
 	margin: 20px;
+	padding-bottom: 4rem;
 	color: #333;
+}
+
+.patch-note-separator {
+	margin-top: 3rem;
+	border-top: 2px solid #e0e0e0;
+	width: 100%;
+	height: 1px;
+	background-color: #e0e0e0;
 }
 
 h1 {

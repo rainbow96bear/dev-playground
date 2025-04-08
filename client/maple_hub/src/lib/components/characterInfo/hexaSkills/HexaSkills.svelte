@@ -1,6 +1,8 @@
 <script lang="ts">
     import { browser } from '$app/environment';
     import { page } from '$app/stores';
+    import {DEFAULT_CHARACTER} from "$lib/constants/index"
+
 
     const rootURL = import.meta.env.VITE_ROOT_URL; // 환경 변수
     let hexaSkills: any = null; // 초기화
@@ -28,7 +30,7 @@
 
     // URL 변경 감지 및 데이터 로드
     $: {
-        const characterName = $page.url.searchParams.get('name');
+        const characterName = $page.url.searchParams.get('name')||DEFAULT_CHARACTER;
         fetchHexaSkills(characterName);
     }
 </script>

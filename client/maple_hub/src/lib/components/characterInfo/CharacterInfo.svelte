@@ -19,19 +19,8 @@
   $: currentInfo = $characterInfo;
   $: motionNum = $characterWalkMotion;
 
-  const startImageSequence = () => {
-    if (intervalId) {
-      clearInterval(intervalId);
-    }
-
-    intervalId = setInterval(() => {
-      motionIndex = (motionIndex + 1) % MotionCount;
-    }, MotionTerm);
-  };
-
   $: if (currentInfo) {
     isDataReady = true;
-    startImageSequence();
   }
 
   onDestroy(() => {
@@ -51,18 +40,11 @@
   {#if currentInfo }
     <div class="character_info_box">
       <div class="main_info display_flex">
-        <img src={currentInfo.character_image + MotionQuery + motionNum + "." + motionIndex} alt="캐릭터 이미지" />
-        
+        <img src={currentInfo.character_image} alt="캐릭터 이미지" />
         <div class="text_main_info">
           <div id="nickname">{currentInfo.character_name}</div>
           <div>{currentInfo.character_class} | Lv.{currentInfo.character_level}</div>
-          <div>{currentInfo.world_name} / {currentInfo.character_guild_name}</div>
-          <div class="display_flex">
-            <div>모션 선택</div>
-            <div class="switch">
-              <Switch onToggle={toggleMotion}/>
-            </div>
-          </div>
+          <div>{currentInfo.world_name} / {currentInfo.character_guild_name || '길드 없음'}</div>
         </div>
       </div>
       <div>

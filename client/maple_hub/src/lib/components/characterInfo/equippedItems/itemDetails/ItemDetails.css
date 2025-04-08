@@ -1,5 +1,6 @@
 .detail_info_box {
-	width: 100%px;
+	width: 100%;
+	max-width: 280px;
 	height: fit-content;
 	color: white;
 	background-color: rgb(0, 0, 0, 0.8);

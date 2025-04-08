@@ -1,11 +1,10 @@
 import { InternalAPI } from '$lib/api/index.js';
 
-export async function load({ params }) {
+export async function load({ params, fetch }) {
 	try {
-		const res = await InternalAPI(`/patch_notes/${params.version}`);
-		const data = await res.content;
+		const res = await InternalAPI(`/patch_notes/${params.version}`, fetch); // ⬅ fetch 전달
 		return {
-			content: data
+			content: res.content
 		};
 	} catch (error) {
 		console.error(error);

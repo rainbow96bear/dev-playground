@@ -12,7 +12,7 @@
           case "/":
           case "/character/info":
               if (characterName) {
-                  goto(`/character/info?name=${encodeURIComponent(characterName)}`);
+                  goto(`/character/info?name=${encodeURIComponent(characterName)}`, { replaceState: true, invalidateAll: true });
                   characterName=""
               } else {
                   console.warn("characterName이 비어 있습니다.");

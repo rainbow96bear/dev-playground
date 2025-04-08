@@ -83,3 +83,5 @@ export const AuthenticSymbolIconList = [
 	'https://open.api.nexon.com/static/maplestory/item/icon/KEIDIHOF',
 	'https://open.api.nexon.com/static/maplestory/item/icon/KEIDIHOE'
 ];
+
+export const DEFAULT_CHARACTER = '타락파워전사';

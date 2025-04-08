@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { page } from '$app/stores';
+  import {DEFAULT_CHARACTER} from "$lib/constants/index"
   import { ArcaneSymbolIconList, AuthenticSymbolIconList } from '$lib/constants';
   import Arcane from './arcane/Arcane.svelte';
   import Authentic from './authentic/Authentic.svelte';
@@ -54,7 +55,7 @@
   }
 
   $: {
-        const characterName = $page.url.searchParams.get('name');
+        const characterName = $page.url.searchParams.get('name')||DEFAULT_CHARACTER;
         fetchSymbol(characterName);
     }
 </script>

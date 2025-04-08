@@ -1,0 +1,64 @@
+.pagination {
+	display: flex;
+	justify-content: center;
+	gap: 0.5rem;
+	margin-top: 1.5rem;
+}
+
+.pagination button {
+	padding: 0.5rem 0.75rem;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	background-color: #fff;
+	cursor: pointer;
+	font-size: 0.9rem;
+	transition: all 0.2s ease;
+}
+
+.pagination button:hover {
+	background-color: #f0f0f0;
+}
+
+.pagination button[disabled] {
+	cursor: not-allowed;
+	opacity: 0.5;
+}
+
+.pagination .active-page {
+	background-color: #3f51b5;
+	color: white;
+	font-weight: bold;
+}
+
+.patch-notes-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: grid;
+	/* gap: 1rem; */
+}
+
+.patch-note-card {
+	background-color: #f9f9f9;
+	border: 1px solid #e1e1e1;
+	border-radius: 12px;
+	padding: 1rem 1.25rem;
+	transition: box-shadow 0.2s ease;
+}
+
+.patch-note-card:hover {
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.patch-note-link {
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+	color: inherit;
+}
+
+.version-label {
+	font-size: 0.85rem;
+	color: #888;
+	margin-bottom: 0.25rem;
+}

@@ -1,16 +1,21 @@
 <script lang="ts">
     import { onMount } from "svelte";
     import "./+page.css";
+    
 
     export let data: { sundayEvent: any };
+
+    const BASE_IMAGE_WIDTH = 876;
     const title = "maple box";
-    const description = "maple box의 메인 페이지\n썬데이 메이플 업로드 확인";
+    const description = "maple box의 메인 페이지 - 썬데이 메이플 업로드 확인";
 
     let areas: any[] = [];
     let imgSrc: string | null = null;
     let imgWidth = 0;
     let isLoading = false;
     let isAbled = false;
+    let showImage = false;
+    let imgElement: HTMLImageElement;
 
     // 데이터 처리 함수
     const processData = () => {
@@ -30,7 +35,7 @@
     // 반응형 coords 계산 함수
     const getResponsiveCoords = (coords: string, imgWidth: number): string => {
         const coordsArray = coords.split(',').map(Number);
-        const newCoords = coordsArray.map(coord => Math.round(coord * (imgWidth / 876)));
+        const newCoords = coordsArray.map(coord => Math.round(coord * (imgWidth / BASE_IMAGE_WIDTH)));
         return newCoords.join(',');
     };
 
@@ -45,31 +50,17 @@
     };
 
     onMount(() => {
-        const imgElement = document.getElementById('sunday_img') as HTMLImageElement;
-        if (imgElement) {
-            imgElement.onload = () => {
-                imgWidth = imgElement.offsetWidth;
-                updateResponsiveCoords();
-            };
-
-            // 이미지가 이미 로드된 경우 처리
-            if (imgElement.complete) {
-                imgWidth = imgElement.offsetWidth;
-                updateResponsiveCoords();
-            }
-        }
-        
-        // 리사이즈 이벤트 핸들러 추가
-        window.addEventListener('resize', () => {
+        const handleResize = () => {
             if (imgElement) {
                 imgWidth = imgElement.offsetWidth;
                 updateResponsiveCoords();
             }
-        });
+        };
 
-        // 이벤트 핸들러 정리
+        window.addEventListener('resize', handleResize);
+
         return () => {
-            window.removeEventListener('resize', updateResponsiveCoords);
+            window.removeEventListener('resize', handleResize);
         };
     });
 
@@ -113,8 +104,24 @@
         ></button>
     </div>
 
-    {#if imgSrc}
-        <img id="sunday_img" src={imgSrc} alt="스페셜 썬데이 메이플" usemap="#map">
+    {#if showImage}
+        <img
+            id="sunday_img"
+            bind:this={imgElement}
+            src={imgSrc}
+            alt="썬데이 메이플"
+            usemap="#map"
+            decoding="async"
+            on:load={() => {
+                imgWidth = imgElement.offsetWidth;
+                updateResponsiveCoords();
+                showImage = true;
+            }}
+            on:error={() => {
+                showImage = false;
+            }}
+        />
+
         <map name="map">
             {#each areas as area, index (index)}
                 <area
@@ -127,6 +134,19 @@
             {/each}
         </map>
     {:else}
-        <div class="explain">아직 썬데이 메이플 이벤트가 올라오지 않았습니다.</div>
+        <div class="explain">
+            아직 썬데이 메이플 이벤트가 올라오지 않았습니다.
+        </div>
+    {/if}
+
+    {#if imgSrc}
+        <!-- 실제 이미지를 미리 로딩해두고, 보이지 않게 숨김 -->
+        <img
+            src={imgSrc}
+            alt="hidden loader"
+            style="display: none"
+            on:load={() => showImage = true}
+            on:error={() => showImage = false}
+        />
     {/if}
 </div>
