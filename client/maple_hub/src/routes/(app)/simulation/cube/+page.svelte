@@ -256,7 +256,7 @@
     <div id="cube_box">
       <div id="cube_show_box">
         <div id="cube_type_box">
-          <img src={selectedImage} alt="selected cube img" loading="lazy"/>
+          <img src={selectedImage} alt="selected cube img" class="cube_image" loading="lazy"/>
           <div>아이템의 <p>잠재능력</p>을 재설정합니다.</div>
         </div>
         <div id="cube_item_img_box">
@@ -292,29 +292,29 @@
     <div id="cube_buttons">
       <div class="cube_groups">
         <button class="cube_select_button" on:click={() => updateCube("redCube", redCubeImg)}>
-          <img src={redCubeImg} alt="red cube img" loading="lazy"/>
+          <img src={redCubeImg} alt="red cube img" class="cube_image" loading="lazy"/>
           레드 큐브
         </button>
         <button class="cube_select_button" on:click={() => updateCube("blackCube", blackCubeImg)}>
-          <img src={blackCubeImg} alt="black cube img" loading="lazy"/><img src={potentialImg} alt="potential img" />
+          <img src={blackCubeImg} alt="black cube img" class="cube_image" loading="lazy"/><img src={potentialImg} alt="potential img" />
           블랙 큐브
         </button>
         <button class="cube_select_button" on:click={() => updateCube("masterCube", masterCubeImg)}>
-          <img src={masterCubeImg} alt="master cube img" loading="lazy"/>
+          <img src={masterCubeImg} alt="master cube img" class="cube_image" loading="lazy"/>
           장인의 큐브
         </button>
         <button class="cube_select_button" on:click={() => updateCube("meisterCube", meisterCubeImg)}>
-          <img src={meisterCubeImg} alt="meister cube img" loading="lazy"/>
+          <img src={meisterCubeImg} alt="meister cube img" class="cube_image" loading="lazy"/>
           명장의 큐브
         </button>
       </div>
       <div class="cube_groups">
         <button class="cube_select_button" on:click={() => updateCube("mesoEditionalCube", editionalImg)}>
-          <img src={editionalImg} alt="editional img" loading="lazy"/>
+          <img src={editionalImg} alt="editional img" class="cube_image" loading="lazy"/>
           에디셔널 재설정
         </button>
         <button class="cube_select_button" on:click={() => updateCube("editionalCube", editionalCubeImg)}>
-          <img src={editionalCubeImg} alt="editional cube img" loading="lazy"/><img src={whiteEditionalCubeImg} alt="white editional cube img" loading="lazy"/>
+          <img src={editionalCubeImg} alt="editional cube img" class="cube_image" loading="lazy"/><img src={whiteEditionalCubeImg} alt="white editional cube img" loading="lazy"/>
           에디셔널 큐브
         </button>
       </div>

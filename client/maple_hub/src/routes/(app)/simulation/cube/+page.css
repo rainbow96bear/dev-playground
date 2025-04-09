@@ -180,6 +180,9 @@
 	background-color: #b8ebf4;
 	height: 100%;
 }
+.cube_image {
+	padding: 0px;
+}
 
 .output_box {
 	display: flex;
