@@ -48,8 +48,7 @@ export const GET: RequestHandler = async () => {
 		return new Response(sitemap, {
 			headers: {
 				'Content-Type': 'application/xml; charset=UTF-8',
-				'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate',
-				'X-Robots-Tag': 'noarchive'
+				'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate'
 			}
 		});
 	} catch (err) {
