@@ -14,12 +14,12 @@ export const GET: RequestHandler = async () => {
 		// 기본 페이지
 		const pages = [
 			{ path: '/', priority: 1.0, changefreq: 'daily' },
-			{ path: '/character/info', priority: 0.8, changefreq: 'monthly' },
-			{ path: '/simulation/cube', priority: 0.8, changefreq: 'monthly' },
-			{ path: '/games', priority: 0.9, changefreq: 'weekly' },
-			{ path: '/games/applegame', priority: 0.9, changefreq: 'monthly' },
-			{ path: '/patch_notes', priority: 0.9, changefreq: 'weekly' },
-			{ path: '/privacy', priority: 0.3, changefreq: 'yearly' },
+			{ path: '/character/info', priority: 0.9, changefreq: 'monthly' },
+			{ path: '/simulation/cube', priority: 0.9, changefreq: 'monthly' },
+			{ path: '/games', priority: 0.6, changefreq: 'weekly' },
+			{ path: '/games/applegame', priority: 0.6, changefreq: 'monthly' },
+			{ path: '/patch_notes', priority: 0.7, changefreq: 'weekly' },
+			{ path: '/privacy', priority: 0.8, changefreq: 'yearly' },
 			...characterNames.map((name) => ({
 				path: `/character/info?name=${encodeURIComponent(name)}`,
 				priority: 0.7,
@@ -30,7 +30,7 @@ export const GET: RequestHandler = async () => {
 		// 패치 노트 상세 페이지 추가
 		const patchPages = patchVersions.map((version) => ({
 			path: `/patch_notes/${version}`,
-			priority: 0.6,
+			priority: 0.9,
 			changefreq: 'monthly'
 		}));
 
