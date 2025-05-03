@@ -7,6 +7,13 @@ declare global {
 	interface JQueryStatic {
 		rwdImageMaps(): void;
 	}
+	namespace App {
+		interface Locals {
+			characterCache: Map<string, any>;
+			itemCache: Map<string, any>;
+			sundayEventCache: any;
+		}
+	}
 }
 
 export {};

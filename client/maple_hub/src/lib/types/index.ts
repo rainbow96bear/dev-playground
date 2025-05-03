@@ -159,3 +159,9 @@ export type CubeOptionChance = {
 		};
 	};
 };
+
+type CachedData<T> = {
+	data: T;
+	timestamp: number;
+	ttl: number;
+};

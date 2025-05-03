@@ -1,38 +1,13 @@
-# sv
+# maplestory hub
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+**메인 페이지 :** https://maplebox.netlify.app/
 
-## Creating a project
+## 기능 소개
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+1.  메인 페이지 : 썬데이 이벤트가 올라오는 경우 썬데이 메이플 안내
+2.  캐릭터 정보 : 검색한 캐릭터의 장비, 6차 스킬, 심볼 상태 확인 가능
+    - (추후에 헥사 코어 추가예정)
+3.  큐브 시뮬레이션 : 검색한 캐릭터의 장비 혹은 선택한 옵션에 해당하는 장비 옵션을 조절할 수 있는 큐브 시뮬레이터
+4.  미니게임 : 페이지의 부가 기능으로 심심할 때 즐길 수 있는 미니게임
+    - (추후에 backend 서버를 두게 된다면 실시간 참여 게임도 준비 예정)
+5.  패치 노트 : 개발을 하며 변경된 혹은 추가된 기능에 대한 기록

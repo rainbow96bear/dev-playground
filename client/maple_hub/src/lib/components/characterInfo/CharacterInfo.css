@@ -1,25 +1,3 @@
-.character_info_box {
-	border-radius: 10px; /* 모서리를 둥글게 */
-	box-shadow:
-		0 4px 6px rgba(0, 0, 0, 0.1),
-		0 1px 3px rgba(0, 0, 0, 0.08); /* 명암 효과 */
-	background-color: #fdfdfd; /* 카드 배경색 */
-	padding: 20px; /* 내부 여백 */
-	margin: 15px auto; /* 외부 여백 */
-	/* max-width: 600px;  */
-	width: 100%;
-	transition:
-		transform 0.2s ease,
-		box-shadow 0.2s ease; /* 호버 효과를 위한 트랜지션 */
-}
-
-/* 호버 시 더 부각된 효과 */
-.character_info_box:hover {
-	box-shadow:
-		0 8px 12px rgba(0, 0, 0, 0.15),
-		0 4px 6px rgba(0, 0, 0, 0.1); /* 더 강한 명암 효과 */
-}
-
 .main_info {
 	width: 100%;
 }

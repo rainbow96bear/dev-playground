@@ -52,7 +52,7 @@ export const getChareterInfo: (ocid: string) => Promise<T_CharacterInfoObj> = as
 	}
 };
 
-export const getEventList = async () => {
+export const getMapleEventList = async () => {
 	try {
 		const response = await nexonAPI('/maplestory/v1/notice-event');
 		if (response.status === 200) {
@@ -72,6 +72,7 @@ export const getSundayEvent = async (notice_id: number) => {
 				notice_id: notice_id
 			}
 		});
+		console.log('응답 결과', response);
 		if (response.status === 200) {
 			const sundayEventObj = response.data;
 			return sundayEventObj;
@@ -101,14 +102,16 @@ export const getEquippedItems = async (ocid: string) => {
 
 export const getEquippedSymbols = async (ocid: string) => {
 	try {
-		const equippedSymbols = (
-			await nexonAPI('/maplestory/v1/character/symbol-equipment', {
-				params: {
-					ocid: ocid
-				}
-			})
-		).data;
-		return equippedSymbols;
+		const response = await nexonAPI('/maplestory/v1/character/symbol-equipment', {
+			params: {
+				ocid: ocid
+			}
+		});
+		if (response.status === 200) {
+			const symbolsObj = response.data;
+			return symbolsObj;
+		}
+		return undefined;
 	} catch (error) {
 		console.log('착용중인 심볼 정보를 불러오지 못했습니다.\n[ERROR] : ', error);
 	}

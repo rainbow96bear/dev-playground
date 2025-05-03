@@ -1,7 +1,6 @@
 <script lang="ts">
-	import "$lib/css/color.css"
-	import "$lib/css/font.css"
-	import "./+layout.css"
+	import "$styles/global.css"
+	import "$styles/variables.css"
 </script>
 
 <slot/>

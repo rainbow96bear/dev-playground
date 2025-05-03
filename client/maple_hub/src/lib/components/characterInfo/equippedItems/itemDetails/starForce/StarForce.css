@@ -1,4 +1,4 @@
-.star-container {
+/* .star-container {
 	display: flex;
 	justify-content: center;
 	max-width: 200px;
@@ -8,7 +8,7 @@
 .star {
 	width: 12px;
 	height: 12px;
-	background-color: gray; /* 기본값은 회색 */
+	background-color: gray;
 	clip-path: polygon(
 		50% 0%,
 		61% 35%,
@@ -21,7 +21,6 @@
 		2% 35%,
 		39% 35%
 	);
-	margin-top: 5px;
 }
 
 .star-container .star:nth-child(5n) {
@@ -42,4 +41,4 @@
 
 .gray {
 	background-color: gray;
-}
+} */

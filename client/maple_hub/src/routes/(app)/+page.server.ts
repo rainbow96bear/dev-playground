@@ -1,53 +1,34 @@
 // +page.server.ts
-import { Actions, error } from '@sveltejs/kit';
-import { getEventList, getSundayEvent } from '$lib/nexonAPI/nexonApi';
+import { error } from '@sveltejs/kit';
+import { InternalAPI } from '$lib/api';
 import type { PageServerLoad } from './$types';
-import type { T_Event_Detail } from '$lib/types';
-import { deleteCache, getCache, setCache } from '$lib/cache/cache';
-import { Days } from '$lib/constants';
 
-const sunday_event_key = 'sunday_event';
-
-export const load: PageServerLoad = async ({}) => {
-	const sundayEvent = await reqSundayEvent();
-	return { sundayEvent };
-};
-export const actions: Actions = {
-	default: async ({}) => {
-		deleteCache(sunday_event_key);
-		reqSundayEvent();
-		return { success: true };
+export const load: PageServerLoad = async ({ locals }) => {
+	const today = new Date().getDay();
+	if (today >= 1 && today <= 4) {
+		console.log('월요일부터 목요일까지는 동작하지 않습니다.');
+		return null;
 	}
+
+	const eventList = await InternalAPI('/v1/nexon/eventList');
+	const sundayEvent = await InternalAPI('/v1/nexon/sundayMaple');
+	return {
+		eventList: eventList.data,
+		sundayEvent: sundayEvent.data
+	};
 };
 
-const reqSundayEvent = async () => {
+// 썬데이 메이플 이벤트 불러오기
+const getSundayEvent = async () => {
 	try {
-		const sunday_event = getCache(sunday_event_key);
-		const today = new Date().getDay(); // 0: 일요일, 1: 월요일, ..., 6: 토요일
+		const today = new Date().getDay();
 		if (today >= 1 && today <= 4) {
 			console.log('월요일부터 목요일까지는 동작하지 않습니다.');
 			return null;
 		}
-		if (sunday_event) {
-			console.log('캐시된 데이터 사용');
-			return sunday_event;
-		}
 
-		const resEventList = await getEventList();
-		for (let i = 0; i < resEventList.event_notice.length; i++) {
-			const event = resEventList.event_notice[i];
-			if (event.title && event.title.includes('썬데이 메이플')) {
-				if (new Date(event.date_event_end) >= new Date()) {
-					const resSundayEventObj: T_Event_Detail = await getSundayEvent(event.notice_id);
-					setCache(sunday_event_key, resSundayEventObj, Days);
-					return resSundayEventObj; // 데이터 반환
-				}
-				break;
-			}
-		}
+		const sundayEvent = await fetch('/api/v1/nexon/sundayMaple');
 
-		return null; // 데이터 없을 때 반환
-	} catch (err) {
-		throw error(500, '썬데이 정보를 가져오는 데 실패했습니다.');
-	}
+		return null;
+	} catch (err) {}
 };

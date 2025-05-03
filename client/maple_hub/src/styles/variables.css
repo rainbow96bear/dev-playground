@@ -1,0 +1,41 @@
+:root {
+	--mushroom1: rgb(255, 240, 155);
+	--mushroom2: #ffd270;
+	--mushroom3: #ffaf63;
+	--mushroom4: #cd7d31;
+
+	--water_element1: #c1e8dd;
+
+	--main_box: #d1d4d6;
+
+	--base_background: #e4edff;
+
+	--rare_background: #66ffff;
+	--rare_color: #506e98;
+
+	--epic_background: #bb77ff;
+	--epic_color: #c96bff;
+
+	--unique_background: #ffcc00;
+	--unique_color: #ffae34;
+
+	--legendary_background: #ccff00;
+	--legendary_color: #005500;
+
+	--arcane_img_box_outside: #f0d963;
+	--arcane_img_box_background: #494d50;
+
+	--arcane_level_background: #454348;
+	--arcane_level_color: #e0a02a;
+
+	--arcane_gauge_bar: #f2a800;
+	--arcane_gauge_background: #5a5a5a;
+	--arcane_gauge_base: #393b3a;
+
+	--authentic-outside: #bdd4ed;
+	--authentic-left: #719ed0;
+	--authentic-right: #5789c8;
+
+	--authentic_gauge_bar: #eae9ff;
+	--authentic_gauge_base: #506e98;
+}

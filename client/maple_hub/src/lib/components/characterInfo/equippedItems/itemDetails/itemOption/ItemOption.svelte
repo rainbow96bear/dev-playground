@@ -1,6 +1,4 @@
 <script lang="ts">
-    import "./ItemOption.css"
-
     export let option_name:string;
     export let total_option:string;
     export let base_option:string;
@@ -28,7 +26,7 @@
             <div>{display_name} : +{total_option}{isPercent?"%":""}</div>
         {:else}
             <div class="option_pointer">{display_name} : +{total_option}{isPercent?"%":""} </div>
-            <div class="base_option"> ({base_option}
+            <div class="base_option"> {base_option}
                 {#if add_option != "0" && add_option != undefined}
                     <div class="add_option">+{add_option}{isPercent?"%":""}</div>
                 {/if}
@@ -38,7 +36,7 @@
                 {#if starforce_option != "0" && starforce_option != undefined}
                     <div class="starforce_option">+{starforce_option}{isPercent?"%":""}</div>
                 {/if}
-            )</div>
+            </div>
         {/if}
     {/if}
     

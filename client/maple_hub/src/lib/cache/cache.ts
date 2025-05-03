@@ -1,46 +1,13 @@
-const cacheMap: Map<string, any> = new Map();
-const cacheTimerMap: Map<string, NodeJS.Timeout> = new Map();
+import { CachedData } from '$lib/types';
 
-// 캐시 설정 함수
-export function setCache(key: string, value: any, time: number): void {
-	cacheMap.set(key, value);
-	setCacheTimer(key, time);
-}
+export const eventListCache = new Map<string, CachedData<any>>();
+export const sundayMapleCache = new Map<string, CachedData<any>>();
 
-// 캐시 조회 함수
-export function getCache(key: string): any | undefined {
-	return cacheMap.get(key);
-}
+export const characterOcidCache = new Map<string, CachedData<string>>();
+export const characterInfoCache = new Map<string, CachedData<any>>();
+export const characterEquipmentsCache = new Map<string, CachedData<any>>();
+export const characterSymbolsCache = new Map<string, CachedData<any>>();
 
-// 캐시 삭제 함수
-export function deleteCache(key: string): void {
-	cacheMap.delete(key);
-	if (cacheTimerMap.has(key)) {
-		clearTimeout(cacheTimerMap.get(key)!);
-		cacheTimerMap.delete(key);
-	}
-}
-
-export function updateCache(key: string, value: any, time: number): void {
-	if (cacheMap.has(key)) {
-		cacheMap.set(key, value);
-		setCacheTimer(key, time);
-	} else {
-		console.log(`No existing value found for key: ${key}. Adding new entry.`);
-		cacheMap.set(key, value);
-		setCacheTimer(key, time);
-	}
-}
-
-function setCacheTimer(key: string, time: number) {
-	if (cacheTimerMap.has(key)) {
-		clearTimeout(cacheTimerMap.get(key)!);
-	}
-
-	const timer = setTimeout(() => {
-		cacheMap.delete(key);
-		cacheTimerMap.delete(key);
-		console.log(`Cache expired and deleted for key: ${key}`);
-	}, time);
-	cacheTimerMap.set(key, timer);
-}
+export const isCacheValid = <T>(entry: CachedData<T> | undefined): entry is CachedData<T> => {
+	return !!entry && Date.now() - entry.timestamp < entry.ttl;
+};

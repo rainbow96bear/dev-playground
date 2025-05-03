@@ -14,8 +14,10 @@
   let motionIndex = 0;
   let intervalId: NodeJS.Timeout | null = null;
   let isDataReady = false;
-  let selectedComponent = "EquippedItems";
-
+  // let selectedComponent = "EquippedItems";
+  // store를 사용해야하는 이유를 확인
+  // 굳이 필요가 없으면 생략
+  // currnetInfo를 component로 전달달
   $: currentInfo = $characterInfo;
   $: motionNum = $characterWalkMotion;
 
@@ -27,11 +29,12 @@
     if (intervalId) clearInterval(intervalId);
   });
 
-  const selectComponent = (componentName: string) => {
-    selectedComponent = componentName;
-  };
+  // const selectComponent = (componentName: string) => {
+  //   selectedComponent = componentName;
+  // };
 </script>
 
+<CharacterInfo characterInfo={currentInfo}/>
 {#if isDataReady && currentInfo}
   <div class="character_info_box">
     <div class="main_info display_flex">
@@ -44,7 +47,7 @@
     </div>
 
     <div>
-      <div id="function_button_box">
+      <!-- <div id="function_button_box">
         <button
           class:selected={selectedComponent === 'EquippedItems'}
           on:click={() => selectComponent('EquippedItems')}
@@ -63,15 +66,13 @@
         >
           심볼
         </button>
-      </div>
+      </div> -->
 
-      <div id="sub_info_box">
-        <!-- EquippedItems는 항상 마운트되며 보이기만 조건으로 처리 -->
+      <!-- <div id="sub_info_box">
         <div style="display: {selectedComponent === 'EquippedItems' ? 'block' : 'none'}">
           <EquippedItems />
         </div>
 
-        <!-- 나머지는 조건부 렌더링 -->
         {#if selectedComponent === 'HexaSkills'}
           <HexaSkills />
         {/if}
@@ -79,7 +80,7 @@
         {#if selectedComponent === 'Symbols'}
           <Symbols />
         {/if}
-      </div>
+      </div> -->
     </div>
   </div>
 {/if}
