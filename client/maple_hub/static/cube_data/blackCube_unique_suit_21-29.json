@@ -1,236 +1,293 @@
 {
   "firstOption": [
     {
-      "name": "STR : +3%",
-      "weight": 8.6207
+      "name": "STR +3%",
+      "weight": 8.6207,
+      "grade": "U"
     },
     {
-      "name": "DEX : +3%",
-      "weight": 8.6207
+      "name": "DEX +3%",
+      "weight": 8.6207,
+      "grade": "U"
     },
     {
-      "name": "INT : +3%",
-      "weight": 8.6207
+      "name": "INT +3%",
+      "weight": 8.6207,
+      "grade": "U"
     },
     {
-      "name": "LUK : +3%",
-      "weight": 8.6207
+      "name": "LUK +3%",
+      "weight": 8.6207,
+      "grade": "U"
     },
     {
-      "name": "최대 HP : +3%",
-      "weight": 10.3448
+      "name": "최대 HP +3%",
+      "weight": 10.3448,
+      "grade": "U"
     },
     {
-      "name": "최대 MP : +3%",
-      "weight": 10.3448
+      "name": "최대 MP +3%",
+      "weight": 10.3448,
+      "grade": "U"
     },
     {
-      "name": "올스탯 : +2%",
-      "weight": 6.8966
+      "name": "올스탯 +2%",
+      "weight": 6.8966,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 20% 무시",
-      "weight": 6.8966
+      "weight": 6.8966,
+      "grade": "U"
     },
     {
-      "name": "피격 후 무적시간 : +2초",
-      "weight": 6.8966
+      "name": "피격 후 무적시간 +2초",
+      "weight": 6.8966,
+      "grade": "U"
     },
     {
       "name": "피격 시 2% 확률로 5초간 무적",
-      "weight": 6.8966
+      "weight": 6.8966,
+      "grade": "U"
     },
     {
       "name": "10% 확률로 받은 피해의 20%를 반사",
-      "weight": 6.8966
+      "weight": 6.8966,
+      "grade": "U"
     },
     {
       "name": "10% 확률로 받은 피해의 30%를 반사",
-      "weight": 3.4483
+      "weight": 3.4483,
+      "grade": "U"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +10%",
-      "weight": 6.8966
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +10%",
+      "weight": 6.8966,
+      "grade": "U"
     }
   ],
   "secondOption": [
     {
-      "name": "STR : +2%",
-      "weight": 10.5263
+      "name": "STR +2%",
+      "weight": 10.5263,
+      "grade": "E"
     },
     {
-      "name": "DEX : +2%",
-      "weight": 10.5263
+      "name": "DEX +2%",
+      "weight": 10.5263,
+      "grade": "E"
     },
     {
-      "name": "INT : +2%",
-      "weight": 10.5263
+      "name": "INT +2%",
+      "weight": 10.5263,
+      "grade": "E"
     },
     {
-      "name": "LUK : +2%",
-      "weight": 10.5263
+      "name": "LUK +2%",
+      "weight": 10.5263,
+      "grade": "E"
     },
     {
-      "name": "최대 HP : +2%",
-      "weight": 10.5263
+      "name": "최대 HP +2%",
+      "weight": 10.5263,
+      "grade": "E"
     },
     {
-      "name": "최대 MP : +2%",
-      "weight": 10.5263
+      "name": "최대 MP +2%",
+      "weight": 10.5263,
+      "grade": "E"
     },
     {
-      "name": "방어력 : +2%",
-      "weight": 6.3158
+      "name": "방어력 +2%",
+      "weight": 6.3158,
+      "grade": "E"
     },
     {
-      "name": "올스탯 : +1%",
-      "weight": 4.2105
+      "name": "올스탯 +1%",
+      "weight": 4.2105,
+      "grade": "E"
     },
     {
-      "name": "피격 후 무적시간 : +1초",
-      "weight": 6.3158
+      "name": "피격 후 무적시간 +1초",
+      "weight": 6.3158,
+      "grade": "E"
     },
     {
-      "name": "STR : +3%",
-      "weight": 1.7241
+      "name": "STR +3%",
+      "weight": 1.7241,
+      "grade": "U"
     },
     {
-      "name": "DEX : +3%",
-      "weight": 1.7241
+      "name": "DEX +3%",
+      "weight": 1.7241,
+      "grade": "U"
     },
     {
-      "name": "INT : +3%",
-      "weight": 1.7241
+      "name": "INT +3%",
+      "weight": 1.7241,
+      "grade": "U"
     },
     {
-      "name": "LUK : +3%",
-      "weight": 1.7241
+      "name": "LUK +3%",
+      "weight": 1.7241,
+      "grade": "U"
     },
     {
-      "name": "최대 HP : +3%",
-      "weight": 2.06897
+      "name": "최대 HP +3%",
+      "weight": 2.06897,
+      "grade": "U"
     },
     {
-      "name": "최대 MP : +3%",
-      "weight": 2.06897
+      "name": "최대 MP +3%",
+      "weight": 2.06897,
+      "grade": "U"
     },
     {
-      "name": "올스탯 : +2%",
-      "weight": 1.3793
+      "name": "올스탯 +2%",
+      "weight": 1.3793,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 20% 무시",
-      "weight": 1.3793
+      "weight": 1.3793,
+      "grade": "U"
     },
     {
-      "name": "피격 후 무적시간 : +2초",
-      "weight": 1.3793
+      "name": "피격 후 무적시간 +2초",
+      "weight": 1.3793,
+      "grade": "U"
     },
     {
       "name": "피격 시 2% 확률로 5초간 무적",
-      "weight": 1.3793
+      "weight": 1.3793,
+      "grade": "U"
     },
     {
       "name": "10% 확률로 받은 피해의 20%를 반사",
-      "weight": 1.3793
+      "weight": 1.3793,
+      "grade": "U"
     },
     {
       "name": "10% 확률로 받은 피해의 30%를 반사",
-      "weight": 0.6897
+      "weight": 0.6897,
+      "grade": "U"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +10%",
-      "weight": 1.3793
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +10%",
+      "weight": 1.3793,
+      "grade": "U"
     }
   ],
   "thirdOption": [
     {
-      "name": "STR : +2%",
-      "weight": 12.5
+      "name": "STR +2%",
+      "weight": 12.5,
+      "grade": "E"
     },
     {
-      "name": "DEX : +2%",
-      "weight": 12.5
+      "name": "DEX +2%",
+      "weight": 12.5,
+      "grade": "E"
     },
     {
-      "name": "INT : +2%",
-      "weight": 12.5
+      "name": "INT +2%",
+      "weight": 12.5,
+      "grade": "E"
     },
     {
-      "name": "LUK : +2%",
-      "weight": 12.5
+      "name": "LUK +2%",
+      "weight": 12.5,
+      "grade": "E"
     },
     {
-      "name": "최대 HP : +2%",
-      "weight": 12.5
+      "name": "최대 HP +2%",
+      "weight": 12.5,
+      "grade": "E"
     },
     {
-      "name": "최대 MP : +2%",
-      "weight": 12.5
+      "name": "최대 MP +2%",
+      "weight": 12.5,
+      "grade": "E"
     },
     {
-      "name": "방어력 : +2%",
-      "weight": 7.5
+      "name": "방어력 +2%",
+      "weight": 7.5,
+      "grade": "E"
     },
     {
-      "name": "올스탯 : +1%",
-      "weight": 5
+      "name": "올스탯 +1%",
+      "weight": 5,
+      "grade": "E"
     },
     {
-      "name": "피격 후 무적시간 : +1초",
-      "weight": 7.5
+      "name": "피격 후 무적시간 +1초",
+      "weight": 7.5,
+      "grade": "E"
     },
     {
-      "name": "STR : +3%",
-      "weight": 0.431
+      "name": "STR +3%",
+      "weight": 0.431,
+      "grade": "U"
     },
     {
-      "name": "DEX : +3%",
-      "weight": 0.431
+      "name": "DEX +3%",
+      "weight": 0.431,
+      "grade": "U"
     },
     {
-      "name": "INT : +3%",
-      "weight": 0.431
+      "name": "INT +3%",
+      "weight": 0.431,
+      "grade": "U"
     },
     {
-      "name": "LUK : +3%",
-      "weight": 0.431
+      "name": "LUK +3%",
+      "weight": 0.431,
+      "grade": "U"
     },
     {
-      "name": "최대 HP : +3%",
-      "weight": 0.5172
+      "name": "최대 HP +3%",
+      "weight": 0.5172,
+      "grade": "U"
     },
     {
-      "name": "최대 MP : +3%",
-      "weight": 0.5172
+      "name": "최대 MP +3%",
+      "weight": 0.5172,
+      "grade": "U"
     },
     {
-      "name": "올스탯 : +2%",
-      "weight": 0.3448
+      "name": "올스탯 +2%",
+      "weight": 0.3448,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 20% 무시",
-      "weight": 0.3448
+      "weight": 0.3448,
+      "grade": "U"
     },
     {
-      "name": "피격 후 무적시간 : +2초",
-      "weight": 0.3448
+      "name": "피격 후 무적시간 +2초",
+      "weight": 0.3448,
+      "grade": "U"
     },
     {
       "name": "피격 시 2% 확률로 5초간 무적",
-      "weight": 0.3448
+      "weight": 0.3448,
+      "grade": "U"
     },
     {
       "name": "10% 확률로 받은 피해의 20%를 반사",
-      "weight": 0.3448
+      "weight": 0.3448,
+      "grade": "U"
     },
     {
       "name": "10% 확률로 받은 피해의 30%를 반사",
-      "weight": 0.1724
+      "weight": 0.1724,
+      "grade": "U"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +10%",
-      "weight": 0.3448
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +10%",
+      "weight": 0.3448,
+      "grade": "U"
     }
   ]
 }

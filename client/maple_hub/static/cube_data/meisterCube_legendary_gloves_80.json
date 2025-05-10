@@ -1,272 +1,338 @@
 {
   "firstOption": [
     {
-      "name": "STR : +12%",
-      "weight": 5.2632
+      "name": "STR +12%",
+      "weight": 5.2632,
+      "grade": "L"
     },
     {
-      "name": "DEX : +12%",
-      "weight": 5.2632
+      "name": "DEX +12%",
+      "weight": 5.2632,
+      "grade": "L"
     },
     {
-      "name": "INT : +12%",
-      "weight": 5.2632
+      "name": "INT +12%",
+      "weight": 5.2632,
+      "grade": "L"
     },
     {
-      "name": "LUK : +12%",
-      "weight": 5.2632
+      "name": "LUK +12%",
+      "weight": 5.2632,
+      "grade": "L"
     },
     {
-      "name": "최대 HP : +12%",
-      "weight": 7.8947
+      "name": "최대 HP +12%",
+      "weight": 7.8947,
+      "grade": "L"
     },
     {
-      "name": "최대 MP : +12%",
-      "weight": 7.8947
+      "name": "최대 MP +12%",
+      "weight": 7.8947,
+      "grade": "L"
     },
     {
-      "name": "크리티컬 데미지 : +6%",
-      "weight": 10.5263
+      "name": "크리티컬 데미지 +6%",
+      "weight": 10.5263,
+      "grade": "L"
     },
     {
-      "name": "올스탯 : +9%",
-      "weight": 5.2632
+      "name": "올스탯 +9%",
+      "weight": 5.2632,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 20% 무시",
-      "weight": 7.8947
+      "weight": 7.8947,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 40% 무시",
-      "weight": 7.8947
+      "weight": 7.8947,
+      "grade": "L"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +40%",
-      "weight": 7.8947
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +40%",
+      "weight": 7.8947,
+      "grade": "L"
     },
     {
       "name": "공격 시 3% 확률로 오토스틸",
-      "weight": 7.8947
+      "weight": 7.8947,
+      "grade": "L"
     },
     {
       "name": "공격 시 5% 확률로 오토스틸",
-      "weight": 7.8947
+      "weight": 7.8947,
+      "grade": "L"
     },
     {
       "name": "공격 시 7% 확률로 오토스틸",
-      "weight": 7.8947
+      "weight": 7.8947,
+      "grade": "L"
     }
   ],
   "secondOption": [
     {
-      "name": "STR : +9%",
-      "weight": 6.6534
+      "name": "STR +9%",
+      "weight": 6.6534,
+      "grade": "U"
     },
     {
-      "name": "DEX : +9%",
-      "weight": 6.6534
+      "name": "DEX +9%",
+      "weight": 6.6534,
+      "grade": "U"
     },
     {
-      "name": "INT : +9%",
-      "weight": 6.6534
+      "name": "INT +9%",
+      "weight": 6.6534,
+      "grade": "U"
     },
     {
-      "name": "LUK : +9%",
-      "weight": 6.6534
+      "name": "LUK +9%",
+      "weight": 6.6534,
+      "grade": "U"
     },
     {
-      "name": "최대 HP : +9%",
-      "weight": 9.98
+      "name": "최대 HP +9%",
+      "weight": 9.98,
+      "grade": "U"
     },
     {
-      "name": "최대 MP : +9%",
-      "weight": 9.98
+      "name": "최대 MP +9%",
+      "weight": 9.98,
+      "grade": "U"
     },
     {
-      "name": "올스탯 : +6%",
-      "weight": 3.3267
+      "name": "올스탯 +6%",
+      "weight": 3.3267,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 20% 무시",
-      "weight": 9.98
+      "weight": 9.98,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 40% 무시",
-      "weight": 9.98
+      "weight": 9.98,
+      "grade": "U"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +30%",
-      "weight": 9.98
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +30%",
+      "weight": 9.98,
+      "grade": "U"
     },
     {
       "name": "공격 시 1% 확률로 오토스틸",
-      "weight": 9.98
+      "weight": 9.98,
+      "grade": "U"
     },
     {
       "name": "공격 시 2% 확률로 오토스틸",
-      "weight": 9.98
+      "weight": 9.98,
+      "grade": "U"
     },
     {
-      "name": "STR : +12%",
-      "weight": 0.01051
+      "name": "STR +12%",
+      "weight": 0.01051,
+      "grade": "L"
     },
     {
-      "name": "DEX : +12%",
-      "weight": 0.01051
+      "name": "DEX +12%",
+      "weight": 0.01051,
+      "grade": "L"
     },
     {
-      "name": "INT : +12%",
-      "weight": 0.01051
+      "name": "INT +12%",
+      "weight": 0.01051,
+      "grade": "L"
     },
     {
-      "name": "LUK : +12%",
-      "weight": 0.01051
+      "name": "LUK +12%",
+      "weight": 0.01051,
+      "grade": "L"
     },
     {
-      "name": "최대 HP : +12%",
-      "weight": 0.01576
+      "name": "최대 HP +12%",
+      "weight": 0.01576,
+      "grade": "L"
     },
     {
-      "name": "최대 MP : +12%",
-      "weight": 0.01576
+      "name": "최대 MP +12%",
+      "weight": 0.01576,
+      "grade": "L"
     },
     {
-      "name": "크리티컬 데미지 : +6%",
-      "weight": 0.02101
+      "name": "크리티컬 데미지 +6%",
+      "weight": 0.02101,
+      "grade": "L"
     },
     {
-      "name": "올스탯 : +9%",
-      "weight": 0.01051
+      "name": "올스탯 +9%",
+      "weight": 0.01051,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 20% 무시",
-      "weight": 0.01576
+      "weight": 0.01576,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 40% 무시",
-      "weight": 0.01576
+      "weight": 0.01576,
+      "grade": "L"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +40%",
-      "weight": 0.01576
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +40%",
+      "weight": 0.01576,
+      "grade": "L"
     },
     {
       "name": "공격 시 3% 확률로 오토스틸",
-      "weight": 0.01576
+      "weight": 0.01576,
+      "grade": "L"
     },
     {
       "name": "공격 시 5% 확률로 오토스틸",
-      "weight": 0.01576
+      "weight": 0.01576,
+      "grade": "L"
     },
     {
       "name": "공격 시 7% 확률로 오토스틸",
-      "weight": 0.01576
+      "weight": 0.01576,
+      "grade": "L"
     }
   ],
   "thirdOption": [
     {
-      "name": "STR : +9%",
-      "weight": 6.6534
+      "name": "STR +9%",
+      "weight": 6.6534,
+      "grade": "U"
     },
     {
-      "name": "DEX : +9%",
-      "weight": 6.6534
+      "name": "DEX +9%",
+      "weight": 6.6534,
+      "grade": "U"
     },
     {
-      "name": "INT : +9%",
-      "weight": 6.6534
+      "name": "INT +9%",
+      "weight": 6.6534,
+      "grade": "U"
     },
     {
-      "name": "LUK : +9%",
-      "weight": 6.6534
+      "name": "LUK +9%",
+      "weight": 6.6534,
+      "grade": "U"
     },
     {
-      "name": "최대 HP : +9%",
-      "weight": 9.98
+      "name": "최대 HP +9%",
+      "weight": 9.98,
+      "grade": "U"
     },
     {
-      "name": "최대 MP : +9%",
-      "weight": 9.98
+      "name": "최대 MP +9%",
+      "weight": 9.98,
+      "grade": "U"
     },
     {
-      "name": "올스탯 : +6%",
-      "weight": 3.3267
+      "name": "올스탯 +6%",
+      "weight": 3.3267,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 20% 무시",
-      "weight": 9.98
+      "weight": 9.98,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 40% 무시",
-      "weight": 9.98
+      "weight": 9.98,
+      "grade": "U"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +30%",
-      "weight": 9.98
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +30%",
+      "weight": 9.98,
+      "grade": "U"
     },
     {
       "name": "공격 시 1% 확률로 오토스틸",
-      "weight": 9.98
+      "weight": 9.98,
+      "grade": "U"
     },
     {
       "name": "공격 시 2% 확률로 오토스틸",
-      "weight": 9.98
+      "weight": 9.98,
+      "grade": "U"
     },
     {
-      "name": "STR : +12%",
-      "weight": 0.01051
+      "name": "STR +12%",
+      "weight": 0.01051,
+      "grade": "L"
     },
     {
-      "name": "DEX : +12%",
-      "weight": 0.01051
+      "name": "DEX +12%",
+      "weight": 0.01051,
+      "grade": "L"
     },
     {
-      "name": "INT : +12%",
-      "weight": 0.01051
+      "name": "INT +12%",
+      "weight": 0.01051,
+      "grade": "L"
     },
     {
-      "name": "LUK : +12%",
-      "weight": 0.01051
+      "name": "LUK +12%",
+      "weight": 0.01051,
+      "grade": "L"
     },
     {
-      "name": "최대 HP : +12%",
-      "weight": 0.01576
+      "name": "최대 HP +12%",
+      "weight": 0.01576,
+      "grade": "L"
     },
     {
-      "name": "최대 MP : +12%",
-      "weight": 0.01576
+      "name": "최대 MP +12%",
+      "weight": 0.01576,
+      "grade": "L"
     },
     {
-      "name": "크리티컬 데미지 : +6%",
-      "weight": 0.02101
+      "name": "크리티컬 데미지 +6%",
+      "weight": 0.02101,
+      "grade": "L"
     },
     {
-      "name": "올스탯 : +9%",
-      "weight": 0.01051
+      "name": "올스탯 +9%",
+      "weight": 0.01051,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 20% 무시",
-      "weight": 0.01576
+      "weight": 0.01576,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 40% 무시",
-      "weight": 0.01576
+      "weight": 0.01576,
+      "grade": "L"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +40%",
-      "weight": 0.01576
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +40%",
+      "weight": 0.01576,
+      "grade": "L"
     },
     {
       "name": "공격 시 3% 확률로 오토스틸",
-      "weight": 0.01576
+      "weight": 0.01576,
+      "grade": "L"
     },
     {
       "name": "공격 시 5% 확률로 오토스틸",
-      "weight": 0.01576
+      "weight": 0.01576,
+      "grade": "L"
     },
     {
       "name": "공격 시 7% 확률로 오토스틸",
-      "weight": 0.01576
+      "weight": 0.01576,
+      "grade": "L"
     }
   ]
 }

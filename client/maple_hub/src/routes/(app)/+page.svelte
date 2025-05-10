@@ -3,12 +3,11 @@
     import EventList from "$Components/EventList/EventList.svelte"
     import SundayMaple from "$Components/SundayMaple/SundayMaple.svelte"
     import SearchBox from "$Components/SearchBox/SearchBox.svelte"
+    import { goto } from '$app/navigation';
 
     export let data;
-    console.log(data)
     const title = "maple box";
     const description = "maple box의 메인 페이지 - 썬데이 메이플 업로드 확인";
-
 </script>
 
 <svelte:head>
@@ -22,7 +21,9 @@
 </svelte:head>
 
 <div class="mainPage">
-  <SearchBox className="mainSearchBox" path='/character/info'></SearchBox>
+  <SearchBox on:search={(e) => goto(`/character/info/${e.detail.characterName}`)} />
   <EventList eventList={data.eventList}></EventList>
-  <SundayMaple className="sundayMaple" sundayEvent={data.sundayEvent}></SundayMaple>
+  {#if data.sundayEvent}
+    <SundayMaple className="sundayMaple" sundayEvent={data.sundayEvent} ></SundayMaple>
+  {/if}
 </div>

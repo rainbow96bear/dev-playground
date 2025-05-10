@@ -1,268 +1,333 @@
 {
   "firstOption": [
     {
-      "name": "STR : +10%",
-      "weight": 8.9286
+      "name": "STR +10%",
+      "weight": 8.9286,
+      "grade": "U"
     },
     {
-      "name": "DEX : +10%",
-      "weight": 8.9286
+      "name": "DEX +10%",
+      "weight": 8.9286,
+      "grade": "U"
     },
     {
-      "name": "INT : +10%",
-      "weight": 8.9286
+      "name": "INT +10%",
+      "weight": 8.9286,
+      "grade": "U"
     },
     {
-      "name": "LUK : +10%",
-      "weight": 8.9286
+      "name": "LUK +10%",
+      "weight": 8.9286,
+      "grade": "U"
     },
     {
-      "name": "최대 HP : +10%",
-      "weight": 10.7143
+      "name": "최대 HP +10%",
+      "weight": 10.7143,
+      "grade": "U"
     },
     {
-      "name": "최대 MP : +10%",
-      "weight": 10.7143
+      "name": "최대 MP +10%",
+      "weight": 10.7143,
+      "grade": "U"
     },
     {
-      "name": "올스탯 : +7%",
-      "weight": 7.1429
+      "name": "올스탯 +7%",
+      "weight": 7.1429,
+      "grade": "U"
     },
     {
-      "name": "STR : +32",
-      "weight": 1.7857
+      "name": "STR +32",
+      "weight": 1.7857,
+      "grade": "U"
     },
     {
-      "name": "DEX : +32",
-      "weight": 1.7857
+      "name": "DEX +32",
+      "weight": 1.7857,
+      "grade": "U"
     },
     {
-      "name": "INT : +32",
-      "weight": 1.7857
+      "name": "INT +32",
+      "weight": 1.7857,
+      "grade": "U"
     },
     {
-      "name": "LUK : +32",
-      "weight": 1.7857
+      "name": "LUK +32",
+      "weight": 1.7857,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 20% 무시",
-      "weight": 7.1429
+      "weight": 7.1429,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 40% 무시",
-      "weight": 7.1429
+      "weight": 7.1429,
+      "grade": "U"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +30%",
-      "weight": 7.1429
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +30%",
+      "weight": 7.1429,
+      "grade": "U"
     },
     {
       "name": "\u003c쓸만한 샤프 아이즈\u003e 스킬 사용 가능",
-      "weight": 7.1429
+      "weight": 7.1429,
+      "grade": "U"
     }
   ],
   "secondOption": [
     {
-      "name": "STR : +7%",
-      "weight": 9.7561
+      "name": "STR +7%",
+      "weight": 9.7561,
+      "grade": "E"
     },
     {
-      "name": "DEX : +7%",
-      "weight": 9.7561
+      "name": "DEX +7%",
+      "weight": 9.7561,
+      "grade": "E"
     },
     {
-      "name": "INT : +7%",
-      "weight": 9.7561
+      "name": "INT +7%",
+      "weight": 9.7561,
+      "grade": "E"
     },
     {
-      "name": "LUK : +7%",
-      "weight": 9.7561
+      "name": "LUK +7%",
+      "weight": 9.7561,
+      "grade": "E"
     },
     {
-      "name": "최대 HP : +7%",
-      "weight": 9.7561
+      "name": "최대 HP +7%",
+      "weight": 9.7561,
+      "grade": "E"
     },
     {
-      "name": "최대 MP : +7%",
-      "weight": 9.7561
+      "name": "최대 MP +7%",
+      "weight": 9.7561,
+      "grade": "E"
     },
     {
-      "name": "방어력 : +7%",
-      "weight": 5.8537
+      "name": "방어력 +7%",
+      "weight": 5.8537,
+      "grade": "E"
     },
     {
-      "name": "올스탯 : +4%",
-      "weight": 3.9024
+      "name": "올스탯 +4%",
+      "weight": 3.9024,
+      "grade": "E"
     },
     {
       "name": "몬스터 처치 시 15% 확률로 97의 HP 회복",
-      "weight": 5.8537
+      "weight": 5.8537,
+      "grade": "E"
     },
     {
       "name": "몬스터 처치 시 15% 확률로 97의 MP 회복",
-      "weight": 5.8537
+      "weight": 5.8537,
+      "grade": "E"
     },
     {
-      "name": "STR : +10%",
-      "weight": 1.7857
+      "name": "STR +10%",
+      "weight": 1.7857,
+      "grade": "U"
     },
     {
-      "name": "DEX : +10%",
-      "weight": 1.7857
+      "name": "DEX +10%",
+      "weight": 1.7857,
+      "grade": "U"
     },
     {
-      "name": "INT : +10%",
-      "weight": 1.7857
+      "name": "INT +10%",
+      "weight": 1.7857,
+      "grade": "U"
     },
     {
-      "name": "LUK : +10%",
-      "weight": 1.7857
+      "name": "LUK +10%",
+      "weight": 1.7857,
+      "grade": "U"
     },
     {
-      "name": "최대 HP : +10%",
-      "weight": 2.1429
+      "name": "최대 HP +10%",
+      "weight": 2.1429,
+      "grade": "U"
     },
     {
-      "name": "최대 MP : +10%",
-      "weight": 2.1429
+      "name": "최대 MP +10%",
+      "weight": 2.1429,
+      "grade": "U"
     },
     {
-      "name": "올스탯 : +7%",
-      "weight": 1.4286
+      "name": "올스탯 +7%",
+      "weight": 1.4286,
+      "grade": "U"
     },
     {
-      "name": "STR : +32",
-      "weight": 0.3571
+      "name": "STR +32",
+      "weight": 0.3571,
+      "grade": "U"
     },
     {
-      "name": "DEX : +32",
-      "weight": 0.3571
+      "name": "DEX +32",
+      "weight": 0.3571,
+      "grade": "U"
     },
     {
-      "name": "INT : +32",
-      "weight": 0.3571
+      "name": "INT +32",
+      "weight": 0.3571,
+      "grade": "U"
     },
     {
-      "name": "LUK : +32",
-      "weight": 0.3571
+      "name": "LUK +32",
+      "weight": 0.3571,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 20% 무시",
-      "weight": 1.4286
+      "weight": 1.4286,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 40% 무시",
-      "weight": 1.4286
+      "weight": 1.4286,
+      "grade": "U"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +30%",
-      "weight": 1.4286
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +30%",
+      "weight": 1.4286,
+      "grade": "U"
     },
     {
       "name": "\u003c쓸만한 샤프 아이즈\u003e 스킬 사용 가능",
-      "weight": 1.4286
+      "weight": 1.4286,
+      "grade": "U"
     }
   ],
   "thirdOption": [
     {
-      "name": "STR : +7%",
-      "weight": 11.5854
+      "name": "STR +7%",
+      "weight": 11.5854,
+      "grade": "E"
     },
     {
-      "name": "DEX : +7%",
-      "weight": 11.5854
+      "name": "DEX +7%",
+      "weight": 11.5854,
+      "grade": "E"
     },
     {
-      "name": "INT : +7%",
-      "weight": 11.5854
+      "name": "INT +7%",
+      "weight": 11.5854,
+      "grade": "E"
     },
     {
-      "name": "LUK : +7%",
-      "weight": 11.5854
+      "name": "LUK +7%",
+      "weight": 11.5854,
+      "grade": "E"
     },
     {
-      "name": "최대 HP : +7%",
-      "weight": 11.5854
+      "name": "최대 HP +7%",
+      "weight": 11.5854,
+      "grade": "E"
     },
     {
-      "name": "최대 MP : +7%",
-      "weight": 11.5854
+      "name": "최대 MP +7%",
+      "weight": 11.5854,
+      "grade": "E"
     },
     {
-      "name": "방어력 : +7%",
-      "weight": 6.9512
+      "name": "방어력 +7%",
+      "weight": 6.9512,
+      "grade": "E"
     },
     {
-      "name": "올스탯 : +4%",
-      "weight": 4.6341
+      "name": "올스탯 +4%",
+      "weight": 4.6341,
+      "grade": "E"
     },
     {
       "name": "몬스터 처치 시 15% 확률로 97의 HP 회복",
-      "weight": 6.9512
+      "weight": 6.9512,
+      "grade": "E"
     },
     {
       "name": "몬스터 처치 시 15% 확률로 97의 MP 회복",
-      "weight": 6.9512
+      "weight": 6.9512,
+      "grade": "E"
     },
     {
-      "name": "STR : +10%",
-      "weight": 0.4464
+      "name": "STR +10%",
+      "weight": 0.4464,
+      "grade": "U"
     },
     {
-      "name": "DEX : +10%",
-      "weight": 0.4464
+      "name": "DEX +10%",
+      "weight": 0.4464,
+      "grade": "U"
     },
     {
-      "name": "INT : +10%",
-      "weight": 0.4464
+      "name": "INT +10%",
+      "weight": 0.4464,
+      "grade": "U"
     },
     {
-      "name": "LUK : +10%",
-      "weight": 0.4464
+      "name": "LUK +10%",
+      "weight": 0.4464,
+      "grade": "U"
     },
     {
-      "name": "최대 HP : +10%",
-      "weight": 0.5357
+      "name": "최대 HP +10%",
+      "weight": 0.5357,
+      "grade": "U"
     },
     {
-      "name": "최대 MP : +10%",
-      "weight": 0.5357
+      "name": "최대 MP +10%",
+      "weight": 0.5357,
+      "grade": "U"
     },
     {
-      "name": "올스탯 : +7%",
-      "weight": 0.3571
+      "name": "올스탯 +7%",
+      "weight": 0.3571,
+      "grade": "U"
     },
     {
-      "name": "STR : +32",
-      "weight": 0.08929
+      "name": "STR +32",
+      "weight": 0.08929,
+      "grade": "U"
     },
     {
-      "name": "DEX : +32",
-      "weight": 0.08929
+      "name": "DEX +32",
+      "weight": 0.08929,
+      "grade": "U"
     },
     {
-      "name": "INT : +32",
-      "weight": 0.08929
+      "name": "INT +32",
+      "weight": 0.08929,
+      "grade": "U"
     },
     {
-      "name": "LUK : +32",
-      "weight": 0.08929
+      "name": "LUK +32",
+      "weight": 0.08929,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 20% 무시",
-      "weight": 0.3571
+      "weight": 0.3571,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 40% 무시",
-      "weight": 0.3571
+      "weight": 0.3571,
+      "grade": "U"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +30%",
-      "weight": 0.3571
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +30%",
+      "weight": 0.3571,
+      "grade": "U"
     },
     {
       "name": "\u003c쓸만한 샤프 아이즈\u003e 스킬 사용 가능",
-      "weight": 0.3571
+      "weight": 0.3571,
+      "grade": "U"
     }
   ]
 }

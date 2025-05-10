@@ -1,16 +1,15 @@
-// +page.server.ts
-import { error } from '@sveltejs/kit';
 import { InternalAPI } from '$lib/api';
 import type { PageServerLoad } from './$types';
 
-export const load: PageServerLoad = async ({ locals }) => {
+export const load: PageServerLoad = async () => {
 	const today = new Date().getDay();
+	const eventList = await InternalAPI('/v1/nexon/eventList');
 	if (today >= 1 && today <= 4) {
-		console.log('월요일부터 목요일까지는 동작하지 않습니다.');
-		return null;
+		return {
+			eventList: eventList.data
+		};
 	}
 
-	const eventList = await InternalAPI('/v1/nexon/eventList');
 	const sundayEvent = await InternalAPI('/v1/nexon/sundayMaple');
 	return {
 		eventList: eventList.data,

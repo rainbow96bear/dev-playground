@@ -1,11 +1,11 @@
-import { isCacheValid, characterOcidCache, characterEquipmentsCache } from '$lib/cache/cache.ts';
-import { getEquippedItems, getCharaterOcid } from '$lib/nexonAPI/nexonApi';
+import { isCacheValid, characterOcidCache, androidInfoCache } from '$lib/cache/cache.ts';
+import { getAndroidInfo, getCharaterOcid } from '$lib/nexonAPI/nexonApi';
 import { DEFAULT_CHARACTER } from '$lib/constants';
 import { json } from '@sveltejs/kit';
 
-export const GET = async ({ url }) => {
+export const GET = async ({ params }) => {
 	try {
-		const characterName = url.searchParams.get('name') ?? DEFAULT_CHARACTER;
+		const characterName = params.name ?? DEFAULT_CHARACTER;
 		let characterOcidCached = characterOcidCache.get(characterName);
 		if (!characterOcidCached || !characterOcidCached.data || !isCacheValid(characterOcidCached)) {
 			const resCharacterOcid = await getCharaterOcid(characterName);
@@ -17,19 +17,19 @@ export const GET = async ({ url }) => {
 			characterOcidCache.set(characterName, characterOcidCached);
 		}
 
-		let characterEquipmentsCached = characterEquipmentsCache.get(characterOcidCached.data);
+		let androidInfoCached = androidInfoCache.get(characterOcidCached.data);
 
-		if (!characterEquipmentsCached || !isCacheValid(characterOcidCached.data)) {
-			const resCharacterEquipments = await getEquippedItems(characterOcidCached.data);
-			characterEquipmentsCached = {
+		if (!androidInfoCached || !isCacheValid(characterOcidCached.data)) {
+			const resCharacterEquipments = await getAndroidInfo(characterOcidCached.data);
+			androidInfoCached = {
 				data: resCharacterEquipments,
 				timestamp: Date.now(),
 				ttl: 24 * 60 * 60 * 1000
 			};
-			characterEquipmentsCache.set(characterOcidCached.data, characterEquipmentsCached);
+			androidInfoCache.set(characterOcidCached.data, androidInfoCached);
 		}
 
-		return json({ data: characterEquipmentsCached.data }, { status: 200 });
+		return json({ data: androidInfoCached.data }, { status: 200 });
 	} catch (err) {
 		return json({ error: '캐릭터 장비 정보 요청 실패' }, { status: 404 });
 	}

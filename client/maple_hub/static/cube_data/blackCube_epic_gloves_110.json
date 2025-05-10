@@ -1,248 +1,308 @@
 {
   "firstOption": [
     {
-      "name": "STR : +6%",
-      "weight": 12.1951
+      "name": "STR +6%",
+      "weight": 12.1951,
+      "grade": "E"
     },
     {
-      "name": "DEX : +6%",
-      "weight": 12.1951
+      "name": "DEX +6%",
+      "weight": 12.1951,
+      "grade": "E"
     },
     {
-      "name": "INT : +6%",
-      "weight": 12.1951
+      "name": "INT +6%",
+      "weight": 12.1951,
+      "grade": "E"
     },
     {
-      "name": "LUK : +6%",
-      "weight": 12.1951
+      "name": "LUK +6%",
+      "weight": 12.1951,
+      "grade": "E"
     },
     {
-      "name": "최대 HP : +6%",
-      "weight": 12.1951
+      "name": "최대 HP +6%",
+      "weight": 12.1951,
+      "grade": "E"
     },
     {
-      "name": "최대 MP : +6%",
-      "weight": 12.1951
+      "name": "최대 MP +6%",
+      "weight": 12.1951,
+      "grade": "E"
     },
     {
-      "name": "방어력 : +6%",
-      "weight": 7.3171
+      "name": "방어력 +6%",
+      "weight": 7.3171,
+      "grade": "E"
     },
     {
-      "name": "올스탯 : +3%",
-      "weight": 4.878
+      "name": "올스탯 +3%",
+      "weight": 4.878,
+      "grade": "E"
     },
     {
       "name": "몬스터 처치 시 15% 확률로 90의 HP 회복",
-      "weight": 7.3171
+      "weight": 7.3171,
+      "grade": "E"
     },
     {
       "name": "몬스터 처치 시 15% 확률로 90의 MP 회복",
-      "weight": 7.3171
+      "weight": 7.3171,
+      "grade": "E"
     }
   ],
   "secondOption": [
     {
-      "name": "STR : +12",
-      "weight": 6
+      "name": "STR +12",
+      "weight": 6,
+      "grade": "R"
     },
     {
-      "name": "DEX : +12",
-      "weight": 6
+      "name": "DEX +12",
+      "weight": 6,
+      "grade": "R"
     },
     {
-      "name": "INT : +12",
-      "weight": 6
+      "name": "INT +12",
+      "weight": 6,
+      "grade": "R"
     },
     {
-      "name": "LUK : +12",
-      "weight": 6
+      "name": "LUK +12",
+      "weight": 6,
+      "grade": "R"
     },
     {
-      "name": "최대 HP : +110",
-      "weight": 6
+      "name": "최대 HP +110",
+      "weight": 6,
+      "grade": "R"
     },
     {
-      "name": "최대 MP : +110",
-      "weight": 6
+      "name": "최대 MP +110",
+      "weight": 6,
+      "grade": "R"
     },
     {
-      "name": "방어력 : +110",
-      "weight": 4.0000004768
+      "name": "방어력 +110",
+      "weight": 4.0000004768,
+      "grade": "R"
     },
     {
-      "name": "STR : +3%",
-      "weight": 6
+      "name": "STR +3%",
+      "weight": 6,
+      "grade": "R"
     },
     {
-      "name": "DEX : +3%",
-      "weight": 6
+      "name": "DEX +3%",
+      "weight": 6,
+      "grade": "R"
     },
     {
-      "name": "INT : +3%",
-      "weight": 6
+      "name": "INT +3%",
+      "weight": 6,
+      "grade": "R"
     },
     {
-      "name": "LUK : +3%",
-      "weight": 6
+      "name": "LUK +3%",
+      "weight": 6,
+      "grade": "R"
     },
     {
-      "name": "최대 HP : +3%",
-      "weight": 4.0000004768
+      "name": "최대 HP +3%",
+      "weight": 4.0000004768,
+      "grade": "R"
     },
     {
-      "name": "최대 MP : +3%",
-      "weight": 4.0000004768
+      "name": "최대 MP +3%",
+      "weight": 4.0000004768,
+      "grade": "R"
     },
     {
-      "name": "방어력 : +3%",
-      "weight": 4.0000004768
+      "name": "방어력 +3%",
+      "weight": 4.0000004768,
+      "grade": "R"
     },
     {
-      "name": "올스탯 : +5",
-      "weight": 4.0000004768
+      "name": "올스탯 +5",
+      "weight": 4.0000004768,
+      "grade": "R"
     },
     {
-      "name": "STR : +6%",
-      "weight": 2.439
+      "name": "STR +6%",
+      "weight": 2.439,
+      "grade": "E"
     },
     {
-      "name": "DEX : +6%",
-      "weight": 2.439
+      "name": "DEX +6%",
+      "weight": 2.439,
+      "grade": "E"
     },
     {
-      "name": "INT : +6%",
-      "weight": 2.439
+      "name": "INT +6%",
+      "weight": 2.439,
+      "grade": "E"
     },
     {
-      "name": "LUK : +6%",
-      "weight": 2.439
+      "name": "LUK +6%",
+      "weight": 2.439,
+      "grade": "E"
     },
     {
-      "name": "최대 HP : +6%",
-      "weight": 2.439
+      "name": "최대 HP +6%",
+      "weight": 2.439,
+      "grade": "E"
     },
     {
-      "name": "최대 MP : +6%",
-      "weight": 2.439
+      "name": "최대 MP +6%",
+      "weight": 2.439,
+      "grade": "E"
     },
     {
-      "name": "방어력 : +6%",
-      "weight": 1.4634
+      "name": "방어력 +6%",
+      "weight": 1.4634,
+      "grade": "E"
     },
     {
-      "name": "올스탯 : +3%",
-      "weight": 0.9756
+      "name": "올스탯 +3%",
+      "weight": 0.9756,
+      "grade": "E"
     },
     {
       "name": "몬스터 처치 시 15% 확률로 90의 HP 회복",
-      "weight": 1.4634
+      "weight": 1.4634,
+      "grade": "E"
     },
     {
       "name": "몬스터 처치 시 15% 확률로 90의 MP 회복",
-      "weight": 1.4634
+      "weight": 1.4634,
+      "grade": "E"
     }
   ],
   "thirdOption": [
     {
-      "name": "STR : +12",
-      "weight": 7.125
+      "name": "STR +12",
+      "weight": 7.125,
+      "grade": "R"
     },
     {
-      "name": "DEX : +12",
-      "weight": 7.125
+      "name": "DEX +12",
+      "weight": 7.125,
+      "grade": "R"
     },
     {
-      "name": "INT : +12",
-      "weight": 7.125
+      "name": "INT +12",
+      "weight": 7.125,
+      "grade": "R"
     },
     {
-      "name": "LUK : +12",
-      "weight": 7.125
+      "name": "LUK +12",
+      "weight": 7.125,
+      "grade": "R"
     },
     {
-      "name": "최대 HP : +110",
-      "weight": 7.125
+      "name": "최대 HP +110",
+      "weight": 7.125,
+      "grade": "R"
     },
     {
-      "name": "최대 MP : +110",
-      "weight": 7.125
+      "name": "최대 MP +110",
+      "weight": 7.125,
+      "grade": "R"
     },
     {
-      "name": "방어력 : +110",
-      "weight": 4.75
+      "name": "방어력 +110",
+      "weight": 4.75,
+      "grade": "R"
     },
     {
-      "name": "STR : +3%",
-      "weight": 7.125
+      "name": "STR +3%",
+      "weight": 7.125,
+      "grade": "R"
     },
     {
-      "name": "DEX : +3%",
-      "weight": 7.125
+      "name": "DEX +3%",
+      "weight": 7.125,
+      "grade": "R"
     },
     {
-      "name": "INT : +3%",
-      "weight": 7.125
+      "name": "INT +3%",
+      "weight": 7.125,
+      "grade": "R"
     },
     {
-      "name": "LUK : +3%",
-      "weight": 7.125
+      "name": "LUK +3%",
+      "weight": 7.125,
+      "grade": "R"
     },
     {
-      "name": "최대 HP : +3%",
-      "weight": 4.75
+      "name": "최대 HP +3%",
+      "weight": 4.75,
+      "grade": "R"
     },
     {
-      "name": "최대 MP : +3%",
-      "weight": 4.75
+      "name": "최대 MP +3%",
+      "weight": 4.75,
+      "grade": "R"
     },
     {
-      "name": "방어력 : +3%",
-      "weight": 4.75
+      "name": "방어력 +3%",
+      "weight": 4.75,
+      "grade": "R"
     },
     {
-      "name": "올스탯 : +5",
-      "weight": 4.75
+      "name": "올스탯 +5",
+      "weight": 4.75,
+      "grade": "R"
     },
     {
-      "name": "STR : +6%",
-      "weight": 0.6098
+      "name": "STR +6%",
+      "weight": 0.6098,
+      "grade": "E"
     },
     {
-      "name": "DEX : +6%",
-      "weight": 0.6098
+      "name": "DEX +6%",
+      "weight": 0.6098,
+      "grade": "E"
     },
     {
-      "name": "INT : +6%",
-      "weight": 0.6098
+      "name": "INT +6%",
+      "weight": 0.6098,
+      "grade": "E"
     },
     {
-      "name": "LUK : +6%",
-      "weight": 0.6098
+      "name": "LUK +6%",
+      "weight": 0.6098,
+      "grade": "E"
     },
     {
-      "name": "최대 HP : +6%",
-      "weight": 0.6098
+      "name": "최대 HP +6%",
+      "weight": 0.6098,
+      "grade": "E"
     },
     {
-      "name": "최대 MP : +6%",
-      "weight": 0.6098
+      "name": "최대 MP +6%",
+      "weight": 0.6098,
+      "grade": "E"
     },
     {
-      "name": "방어력 : +6%",
-      "weight": 0.3659
+      "name": "방어력 +6%",
+      "weight": 0.3659,
+      "grade": "E"
     },
     {
-      "name": "올스탯 : +3%",
-      "weight": 0.2439
+      "name": "올스탯 +3%",
+      "weight": 0.2439,
+      "grade": "E"
     },
     {
       "name": "몬스터 처치 시 15% 확률로 90의 HP 회복",
-      "weight": 0.3659
+      "weight": 0.3659,
+      "grade": "E"
     },
     {
       "name": "몬스터 처치 시 15% 확률로 90의 MP 회복",
-      "weight": 0.3659
+      "weight": 0.3659,
+      "grade": "E"
     }
   ]
 }

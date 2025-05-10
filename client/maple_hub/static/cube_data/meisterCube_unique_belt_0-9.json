@@ -1,192 +1,238 @@
 {
   "firstOption": [
     {
-      "name": "STR : +3%",
-      "weight": 11.1111
+      "name": "STR +3%",
+      "weight": 11.1111,
+      "grade": "U"
     },
     {
-      "name": "DEX : +3%",
-      "weight": 11.1111
+      "name": "DEX +3%",
+      "weight": 11.1111,
+      "grade": "U"
     },
     {
-      "name": "INT : +3%",
-      "weight": 11.1111
+      "name": "INT +3%",
+      "weight": 11.1111,
+      "grade": "U"
     },
     {
-      "name": "LUK : +3%",
-      "weight": 11.1111
+      "name": "LUK +3%",
+      "weight": 11.1111,
+      "grade": "U"
     },
     {
-      "name": "최대 HP : +3%",
-      "weight": 16.6667
+      "name": "최대 HP +3%",
+      "weight": 16.6667,
+      "grade": "U"
     },
     {
-      "name": "최대 MP : +3%",
-      "weight": 16.6667
+      "name": "최대 MP +3%",
+      "weight": 16.6667,
+      "grade": "U"
     },
     {
-      "name": "올스탯 : +2%",
-      "weight": 5.5556
+      "name": "올스탯 +2%",
+      "weight": 5.5556,
+      "grade": "U"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +10%",
-      "weight": 16.6667
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +10%",
+      "weight": 16.6667,
+      "grade": "U"
     }
   ],
   "secondOption": [
     {
-      "name": "STR : +2%",
-      "weight": 7.2818
+      "name": "STR +2%",
+      "weight": 7.2818,
+      "grade": "E"
     },
     {
-      "name": "DEX : +2%",
-      "weight": 7.2818
+      "name": "DEX +2%",
+      "weight": 7.2818,
+      "grade": "E"
     },
     {
-      "name": "INT : +2%",
-      "weight": 7.2818
+      "name": "INT +2%",
+      "weight": 7.2818,
+      "grade": "E"
     },
     {
-      "name": "LUK : +2%",
-      "weight": 7.2818
+      "name": "LUK +2%",
+      "weight": 7.2818,
+      "grade": "E"
     },
     {
-      "name": "최대 HP : +2%",
-      "weight": 10.9227
+      "name": "최대 HP +2%",
+      "weight": 10.9227,
+      "grade": "E"
     },
     {
-      "name": "최대 MP : +2%",
-      "weight": 10.9227
+      "name": "최대 MP +2%",
+      "weight": 10.9227,
+      "grade": "E"
     },
     {
-      "name": "방어력 : +2%",
-      "weight": 10.9227
+      "name": "방어력 +2%",
+      "weight": 10.9227,
+      "grade": "E"
     },
     {
-      "name": "올스탯 : +1%",
-      "weight": 3.6409
+      "name": "올스탯 +1%",
+      "weight": 3.6409,
+      "grade": "E"
     },
     {
       "name": "피격 시 20% 확률로 3의 데미지 무시",
-      "weight": 10.9227
+      "weight": 10.9227,
+      "grade": "E"
     },
     {
       "name": "피격 시 20% 확률로 5의 데미지 무시",
-      "weight": 10.9227
+      "weight": 10.9227,
+      "grade": "E"
     },
     {
       "name": "피격 시 30% 확률로 7의 데미지 무시",
-      "weight": 10.9227
+      "weight": 10.9227,
+      "grade": "E"
     },
     {
-      "name": "STR : +3%",
-      "weight": 0.1884
+      "name": "STR +3%",
+      "weight": 0.1884,
+      "grade": "U"
     },
     {
-      "name": "DEX : +3%",
-      "weight": 0.1884
+      "name": "DEX +3%",
+      "weight": 0.1884,
+      "grade": "U"
     },
     {
-      "name": "INT : +3%",
-      "weight": 0.1884
+      "name": "INT +3%",
+      "weight": 0.1884,
+      "grade": "U"
     },
     {
-      "name": "LUK : +3%",
-      "weight": 0.1884
+      "name": "LUK +3%",
+      "weight": 0.1884,
+      "grade": "U"
     },
     {
-      "name": "최대 HP : +3%",
-      "weight": 0.2826
+      "name": "최대 HP +3%",
+      "weight": 0.2826,
+      "grade": "U"
     },
     {
-      "name": "최대 MP : +3%",
-      "weight": 0.2826
+      "name": "최대 MP +3%",
+      "weight": 0.2826,
+      "grade": "U"
     },
     {
-      "name": "올스탯 : +2%",
-      "weight": 0.09422
+      "name": "올스탯 +2%",
+      "weight": 0.09422,
+      "grade": "U"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +10%",
-      "weight": 0.2826
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +10%",
+      "weight": 0.2826,
+      "grade": "U"
     }
   ],
   "thirdOption": [
     {
-      "name": "STR : +2%",
-      "weight": 7.2818
+      "name": "STR +2%",
+      "weight": 7.2818,
+      "grade": "E"
     },
     {
-      "name": "DEX : +2%",
-      "weight": 7.2818
+      "name": "DEX +2%",
+      "weight": 7.2818,
+      "grade": "E"
     },
     {
-      "name": "INT : +2%",
-      "weight": 7.2818
+      "name": "INT +2%",
+      "weight": 7.2818,
+      "grade": "E"
     },
     {
-      "name": "LUK : +2%",
-      "weight": 7.2818
+      "name": "LUK +2%",
+      "weight": 7.2818,
+      "grade": "E"
     },
     {
-      "name": "최대 HP : +2%",
-      "weight": 10.9227
+      "name": "최대 HP +2%",
+      "weight": 10.9227,
+      "grade": "E"
     },
     {
-      "name": "최대 MP : +2%",
-      "weight": 10.9227
+      "name": "최대 MP +2%",
+      "weight": 10.9227,
+      "grade": "E"
     },
     {
-      "name": "방어력 : +2%",
-      "weight": 10.9227
+      "name": "방어력 +2%",
+      "weight": 10.9227,
+      "grade": "E"
     },
     {
-      "name": "올스탯 : +1%",
-      "weight": 3.6409
+      "name": "올스탯 +1%",
+      "weight": 3.6409,
+      "grade": "E"
     },
     {
       "name": "피격 시 20% 확률로 3의 데미지 무시",
-      "weight": 10.9227
+      "weight": 10.9227,
+      "grade": "E"
     },
     {
       "name": "피격 시 20% 확률로 5의 데미지 무시",
-      "weight": 10.9227
+      "weight": 10.9227,
+      "grade": "E"
     },
     {
       "name": "피격 시 30% 확률로 7의 데미지 무시",
-      "weight": 10.9227
+      "weight": 10.9227,
+      "grade": "E"
     },
     {
-      "name": "STR : +3%",
-      "weight": 0.1884
+      "name": "STR +3%",
+      "weight": 0.1884,
+      "grade": "U"
     },
     {
-      "name": "DEX : +3%",
-      "weight": 0.1884
+      "name": "DEX +3%",
+      "weight": 0.1884,
+      "grade": "U"
     },
     {
-      "name": "INT : +3%",
-      "weight": 0.1884
+      "name": "INT +3%",
+      "weight": 0.1884,
+      "grade": "U"
     },
     {
-      "name": "LUK : +3%",
-      "weight": 0.1884
+      "name": "LUK +3%",
+      "weight": 0.1884,
+      "grade": "U"
     },
     {
-      "name": "최대 HP : +3%",
-      "weight": 0.2826
+      "name": "최대 HP +3%",
+      "weight": 0.2826,
+      "grade": "U"
     },
     {
-      "name": "최대 MP : +3%",
-      "weight": 0.2826
+      "name": "최대 MP +3%",
+      "weight": 0.2826,
+      "grade": "U"
     },
     {
-      "name": "올스탯 : +2%",
-      "weight": 0.09422
+      "name": "올스탯 +2%",
+      "weight": 0.09422,
+      "grade": "U"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +10%",
-      "weight": 0.2826
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +10%",
+      "weight": 0.2826,
+      "grade": "U"
     }
   ]
 }

@@ -1,204 +1,253 @@
 {
   "firstOption": [
     {
-      "name": "STR : +9%",
-      "weight": 10.2564
+      "name": "STR +9%",
+      "weight": 10.2564,
+      "grade": "L"
     },
     {
-      "name": "DEX : +9%",
-      "weight": 10.2564
+      "name": "DEX +9%",
+      "weight": 10.2564,
+      "grade": "L"
     },
     {
-      "name": "INT : +9%",
-      "weight": 10.2564
+      "name": "INT +9%",
+      "weight": 10.2564,
+      "grade": "L"
     },
     {
-      "name": "LUK : +9%",
-      "weight": 10.2564
+      "name": "LUK +9%",
+      "weight": 10.2564,
+      "grade": "L"
     },
     {
-      "name": "최대 HP : +9%",
-      "weight": 10.2564
+      "name": "최대 HP +9%",
+      "weight": 10.2564,
+      "grade": "L"
     },
     {
-      "name": "최대 MP : +9%",
-      "weight": 10.2564
+      "name": "최대 MP +9%",
+      "weight": 10.2564,
+      "grade": "L"
     },
     {
-      "name": "올스탯 : +6%",
-      "weight": 7.6923
+      "name": "올스탯 +6%",
+      "weight": 7.6923,
+      "grade": "L"
     },
     {
-      "name": "모든 스킬의 MP 소모 : -10%",
-      "weight": 7.6923
+      "name": "모든 스킬의 MP 소모 -10%",
+      "weight": 7.6923,
+      "grade": "L"
     },
     {
-      "name": "모든 스킬의 MP 소모 : -20%",
-      "weight": 7.6923
+      "name": "모든 스킬의 MP 소모 -20%",
+      "weight": 7.6923,
+      "grade": "L"
     },
     {
-      "name": "메소 획득량 : +15%",
-      "weight": 7.6923
+      "name": "메소 획득량 +15%",
+      "weight": 7.6923,
+      "grade": "L"
     },
     {
-      "name": "아이템 드롭률 : +15%",
-      "weight": 7.6923
+      "name": "아이템 드롭률 +15%",
+      "weight": 7.6923,
+      "grade": "L"
     }
   ],
   "secondOption": [
     {
-      "name": "STR : +6%",
-      "weight": 11.25
+      "name": "STR +6%",
+      "weight": 11.25,
+      "grade": "U"
     },
     {
-      "name": "DEX : +6%",
-      "weight": 11.25
+      "name": "DEX +6%",
+      "weight": 11.25,
+      "grade": "U"
     },
     {
-      "name": "INT : +6%",
-      "weight": 11.25
+      "name": "INT +6%",
+      "weight": 11.25,
+      "grade": "U"
     },
     {
-      "name": "LUK : +6%",
-      "weight": 11.25
+      "name": "LUK +6%",
+      "weight": 11.25,
+      "grade": "U"
     },
     {
-      "name": "최대 HP : +6%",
-      "weight": 13.5
+      "name": "최대 HP +6%",
+      "weight": 13.5,
+      "grade": "U"
     },
     {
-      "name": "최대 MP : +6%",
-      "weight": 13.5
+      "name": "최대 MP +6%",
+      "weight": 13.5,
+      "grade": "U"
     },
     {
-      "name": "올스탯 : +4%",
-      "weight": 9
+      "name": "올스탯 +4%",
+      "weight": 9,
+      "grade": "U"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +20%",
-      "weight": 9
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +20%",
+      "weight": 9,
+      "grade": "U"
     },
     {
-      "name": "STR : +9%",
-      "weight": 1.02564
+      "name": "STR +9%",
+      "weight": 1.02564,
+      "grade": "L"
     },
     {
-      "name": "DEX : +9%",
-      "weight": 1.02564
+      "name": "DEX +9%",
+      "weight": 1.02564,
+      "grade": "L"
     },
     {
-      "name": "INT : +9%",
-      "weight": 1.02564
+      "name": "INT +9%",
+      "weight": 1.02564,
+      "grade": "L"
     },
     {
-      "name": "LUK : +9%",
-      "weight": 1.02564
+      "name": "LUK +9%",
+      "weight": 1.02564,
+      "grade": "L"
     },
     {
-      "name": "최대 HP : +9%",
-      "weight": 1.02564
+      "name": "최대 HP +9%",
+      "weight": 1.02564,
+      "grade": "L"
     },
     {
-      "name": "최대 MP : +9%",
-      "weight": 1.02564
+      "name": "최대 MP +9%",
+      "weight": 1.02564,
+      "grade": "L"
     },
     {
-      "name": "올스탯 : +6%",
-      "weight": 0.7692
+      "name": "올스탯 +6%",
+      "weight": 0.7692,
+      "grade": "L"
     },
     {
-      "name": "모든 스킬의 MP 소모 : -10%",
-      "weight": 0.7692
+      "name": "모든 스킬의 MP 소모 -10%",
+      "weight": 0.7692,
+      "grade": "L"
     },
     {
-      "name": "모든 스킬의 MP 소모 : -20%",
-      "weight": 0.7692
+      "name": "모든 스킬의 MP 소모 -20%",
+      "weight": 0.7692,
+      "grade": "L"
     },
     {
-      "name": "메소 획득량 : +15%",
-      "weight": 0.7692
+      "name": "메소 획득량 +15%",
+      "weight": 0.7692,
+      "grade": "L"
     },
     {
-      "name": "아이템 드롭률 : +15%",
-      "weight": 0.7692
+      "name": "아이템 드롭률 +15%",
+      "weight": 0.7692,
+      "grade": "L"
     }
   ],
   "thirdOption": [
     {
-      "name": "STR : +6%",
-      "weight": 12.375
+      "name": "STR +6%",
+      "weight": 12.375,
+      "grade": "U"
     },
     {
-      "name": "DEX : +6%",
-      "weight": 12.375
+      "name": "DEX +6%",
+      "weight": 12.375,
+      "grade": "U"
     },
     {
-      "name": "INT : +6%",
-      "weight": 12.375
+      "name": "INT +6%",
+      "weight": 12.375,
+      "grade": "U"
     },
     {
-      "name": "LUK : +6%",
-      "weight": 12.375
+      "name": "LUK +6%",
+      "weight": 12.375,
+      "grade": "U"
     },
     {
-      "name": "최대 HP : +6%",
-      "weight": 14.85
+      "name": "최대 HP +6%",
+      "weight": 14.85,
+      "grade": "U"
     },
     {
-      "name": "최대 MP : +6%",
-      "weight": 14.85
+      "name": "최대 MP +6%",
+      "weight": 14.85,
+      "grade": "U"
     },
     {
-      "name": "올스탯 : +4%",
-      "weight": 9.9
+      "name": "올스탯 +4%",
+      "weight": 9.9,
+      "grade": "U"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +20%",
-      "weight": 9.9
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +20%",
+      "weight": 9.9,
+      "grade": "U"
     },
     {
-      "name": "STR : +9%",
-      "weight": 0.1026
+      "name": "STR +9%",
+      "weight": 0.1026,
+      "grade": "L"
     },
     {
-      "name": "DEX : +9%",
-      "weight": 0.1026
+      "name": "DEX +9%",
+      "weight": 0.1026,
+      "grade": "L"
     },
     {
-      "name": "INT : +9%",
-      "weight": 0.1026
+      "name": "INT +9%",
+      "weight": 0.1026,
+      "grade": "L"
     },
     {
-      "name": "LUK : +9%",
-      "weight": 0.1026
+      "name": "LUK +9%",
+      "weight": 0.1026,
+      "grade": "L"
     },
     {
-      "name": "최대 HP : +9%",
-      "weight": 0.1026
+      "name": "최대 HP +9%",
+      "weight": 0.1026,
+      "grade": "L"
     },
     {
-      "name": "최대 MP : +9%",
-      "weight": 0.1026
+      "name": "최대 MP +9%",
+      "weight": 0.1026,
+      "grade": "L"
     },
     {
-      "name": "올스탯 : +6%",
-      "weight": 0.07692
+      "name": "올스탯 +6%",
+      "weight": 0.07692,
+      "grade": "L"
     },
     {
-      "name": "모든 스킬의 MP 소모 : -10%",
-      "weight": 0.07692
+      "name": "모든 스킬의 MP 소모 -10%",
+      "weight": 0.07692,
+      "grade": "L"
     },
     {
-      "name": "모든 스킬의 MP 소모 : -20%",
-      "weight": 0.07692
+      "name": "모든 스킬의 MP 소모 -20%",
+      "weight": 0.07692,
+      "grade": "L"
     },
     {
-      "name": "메소 획득량 : +15%",
-      "weight": 0.07692
+      "name": "메소 획득량 +15%",
+      "weight": 0.07692,
+      "grade": "L"
     },
     {
-      "name": "아이템 드롭률 : +15%",
-      "weight": 0.07692
+      "name": "아이템 드롭률 +15%",
+      "weight": 0.07692,
+      "grade": "L"
     }
   ]
 }

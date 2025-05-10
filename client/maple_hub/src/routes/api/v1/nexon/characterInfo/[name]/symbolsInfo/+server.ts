@@ -3,9 +3,9 @@ import { getEquippedSymbols, getCharaterOcid } from '$lib/nexonAPI/nexonApi';
 import { DEFAULT_CHARACTER } from '$lib/constants';
 import { json } from '@sveltejs/kit';
 
-export const GET = async ({ url }) => {
+export const GET = async ({ params }) => {
 	try {
-		const characterName = url.searchParams.get('name') ?? DEFAULT_CHARACTER;
+		const characterName = params.name ?? DEFAULT_CHARACTER;
 		let characterOcidCached = characterOcidCache.get(characterName);
 		if (!characterOcidCached || !characterOcidCached.data || !isCacheValid(characterOcidCached)) {
 			const resCharacterOcid = await getCharaterOcid(characterName);

@@ -5,7 +5,9 @@
 
 <div class="infoBox">
     <div class="firstInfo">
-        <ItemImg itemImage={item?.item_shape_icon}/>
+        <div class="imageBox">
+            <ItemImg itemImage={item?.item_shape_icon}/>
+        </div>
         <div class="textBox">
             <div class="battlePointText">전투력 증가량</div>
             <div class="battlePoint">현재 장착 중인 장비</div>
@@ -27,6 +29,10 @@
 <style>
     .infoBox{
         width:100%;
+    }
+    .imageBox{
+        width:75px;
+        height: 75px;
     }
     .firstInfo{
         display: flex;
@@ -58,6 +64,7 @@
     .equipmentLevel{
         display: flex;
         gap : 10px;
+        margin-top: 5px;
     }
     .equipmentLevel div:first-child{
         color:#B7BFC5;

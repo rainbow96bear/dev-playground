@@ -100,6 +100,23 @@ export const getEquippedItems = async (ocid: string) => {
 	}
 };
 
+export const getAndroidInfo = async (ocid: string) => {
+	try {
+		const response = await nexonAPI('/maplestory/v1/character/android-equipment', {
+			params: {
+				ocid: ocid
+			}
+		});
+		if (response.status === 200) {
+			const androidInfoObj = response.data;
+			return androidInfoObj;
+		}
+		return undefined;
+	} catch (error) {
+		console.log('착용중인 안드로이드 정보를 불러오지 못했습니다.\n[ERROR]:', error);
+	}
+};
+
 export const getEquippedSymbols = async (ocid: string) => {
 	try {
 		const response = await nexonAPI('/maplestory/v1/character/symbol-equipment', {

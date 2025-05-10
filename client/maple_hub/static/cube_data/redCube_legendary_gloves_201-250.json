@@ -1,260 +1,323 @@
 {
   "firstOption": [
     {
-      "name": "STR : +13%",
-      "weight": 10
+      "name": "STR +13%",
+      "weight": 10,
+      "grade": "L"
     },
     {
-      "name": "DEX : +13%",
-      "weight": 10
+      "name": "DEX +13%",
+      "weight": 10,
+      "grade": "L"
     },
     {
-      "name": "INT : +13%",
-      "weight": 10
+      "name": "INT +13%",
+      "weight": 10,
+      "grade": "L"
     },
     {
-      "name": "LUK : +13%",
-      "weight": 10
+      "name": "LUK +13%",
+      "weight": 10,
+      "grade": "L"
     },
     {
-      "name": "최대 HP : +13%",
-      "weight": 10
+      "name": "최대 HP +13%",
+      "weight": 10,
+      "grade": "L"
     },
     {
-      "name": "최대 MP : +13%",
-      "weight": 10
+      "name": "최대 MP +13%",
+      "weight": 10,
+      "grade": "L"
     },
     {
-      "name": "크리티컬 데미지 : +8%",
-      "weight": 10
+      "name": "크리티컬 데미지 +8%",
+      "weight": 10,
+      "grade": "L"
     },
     {
-      "name": "올스탯 : +10%",
-      "weight": 7.5
+      "name": "올스탯 +10%",
+      "weight": 7.5,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 20% 무시",
-      "weight": 7.5
+      "weight": 7.5,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 40% 무시",
-      "weight": 7.5
+      "weight": 7.5,
+      "grade": "L"
     },
     {
       "name": "\u003c쓸만한 윈드 부스터\u003e 스킬 사용 가능",
-      "weight": 7.5
+      "weight": 7.5,
+      "grade": "L"
     }
   ],
   "secondOption": [
     {
-      "name": "STR : +10%",
-      "weight": 8.03571
+      "name": "STR +10%",
+      "weight": 8.03571,
+      "grade": "U"
     },
     {
-      "name": "DEX : +10%",
-      "weight": 8.03571
+      "name": "DEX +10%",
+      "weight": 8.03571,
+      "grade": "U"
     },
     {
-      "name": "INT : +10%",
-      "weight": 8.03571
+      "name": "INT +10%",
+      "weight": 8.03571,
+      "grade": "U"
     },
     {
-      "name": "LUK : +10%",
-      "weight": 8.03571
+      "name": "LUK +10%",
+      "weight": 8.03571,
+      "grade": "U"
     },
     {
-      "name": "최대 HP : +10%",
-      "weight": 9.6429
+      "name": "최대 HP +10%",
+      "weight": 9.6429,
+      "grade": "U"
     },
     {
-      "name": "최대 MP : +10%",
-      "weight": 9.6429
+      "name": "최대 MP +10%",
+      "weight": 9.6429,
+      "grade": "U"
     },
     {
-      "name": "올스탯 : +7%",
-      "weight": 6.4286
+      "name": "올스탯 +7%",
+      "weight": 6.4286,
+      "grade": "U"
     },
     {
-      "name": "STR : +32",
-      "weight": 1.6071
+      "name": "STR +32",
+      "weight": 1.6071,
+      "grade": "U"
     },
     {
-      "name": "DEX : +32",
-      "weight": 1.6071
+      "name": "DEX +32",
+      "weight": 1.6071,
+      "grade": "U"
     },
     {
-      "name": "INT : +32",
-      "weight": 1.6071
+      "name": "INT +32",
+      "weight": 1.6071,
+      "grade": "U"
     },
     {
-      "name": "LUK : +32",
-      "weight": 1.6071
+      "name": "LUK +32",
+      "weight": 1.6071,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 20% 무시",
-      "weight": 6.4286
+      "weight": 6.4286,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 40% 무시",
-      "weight": 6.4286
+      "weight": 6.4286,
+      "grade": "U"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +30%",
-      "weight": 6.4286
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +30%",
+      "weight": 6.4286,
+      "grade": "U"
     },
     {
       "name": "\u003c쓸만한 샤프 아이즈\u003e 스킬 사용 가능",
-      "weight": 6.4286
+      "weight": 6.4286,
+      "grade": "U"
     },
     {
-      "name": "STR : +13%",
-      "weight": 1.0000001192
+      "name": "STR +13%",
+      "weight": 1.0000001192,
+      "grade": "L"
     },
     {
-      "name": "DEX : +13%",
-      "weight": 1.0000001192
+      "name": "DEX +13%",
+      "weight": 1.0000001192,
+      "grade": "L"
     },
     {
-      "name": "INT : +13%",
-      "weight": 1.0000001192
+      "name": "INT +13%",
+      "weight": 1.0000001192,
+      "grade": "L"
     },
     {
-      "name": "LUK : +13%",
-      "weight": 1.0000001192
+      "name": "LUK +13%",
+      "weight": 1.0000001192,
+      "grade": "L"
     },
     {
-      "name": "최대 HP : +13%",
-      "weight": 1.0000001192
+      "name": "최대 HP +13%",
+      "weight": 1.0000001192,
+      "grade": "L"
     },
     {
-      "name": "최대 MP : +13%",
-      "weight": 1.0000001192
+      "name": "최대 MP +13%",
+      "weight": 1.0000001192,
+      "grade": "L"
     },
     {
-      "name": "크리티컬 데미지 : +8%",
-      "weight": 1.0000001192
+      "name": "크리티컬 데미지 +8%",
+      "weight": 1.0000001192,
+      "grade": "L"
     },
     {
-      "name": "올스탯 : +10%",
-      "weight": 0.75
+      "name": "올스탯 +10%",
+      "weight": 0.75,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 20% 무시",
-      "weight": 0.75
+      "weight": 0.75,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 40% 무시",
-      "weight": 0.75
+      "weight": 0.75,
+      "grade": "L"
     },
     {
       "name": "\u003c쓸만한 윈드 부스터\u003e 스킬 사용 가능",
-      "weight": 0.75
+      "weight": 0.75,
+      "grade": "L"
     }
   ],
   "thirdOption": [
     {
-      "name": "STR : +10%",
-      "weight": 8.8393
+      "name": "STR +10%",
+      "weight": 8.8393,
+      "grade": "U"
     },
     {
-      "name": "DEX : +10%",
-      "weight": 8.8393
+      "name": "DEX +10%",
+      "weight": 8.8393,
+      "grade": "U"
     },
     {
-      "name": "INT : +10%",
-      "weight": 8.8393
+      "name": "INT +10%",
+      "weight": 8.8393,
+      "grade": "U"
     },
     {
-      "name": "LUK : +10%",
-      "weight": 8.8393
+      "name": "LUK +10%",
+      "weight": 8.8393,
+      "grade": "U"
     },
     {
-      "name": "최대 HP : +10%",
-      "weight": 10.6071
+      "name": "최대 HP +10%",
+      "weight": 10.6071,
+      "grade": "U"
     },
     {
-      "name": "최대 MP : +10%",
-      "weight": 10.6071
+      "name": "최대 MP +10%",
+      "weight": 10.6071,
+      "grade": "U"
     },
     {
-      "name": "올스탯 : +7%",
-      "weight": 7.07143
+      "name": "올스탯 +7%",
+      "weight": 7.07143,
+      "grade": "U"
     },
     {
-      "name": "STR : +32",
-      "weight": 1.7679
+      "name": "STR +32",
+      "weight": 1.7679,
+      "grade": "U"
     },
     {
-      "name": "DEX : +32",
-      "weight": 1.7679
+      "name": "DEX +32",
+      "weight": 1.7679,
+      "grade": "U"
     },
     {
-      "name": "INT : +32",
-      "weight": 1.7679
+      "name": "INT +32",
+      "weight": 1.7679,
+      "grade": "U"
     },
     {
-      "name": "LUK : +32",
-      "weight": 1.7679
+      "name": "LUK +32",
+      "weight": 1.7679,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 20% 무시",
-      "weight": 7.07143
+      "weight": 7.07143,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 40% 무시",
-      "weight": 7.07143
+      "weight": 7.07143,
+      "grade": "U"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +30%",
-      "weight": 7.07143
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +30%",
+      "weight": 7.07143,
+      "grade": "U"
     },
     {
       "name": "\u003c쓸만한 샤프 아이즈\u003e 스킬 사용 가능",
-      "weight": 7.07143
+      "weight": 7.07143,
+      "grade": "U"
     },
     {
-      "name": "STR : +13%",
-      "weight": 0.1
+      "name": "STR +13%",
+      "weight": 0.1,
+      "grade": "L"
     },
     {
-      "name": "DEX : +13%",
-      "weight": 0.1
+      "name": "DEX +13%",
+      "weight": 0.1,
+      "grade": "L"
     },
     {
-      "name": "INT : +13%",
-      "weight": 0.1
+      "name": "INT +13%",
+      "weight": 0.1,
+      "grade": "L"
     },
     {
-      "name": "LUK : +13%",
-      "weight": 0.1
+      "name": "LUK +13%",
+      "weight": 0.1,
+      "grade": "L"
     },
     {
-      "name": "최대 HP : +13%",
-      "weight": 0.1
+      "name": "최대 HP +13%",
+      "weight": 0.1,
+      "grade": "L"
     },
     {
-      "name": "최대 MP : +13%",
-      "weight": 0.1
+      "name": "최대 MP +13%",
+      "weight": 0.1,
+      "grade": "L"
     },
     {
-      "name": "크리티컬 데미지 : +8%",
-      "weight": 0.1
+      "name": "크리티컬 데미지 +8%",
+      "weight": 0.1,
+      "grade": "L"
     },
     {
-      "name": "올스탯 : +10%",
-      "weight": 0.075
+      "name": "올스탯 +10%",
+      "weight": 0.075,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 20% 무시",
-      "weight": 0.075
+      "weight": 0.075,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 40% 무시",
-      "weight": 0.075
+      "weight": 0.075,
+      "grade": "L"
     },
     {
       "name": "\u003c쓸만한 윈드 부스터\u003e 스킬 사용 가능",
-      "weight": 0.075
+      "weight": 0.075,
+      "grade": "L"
     }
   ]
 }

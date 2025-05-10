@@ -1,384 +1,478 @@
 {
   "firstOption": [
     {
-      "name": "STR : +8",
-      "weight": 6.1224
+      "name": "STR +8",
+      "weight": 6.1224,
+      "grade": "R"
     },
     {
-      "name": "DEX : +8",
-      "weight": 6.1224
+      "name": "DEX +8",
+      "weight": 6.1224,
+      "grade": "R"
     },
     {
-      "name": "INT : +8",
-      "weight": 6.1224
+      "name": "INT +8",
+      "weight": 6.1224,
+      "grade": "R"
     },
     {
-      "name": "LUK : +8",
-      "weight": 6.1224
+      "name": "LUK +8",
+      "weight": 6.1224,
+      "grade": "R"
     },
     {
-      "name": "최대 HP : +70",
-      "weight": 6.1224
+      "name": "최대 HP +70",
+      "weight": 6.1224,
+      "grade": "R"
     },
     {
-      "name": "최대 MP : +70",
-      "weight": 6.1224
+      "name": "최대 MP +70",
+      "weight": 6.1224,
+      "grade": "R"
     },
     {
-      "name": "공격력 : +8",
-      "weight": 4.08163
+      "name": "공격력 +8",
+      "weight": 4.08163,
+      "grade": "R"
     },
     {
-      "name": "마력 : +8",
-      "weight": 4.08163
+      "name": "마력 +8",
+      "weight": 4.08163,
+      "grade": "R"
     },
     {
-      "name": "STR : +2%",
-      "weight": 6.1224
+      "name": "STR +2%",
+      "weight": 6.1224,
+      "grade": "R"
     },
     {
-      "name": "DEX : +2%",
-      "weight": 6.1224
+      "name": "DEX +2%",
+      "weight": 6.1224,
+      "grade": "R"
     },
     {
-      "name": "INT : +2%",
-      "weight": 6.1224
+      "name": "INT +2%",
+      "weight": 6.1224,
+      "grade": "R"
     },
     {
-      "name": "LUK : +2%",
-      "weight": 6.1224
+      "name": "LUK +2%",
+      "weight": 6.1224,
+      "grade": "R"
     },
     {
-      "name": "공격력 : +2%",
-      "weight": 2.04082
+      "name": "공격력 +2%",
+      "weight": 2.04082,
+      "grade": "R"
     },
     {
-      "name": "마력 : +2%",
-      "weight": 2.04082
+      "name": "마력 +2%",
+      "weight": 2.04082,
+      "grade": "R"
     },
     {
-      "name": "크리티컬 확률 : +4%",
-      "weight": 2.04082
+      "name": "크리티컬 확률 +4%",
+      "weight": 2.04082,
+      "grade": "R"
     },
     {
-      "name": "데미지 : +2%",
-      "weight": 2.04082
+      "name": "데미지 +2%",
+      "weight": 2.04082,
+      "grade": "R"
     },
     {
-      "name": "올스탯 : +4",
-      "weight": 4.08163
+      "name": "올스탯 +4",
+      "weight": 4.08163,
+      "grade": "R"
     },
     {
       "name": "공격 시 20% 확률로 140의 HP 회복",
-      "weight": 2.04082
+      "weight": 2.04082,
+      "grade": "R"
     },
     {
       "name": "공격 시 20% 확률로 80의 MP 회복",
-      "weight": 2.04082
+      "weight": 2.04082,
+      "grade": "R"
     },
     {
       "name": "공격 시 20% 확률로 4레벨 중독효과 적용",
-      "weight": 2.04082
+      "weight": 2.04082,
+      "grade": "R"
     },
     {
       "name": "공격 시 10% 확률로 1레벨 기절효과 적용",
-      "weight": 2.04082
+      "weight": 2.04082,
+      "grade": "R"
     },
     {
       "name": "공격 시 20% 확률로 1레벨 슬로우효과 적용",
-      "weight": 2.04082
+      "weight": 2.04082,
+      "grade": "R"
     },
     {
       "name": "공격 시 20% 확률로 2레벨 암흑효과 적용",
-      "weight": 2.04082
+      "weight": 2.04082,
+      "grade": "R"
     },
     {
       "name": "공격 시 10% 확률로 1레벨 빙결효과 적용",
-      "weight": 2.04082
+      "weight": 2.04082,
+      "grade": "R"
     },
     {
       "name": "공격 시 10% 확률로 1레벨 봉인효과 적용",
-      "weight": 2.04082
+      "weight": 2.04082,
+      "grade": "R"
     },
     {
-      "name": "몬스터 방어율 무시 : +15%",
-      "weight": 2.04082
+      "name": "몬스터 방어율 무시 +15%",
+      "weight": 2.04082,
+      "grade": "R"
     }
   ],
   "secondOption": [
     {
-      "name": "STR : +4",
-      "weight": 10.9091
+      "name": "STR +4",
+      "weight": 10.9091,
+      "grade": "R"
     },
     {
-      "name": "DEX : +4",
-      "weight": 10.9091
+      "name": "DEX +4",
+      "weight": 10.9091,
+      "grade": "R"
     },
     {
-      "name": "INT : +4",
-      "weight": 10.9091
+      "name": "INT +4",
+      "weight": 10.9091,
+      "grade": "R"
     },
     {
-      "name": "LUK : +4",
-      "weight": 10.9091
+      "name": "LUK +4",
+      "weight": 10.9091,
+      "grade": "R"
     },
     {
-      "name": "최대 HP : +35",
-      "weight": 10.9091
+      "name": "최대 HP +35",
+      "weight": 10.9091,
+      "grade": "R"
     },
     {
-      "name": "최대 MP : +35",
-      "weight": 10.9091
+      "name": "최대 MP +35",
+      "weight": 10.9091,
+      "grade": "R"
     },
     {
-      "name": "공격력 : +4",
-      "weight": 7.2727
+      "name": "공격력 +4",
+      "weight": 7.2727,
+      "grade": "R"
     },
     {
-      "name": "마력 : +4",
-      "weight": 7.2727
+      "name": "마력 +4",
+      "weight": 7.2727,
+      "grade": "R"
     },
     {
-      "name": "STR : +8",
-      "weight": 1.2245
+      "name": "STR +8",
+      "weight": 1.2245,
+      "grade": "R"
     },
     {
-      "name": "DEX : +8",
-      "weight": 1.2245
+      "name": "DEX +8",
+      "weight": 1.2245,
+      "grade": "R"
     },
     {
-      "name": "INT : +8",
-      "weight": 1.2245
+      "name": "INT +8",
+      "weight": 1.2245,
+      "grade": "R"
     },
     {
-      "name": "LUK : +8",
-      "weight": 1.2245
+      "name": "LUK +8",
+      "weight": 1.2245,
+      "grade": "R"
     },
     {
-      "name": "최대 HP : +70",
-      "weight": 1.2245
+      "name": "최대 HP +70",
+      "weight": 1.2245,
+      "grade": "R"
     },
     {
-      "name": "최대 MP : +70",
-      "weight": 1.2245
+      "name": "최대 MP +70",
+      "weight": 1.2245,
+      "grade": "R"
     },
     {
-      "name": "공격력 : +8",
-      "weight": 0.8163
+      "name": "공격력 +8",
+      "weight": 0.8163,
+      "grade": "R"
     },
     {
-      "name": "마력 : +8",
-      "weight": 0.8163
+      "name": "마력 +8",
+      "weight": 0.8163,
+      "grade": "R"
     },
     {
-      "name": "STR : +2%",
-      "weight": 1.2245
+      "name": "STR +2%",
+      "weight": 1.2245,
+      "grade": "R"
     },
     {
-      "name": "DEX : +2%",
-      "weight": 1.2245
+      "name": "DEX +2%",
+      "weight": 1.2245,
+      "grade": "R"
     },
     {
-      "name": "INT : +2%",
-      "weight": 1.2245
+      "name": "INT +2%",
+      "weight": 1.2245,
+      "grade": "R"
     },
     {
-      "name": "LUK : +2%",
-      "weight": 1.2245
+      "name": "LUK +2%",
+      "weight": 1.2245,
+      "grade": "R"
     },
     {
-      "name": "공격력 : +2%",
-      "weight": 0.4082
+      "name": "공격력 +2%",
+      "weight": 0.4082,
+      "grade": "R"
     },
     {
-      "name": "마력 : +2%",
-      "weight": 0.4082
+      "name": "마력 +2%",
+      "weight": 0.4082,
+      "grade": "R"
     },
     {
-      "name": "크리티컬 확률 : +4%",
-      "weight": 0.4082
+      "name": "크리티컬 확률 +4%",
+      "weight": 0.4082,
+      "grade": "R"
     },
     {
-      "name": "데미지 : +2%",
-      "weight": 0.4082
+      "name": "데미지 +2%",
+      "weight": 0.4082,
+      "grade": "R"
     },
     {
-      "name": "올스탯 : +4",
-      "weight": 0.8163
+      "name": "올스탯 +4",
+      "weight": 0.8163,
+      "grade": "R"
     },
     {
       "name": "공격 시 20% 확률로 140의 HP 회복",
-      "weight": 0.4082
+      "weight": 0.4082,
+      "grade": "R"
     },
     {
       "name": "공격 시 20% 확률로 80의 MP 회복",
-      "weight": 0.4082
+      "weight": 0.4082,
+      "grade": "R"
     },
     {
       "name": "공격 시 20% 확률로 4레벨 중독효과 적용",
-      "weight": 0.4082
+      "weight": 0.4082,
+      "grade": "R"
     },
     {
       "name": "공격 시 10% 확률로 1레벨 기절효과 적용",
-      "weight": 0.4082
+      "weight": 0.4082,
+      "grade": "R"
     },
     {
       "name": "공격 시 20% 확률로 1레벨 슬로우효과 적용",
-      "weight": 0.4082
+      "weight": 0.4082,
+      "grade": "R"
     },
     {
       "name": "공격 시 20% 확률로 2레벨 암흑효과 적용",
-      "weight": 0.4082
+      "weight": 0.4082,
+      "grade": "R"
     },
     {
       "name": "공격 시 10% 확률로 1레벨 빙결효과 적용",
-      "weight": 0.4082
+      "weight": 0.4082,
+      "grade": "R"
     },
     {
       "name": "공격 시 10% 확률로 1레벨 봉인효과 적용",
-      "weight": 0.4082
+      "weight": 0.4082,
+      "grade": "R"
     },
     {
-      "name": "몬스터 방어율 무시 : +15%",
-      "weight": 0.4082
+      "name": "몬스터 방어율 무시 +15%",
+      "weight": 0.4082,
+      "grade": "R"
     }
   ],
   "thirdOption": [
     {
-      "name": "STR : +4",
-      "weight": 12.9545
+      "name": "STR +4",
+      "weight": 12.9545,
+      "grade": "R"
     },
     {
-      "name": "DEX : +4",
-      "weight": 12.9545
+      "name": "DEX +4",
+      "weight": 12.9545,
+      "grade": "R"
     },
     {
-      "name": "INT : +4",
-      "weight": 12.9545
+      "name": "INT +4",
+      "weight": 12.9545,
+      "grade": "R"
     },
     {
-      "name": "LUK : +4",
-      "weight": 12.9545
+      "name": "LUK +4",
+      "weight": 12.9545,
+      "grade": "R"
     },
     {
-      "name": "최대 HP : +35",
-      "weight": 12.9545
+      "name": "최대 HP +35",
+      "weight": 12.9545,
+      "grade": "R"
     },
     {
-      "name": "최대 MP : +35",
-      "weight": 12.9545
+      "name": "최대 MP +35",
+      "weight": 12.9545,
+      "grade": "R"
     },
     {
-      "name": "공격력 : +4",
-      "weight": 8.6364
+      "name": "공격력 +4",
+      "weight": 8.6364,
+      "grade": "R"
     },
     {
-      "name": "마력 : +4",
-      "weight": 8.6364
+      "name": "마력 +4",
+      "weight": 8.6364,
+      "grade": "R"
     },
     {
-      "name": "STR : +8",
-      "weight": 0.3061
+      "name": "STR +8",
+      "weight": 0.3061,
+      "grade": "R"
     },
     {
-      "name": "DEX : +8",
-      "weight": 0.3061
+      "name": "DEX +8",
+      "weight": 0.3061,
+      "grade": "R"
     },
     {
-      "name": "INT : +8",
-      "weight": 0.3061
+      "name": "INT +8",
+      "weight": 0.3061,
+      "grade": "R"
     },
     {
-      "name": "LUK : +8",
-      "weight": 0.3061
+      "name": "LUK +8",
+      "weight": 0.3061,
+      "grade": "R"
     },
     {
-      "name": "최대 HP : +70",
-      "weight": 0.3061
+      "name": "최대 HP +70",
+      "weight": 0.3061,
+      "grade": "R"
     },
     {
-      "name": "최대 MP : +70",
-      "weight": 0.3061
+      "name": "최대 MP +70",
+      "weight": 0.3061,
+      "grade": "R"
     },
     {
-      "name": "공격력 : +8",
-      "weight": 0.2041
+      "name": "공격력 +8",
+      "weight": 0.2041,
+      "grade": "R"
     },
     {
-      "name": "마력 : +8",
-      "weight": 0.2041
+      "name": "마력 +8",
+      "weight": 0.2041,
+      "grade": "R"
     },
     {
-      "name": "STR : +2%",
-      "weight": 0.3061
+      "name": "STR +2%",
+      "weight": 0.3061,
+      "grade": "R"
     },
     {
-      "name": "DEX : +2%",
-      "weight": 0.3061
+      "name": "DEX +2%",
+      "weight": 0.3061,
+      "grade": "R"
     },
     {
-      "name": "INT : +2%",
-      "weight": 0.3061
+      "name": "INT +2%",
+      "weight": 0.3061,
+      "grade": "R"
     },
     {
-      "name": "LUK : +2%",
-      "weight": 0.3061
+      "name": "LUK +2%",
+      "weight": 0.3061,
+      "grade": "R"
     },
     {
-      "name": "공격력 : +2%",
-      "weight": 0.102
+      "name": "공격력 +2%",
+      "weight": 0.102,
+      "grade": "R"
     },
     {
-      "name": "마력 : +2%",
-      "weight": 0.102
+      "name": "마력 +2%",
+      "weight": 0.102,
+      "grade": "R"
     },
     {
-      "name": "크리티컬 확률 : +4%",
-      "weight": 0.102
+      "name": "크리티컬 확률 +4%",
+      "weight": 0.102,
+      "grade": "R"
     },
     {
-      "name": "데미지 : +2%",
-      "weight": 0.102
+      "name": "데미지 +2%",
+      "weight": 0.102,
+      "grade": "R"
     },
     {
-      "name": "올스탯 : +4",
-      "weight": 0.2041
+      "name": "올스탯 +4",
+      "weight": 0.2041,
+      "grade": "R"
     },
     {
       "name": "공격 시 20% 확률로 140의 HP 회복",
-      "weight": 0.102
+      "weight": 0.102,
+      "grade": "R"
     },
     {
       "name": "공격 시 20% 확률로 80의 MP 회복",
-      "weight": 0.102
+      "weight": 0.102,
+      "grade": "R"
     },
     {
       "name": "공격 시 20% 확률로 4레벨 중독효과 적용",
-      "weight": 0.102
+      "weight": 0.102,
+      "grade": "R"
     },
     {
       "name": "공격 시 10% 확률로 1레벨 기절효과 적용",
-      "weight": 0.102
+      "weight": 0.102,
+      "grade": "R"
     },
     {
       "name": "공격 시 20% 확률로 1레벨 슬로우효과 적용",
-      "weight": 0.102
+      "weight": 0.102,
+      "grade": "R"
     },
     {
       "name": "공격 시 20% 확률로 2레벨 암흑효과 적용",
-      "weight": 0.102
+      "weight": 0.102,
+      "grade": "R"
     },
     {
       "name": "공격 시 10% 확률로 1레벨 빙결효과 적용",
-      "weight": 0.102
+      "weight": 0.102,
+      "grade": "R"
     },
     {
       "name": "공격 시 10% 확률로 1레벨 봉인효과 적용",
-      "weight": 0.102
+      "weight": 0.102,
+      "grade": "R"
     },
     {
-      "name": "몬스터 방어율 무시 : +15%",
-      "weight": 0.102
+      "name": "몬스터 방어율 무시 +15%",
+      "weight": 0.102,
+      "grade": "R"
     }
   ]
 }

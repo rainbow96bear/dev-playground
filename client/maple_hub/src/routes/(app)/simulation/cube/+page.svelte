@@ -1,366 +1,114 @@
 <script lang="ts">
+  import SearchBox from "$Components/SearchBox/SearchBox.svelte"
+  import EquipmentScreen from "$Components/Equipment/EquipmentScreen.svelte"
+  import CubeSimulation from "$Components/CubeSimulation/CubeSimulation.svelte";
+  import { InternalAPI } from '$lib/api';
+  import { onMount } from 'svelte';
+
   import "./+page.css"
-  import { GradeUpProbability, MaxCeiling } from "$lib/constants/cube";
-  import { EquipmentTypeMap, PotentialOptionToEng, ReverseEquipmentTypeMap } from "$lib/constants";
-  import { InternalAPI } from "$lib/api";
-  import { onMount } from "svelte";
-  import Equipment from "$lib/components/equipment/Equipment.svelte";
-
-  import editionalImg from "$lib/assets/editional.png";
-  import redCubeImg from "$lib/assets/redCube.png";
-  import blackCubeImg from "$lib/assets/blackCube.png";
-  import masterCubeImg from "$lib/assets/masterCube.png";
-  import meisterCubeImg from "$lib/assets/meisterCube.png";
-  import editionalCubeImg from "$lib/assets/editionalCube.png";
-  import whiteEditionalCubeImg from "$lib/assets/whiteEditionalCube.png";
-  import arcaneSymbolImg from "$lib/assets/arcane_symbol.png";
-  import potentialImg from "$lib/assets/potential.png";
-	import { itemInfoForCube } from "$lib/store/index.js";
-
-  let cubeType: string = "redCube";
-  let equipmentType: string = "weapon";
-  let grade: string = "레어";
-  let gradeIndex: number = 0;
-  let levelRange: string = "0-9";
-  let cube: any = null;
-  let levelRangeArr: any = null;
-
-  let tempEquipmentType: string = "weapon";
-  let tempGradeIndex: number = 0;
-  let tempGrade: string = "레어";
-  let tempLevelRange:string = "0-9";
   
-  let item_icon = arcaneSymbolImg;
-  let totalCount = 0;
-  let itemCount = 0;
-  let executionCountMap = {
-    redCube: [0, 0, 0, 0],
-    blackCube: [0, 0, 0, 0],
-    editionalCube: [0, 0, 0, 0],
-    mesoEditionalCube: [0, 0, 0, 0],
-    whiteEditionalCube: [0, 0, 0, 0],
-  };
+  // 타입 명시로 코드 품질 향상
+  let characterInfo: any = null;
+  let characterEquipments: any = null;
+  let androidInfo: any = null;
+  let itemInfo: any = null;
+  let isLoading: boolean = false;
+  let errorMessage: string = "";
 
-  
-  let option1: string | null = null;
-  let option2: string | null = null;
-  let option3: string | null = null;
-  let selectedImage: string = redCubeImg; // 선택된 큐브 이미지
-  export let data;
- 
-  const fetchCubeData = async (fileName : string) => {
+  // 캐릭터 장비 정보 가져오기
+  const fetchEquipments = async (characterName: string) => {
+    if (!characterName) return;
+    
     try {
-      const res = await InternalAPI(`/cubeData/${fileName}`);
-      if (res.status == 404) {
-        cube = null;
-        alert("해당 큐브는 " + grade + "등급을 재설정 할 수 없습니다.");
-        return;
-      }
-      cube = res.content
-    } catch (error) {
-      cube = null;
-      console.error('Cube 데이터를 가져오는 데 실패했습니다:', error);
-    }
-  };
-
-  const fetchLevelRange = async () => {
-    try {
-      const res = await InternalAPI('/cubeData/levelRange');
-      levelRangeArr = res.content
-    } catch (error) {
-      console.error('장비 별 레벨 범위를 가져오는 데 실패했습니다:', error);
-    }
-  }
-
-  const setOption = () => {
-    const currentGrade = PotentialOptionToEng[grade];
-    if (!cube) {
-      console.error("Invalid cube structure or grade not found:", {
-        equipmentType,
-        levelRange,
-        currentGrade,
-      });
-      option1 = null;
-      option2 = null;
-      option3 = null;
-    } else {
-      option1 = getRandomOption(cube.firstOption || []);
-      option2 = getRandomOption(cube.secondOption || []);
-      option3 = getRandomOption(cube.thirdOption || []);
-    }
-  };
-
-  const setItemforCube = () => {
-    $itemInfoForCube = null;
-    item_icon = arcaneSymbolImg;
-    tempGradeIndex = Object.keys(PotentialOptionToEng).indexOf(tempGrade);
-    gradeIndex = tempGradeIndex;
-    grade = tempGrade;
-    equipmentType = tempEquipmentType;
-    levelRange = tempLevelRange;
-    itemCount = 0;
-    updateCube(cubeType, selectedImage)
-    setOption();
-  };
-
-
-  const updateCube = async (type: string, image: string) => {
-    cubeType = type;
-    const actualCubeType = cubeType === "mesoEditionalCube" ? "editionalCube" : cubeType;
-    const cubeFileName = `${actualCubeType}_${PotentialOptionToEng[grade]}_${equipmentType}_${levelRange}`; // 예: cubeType이 "weapon"이면 "weapon.json"
-    try {
-      await fetchCubeData(cubeFileName);
-      selectedImage = image;
+      isLoading = true;
+      errorMessage = "";
       
+      // API 호출 시 오류 처리 추가
+      const resCharacterInfo = await InternalAPI(`/v1/nexon/characterInfo/${characterName}`);
+      const resCharacterEquipments = await InternalAPI(
+        `/v1/nexon/characterInfo/${characterName}/equipmentsInfo`
+      );
+      const resAndroidInfo = await InternalAPI(`/v1/nexon/characterInfo/${characterName}/androidInfo`);
+    
+      characterInfo = resCharacterInfo.data;
+      characterEquipments = resCharacterEquipments.data;
+      androidInfo = resAndroidInfo.data;
     } catch (error) {
-      console.error('Cube 데이터를 가져오는 데 실패했습니다:', error);
+      errorMessage = "캐릭터 정보를 불러오는 중 오류가 발생했습니다. 다시 시도해 주세요.";
+      console.error("API 오류:", error);
+    } finally {
+      isLoading = false;
     }
   };
 
-  const gradeUp = (cubeType: string, currentGrade: string) => {
-    const actualCubeType = cubeType === "mesoEditionalCube" ? "editionalCube" : cubeType;
-
-    if (GradeUpProbability[actualCubeType][currentGrade] < 0) {
-      return;
-    }
-
-    const probability = GradeUpProbability[actualCubeType][currentGrade];
-    const random = globalThis.Math.random();
-    const maxCeilingValue = MaxCeiling[cubeType][currentGrade]; // <- 여기만 cubeType 그대로 유지
-
-    const currentExecution = executionCountMap[cubeType][gradeIndex];
-
-    if (
-      random < probability ||
-      (maxCeilingValue > 0 && currentExecution >= maxCeilingValue)
-    ) {
-      executionCountMap[cubeType][gradeIndex] = 0;
-      gradeIndex++;
-      grade = Object.keys(PotentialOptionToEng)[gradeIndex];
-
-      const cubeBox = document.getElementById("cube_item_img_box");
-      if (cubeBox) {
-        cubeBox.classList.add("flash-effect");
-        setTimeout(() => cubeBox.classList.remove("flash-effect"), 1000);
-      }
-    }
+  const handleSelectItem = (item: any) => {
+    itemInfo = item;
   };
 
-  const getRandomOption = (options: { name: string; weight: number }[]) => {
-    const totalWeight = options.reduce((sum, option) => sum + option.weight, 0);
-    const random = globalThis.Math.random() * totalWeight;
-    let sum = 0;
-    for (let option of options) {
-      sum += option.weight;
-      if (random < sum) {
-        return option.name;
-      }
-    }
-    return options[options.length - 1].name;
-  };
-
-  const useCube = () => {
-    const currentGrade = PotentialOptionToEng[grade];
-    if (!cube) {
-      alert("해당 큐브는 " + grade + "등급을 재설정 할 수 없습니다.");
-      return;
-    }
-
-    totalCount++;
-    itemCount++;
-
-    if (executionCountMap[cubeType]!=null){
-      executionCountMap[cubeType][gradeIndex]++;
-    }
-
-    setOption();
-    gradeUp(cubeType, currentGrade);
-  };
-
-  const translateEquipmentType = (item) => {
-    item_icon = item.item_icon
-    const slot = item?.item_equipment_slot;
-    return EquipmentTypeMap[slot]  
-  };
-
-  onMount(async () => {
-    const cubeFileName = `${cubeType}_${PotentialOptionToEng[grade]}_${equipmentType}_${levelRange}`;
-    await fetchCubeData(cubeFileName);
-    await fetchLevelRange();
+  onMount(() => {
+    // 필요한 초기화 로직
   });
-
-  $: if ($itemInfoForCube) {
-    const translatedType = translateEquipmentType($itemInfoForCube);
-    if (equipmentType !== translatedType) {
-      equipmentType = translatedType;
-    }
-
-    const newGradeIndex =  Object.keys(PotentialOptionToEng).indexOf($itemInfoForCube.potential_option_grade);
-    if (gradeIndex !== newGradeIndex) {
-      gradeIndex = newGradeIndex;
-    }
-
-    switch(cubeType){
-      case "redCube":
-      case "blackCube":
-      case "masterCube":
-      case "meisterCube":
-      case "strangeCube":
-        if ($itemInfoForCube.potential_option_grade == null){
-          alert("아이템이 해당 잠재능력을 가지고 있지 않아 레어 등급을 부여합니다.")
-          grade = "레어"
-          gradeIndex=0;
-          setOption();
-          break;
-        }
-        grade = $itemInfoForCube.potential_option_grade
-        gradeIndex = Object.keys(PotentialOptionToEng).indexOf($itemInfoForCube.potential_option_grade);
-        option1 = $itemInfoForCube.potential_option_1;
-        option2 = $itemInfoForCube.potential_option_2;
-        option3 = $itemInfoForCube.potential_option_3;
-      break;
-      case "editionalCube":
-      case "mesoEditionalCube":
-      case "strangeEditionalCube" :
-      if ($itemInfoForCube.additional_potential_option_grade == null){
-          alert("아이템이 해당 잠재능력을 가지고 있지 않아 레어 등급을 부여합니다.")
-          grade = "레어"
-          gradeIndex=0;
-          setOption();
-          break;
-        }
-        grade = $itemInfoForCube.additional_potential_option_grade
-        gradeIndex = Object.keys(PotentialOptionToEng).indexOf($itemInfoForCube.additional_potential_option_grade);
-        option1 = $itemInfoForCube.additional_potential_option_1;
-        option2 = $itemInfoForCube.additional_potential_option_2;
-        option3 = $itemInfoForCube.additional_potential_option_3;
-    }
-    itemCount = 0;
-  }
-  
-  
 </script>
 
-<div id="cube_info">
-  캐릭터를 검색하여 장비를 불러올 수 있습니다.
-  *2줄인 아이템도 큐브 사용 시 3줄을 기본으로 사용됩니다.
-</div>
-<div id="cube_container">
-  <div>  
-    <div id="count_box">
-      전체 사용 횟수 : {totalCount}
+<svelte:head>
+  <!-- SEO 최적화 -->
+  <title>메이플스토리 큐브 시뮬레이터 | 장비 최적화 도구</title>
+  <meta name="description" content="메이플스토리 캐릭터의 장비 정보를 확인하고 큐브 시뮬레이션을 통해 최적의 잠재능력을 찾아보세요." />
+  <meta name="keywords" content="메이플스토리, 큐브 시뮬레이터, 장비 최적화, 잠재능력, 게임 도구" />
+</svelte:head>
+
+<main class="cubePage">
+  <SearchBox on:search={(e) => fetchEquipments(e.detail.characterName)} />
+
+  {#if isLoading}
+    <div class="loading-indicator" aria-live="polite">
+      <p>캐릭터 정보를 불러오는 중입니다...</p>
     </div>
-    <div id="count_box">
-      현재 아이템 큐브 사용 횟수 : {itemCount}
+  {:else if errorMessage}
+    <div class="error-message" role="alert">
+      <p>{errorMessage}</p>
     </div>
-    <div id="cube_box">
-      <div id="cube_show_box">
-        <div id="cube_type_box">
-          <img src={selectedImage} alt="selected cube img" class="cube_image" loading="lazy"/>
-          <div>아이템의 <p>잠재능력</p>을 재설정합니다.</div>
-        </div>
-        <div id="cube_item_img_box">
-          <div id="cube_item_effect">
-            <div id="cube_item_outline">
-              <img src={item_icon} alt="selected cube img" loading="lazy"/>
-            </div>
-          </div>
-          <div id="celing_gage_area"> 
-            {#if gradeIndex<3 && MaxCeiling[cubeType][PotentialOptionToEng[grade]] > 0 }
-              <div id="celing_gauge_box">
-                <div id="celing_gauge_bar" style="width: {executionCountMap[cubeType][gradeIndex]/MaxCeiling[cubeType][PotentialOptionToEng[grade]]*100}%"></div>
-              </div>
-            {/if}
-          </div>
-        </div>
-        <div class="result_box">
-          result
-          <div class="output_box">
-            <div class="grade_box">{grade}</div>
-            <div>{option1}</div>
-            <div>{option2}</div>
-            <div>{option3}</div>
-          </div>
-        </div>
-      </div>
-      <div class="cube_use_button_box">
-        <button class="cube_use_button" on:click={useCube}>한 번 더 사용하기</button>
-      </div>
-    </div>
+  {/if}
+
+  <div class="contentWrapper">
+    {#if characterInfo}
+      <section class="equipment-section" aria-label="캐릭터 장비 정보">
+        <h2 class="title">장비 정보</h2>
+        <EquipmentScreen
+          {characterInfo}
+          equippedItems={characterEquipments?.item_equipment}
+          {androidInfo}
+          selectItem={handleSelectItem}
+        />
+      </section>
+    {/if}
+    
+    <section class="simulator-section" aria-label="큐브 시뮬레이션">
+      <h2 class="title">큐브 시뮬레이터</h2>
+      <CubeSimulation selectedItem={itemInfo} />
+    </section>
   </div>
-  <div>
-    <div id="cube_buttons">
-      <div class="cube_groups">
-        <button class="cube_select_button" on:click={() => updateCube("redCube", redCubeImg)}>
-          <img src={redCubeImg} alt="red cube img" class="cube_image" loading="lazy"/>
-          레드 큐브
-        </button>
-        <button class="cube_select_button" on:click={() => updateCube("blackCube", blackCubeImg)}>
-          <img src={blackCubeImg} alt="black cube img" class="cube_image" loading="lazy"/><img src={potentialImg} alt="potential img" />
-          블랙 큐브
-        </button>
-        <button class="cube_select_button" on:click={() => updateCube("masterCube", masterCubeImg)}>
-          <img src={masterCubeImg} alt="master cube img" class="cube_image" loading="lazy"/>
-          장인의 큐브
-        </button>
-        <button class="cube_select_button" on:click={() => updateCube("meisterCube", meisterCubeImg)}>
-          <img src={meisterCubeImg} alt="meister cube img" class="cube_image" loading="lazy"/>
-          명장의 큐브
-        </button>
+
+  <section class="info-section">
+    <h2>큐브 시뮬레이션 가이드</h2>
+    <p>
+      메이플스토리 큐브 시뮬레이터는 실제 게임에서 큐브를 사용하기 전에 
+      다양한 잠재능력 옵션을 미리 테스트해볼 수 있는 도구입니다.
+      원하는 캐릭터의 장비를 불러와 시뮬레이션을 진행해보세요.
+    </p>
+    <div class="guide-cards">
+      <div class="guide-card">
+        <h3>시작하기</h3>
+        <p>캐릭터 이름을 입력하고 검색하여 장비 정보를 불러옵니다.</p>
       </div>
-      <div class="cube_groups">
-        <button class="cube_select_button" on:click={() => updateCube("mesoEditionalCube", editionalImg)}>
-          <img src={editionalImg} alt="editional img" class="cube_image" loading="lazy"/>
-          에디셔널 재설정
-        </button>
-        <button class="cube_select_button" on:click={() => updateCube("editionalCube", editionalCubeImg)}>
-          <img src={editionalCubeImg} alt="editional cube img" class="cube_image" loading="lazy"/><img src={whiteEditionalCubeImg} alt="white editional cube img" loading="lazy"/>
-          에디셔널 큐브
-        </button>
+      <div class="guide-card">
+        <h3>장비 선택</h3>
+        <p>장비 화면에서 큐브를 적용할 아이템을 선택합니다.</p>
+      </div>
+      <div class="guide-card">
+        <h3>시뮬레이션</h3>
+        <p>다양한 큐브 옵션을 적용하여 최적의 잠재능력을 찾아보세요.</p>
       </div>
     </div>
-    {#await data}
-      <p>로딩 중...</p>
-    {:then loadedData}
-      {#if Object.keys(loadedData).length > 0}
-        <Equipment equippedItems={loadedData.item_equipment}></Equipment>
-      {/if}
-    {/await}
-    <div id="cube_setting_box">
-      <label for="gradeSelect">등급 선택:</label>
-      <select id="gradeSelect" bind:value={tempGrade}>
-        <option value="" disabled selected>등급을 선택해주세요</option>
-        {#each Object.entries(PotentialOptionToEng) as [korGrade, engGrade]}
-          <option value={korGrade}>{korGrade}</option>
-        {/each}
-      </select>
-      
-      <label for="equipment">부위 선택:</label>
-      <select id="equipment" bind:value={tempEquipmentType}>
-        {#if levelRangeArr != null}
-          {#each Object.keys(levelRangeArr) as key}
-            <option value={key}>{ReverseEquipmentTypeMap[key]}</option>
-          {/each}
-        {/if}
-      </select>
-      
-      <label for="req_level">레벨 입력:</label>
-      <select id="req_level" bind:value={tempLevelRange}>
-        <option value="" disabled selected>레벨을 선택해주세요</option>
-        {#if levelRangeArr != null}
-          {#each levelRangeArr[tempEquipmentType].sort((a, b) => {
-            const numA = a.split('-').map(Number);
-            const numB = b.split('-').map(Number);
-            if (numA.length > 1 && numB.length > 1) {
-              return numA[0] - numB[0];
-            }
-            return numA[0] - numB[0];
-          }) as levelRange}
-            <option value={levelRange}>{levelRange}</option>
-          {/each}
-        {/if}
-      </select>
-      <button on:click={() => setItemforCube()}>설정 적용</button>
-    </div>
-  </div>
-</div>
+  </section>
+</main>

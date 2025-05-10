@@ -1,340 +1,423 @@
 {
   "firstOption": [
     {
-      "name": "STR : +2",
-      "weight": 4
+      "name": "STR +2",
+      "weight": 4,
+      "grade": "R"
     },
     {
-      "name": "DEX : +2",
-      "weight": 4
+      "name": "DEX +2",
+      "weight": 4,
+      "grade": "R"
     },
     {
-      "name": "INT : +2",
-      "weight": 4
+      "name": "INT +2",
+      "weight": 4,
+      "grade": "R"
     },
     {
-      "name": "LUK : +2",
-      "weight": 4
+      "name": "LUK +2",
+      "weight": 4,
+      "grade": "R"
     },
     {
-      "name": "최대 HP : +10",
-      "weight": 6
+      "name": "최대 HP +10",
+      "weight": 6,
+      "grade": "R"
     },
     {
-      "name": "공격력 : +2",
-      "weight": 4
+      "name": "공격력 +2",
+      "weight": 4,
+      "grade": "R"
     },
     {
-      "name": "마력 : +2",
-      "weight": 4
+      "name": "마력 +2",
+      "weight": 4,
+      "grade": "R"
     },
     {
-      "name": "STR : +1%",
-      "weight": 4
+      "name": "STR +1%",
+      "weight": 4,
+      "grade": "R"
     },
     {
-      "name": "DEX : +1%",
-      "weight": 4
+      "name": "DEX +1%",
+      "weight": 4,
+      "grade": "R"
     },
     {
-      "name": "INT : +1%",
-      "weight": 4
+      "name": "INT +1%",
+      "weight": 4,
+      "grade": "R"
     },
     {
-      "name": "LUK : +1%",
-      "weight": 4
+      "name": "LUK +1%",
+      "weight": 4,
+      "grade": "R"
     },
     {
-      "name": "공격력 : +1%",
-      "weight": 2
+      "name": "공격력 +1%",
+      "weight": 2,
+      "grade": "R"
     },
     {
-      "name": "마력 : +1%",
-      "weight": 2
+      "name": "마력 +1%",
+      "weight": 2,
+      "grade": "R"
     },
     {
-      "name": "크리티컬 확률 : +4%",
-      "weight": 2
+      "name": "크리티컬 확률 +4%",
+      "weight": 2,
+      "grade": "R"
     },
     {
-      "name": "데미지 : +1%",
-      "weight": 2
+      "name": "데미지 +1%",
+      "weight": 2,
+      "grade": "R"
     },
     {
-      "name": "올스탯 : +1",
-      "weight": 4
+      "name": "올스탯 +1",
+      "weight": 4,
+      "grade": "R"
     },
     {
       "name": "공격 시 3% 확률로 10의 HP 회복",
-      "weight": 6
+      "weight": 6,
+      "grade": "R"
     },
     {
       "name": "공격 시 10% 확률로 1레벨 중독효과 적용",
-      "weight": 6
+      "weight": 6,
+      "grade": "R"
     },
     {
       "name": "공격 시 5% 확률로 1레벨 기절효과 적용",
-      "weight": 6
+      "weight": 6,
+      "grade": "R"
     },
     {
       "name": "공격 시 10% 확률로 1레벨 슬로우효과 적용",
-      "weight": 6
+      "weight": 6,
+      "grade": "R"
     },
     {
       "name": "공격 시 10% 확률로 1레벨 암흑효과 적용",
-      "weight": 6
+      "weight": 6,
+      "grade": "R"
     },
     {
       "name": "공격 시 5% 확률로 1레벨 빙결효과 적용",
-      "weight": 6
+      "weight": 6,
+      "grade": "R"
     },
     {
       "name": "공격 시 5% 확률로 1레벨 봉인효과 적용",
-      "weight": 6
+      "weight": 6,
+      "grade": "R"
     }
   ],
   "secondOption": [
     {
-      "name": "STR : +1",
-      "weight": 15.3692
+      "name": "STR +1",
+      "weight": 15.3692,
+      "grade": "R"
     },
     {
-      "name": "DEX : +1",
-      "weight": 15.3692
+      "name": "DEX +1",
+      "weight": 15.3692,
+      "grade": "R"
     },
     {
-      "name": "INT : +1",
-      "weight": 15.3692
+      "name": "INT +1",
+      "weight": 15.3692,
+      "grade": "R"
     },
     {
-      "name": "LUK : +1",
-      "weight": 15.3692
+      "name": "LUK +1",
+      "weight": 15.3692,
+      "grade": "R"
     },
     {
-      "name": "최대 HP : +5",
-      "weight": 23.05387
+      "name": "최대 HP +5",
+      "weight": 23.05387,
+      "grade": "R"
     },
     {
-      "name": "공격력 : +1",
-      "weight": 7.6846
+      "name": "공격력 +1",
+      "weight": 7.6846,
+      "grade": "R"
     },
     {
-      "name": "마력 : +1",
-      "weight": 7.6846
+      "name": "마력 +1",
+      "weight": 7.6846,
+      "grade": "R"
     },
     {
-      "name": "STR : +2",
-      "weight": 0.003996
+      "name": "STR +2",
+      "weight": 0.003996,
+      "grade": "R"
     },
     {
-      "name": "DEX : +2",
-      "weight": 0.003996
+      "name": "DEX +2",
+      "weight": 0.003996,
+      "grade": "R"
     },
     {
-      "name": "INT : +2",
-      "weight": 0.003996
+      "name": "INT +2",
+      "weight": 0.003996,
+      "grade": "R"
     },
     {
-      "name": "LUK : +2",
-      "weight": 0.003996
+      "name": "LUK +2",
+      "weight": 0.003996,
+      "grade": "R"
     },
     {
-      "name": "최대 HP : +10",
-      "weight": 0.005994
+      "name": "최대 HP +10",
+      "weight": 0.005994,
+      "grade": "R"
     },
     {
-      "name": "공격력 : +2",
-      "weight": 0.003996
+      "name": "공격력 +2",
+      "weight": 0.003996,
+      "grade": "R"
     },
     {
-      "name": "마력 : +2",
-      "weight": 0.003996
+      "name": "마력 +2",
+      "weight": 0.003996,
+      "grade": "R"
     },
     {
-      "name": "STR : +1%",
-      "weight": 0.003996
+      "name": "STR +1%",
+      "weight": 0.003996,
+      "grade": "R"
     },
     {
-      "name": "DEX : +1%",
-      "weight": 0.003996
+      "name": "DEX +1%",
+      "weight": 0.003996,
+      "grade": "R"
     },
     {
-      "name": "INT : +1%",
-      "weight": 0.003996
+      "name": "INT +1%",
+      "weight": 0.003996,
+      "grade": "R"
     },
     {
-      "name": "LUK : +1%",
-      "weight": 0.003996
+      "name": "LUK +1%",
+      "weight": 0.003996,
+      "grade": "R"
     },
     {
-      "name": "공격력 : +1%",
-      "weight": 0.001998
+      "name": "공격력 +1%",
+      "weight": 0.001998,
+      "grade": "R"
     },
     {
-      "name": "마력 : +1%",
-      "weight": 0.001998
+      "name": "마력 +1%",
+      "weight": 0.001998,
+      "grade": "R"
     },
     {
-      "name": "크리티컬 확률 : +4%",
-      "weight": 0.001998
+      "name": "크리티컬 확률 +4%",
+      "weight": 0.001998,
+      "grade": "R"
     },
     {
-      "name": "데미지 : +1%",
-      "weight": 0.001998
+      "name": "데미지 +1%",
+      "weight": 0.001998,
+      "grade": "R"
     },
     {
-      "name": "올스탯 : +1",
-      "weight": 0.003996
+      "name": "올스탯 +1",
+      "weight": 0.003996,
+      "grade": "R"
     },
     {
       "name": "공격 시 3% 확률로 10의 HP 회복",
-      "weight": 0.005994
+      "weight": 0.005994,
+      "grade": "R"
     },
     {
       "name": "공격 시 10% 확률로 1레벨 중독효과 적용",
-      "weight": 0.005994
+      "weight": 0.005994,
+      "grade": "R"
     },
     {
       "name": "공격 시 5% 확률로 1레벨 기절효과 적용",
-      "weight": 0.005994
+      "weight": 0.005994,
+      "grade": "R"
     },
     {
       "name": "공격 시 10% 확률로 1레벨 슬로우효과 적용",
-      "weight": 0.005994
+      "weight": 0.005994,
+      "grade": "R"
     },
     {
       "name": "공격 시 10% 확률로 1레벨 암흑효과 적용",
-      "weight": 0.005994
+      "weight": 0.005994,
+      "grade": "R"
     },
     {
       "name": "공격 시 5% 확률로 1레벨 빙결효과 적용",
-      "weight": 0.005994
+      "weight": 0.005994,
+      "grade": "R"
     },
     {
       "name": "공격 시 5% 확률로 1레벨 봉인효과 적용",
-      "weight": 0.005994
+      "weight": 0.005994,
+      "grade": "R"
     }
   ],
   "thirdOption": [
     {
-      "name": "STR : +1",
-      "weight": 15.3692
+      "name": "STR +1",
+      "weight": 15.3692,
+      "grade": "R"
     },
     {
-      "name": "DEX : +1",
-      "weight": 15.3692
+      "name": "DEX +1",
+      "weight": 15.3692,
+      "grade": "R"
     },
     {
-      "name": "INT : +1",
-      "weight": 15.3692
+      "name": "INT +1",
+      "weight": 15.3692,
+      "grade": "R"
     },
     {
-      "name": "LUK : +1",
-      "weight": 15.3692
+      "name": "LUK +1",
+      "weight": 15.3692,
+      "grade": "R"
     },
     {
-      "name": "최대 HP : +5",
-      "weight": 23.05387
+      "name": "최대 HP +5",
+      "weight": 23.05387,
+      "grade": "R"
     },
     {
-      "name": "공격력 : +1",
-      "weight": 7.6846
+      "name": "공격력 +1",
+      "weight": 7.6846,
+      "grade": "R"
     },
     {
-      "name": "마력 : +1",
-      "weight": 7.6846
+      "name": "마력 +1",
+      "weight": 7.6846,
+      "grade": "R"
     },
     {
-      "name": "STR : +2",
-      "weight": 0.003996
+      "name": "STR +2",
+      "weight": 0.003996,
+      "grade": "R"
     },
     {
-      "name": "DEX : +2",
-      "weight": 0.003996
+      "name": "DEX +2",
+      "weight": 0.003996,
+      "grade": "R"
     },
     {
-      "name": "INT : +2",
-      "weight": 0.003996
+      "name": "INT +2",
+      "weight": 0.003996,
+      "grade": "R"
     },
     {
-      "name": "LUK : +2",
-      "weight": 0.003996
+      "name": "LUK +2",
+      "weight": 0.003996,
+      "grade": "R"
     },
     {
-      "name": "최대 HP : +10",
-      "weight": 0.005994
+      "name": "최대 HP +10",
+      "weight": 0.005994,
+      "grade": "R"
     },
     {
-      "name": "공격력 : +2",
-      "weight": 0.003996
+      "name": "공격력 +2",
+      "weight": 0.003996,
+      "grade": "R"
     },
     {
-      "name": "마력 : +2",
-      "weight": 0.003996
+      "name": "마력 +2",
+      "weight": 0.003996,
+      "grade": "R"
     },
     {
-      "name": "STR : +1%",
-      "weight": 0.003996
+      "name": "STR +1%",
+      "weight": 0.003996,
+      "grade": "R"
     },
     {
-      "name": "DEX : +1%",
-      "weight": 0.003996
+      "name": "DEX +1%",
+      "weight": 0.003996,
+      "grade": "R"
     },
     {
-      "name": "INT : +1%",
-      "weight": 0.003996
+      "name": "INT +1%",
+      "weight": 0.003996,
+      "grade": "R"
     },
     {
-      "name": "LUK : +1%",
-      "weight": 0.003996
+      "name": "LUK +1%",
+      "weight": 0.003996,
+      "grade": "R"
     },
     {
-      "name": "공격력 : +1%",
-      "weight": 0.001998
+      "name": "공격력 +1%",
+      "weight": 0.001998,
+      "grade": "R"
     },
     {
-      "name": "마력 : +1%",
-      "weight": 0.001998
+      "name": "마력 +1%",
+      "weight": 0.001998,
+      "grade": "R"
     },
     {
-      "name": "크리티컬 확률 : +4%",
-      "weight": 0.001998
+      "name": "크리티컬 확률 +4%",
+      "weight": 0.001998,
+      "grade": "R"
     },
     {
-      "name": "데미지 : +1%",
-      "weight": 0.001998
+      "name": "데미지 +1%",
+      "weight": 0.001998,
+      "grade": "R"
     },
     {
-      "name": "올스탯 : +1",
-      "weight": 0.003996
+      "name": "올스탯 +1",
+      "weight": 0.003996,
+      "grade": "R"
     },
     {
       "name": "공격 시 3% 확률로 10의 HP 회복",
-      "weight": 0.005994
+      "weight": 0.005994,
+      "grade": "R"
     },
     {
       "name": "공격 시 10% 확률로 1레벨 중독효과 적용",
-      "weight": 0.005994
+      "weight": 0.005994,
+      "grade": "R"
     },
     {
       "name": "공격 시 5% 확률로 1레벨 기절효과 적용",
-      "weight": 0.005994
+      "weight": 0.005994,
+      "grade": "R"
     },
     {
       "name": "공격 시 10% 확률로 1레벨 슬로우효과 적용",
-      "weight": 0.005994
+      "weight": 0.005994,
+      "grade": "R"
     },
     {
       "name": "공격 시 10% 확률로 1레벨 암흑효과 적용",
-      "weight": 0.005994
+      "weight": 0.005994,
+      "grade": "R"
     },
     {
       "name": "공격 시 5% 확률로 1레벨 빙결효과 적용",
-      "weight": 0.005994
+      "weight": 0.005994,
+      "grade": "R"
     },
     {
       "name": "공격 시 5% 확률로 1레벨 봉인효과 적용",
-      "weight": 0.005994
+      "weight": 0.005994,
+      "grade": "R"
     }
   ]
 }

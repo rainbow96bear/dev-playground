@@ -1,388 +1,483 @@
 {
   "firstOption": [
     {
-      "name": "최대 HP : +11%",
-      "weight": 7.6923
+      "name": "최대 HP +11%",
+      "weight": 7.6923,
+      "grade": "L"
     },
     {
-      "name": "최대 MP : +11%",
-      "weight": 7.6923
+      "name": "최대 MP +11%",
+      "weight": 7.6923,
+      "grade": "L"
     },
     {
-      "name": "공격력 : +12%",
-      "weight": 5.1282
+      "name": "공격력 +12%",
+      "weight": 5.1282,
+      "grade": "L"
     },
     {
-      "name": "마력 : +12%",
-      "weight": 5.1282
+      "name": "마력 +12%",
+      "weight": 5.1282,
+      "grade": "L"
     },
     {
-      "name": "크리티컬 확률 : +12%",
-      "weight": 5.1282
+      "name": "크리티컬 확률 +12%",
+      "weight": 5.1282,
+      "grade": "L"
     },
     {
-      "name": "STR : +12%",
-      "weight": 7.6923
+      "name": "STR +12%",
+      "weight": 7.6923,
+      "grade": "L"
     },
     {
-      "name": "DEX : +12%",
-      "weight": 7.6923
+      "name": "DEX +12%",
+      "weight": 7.6923,
+      "grade": "L"
     },
     {
-      "name": "INT : +12%",
-      "weight": 7.6923
+      "name": "INT +12%",
+      "weight": 7.6923,
+      "grade": "L"
     },
     {
-      "name": "LUK : +12%",
-      "weight": 7.6923
+      "name": "LUK +12%",
+      "weight": 7.6923,
+      "grade": "L"
     },
     {
-      "name": "데미지 : +12%",
-      "weight": 2.5641
+      "name": "데미지 +12%",
+      "weight": 2.5641,
+      "grade": "L"
     },
     {
-      "name": "올스탯 : +9%",
-      "weight": 5.1282
+      "name": "올스탯 +9%",
+      "weight": 5.1282,
+      "grade": "L"
     },
     {
-      "name": "캐릭터 기준 9레벨 당 STR : +2",
-      "weight": 5.1282
+      "name": "캐릭터 기준 9레벨 당 STR +2",
+      "weight": 5.1282,
+      "grade": "L"
     },
     {
-      "name": "캐릭터 기준 9레벨 당 DEX : +2",
-      "weight": 5.1282
+      "name": "캐릭터 기준 9레벨 당 DEX +2",
+      "weight": 5.1282,
+      "grade": "L"
     },
     {
-      "name": "캐릭터 기준 9레벨 당 INT : +2",
-      "weight": 5.1282
+      "name": "캐릭터 기준 9레벨 당 INT +2",
+      "weight": 5.1282,
+      "grade": "L"
     },
     {
-      "name": "캐릭터 기준 9레벨 당 LUK : +2",
-      "weight": 5.1282
+      "name": "캐릭터 기준 9레벨 당 LUK +2",
+      "weight": 5.1282,
+      "grade": "L"
     },
     {
-      "name": "공격력 : +32",
-      "weight": 2.5641
+      "name": "공격력 +32",
+      "weight": 2.5641,
+      "grade": "L"
     },
     {
-      "name": "마력 : +32",
-      "weight": 2.5641
+      "name": "마력 +32",
+      "weight": 2.5641,
+      "grade": "L"
     },
     {
-      "name": "몬스터 방어율 무시 : +5%",
-      "weight": 2.5641
+      "name": "몬스터 방어율 무시 +5%",
+      "weight": 2.5641,
+      "grade": "L"
     },
     {
-      "name": "보스 몬스터 공격 시 데미지 : +18%",
-      "weight": 2.5641
+      "name": "보스 몬스터 데미지 +18%",
+      "weight": 2.5641,
+      "grade": "L"
     }
   ],
   "secondOption": [
     {
-      "name": "최대 HP : +8%",
-      "weight": 6.942
+      "name": "최대 HP +8%",
+      "weight": 6.942,
+      "grade": "U"
     },
     {
-      "name": "최대 MP : +8%",
-      "weight": 6.942
+      "name": "최대 MP +8%",
+      "weight": 6.942,
+      "grade": "U"
     },
     {
-      "name": "공격력 : +9%",
-      "weight": 4.628
+      "name": "공격력 +9%",
+      "weight": 4.628,
+      "grade": "U"
     },
     {
-      "name": "마력 : +9%",
-      "weight": 4.628
+      "name": "마력 +9%",
+      "weight": 4.628,
+      "grade": "U"
     },
     {
-      "name": "크리티컬 확률 : +9%",
-      "weight": 4.628
+      "name": "크리티컬 확률 +9%",
+      "weight": 4.628,
+      "grade": "U"
     },
     {
-      "name": "STR : +9%",
-      "weight": 6.942
+      "name": "STR +9%",
+      "weight": 6.942,
+      "grade": "U"
     },
     {
-      "name": "DEX : +9%",
-      "weight": 6.942
+      "name": "DEX +9%",
+      "weight": 6.942,
+      "grade": "U"
     },
     {
-      "name": "INT : +9%",
-      "weight": 6.942
+      "name": "INT +9%",
+      "weight": 6.942,
+      "grade": "U"
     },
     {
-      "name": "LUK : +9%",
-      "weight": 6.942
+      "name": "LUK +9%",
+      "weight": 6.942,
+      "grade": "U"
     },
     {
-      "name": "데미지 : +9%",
-      "weight": 2.314
+      "name": "데미지 +9%",
+      "weight": 2.314,
+      "grade": "U"
     },
     {
-      "name": "올스탯 : +6%",
-      "weight": 4.628
+      "name": "올스탯 +6%",
+      "weight": 4.628,
+      "grade": "U"
     },
     {
-      "name": "캐릭터 기준 9레벨 당 STR : +1",
-      "weight": 4.628
+      "name": "캐릭터 기준 9레벨 당 STR +1",
+      "weight": 4.628,
+      "grade": "U"
     },
     {
-      "name": "캐릭터 기준 9레벨 당 DEX : +1",
-      "weight": 4.628
+      "name": "캐릭터 기준 9레벨 당 DEX +1",
+      "weight": 4.628,
+      "grade": "U"
     },
     {
-      "name": "캐릭터 기준 9레벨 당 INT : +1",
-      "weight": 4.628
+      "name": "캐릭터 기준 9레벨 당 INT +1",
+      "weight": 4.628,
+      "grade": "U"
     },
     {
-      "name": "캐릭터 기준 9레벨 당 LUK : +1",
-      "weight": 4.628
+      "name": "캐릭터 기준 9레벨 당 LUK +1",
+      "weight": 4.628,
+      "grade": "U"
     },
     {
       "name": "공격 시 15% 확률로 95의 HP 회복",
-      "weight": 6.942
+      "weight": 6.942,
+      "grade": "U"
     },
     {
       "name": "공격 시 15% 확률로 95의 MP 회복",
-      "weight": 6.942
+      "weight": 6.942,
+      "grade": "U"
     },
     {
-      "name": "몬스터 방어율 무시 : +4%",
-      "weight": 2.314
+      "name": "몬스터 방어율 무시 +4%",
+      "weight": 2.314,
+      "grade": "U"
     },
     {
-      "name": "보스 몬스터 공격 시 데미지 : +12%",
-      "weight": 2.314
+      "name": "보스 몬스터 데미지 +12%",
+      "weight": 2.314,
+      "grade": "U"
     },
     {
-      "name": "최대 HP : +11%",
-      "weight": 0.03827
+      "name": "최대 HP +11%",
+      "weight": 0.03827,
+      "grade": "L"
     },
     {
-      "name": "최대 MP : +11%",
-      "weight": 0.03827
+      "name": "최대 MP +11%",
+      "weight": 0.03827,
+      "grade": "L"
     },
     {
-      "name": "공격력 : +12%",
-      "weight": 0.02551
+      "name": "공격력 +12%",
+      "weight": 0.02551,
+      "grade": "L"
     },
     {
-      "name": "마력 : +12%",
-      "weight": 0.02551
+      "name": "마력 +12%",
+      "weight": 0.02551,
+      "grade": "L"
     },
     {
-      "name": "크리티컬 확률 : +12%",
-      "weight": 0.02551
+      "name": "크리티컬 확률 +12%",
+      "weight": 0.02551,
+      "grade": "L"
     },
     {
-      "name": "STR : +12%",
-      "weight": 0.03827
+      "name": "STR +12%",
+      "weight": 0.03827,
+      "grade": "L"
     },
     {
-      "name": "DEX : +12%",
-      "weight": 0.03827
+      "name": "DEX +12%",
+      "weight": 0.03827,
+      "grade": "L"
     },
     {
-      "name": "INT : +12%",
-      "weight": 0.03827
+      "name": "INT +12%",
+      "weight": 0.03827,
+      "grade": "L"
     },
     {
-      "name": "LUK : +12%",
-      "weight": 0.03827
+      "name": "LUK +12%",
+      "weight": 0.03827,
+      "grade": "L"
     },
     {
-      "name": "데미지 : +12%",
-      "weight": 0.01276
+      "name": "데미지 +12%",
+      "weight": 0.01276,
+      "grade": "L"
     },
     {
-      "name": "올스탯 : +9%",
-      "weight": 0.02551
+      "name": "올스탯 +9%",
+      "weight": 0.02551,
+      "grade": "L"
     },
     {
-      "name": "캐릭터 기준 9레벨 당 STR : +2",
-      "weight": 0.02551
+      "name": "캐릭터 기준 9레벨 당 STR +2",
+      "weight": 0.02551,
+      "grade": "L"
     },
     {
-      "name": "캐릭터 기준 9레벨 당 DEX : +2",
-      "weight": 0.02551
+      "name": "캐릭터 기준 9레벨 당 DEX +2",
+      "weight": 0.02551,
+      "grade": "L"
     },
     {
-      "name": "캐릭터 기준 9레벨 당 INT : +2",
-      "weight": 0.02551
+      "name": "캐릭터 기준 9레벨 당 INT +2",
+      "weight": 0.02551,
+      "grade": "L"
     },
     {
-      "name": "캐릭터 기준 9레벨 당 LUK : +2",
-      "weight": 0.02551
+      "name": "캐릭터 기준 9레벨 당 LUK +2",
+      "weight": 0.02551,
+      "grade": "L"
     },
     {
-      "name": "공격력 : +32",
-      "weight": 0.01276
+      "name": "공격력 +32",
+      "weight": 0.01276,
+      "grade": "L"
     },
     {
-      "name": "마력 : +32",
-      "weight": 0.01276
+      "name": "마력 +32",
+      "weight": 0.01276,
+      "grade": "L"
     },
     {
-      "name": "몬스터 방어율 무시 : +5%",
-      "weight": 0.01276
+      "name": "몬스터 방어율 무시 +5%",
+      "weight": 0.01276,
+      "grade": "L"
     },
     {
-      "name": "보스 몬스터 공격 시 데미지 : +18%",
-      "weight": 0.01276
+      "name": "보스 몬스터 데미지 +18%",
+      "weight": 0.01276,
+      "grade": "L"
     }
   ],
   "thirdOption": [
     {
-      "name": "최대 HP : +8%",
-      "weight": 6.942
+      "name": "최대 HP +8%",
+      "weight": 6.942,
+      "grade": "U"
     },
     {
-      "name": "최대 MP : +8%",
-      "weight": 6.942
+      "name": "최대 MP +8%",
+      "weight": 6.942,
+      "grade": "U"
     },
     {
-      "name": "공격력 : +9%",
-      "weight": 4.628
+      "name": "공격력 +9%",
+      "weight": 4.628,
+      "grade": "U"
     },
     {
-      "name": "마력 : +9%",
-      "weight": 4.628
+      "name": "마력 +9%",
+      "weight": 4.628,
+      "grade": "U"
     },
     {
-      "name": "크리티컬 확률 : +9%",
-      "weight": 4.628
+      "name": "크리티컬 확률 +9%",
+      "weight": 4.628,
+      "grade": "U"
     },
     {
-      "name": "STR : +9%",
-      "weight": 6.942
+      "name": "STR +9%",
+      "weight": 6.942,
+      "grade": "U"
     },
     {
-      "name": "DEX : +9%",
-      "weight": 6.942
+      "name": "DEX +9%",
+      "weight": 6.942,
+      "grade": "U"
     },
     {
-      "name": "INT : +9%",
-      "weight": 6.942
+      "name": "INT +9%",
+      "weight": 6.942,
+      "grade": "U"
     },
     {
-      "name": "LUK : +9%",
-      "weight": 6.942
+      "name": "LUK +9%",
+      "weight": 6.942,
+      "grade": "U"
     },
     {
-      "name": "데미지 : +9%",
-      "weight": 2.314
+      "name": "데미지 +9%",
+      "weight": 2.314,
+      "grade": "U"
     },
     {
-      "name": "올스탯 : +6%",
-      "weight": 4.628
+      "name": "올스탯 +6%",
+      "weight": 4.628,
+      "grade": "U"
     },
     {
-      "name": "캐릭터 기준 9레벨 당 STR : +1",
-      "weight": 4.628
+      "name": "캐릭터 기준 9레벨 당 STR +1",
+      "weight": 4.628,
+      "grade": "U"
     },
     {
-      "name": "캐릭터 기준 9레벨 당 DEX : +1",
-      "weight": 4.628
+      "name": "캐릭터 기준 9레벨 당 DEX +1",
+      "weight": 4.628,
+      "grade": "U"
     },
     {
-      "name": "캐릭터 기준 9레벨 당 INT : +1",
-      "weight": 4.628
+      "name": "캐릭터 기준 9레벨 당 INT +1",
+      "weight": 4.628,
+      "grade": "U"
     },
     {
-      "name": "캐릭터 기준 9레벨 당 LUK : +1",
-      "weight": 4.628
+      "name": "캐릭터 기준 9레벨 당 LUK +1",
+      "weight": 4.628,
+      "grade": "U"
     },
     {
       "name": "공격 시 15% 확률로 95의 HP 회복",
-      "weight": 6.942
+      "weight": 6.942,
+      "grade": "U"
     },
     {
       "name": "공격 시 15% 확률로 95의 MP 회복",
-      "weight": 6.942
+      "weight": 6.942,
+      "grade": "U"
     },
     {
-      "name": "몬스터 방어율 무시 : +4%",
-      "weight": 2.314
+      "name": "몬스터 방어율 무시 +4%",
+      "weight": 2.314,
+      "grade": "U"
     },
     {
-      "name": "보스 몬스터 공격 시 데미지 : +12%",
-      "weight": 2.314
+      "name": "보스 몬스터 데미지 +12%",
+      "weight": 2.314,
+      "grade": "U"
     },
     {
-      "name": "최대 HP : +11%",
-      "weight": 0.03827
+      "name": "최대 HP +11%",
+      "weight": 0.03827,
+      "grade": "L"
     },
     {
-      "name": "최대 MP : +11%",
-      "weight": 0.03827
+      "name": "최대 MP +11%",
+      "weight": 0.03827,
+      "grade": "L"
     },
     {
-      "name": "공격력 : +12%",
-      "weight": 0.02551
+      "name": "공격력 +12%",
+      "weight": 0.02551,
+      "grade": "L"
     },
     {
-      "name": "마력 : +12%",
-      "weight": 0.02551
+      "name": "마력 +12%",
+      "weight": 0.02551,
+      "grade": "L"
     },
     {
-      "name": "크리티컬 확률 : +12%",
-      "weight": 0.02551
+      "name": "크리티컬 확률 +12%",
+      "weight": 0.02551,
+      "grade": "L"
     },
     {
-      "name": "STR : +12%",
-      "weight": 0.03827
+      "name": "STR +12%",
+      "weight": 0.03827,
+      "grade": "L"
     },
     {
-      "name": "DEX : +12%",
-      "weight": 0.03827
+      "name": "DEX +12%",
+      "weight": 0.03827,
+      "grade": "L"
     },
     {
-      "name": "INT : +12%",
-      "weight": 0.03827
+      "name": "INT +12%",
+      "weight": 0.03827,
+      "grade": "L"
     },
     {
-      "name": "LUK : +12%",
-      "weight": 0.03827
+      "name": "LUK +12%",
+      "weight": 0.03827,
+      "grade": "L"
     },
     {
-      "name": "데미지 : +12%",
-      "weight": 0.01276
+      "name": "데미지 +12%",
+      "weight": 0.01276,
+      "grade": "L"
     },
     {
-      "name": "올스탯 : +9%",
-      "weight": 0.02551
+      "name": "올스탯 +9%",
+      "weight": 0.02551,
+      "grade": "L"
     },
     {
-      "name": "캐릭터 기준 9레벨 당 STR : +2",
-      "weight": 0.02551
+      "name": "캐릭터 기준 9레벨 당 STR +2",
+      "weight": 0.02551,
+      "grade": "L"
     },
     {
-      "name": "캐릭터 기준 9레벨 당 DEX : +2",
-      "weight": 0.02551
+      "name": "캐릭터 기준 9레벨 당 DEX +2",
+      "weight": 0.02551,
+      "grade": "L"
     },
     {
-      "name": "캐릭터 기준 9레벨 당 INT : +2",
-      "weight": 0.02551
+      "name": "캐릭터 기준 9레벨 당 INT +2",
+      "weight": 0.02551,
+      "grade": "L"
     },
     {
-      "name": "캐릭터 기준 9레벨 당 LUK : +2",
-      "weight": 0.02551
+      "name": "캐릭터 기준 9레벨 당 LUK +2",
+      "weight": 0.02551,
+      "grade": "L"
     },
     {
-      "name": "공격력 : +32",
-      "weight": 0.01276
+      "name": "공격력 +32",
+      "weight": 0.01276,
+      "grade": "L"
     },
     {
-      "name": "마력 : +32",
-      "weight": 0.01276
+      "name": "마력 +32",
+      "weight": 0.01276,
+      "grade": "L"
     },
     {
-      "name": "몬스터 방어율 무시 : +5%",
-      "weight": 0.01276
+      "name": "몬스터 방어율 무시 +5%",
+      "weight": 0.01276,
+      "grade": "L"
     },
     {
-      "name": "보스 몬스터 공격 시 데미지 : +18%",
-      "weight": 0.01276
+      "name": "보스 몬스터 데미지 +18%",
+      "weight": 0.01276,
+      "grade": "L"
     }
   ]
 }

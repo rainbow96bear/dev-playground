@@ -1,228 +1,283 @@
 {
   "firstOption": [
     {
-      "name": "STR : +13%",
-      "weight": 7.1429
+      "name": "STR +13%",
+      "weight": 7.1429,
+      "grade": "L"
     },
     {
-      "name": "DEX : +13%",
-      "weight": 7.1429
+      "name": "DEX +13%",
+      "weight": 7.1429,
+      "grade": "L"
     },
     {
-      "name": "INT : +13%",
-      "weight": 7.1429
+      "name": "INT +13%",
+      "weight": 7.1429,
+      "grade": "L"
     },
     {
-      "name": "LUK : +13%",
-      "weight": 7.1429
+      "name": "LUK +13%",
+      "weight": 7.1429,
+      "grade": "L"
     },
     {
-      "name": "최대 HP : +13%",
-      "weight": 10.7143
+      "name": "최대 HP +13%",
+      "weight": 10.7143,
+      "grade": "L"
     },
     {
-      "name": "최대 MP : +13%",
-      "weight": 10.7143
+      "name": "최대 MP +13%",
+      "weight": 10.7143,
+      "grade": "L"
     },
     {
-      "name": "올스탯 : +10%",
-      "weight": 7.1429
+      "name": "올스탯 +10%",
+      "weight": 7.1429,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 20% 무시",
-      "weight": 10.7143
+      "weight": 10.7143,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 40% 무시",
-      "weight": 10.7143
+      "weight": 10.7143,
+      "grade": "L"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +40%",
-      "weight": 10.7143
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +40%",
+      "weight": 10.7143,
+      "grade": "L"
     },
     {
       "name": "\u003c쓸만한 컴뱃 오더스\u003e 스킬 사용 가능",
-      "weight": 10.7143
+      "weight": 10.7143,
+      "grade": "L"
     }
   ],
   "secondOption": [
     {
-      "name": "STR : +10%",
-      "weight": 7.677
+      "name": "STR +10%",
+      "weight": 7.677,
+      "grade": "U"
     },
     {
-      "name": "DEX : +10%",
-      "weight": 7.677
+      "name": "DEX +10%",
+      "weight": 7.677,
+      "grade": "U"
     },
     {
-      "name": "INT : +10%",
-      "weight": 7.677
+      "name": "INT +10%",
+      "weight": 7.677,
+      "grade": "U"
     },
     {
-      "name": "LUK : +10%",
-      "weight": 7.677
+      "name": "LUK +10%",
+      "weight": 7.677,
+      "grade": "U"
     },
     {
-      "name": "최대 HP : +10%",
-      "weight": 11.5154
+      "name": "최대 HP +10%",
+      "weight": 11.5154,
+      "grade": "U"
     },
     {
-      "name": "최대 MP : +10%",
-      "weight": 11.5154
+      "name": "최대 MP +10%",
+      "weight": 11.5154,
+      "grade": "U"
     },
     {
-      "name": "올스탯 : +7%",
-      "weight": 3.8385
+      "name": "올스탯 +7%",
+      "weight": 3.8385,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 20% 무시",
-      "weight": 11.5154
+      "weight": 11.5154,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 40% 무시",
-      "weight": 11.5154
+      "weight": 11.5154,
+      "grade": "U"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +30%",
-      "weight": 11.5154
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +30%",
+      "weight": 11.5154,
+      "grade": "U"
     },
     {
       "name": "\u003c쓸만한 헤이스트\u003e 스킬 사용 가능",
-      "weight": 7.677
+      "weight": 7.677,
+      "grade": "U"
     },
     {
-      "name": "STR : +13%",
-      "weight": 0.01426
+      "name": "STR +13%",
+      "weight": 0.01426,
+      "grade": "L"
     },
     {
-      "name": "DEX : +13%",
-      "weight": 0.01426
+      "name": "DEX +13%",
+      "weight": 0.01426,
+      "grade": "L"
     },
     {
-      "name": "INT : +13%",
-      "weight": 0.01426
+      "name": "INT +13%",
+      "weight": 0.01426,
+      "grade": "L"
     },
     {
-      "name": "LUK : +13%",
-      "weight": 0.01426
+      "name": "LUK +13%",
+      "weight": 0.01426,
+      "grade": "L"
     },
     {
-      "name": "최대 HP : +13%",
-      "weight": 0.02139
+      "name": "최대 HP +13%",
+      "weight": 0.02139,
+      "grade": "L"
     },
     {
-      "name": "최대 MP : +13%",
-      "weight": 0.02139
+      "name": "최대 MP +13%",
+      "weight": 0.02139,
+      "grade": "L"
     },
     {
-      "name": "올스탯 : +10%",
-      "weight": 0.01426
+      "name": "올스탯 +10%",
+      "weight": 0.01426,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 20% 무시",
-      "weight": 0.02139
+      "weight": 0.02139,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 40% 무시",
-      "weight": 0.02139
+      "weight": 0.02139,
+      "grade": "L"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +40%",
-      "weight": 0.02139
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +40%",
+      "weight": 0.02139,
+      "grade": "L"
     },
     {
       "name": "\u003c쓸만한 컴뱃 오더스\u003e 스킬 사용 가능",
-      "weight": 0.02139
+      "weight": 0.02139,
+      "grade": "L"
     }
   ],
   "thirdOption": [
     {
-      "name": "STR : +10%",
-      "weight": 7.677
+      "name": "STR +10%",
+      "weight": 7.677,
+      "grade": "U"
     },
     {
-      "name": "DEX : +10%",
-      "weight": 7.677
+      "name": "DEX +10%",
+      "weight": 7.677,
+      "grade": "U"
     },
     {
-      "name": "INT : +10%",
-      "weight": 7.677
+      "name": "INT +10%",
+      "weight": 7.677,
+      "grade": "U"
     },
     {
-      "name": "LUK : +10%",
-      "weight": 7.677
+      "name": "LUK +10%",
+      "weight": 7.677,
+      "grade": "U"
     },
     {
-      "name": "최대 HP : +10%",
-      "weight": 11.5154
+      "name": "최대 HP +10%",
+      "weight": 11.5154,
+      "grade": "U"
     },
     {
-      "name": "최대 MP : +10%",
-      "weight": 11.5154
+      "name": "최대 MP +10%",
+      "weight": 11.5154,
+      "grade": "U"
     },
     {
-      "name": "올스탯 : +7%",
-      "weight": 3.8385
+      "name": "올스탯 +7%",
+      "weight": 3.8385,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 20% 무시",
-      "weight": 11.5154
+      "weight": 11.5154,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 40% 무시",
-      "weight": 11.5154
+      "weight": 11.5154,
+      "grade": "U"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +30%",
-      "weight": 11.5154
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +30%",
+      "weight": 11.5154,
+      "grade": "U"
     },
     {
       "name": "\u003c쓸만한 헤이스트\u003e 스킬 사용 가능",
-      "weight": 7.677
+      "weight": 7.677,
+      "grade": "U"
     },
     {
-      "name": "STR : +13%",
-      "weight": 0.01426
+      "name": "STR +13%",
+      "weight": 0.01426,
+      "grade": "L"
     },
     {
-      "name": "DEX : +13%",
-      "weight": 0.01426
+      "name": "DEX +13%",
+      "weight": 0.01426,
+      "grade": "L"
     },
     {
-      "name": "INT : +13%",
-      "weight": 0.01426
+      "name": "INT +13%",
+      "weight": 0.01426,
+      "grade": "L"
     },
     {
-      "name": "LUK : +13%",
-      "weight": 0.01426
+      "name": "LUK +13%",
+      "weight": 0.01426,
+      "grade": "L"
     },
     {
-      "name": "최대 HP : +13%",
-      "weight": 0.02139
+      "name": "최대 HP +13%",
+      "weight": 0.02139,
+      "grade": "L"
     },
     {
-      "name": "최대 MP : +13%",
-      "weight": 0.02139
+      "name": "최대 MP +13%",
+      "weight": 0.02139,
+      "grade": "L"
     },
     {
-      "name": "올스탯 : +10%",
-      "weight": 0.01426
+      "name": "올스탯 +10%",
+      "weight": 0.01426,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 20% 무시",
-      "weight": 0.02139
+      "weight": 0.02139,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 40% 무시",
-      "weight": 0.02139
+      "weight": 0.02139,
+      "grade": "L"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +40%",
-      "weight": 0.02139
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +40%",
+      "weight": 0.02139,
+      "grade": "L"
     },
     {
       "name": "\u003c쓸만한 컴뱃 오더스\u003e 스킬 사용 가능",
-      "weight": 0.02139
+      "weight": 0.02139,
+      "grade": "L"
     }
   ]
 }

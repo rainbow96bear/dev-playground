@@ -1,248 +1,308 @@
 {
   "firstOption": [
     {
-      "name": "STR : +12%",
-      "weight": 6.4516
+      "name": "STR +12%",
+      "weight": 6.4516,
+      "grade": "L"
     },
     {
-      "name": "DEX : +12%",
-      "weight": 6.4516
+      "name": "DEX +12%",
+      "weight": 6.4516,
+      "grade": "L"
     },
     {
-      "name": "INT : +12%",
-      "weight": 6.4516
+      "name": "INT +12%",
+      "weight": 6.4516,
+      "grade": "L"
     },
     {
-      "name": "LUK : +12%",
-      "weight": 6.4516
+      "name": "LUK +12%",
+      "weight": 6.4516,
+      "grade": "L"
     },
     {
-      "name": "최대 HP : +12%",
-      "weight": 9.6774
+      "name": "최대 HP +12%",
+      "weight": 9.6774,
+      "grade": "L"
     },
     {
-      "name": "최대 MP : +12%",
-      "weight": 9.6774
+      "name": "최대 MP +12%",
+      "weight": 9.6774,
+      "grade": "L"
     },
     {
-      "name": "올스탯 : +9%",
-      "weight": 6.4516
+      "name": "올스탯 +9%",
+      "weight": 6.4516,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 20% 무시",
-      "weight": 9.6774
+      "weight": 9.6774,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 40% 무시",
-      "weight": 9.6774
+      "weight": 9.6774,
+      "grade": "L"
     },
     {
-      "name": "피격 후 무적시간 : +3초",
-      "weight": 9.6774
+      "name": "피격 후 무적시간 +3초",
+      "weight": 9.6774,
+      "grade": "L"
     },
     {
       "name": "피격 시 4% 확률로 6초간 무적",
-      "weight": 9.6774
+      "weight": 9.6774,
+      "grade": "L"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +40%",
-      "weight": 9.6774
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +40%",
+      "weight": 9.6774,
+      "grade": "L"
     }
   ],
   "secondOption": [
     {
-      "name": "STR : +9%",
-      "weight": 6.6534
+      "name": "STR +9%",
+      "weight": 6.6534,
+      "grade": "U"
     },
     {
-      "name": "DEX : +9%",
-      "weight": 6.6534
+      "name": "DEX +9%",
+      "weight": 6.6534,
+      "grade": "U"
     },
     {
-      "name": "INT : +9%",
-      "weight": 6.6534
+      "name": "INT +9%",
+      "weight": 6.6534,
+      "grade": "U"
     },
     {
-      "name": "LUK : +9%",
-      "weight": 6.6534
+      "name": "LUK +9%",
+      "weight": 6.6534,
+      "grade": "U"
     },
     {
-      "name": "최대 HP : +9%",
-      "weight": 9.98
+      "name": "최대 HP +9%",
+      "weight": 9.98,
+      "grade": "U"
     },
     {
-      "name": "최대 MP : +9%",
-      "weight": 9.98
+      "name": "최대 MP +9%",
+      "weight": 9.98,
+      "grade": "U"
     },
     {
-      "name": "올스탯 : +6%",
-      "weight": 3.3267
+      "name": "올스탯 +6%",
+      "weight": 3.3267,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 20% 무시",
-      "weight": 9.98
+      "weight": 9.98,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 40% 무시",
-      "weight": 9.98
+      "weight": 9.98,
+      "grade": "U"
     },
     {
-      "name": "피격 후 무적시간 : +2초",
-      "weight": 9.98
+      "name": "피격 후 무적시간 +2초",
+      "weight": 9.98,
+      "grade": "U"
     },
     {
       "name": "피격 시 2% 확률로 6초간 무적",
-      "weight": 9.98
+      "weight": 9.98,
+      "grade": "U"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +30%",
-      "weight": 9.98
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +30%",
+      "weight": 9.98,
+      "grade": "U"
     },
     {
-      "name": "STR : +12%",
-      "weight": 0.01288
+      "name": "STR +12%",
+      "weight": 0.01288,
+      "grade": "L"
     },
     {
-      "name": "DEX : +12%",
-      "weight": 0.01288
+      "name": "DEX +12%",
+      "weight": 0.01288,
+      "grade": "L"
     },
     {
-      "name": "INT : +12%",
-      "weight": 0.01288
+      "name": "INT +12%",
+      "weight": 0.01288,
+      "grade": "L"
     },
     {
-      "name": "LUK : +12%",
-      "weight": 0.01288
+      "name": "LUK +12%",
+      "weight": 0.01288,
+      "grade": "L"
     },
     {
-      "name": "최대 HP : +12%",
-      "weight": 0.01932
+      "name": "최대 HP +12%",
+      "weight": 0.01932,
+      "grade": "L"
     },
     {
-      "name": "최대 MP : +12%",
-      "weight": 0.01932
+      "name": "최대 MP +12%",
+      "weight": 0.01932,
+      "grade": "L"
     },
     {
-      "name": "올스탯 : +9%",
-      "weight": 0.01288
+      "name": "올스탯 +9%",
+      "weight": 0.01288,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 20% 무시",
-      "weight": 0.01932
+      "weight": 0.01932,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 40% 무시",
-      "weight": 0.01932
+      "weight": 0.01932,
+      "grade": "L"
     },
     {
-      "name": "피격 후 무적시간 : +3초",
-      "weight": 0.01932
+      "name": "피격 후 무적시간 +3초",
+      "weight": 0.01932,
+      "grade": "L"
     },
     {
       "name": "피격 시 4% 확률로 6초간 무적",
-      "weight": 0.01932
+      "weight": 0.01932,
+      "grade": "L"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +40%",
-      "weight": 0.01932
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +40%",
+      "weight": 0.01932,
+      "grade": "L"
     }
   ],
   "thirdOption": [
     {
-      "name": "STR : +9%",
-      "weight": 6.6534
+      "name": "STR +9%",
+      "weight": 6.6534,
+      "grade": "U"
     },
     {
-      "name": "DEX : +9%",
-      "weight": 6.6534
+      "name": "DEX +9%",
+      "weight": 6.6534,
+      "grade": "U"
     },
     {
-      "name": "INT : +9%",
-      "weight": 6.6534
+      "name": "INT +9%",
+      "weight": 6.6534,
+      "grade": "U"
     },
     {
-      "name": "LUK : +9%",
-      "weight": 6.6534
+      "name": "LUK +9%",
+      "weight": 6.6534,
+      "grade": "U"
     },
     {
-      "name": "최대 HP : +9%",
-      "weight": 9.98
+      "name": "최대 HP +9%",
+      "weight": 9.98,
+      "grade": "U"
     },
     {
-      "name": "최대 MP : +9%",
-      "weight": 9.98
+      "name": "최대 MP +9%",
+      "weight": 9.98,
+      "grade": "U"
     },
     {
-      "name": "올스탯 : +6%",
-      "weight": 3.3267
+      "name": "올스탯 +6%",
+      "weight": 3.3267,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 20% 무시",
-      "weight": 9.98
+      "weight": 9.98,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 40% 무시",
-      "weight": 9.98
+      "weight": 9.98,
+      "grade": "U"
     },
     {
-      "name": "피격 후 무적시간 : +2초",
-      "weight": 9.98
+      "name": "피격 후 무적시간 +2초",
+      "weight": 9.98,
+      "grade": "U"
     },
     {
       "name": "피격 시 2% 확률로 6초간 무적",
-      "weight": 9.98
+      "weight": 9.98,
+      "grade": "U"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +30%",
-      "weight": 9.98
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +30%",
+      "weight": 9.98,
+      "grade": "U"
     },
     {
-      "name": "STR : +12%",
-      "weight": 0.01288
+      "name": "STR +12%",
+      "weight": 0.01288,
+      "grade": "L"
     },
     {
-      "name": "DEX : +12%",
-      "weight": 0.01288
+      "name": "DEX +12%",
+      "weight": 0.01288,
+      "grade": "L"
     },
     {
-      "name": "INT : +12%",
-      "weight": 0.01288
+      "name": "INT +12%",
+      "weight": 0.01288,
+      "grade": "L"
     },
     {
-      "name": "LUK : +12%",
-      "weight": 0.01288
+      "name": "LUK +12%",
+      "weight": 0.01288,
+      "grade": "L"
     },
     {
-      "name": "최대 HP : +12%",
-      "weight": 0.01932
+      "name": "최대 HP +12%",
+      "weight": 0.01932,
+      "grade": "L"
     },
     {
-      "name": "최대 MP : +12%",
-      "weight": 0.01932
+      "name": "최대 MP +12%",
+      "weight": 0.01932,
+      "grade": "L"
     },
     {
-      "name": "올스탯 : +9%",
-      "weight": 0.01288
+      "name": "올스탯 +9%",
+      "weight": 0.01288,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 20% 무시",
-      "weight": 0.01932
+      "weight": 0.01932,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 40% 무시",
-      "weight": 0.01932
+      "weight": 0.01932,
+      "grade": "L"
     },
     {
-      "name": "피격 후 무적시간 : +3초",
-      "weight": 0.01932
+      "name": "피격 후 무적시간 +3초",
+      "weight": 0.01932,
+      "grade": "L"
     },
     {
       "name": "피격 시 4% 확률로 6초간 무적",
-      "weight": 0.01932
+      "weight": 0.01932,
+      "grade": "L"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +40%",
-      "weight": 0.01932
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +40%",
+      "weight": 0.01932,
+      "grade": "L"
     }
   ]
 }

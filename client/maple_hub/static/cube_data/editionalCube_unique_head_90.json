@@ -1,400 +1,498 @@
 {
   "firstOption": [
     {
-      "name": "STR : +14",
-      "weight": 6.1224
+      "name": "STR +14",
+      "weight": 6.1224,
+      "grade": "U"
     },
     {
-      "name": "DEX : +14",
-      "weight": 6.1224
+      "name": "DEX +14",
+      "weight": 6.1224,
+      "grade": "U"
     },
     {
-      "name": "INT : +14",
-      "weight": 6.1224
+      "name": "INT +14",
+      "weight": 6.1224,
+      "grade": "U"
     },
     {
-      "name": "LUK : +14",
-      "weight": 6.1224
+      "name": "LUK +14",
+      "weight": 6.1224,
+      "grade": "U"
     },
     {
-      "name": "최대 HP : +180",
-      "weight": 6.1224
+      "name": "최대 HP +180",
+      "weight": 6.1224,
+      "grade": "U"
     },
     {
-      "name": "최대 MP : +180",
-      "weight": 6.1224
+      "name": "최대 MP +180",
+      "weight": 6.1224,
+      "grade": "U"
     },
     {
-      "name": "공격력 : +10",
-      "weight": 4.08163
+      "name": "공격력 +10",
+      "weight": 4.08163,
+      "grade": "U"
     },
     {
-      "name": "마력 : +10",
-      "weight": 4.08163
+      "name": "마력 +10",
+      "weight": 4.08163,
+      "grade": "U"
     },
     {
-      "name": "STR : +4%",
-      "weight": 4.08163
+      "name": "STR +4%",
+      "weight": 4.08163,
+      "grade": "U"
     },
     {
-      "name": "DEX : +4%",
-      "weight": 4.08163
+      "name": "DEX +4%",
+      "weight": 4.08163,
+      "grade": "U"
     },
     {
-      "name": "INT : +4%",
-      "weight": 4.08163
+      "name": "INT +4%",
+      "weight": 4.08163,
+      "grade": "U"
     },
     {
-      "name": "LUK : +4%",
-      "weight": 4.08163
+      "name": "LUK +4%",
+      "weight": 4.08163,
+      "grade": "U"
     },
     {
-      "name": "최대 HP : +5%",
-      "weight": 6.1224
+      "name": "최대 HP +5%",
+      "weight": 6.1224,
+      "grade": "U"
     },
     {
-      "name": "최대 MP : +5%",
-      "weight": 6.1224
+      "name": "최대 MP +5%",
+      "weight": 6.1224,
+      "grade": "U"
     },
     {
-      "name": "올스탯 : +3%",
-      "weight": 4.08163
+      "name": "올스탯 +3%",
+      "weight": 4.08163,
+      "grade": "U"
     },
     {
-      "name": "캐릭터 기준 9레벨 당 STR : +1",
-      "weight": 4.08163
+      "name": "캐릭터 기준 9레벨 당 STR +1",
+      "weight": 4.08163,
+      "grade": "U"
     },
     {
-      "name": "캐릭터 기준 9레벨 당 DEX : +1",
-      "weight": 4.08163
+      "name": "캐릭터 기준 9레벨 당 DEX +1",
+      "weight": 4.08163,
+      "grade": "U"
     },
     {
-      "name": "캐릭터 기준 9레벨 당 INT : +1",
-      "weight": 4.08163
+      "name": "캐릭터 기준 9레벨 당 INT +1",
+      "weight": 4.08163,
+      "grade": "U"
     },
     {
-      "name": "캐릭터 기준 9레벨 당 LUK : +1",
-      "weight": 4.08163
+      "name": "캐릭터 기준 9레벨 당 LUK +1",
+      "weight": 4.08163,
+      "grade": "U"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +15%",
-      "weight": 6.1224
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +15%",
+      "weight": 6.1224,
+      "grade": "U"
     }
   ],
   "secondOption": [
     {
-      "name": "STR : +12",
-      "weight": 5.8824
+      "name": "STR +12",
+      "weight": 5.8824,
+      "grade": "E"
     },
     {
-      "name": "DEX : +12",
-      "weight": 5.8824
+      "name": "DEX +12",
+      "weight": 5.8824,
+      "grade": "E"
     },
     {
-      "name": "INT : +12",
-      "weight": 5.8824
+      "name": "INT +12",
+      "weight": 5.8824,
+      "grade": "E"
     },
     {
-      "name": "LUK : +12",
-      "weight": 5.8824
+      "name": "LUK +12",
+      "weight": 5.8824,
+      "grade": "E"
     },
     {
-      "name": "최대 HP : +135",
-      "weight": 5.8824
+      "name": "최대 HP +135",
+      "weight": 5.8824,
+      "grade": "E"
     },
     {
-      "name": "최대 MP : +135",
-      "weight": 5.8824
+      "name": "최대 MP +135",
+      "weight": 5.8824,
+      "grade": "E"
     },
     {
-      "name": "이동속도 : +6",
-      "weight": 5.8824
+      "name": "이동속도 +6",
+      "weight": 5.8824,
+      "grade": "E"
     },
     {
-      "name": "점프력 : +6",
-      "weight": 5.8824
+      "name": "점프력 +6",
+      "weight": 5.8824,
+      "grade": "E"
     },
     {
-      "name": "공격력 : +8",
-      "weight": 3.9216
+      "name": "공격력 +8",
+      "weight": 3.9216,
+      "grade": "E"
     },
     {
-      "name": "마력 : +8",
-      "weight": 3.9216
+      "name": "마력 +8",
+      "weight": 3.9216,
+      "grade": "E"
     },
     {
-      "name": "방어력 : +60",
-      "weight": 5.8824
+      "name": "방어력 +60",
+      "weight": 5.8824,
+      "grade": "E"
     },
     {
-      "name": "STR : +3%",
-      "weight": 3.9216
+      "name": "STR +3%",
+      "weight": 3.9216,
+      "grade": "E"
     },
     {
-      "name": "DEX : +3%",
-      "weight": 3.9216
+      "name": "DEX +3%",
+      "weight": 3.9216,
+      "grade": "E"
     },
     {
-      "name": "INT : +3%",
-      "weight": 3.9216
+      "name": "INT +3%",
+      "weight": 3.9216,
+      "grade": "E"
     },
     {
-      "name": "LUK : +3%",
-      "weight": 3.9216
+      "name": "LUK +3%",
+      "weight": 3.9216,
+      "grade": "E"
     },
     {
-      "name": "최대 HP : +3%",
-      "weight": 5.8824
+      "name": "최대 HP +3%",
+      "weight": 5.8824,
+      "grade": "E"
     },
     {
-      "name": "최대 MP : +3%",
-      "weight": 5.8824
+      "name": "최대 MP +3%",
+      "weight": 5.8824,
+      "grade": "E"
     },
     {
-      "name": "방어력 : +4%",
-      "weight": 5.8824
+      "name": "방어력 +4%",
+      "weight": 5.8824,
+      "grade": "E"
     },
     {
-      "name": "올스탯 : +1%",
-      "weight": 3.9216
+      "name": "올스탯 +1%",
+      "weight": 3.9216,
+      "grade": "E"
     },
     {
-      "name": "STR : +14",
-      "weight": 0.12
+      "name": "STR +14",
+      "weight": 0.12,
+      "grade": "U"
     },
     {
-      "name": "DEX : +14",
-      "weight": 0.12
+      "name": "DEX +14",
+      "weight": 0.12,
+      "grade": "U"
     },
     {
-      "name": "INT : +14",
-      "weight": 0.12
+      "name": "INT +14",
+      "weight": 0.12,
+      "grade": "U"
     },
     {
-      "name": "LUK : +14",
-      "weight": 0.12
+      "name": "LUK +14",
+      "weight": 0.12,
+      "grade": "U"
     },
     {
-      "name": "최대 HP : +180",
-      "weight": 0.12
+      "name": "최대 HP +180",
+      "weight": 0.12,
+      "grade": "U"
     },
     {
-      "name": "최대 MP : +180",
-      "weight": 0.12
+      "name": "최대 MP +180",
+      "weight": 0.12,
+      "grade": "U"
     },
     {
-      "name": "공격력 : +10",
-      "weight": 0.08003
+      "name": "공격력 +10",
+      "weight": 0.08003,
+      "grade": "U"
     },
     {
-      "name": "마력 : +10",
-      "weight": 0.08003
+      "name": "마력 +10",
+      "weight": 0.08003,
+      "grade": "U"
     },
     {
-      "name": "STR : +4%",
-      "weight": 0.08003
+      "name": "STR +4%",
+      "weight": 0.08003,
+      "grade": "U"
     },
     {
-      "name": "DEX : +4%",
-      "weight": 0.08003
+      "name": "DEX +4%",
+      "weight": 0.08003,
+      "grade": "U"
     },
     {
-      "name": "INT : +4%",
-      "weight": 0.08003
+      "name": "INT +4%",
+      "weight": 0.08003,
+      "grade": "U"
     },
     {
-      "name": "LUK : +4%",
-      "weight": 0.08003
+      "name": "LUK +4%",
+      "weight": 0.08003,
+      "grade": "U"
     },
     {
-      "name": "최대 HP : +5%",
-      "weight": 0.12
+      "name": "최대 HP +5%",
+      "weight": 0.12,
+      "grade": "U"
     },
     {
-      "name": "최대 MP : +5%",
-      "weight": 0.12
+      "name": "최대 MP +5%",
+      "weight": 0.12,
+      "grade": "U"
     },
     {
-      "name": "올스탯 : +3%",
-      "weight": 0.08003
+      "name": "올스탯 +3%",
+      "weight": 0.08003,
+      "grade": "U"
     },
     {
-      "name": "캐릭터 기준 9레벨 당 STR : +1",
-      "weight": 0.08003
+      "name": "캐릭터 기준 9레벨 당 STR +1",
+      "weight": 0.08003,
+      "grade": "U"
     },
     {
-      "name": "캐릭터 기준 9레벨 당 DEX : +1",
-      "weight": 0.08003
+      "name": "캐릭터 기준 9레벨 당 DEX +1",
+      "weight": 0.08003,
+      "grade": "U"
     },
     {
-      "name": "캐릭터 기준 9레벨 당 INT : +1",
-      "weight": 0.08003
+      "name": "캐릭터 기준 9레벨 당 INT +1",
+      "weight": 0.08003,
+      "grade": "U"
     },
     {
-      "name": "캐릭터 기준 9레벨 당 LUK : +1",
-      "weight": 0.08003
+      "name": "캐릭터 기준 9레벨 당 LUK +1",
+      "weight": 0.08003,
+      "grade": "U"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +15%",
-      "weight": 0.12
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +15%",
+      "weight": 0.12,
+      "grade": "U"
     }
   ],
   "thirdOption": [
     {
-      "name": "STR : +12",
-      "weight": 5.8824
+      "name": "STR +12",
+      "weight": 5.8824,
+      "grade": "E"
     },
     {
-      "name": "DEX : +12",
-      "weight": 5.8824
+      "name": "DEX +12",
+      "weight": 5.8824,
+      "grade": "E"
     },
     {
-      "name": "INT : +12",
-      "weight": 5.8824
+      "name": "INT +12",
+      "weight": 5.8824,
+      "grade": "E"
     },
     {
-      "name": "LUK : +12",
-      "weight": 5.8824
+      "name": "LUK +12",
+      "weight": 5.8824,
+      "grade": "E"
     },
     {
-      "name": "최대 HP : +135",
-      "weight": 5.8824
+      "name": "최대 HP +135",
+      "weight": 5.8824,
+      "grade": "E"
     },
     {
-      "name": "최대 MP : +135",
-      "weight": 5.8824
+      "name": "최대 MP +135",
+      "weight": 5.8824,
+      "grade": "E"
     },
     {
-      "name": "이동속도 : +6",
-      "weight": 5.8824
+      "name": "이동속도 +6",
+      "weight": 5.8824,
+      "grade": "E"
     },
     {
-      "name": "점프력 : +6",
-      "weight": 5.8824
+      "name": "점프력 +6",
+      "weight": 5.8824,
+      "grade": "E"
     },
     {
-      "name": "공격력 : +8",
-      "weight": 3.9216
+      "name": "공격력 +8",
+      "weight": 3.9216,
+      "grade": "E"
     },
     {
-      "name": "마력 : +8",
-      "weight": 3.9216
+      "name": "마력 +8",
+      "weight": 3.9216,
+      "grade": "E"
     },
     {
-      "name": "방어력 : +60",
-      "weight": 5.8824
+      "name": "방어력 +60",
+      "weight": 5.8824,
+      "grade": "E"
     },
     {
-      "name": "STR : +3%",
-      "weight": 3.9216
+      "name": "STR +3%",
+      "weight": 3.9216,
+      "grade": "E"
     },
     {
-      "name": "DEX : +3%",
-      "weight": 3.9216
+      "name": "DEX +3%",
+      "weight": 3.9216,
+      "grade": "E"
     },
     {
-      "name": "INT : +3%",
-      "weight": 3.9216
+      "name": "INT +3%",
+      "weight": 3.9216,
+      "grade": "E"
     },
     {
-      "name": "LUK : +3%",
-      "weight": 3.9216
+      "name": "LUK +3%",
+      "weight": 3.9216,
+      "grade": "E"
     },
     {
-      "name": "최대 HP : +3%",
-      "weight": 5.8824
+      "name": "최대 HP +3%",
+      "weight": 5.8824,
+      "grade": "E"
     },
     {
-      "name": "최대 MP : +3%",
-      "weight": 5.8824
+      "name": "최대 MP +3%",
+      "weight": 5.8824,
+      "grade": "E"
     },
     {
-      "name": "방어력 : +4%",
-      "weight": 5.8824
+      "name": "방어력 +4%",
+      "weight": 5.8824,
+      "grade": "E"
     },
     {
-      "name": "올스탯 : +1%",
-      "weight": 3.9216
+      "name": "올스탯 +1%",
+      "weight": 3.9216,
+      "grade": "E"
     },
     {
-      "name": "STR : +14",
-      "weight": 0.12
+      "name": "STR +14",
+      "weight": 0.12,
+      "grade": "U"
     },
     {
-      "name": "DEX : +14",
-      "weight": 0.12
+      "name": "DEX +14",
+      "weight": 0.12,
+      "grade": "U"
     },
     {
-      "name": "INT : +14",
-      "weight": 0.12
+      "name": "INT +14",
+      "weight": 0.12,
+      "grade": "U"
     },
     {
-      "name": "LUK : +14",
-      "weight": 0.12
+      "name": "LUK +14",
+      "weight": 0.12,
+      "grade": "U"
     },
     {
-      "name": "최대 HP : +180",
-      "weight": 0.12
+      "name": "최대 HP +180",
+      "weight": 0.12,
+      "grade": "U"
     },
     {
-      "name": "최대 MP : +180",
-      "weight": 0.12
+      "name": "최대 MP +180",
+      "weight": 0.12,
+      "grade": "U"
     },
     {
-      "name": "공격력 : +10",
-      "weight": 0.08003
+      "name": "공격력 +10",
+      "weight": 0.08003,
+      "grade": "U"
     },
     {
-      "name": "마력 : +10",
-      "weight": 0.08003
+      "name": "마력 +10",
+      "weight": 0.08003,
+      "grade": "U"
     },
     {
-      "name": "STR : +4%",
-      "weight": 0.08003
+      "name": "STR +4%",
+      "weight": 0.08003,
+      "grade": "U"
     },
     {
-      "name": "DEX : +4%",
-      "weight": 0.08003
+      "name": "DEX +4%",
+      "weight": 0.08003,
+      "grade": "U"
     },
     {
-      "name": "INT : +4%",
-      "weight": 0.08003
+      "name": "INT +4%",
+      "weight": 0.08003,
+      "grade": "U"
     },
     {
-      "name": "LUK : +4%",
-      "weight": 0.08003
+      "name": "LUK +4%",
+      "weight": 0.08003,
+      "grade": "U"
     },
     {
-      "name": "최대 HP : +5%",
-      "weight": 0.12
+      "name": "최대 HP +5%",
+      "weight": 0.12,
+      "grade": "U"
     },
     {
-      "name": "최대 MP : +5%",
-      "weight": 0.12
+      "name": "최대 MP +5%",
+      "weight": 0.12,
+      "grade": "U"
     },
     {
-      "name": "올스탯 : +3%",
-      "weight": 0.08003
+      "name": "올스탯 +3%",
+      "weight": 0.08003,
+      "grade": "U"
     },
     {
-      "name": "캐릭터 기준 9레벨 당 STR : +1",
-      "weight": 0.08003
+      "name": "캐릭터 기준 9레벨 당 STR +1",
+      "weight": 0.08003,
+      "grade": "U"
     },
     {
-      "name": "캐릭터 기준 9레벨 당 DEX : +1",
-      "weight": 0.08003
+      "name": "캐릭터 기준 9레벨 당 DEX +1",
+      "weight": 0.08003,
+      "grade": "U"
     },
     {
-      "name": "캐릭터 기준 9레벨 당 INT : +1",
-      "weight": 0.08003
+      "name": "캐릭터 기준 9레벨 당 INT +1",
+      "weight": 0.08003,
+      "grade": "U"
     },
     {
-      "name": "캐릭터 기준 9레벨 당 LUK : +1",
-      "weight": 0.08003
+      "name": "캐릭터 기준 9레벨 당 LUK +1",
+      "weight": 0.08003,
+      "grade": "U"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +15%",
-      "weight": 0.12
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +15%",
+      "weight": 0.12,
+      "grade": "U"
     }
   ]
 }

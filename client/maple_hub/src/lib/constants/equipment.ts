@@ -1,0 +1,23 @@
+export const slotMap = {
+	'무기': 'weapon',
+	'엠블렘': 'emblem',
+	'보조무기': 'subweapon',
+	'포스실드': 'forceOrSoul',
+	'소울링': 'forceOrSoul',
+	'방패': 'shield',
+	'모자': 'head',
+	'상의': 'top',
+	'한벌옷': 'suit',
+	'하의': 'bottom',
+	'신발': 'shoes',
+	'장갑': 'gloves',
+	'망토': 'cloak',
+	'벨트': 'belt',
+	'어깨장식': 'shoulder',
+	'얼굴장식': 'face',
+	'눈장식': 'eyes',
+	'귀고리': 'ears',
+	'반지': 'ring',
+	'펜던트': 'pendant',
+	'기계심장': 'heart'
+};

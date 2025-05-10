@@ -1,0 +1,15 @@
+.character-info-landing {
+	padding: 2rem;
+	text-align: center;
+}
+
+.characterInfoTitle {
+	font-size: 2rem;
+	margin-bottom: 0.5rem;
+}
+
+.characterInfoText {
+	font-size: 1rem;
+	color: #555;
+	margin-bottom: 1.5rem;
+}

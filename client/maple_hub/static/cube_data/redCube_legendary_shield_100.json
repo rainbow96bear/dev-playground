@@ -1,316 +1,393 @@
 {
   "firstOption": [
     {
-      "name": "STR : +12%",
-      "weight": 8.5106
+      "name": "STR +12%",
+      "weight": 8.5106,
+      "grade": "L"
     },
     {
-      "name": "DEX : +12%",
-      "weight": 8.5106
+      "name": "DEX +12%",
+      "weight": 8.5106,
+      "grade": "L"
     },
     {
-      "name": "INT : +12%",
-      "weight": 8.5106
+      "name": "INT +12%",
+      "weight": 8.5106,
+      "grade": "L"
     },
     {
-      "name": "LUK : +12%",
-      "weight": 8.5106
+      "name": "LUK +12%",
+      "weight": 8.5106,
+      "grade": "L"
     },
     {
-      "name": "공격력 : +12%",
-      "weight": 4.2553
+      "name": "공격력 +12%",
+      "weight": 4.2553,
+      "grade": "L"
     },
     {
-      "name": "마력 : +12%",
-      "weight": 4.2553
+      "name": "마력 +12%",
+      "weight": 4.2553,
+      "grade": "L"
     },
     {
-      "name": "크리티컬 확률 : +12%",
-      "weight": 4.2553
+      "name": "크리티컬 확률 +12%",
+      "weight": 4.2553,
+      "grade": "L"
     },
     {
-      "name": "데미지 : +12%",
-      "weight": 4.2553
+      "name": "데미지 +12%",
+      "weight": 4.2553,
+      "grade": "L"
     },
     {
-      "name": "올스탯 : +9%",
-      "weight": 6.383
+      "name": "올스탯 +9%",
+      "weight": 6.383,
+      "grade": "L"
     },
     {
-      "name": "공격력 : +32",
-      "weight": 4.2553
+      "name": "공격력 +32",
+      "weight": 4.2553,
+      "grade": "L"
     },
     {
-      "name": "마력 : +32",
-      "weight": 4.2553
+      "name": "마력 +32",
+      "weight": 4.2553,
+      "grade": "L"
     },
     {
-      "name": "몬스터 방어율 무시 : +35%",
-      "weight": 4.2553
+      "name": "몬스터 방어율 무시 +35%",
+      "weight": 4.2553,
+      "grade": "L"
     },
     {
-      "name": "몬스터 방어율 무시 : +40%",
-      "weight": 4.2553
+      "name": "몬스터 방어율 무시 +40%",
+      "weight": 4.2553,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 20% 무시",
-      "weight": 6.383
+      "weight": 6.383,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 40% 무시",
-      "weight": 6.383
+      "weight": 6.383,
+      "grade": "L"
     },
     {
-      "name": "보스 몬스터 공격 시 데미지 : +35%",
-      "weight": 8.5106
+      "name": "보스 몬스터 데미지 +35%",
+      "weight": 8.5106,
+      "grade": "L"
     },
     {
-      "name": "보스 몬스터 공격 시 데미지 : +40%",
-      "weight": 4.2553
+      "name": "보스 몬스터 데미지 +40%",
+      "weight": 4.2553,
+      "grade": "L"
     }
   ],
   "secondOption": [
     {
-      "name": "STR : +9%",
-      "weight": 8.8235
+      "name": "STR +9%",
+      "weight": 8.8235,
+      "grade": "U"
     },
     {
-      "name": "DEX : +9%",
-      "weight": 8.8235
+      "name": "DEX +9%",
+      "weight": 8.8235,
+      "grade": "U"
     },
     {
-      "name": "INT : +9%",
-      "weight": 8.8235
+      "name": "INT +9%",
+      "weight": 8.8235,
+      "grade": "U"
     },
     {
-      "name": "LUK : +9%",
-      "weight": 8.8235
+      "name": "LUK +9%",
+      "weight": 8.8235,
+      "grade": "U"
     },
     {
-      "name": "공격력 : +9%",
-      "weight": 5.2941
+      "name": "공격력 +9%",
+      "weight": 5.2941,
+      "grade": "U"
     },
     {
-      "name": "마력 : +9%",
-      "weight": 5.2941
+      "name": "마력 +9%",
+      "weight": 5.2941,
+      "grade": "U"
     },
     {
-      "name": "크리티컬 확률 : +9%",
-      "weight": 7.05882
+      "name": "크리티컬 확률 +9%",
+      "weight": 7.05882,
+      "grade": "U"
     },
     {
-      "name": "데미지 : +9%",
-      "weight": 5.2941
+      "name": "데미지 +9%",
+      "weight": 5.2941,
+      "grade": "U"
     },
     {
-      "name": "올스탯 : +6%",
-      "weight": 7.05882
+      "name": "올스탯 +6%",
+      "weight": 7.05882,
+      "grade": "U"
     },
     {
-      "name": "몬스터 방어율 무시 : +30%",
-      "weight": 5.2941
+      "name": "몬스터 방어율 무시 +30%",
+      "weight": 5.2941,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 20% 무시",
-      "weight": 7.05882
+      "weight": 7.05882,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 40% 무시",
-      "weight": 7.05882
+      "weight": 7.05882,
+      "grade": "U"
     },
     {
-      "name": "보스 몬스터 공격 시 데미지 : +30%",
-      "weight": 5.2941
+      "name": "보스 몬스터 데미지 +30%",
+      "weight": 5.2941,
+      "grade": "U"
     },
     {
-      "name": "STR : +12%",
-      "weight": 0.8511
+      "name": "STR +12%",
+      "weight": 0.8511,
+      "grade": "L"
     },
     {
-      "name": "DEX : +12%",
-      "weight": 0.8511
+      "name": "DEX +12%",
+      "weight": 0.8511,
+      "grade": "L"
     },
     {
-      "name": "INT : +12%",
-      "weight": 0.8511
+      "name": "INT +12%",
+      "weight": 0.8511,
+      "grade": "L"
     },
     {
-      "name": "LUK : +12%",
-      "weight": 0.8511
+      "name": "LUK +12%",
+      "weight": 0.8511,
+      "grade": "L"
     },
     {
-      "name": "공격력 : +12%",
-      "weight": 0.4255
+      "name": "공격력 +12%",
+      "weight": 0.4255,
+      "grade": "L"
     },
     {
-      "name": "마력 : +12%",
-      "weight": 0.4255
+      "name": "마력 +12%",
+      "weight": 0.4255,
+      "grade": "L"
     },
     {
-      "name": "크리티컬 확률 : +12%",
-      "weight": 0.4255
+      "name": "크리티컬 확률 +12%",
+      "weight": 0.4255,
+      "grade": "L"
     },
     {
-      "name": "데미지 : +12%",
-      "weight": 0.4255
+      "name": "데미지 +12%",
+      "weight": 0.4255,
+      "grade": "L"
     },
     {
-      "name": "올스탯 : +9%",
-      "weight": 0.6383
+      "name": "올스탯 +9%",
+      "weight": 0.6383,
+      "grade": "L"
     },
     {
-      "name": "공격력 : +32",
-      "weight": 0.4255
+      "name": "공격력 +32",
+      "weight": 0.4255,
+      "grade": "L"
     },
     {
-      "name": "마력 : +32",
-      "weight": 0.4255
+      "name": "마력 +32",
+      "weight": 0.4255,
+      "grade": "L"
     },
     {
-      "name": "몬스터 방어율 무시 : +35%",
-      "weight": 0.4255
+      "name": "몬스터 방어율 무시 +35%",
+      "weight": 0.4255,
+      "grade": "L"
     },
     {
-      "name": "몬스터 방어율 무시 : +40%",
-      "weight": 0.4255
+      "name": "몬스터 방어율 무시 +40%",
+      "weight": 0.4255,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 20% 무시",
-      "weight": 0.6383
+      "weight": 0.6383,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 40% 무시",
-      "weight": 0.6383
+      "weight": 0.6383,
+      "grade": "L"
     },
     {
-      "name": "보스 몬스터 공격 시 데미지 : +35%",
-      "weight": 0.8511
+      "name": "보스 몬스터 데미지 +35%",
+      "weight": 0.8511,
+      "grade": "L"
     },
     {
-      "name": "보스 몬스터 공격 시 데미지 : +40%",
-      "weight": 0.4255
+      "name": "보스 몬스터 데미지 +40%",
+      "weight": 0.4255,
+      "grade": "L"
     }
   ],
   "thirdOption": [
     {
-      "name": "STR : +9%",
-      "weight": 9.7059
+      "name": "STR +9%",
+      "weight": 9.7059,
+      "grade": "U"
     },
     {
-      "name": "DEX : +9%",
-      "weight": 9.7059
+      "name": "DEX +9%",
+      "weight": 9.7059,
+      "grade": "U"
     },
     {
-      "name": "INT : +9%",
-      "weight": 9.7059
+      "name": "INT +9%",
+      "weight": 9.7059,
+      "grade": "U"
     },
     {
-      "name": "LUK : +9%",
-      "weight": 9.7059
+      "name": "LUK +9%",
+      "weight": 9.7059,
+      "grade": "U"
     },
     {
-      "name": "공격력 : +9%",
-      "weight": 5.8235
+      "name": "공격력 +9%",
+      "weight": 5.8235,
+      "grade": "U"
     },
     {
-      "name": "마력 : +9%",
-      "weight": 5.8235
+      "name": "마력 +9%",
+      "weight": 5.8235,
+      "grade": "U"
     },
     {
-      "name": "크리티컬 확률 : +9%",
-      "weight": 7.7647
+      "name": "크리티컬 확률 +9%",
+      "weight": 7.7647,
+      "grade": "U"
     },
     {
-      "name": "데미지 : +9%",
-      "weight": 5.8235
+      "name": "데미지 +9%",
+      "weight": 5.8235,
+      "grade": "U"
     },
     {
-      "name": "올스탯 : +6%",
-      "weight": 7.7647
+      "name": "올스탯 +6%",
+      "weight": 7.7647,
+      "grade": "U"
     },
     {
-      "name": "몬스터 방어율 무시 : +30%",
-      "weight": 5.8235
+      "name": "몬스터 방어율 무시 +30%",
+      "weight": 5.8235,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 20% 무시",
-      "weight": 7.7647
+      "weight": 7.7647,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 40% 무시",
-      "weight": 7.7647
+      "weight": 7.7647,
+      "grade": "U"
     },
     {
-      "name": "보스 몬스터 공격 시 데미지 : +30%",
-      "weight": 5.8235
+      "name": "보스 몬스터 데미지 +30%",
+      "weight": 5.8235,
+      "grade": "U"
     },
     {
-      "name": "STR : +12%",
-      "weight": 0.08511
+      "name": "STR +12%",
+      "weight": 0.08511,
+      "grade": "L"
     },
     {
-      "name": "DEX : +12%",
-      "weight": 0.08511
+      "name": "DEX +12%",
+      "weight": 0.08511,
+      "grade": "L"
     },
     {
-      "name": "INT : +12%",
-      "weight": 0.08511
+      "name": "INT +12%",
+      "weight": 0.08511,
+      "grade": "L"
     },
     {
-      "name": "LUK : +12%",
-      "weight": 0.08511
+      "name": "LUK +12%",
+      "weight": 0.08511,
+      "grade": "L"
     },
     {
-      "name": "공격력 : +12%",
-      "weight": 0.04255
+      "name": "공격력 +12%",
+      "weight": 0.04255,
+      "grade": "L"
     },
     {
-      "name": "마력 : +12%",
-      "weight": 0.04255
+      "name": "마력 +12%",
+      "weight": 0.04255,
+      "grade": "L"
     },
     {
-      "name": "크리티컬 확률 : +12%",
-      "weight": 0.04255
+      "name": "크리티컬 확률 +12%",
+      "weight": 0.04255,
+      "grade": "L"
     },
     {
-      "name": "데미지 : +12%",
-      "weight": 0.04255
+      "name": "데미지 +12%",
+      "weight": 0.04255,
+      "grade": "L"
     },
     {
-      "name": "올스탯 : +9%",
-      "weight": 0.06383
+      "name": "올스탯 +9%",
+      "weight": 0.06383,
+      "grade": "L"
     },
     {
-      "name": "공격력 : +32",
-      "weight": 0.04255
+      "name": "공격력 +32",
+      "weight": 0.04255,
+      "grade": "L"
     },
     {
-      "name": "마력 : +32",
-      "weight": 0.04255
+      "name": "마력 +32",
+      "weight": 0.04255,
+      "grade": "L"
     },
     {
-      "name": "몬스터 방어율 무시 : +35%",
-      "weight": 0.04255
+      "name": "몬스터 방어율 무시 +35%",
+      "weight": 0.04255,
+      "grade": "L"
     },
     {
-      "name": "몬스터 방어율 무시 : +40%",
-      "weight": 0.04255
+      "name": "몬스터 방어율 무시 +40%",
+      "weight": 0.04255,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 20% 무시",
-      "weight": 0.06383
+      "weight": 0.06383,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 40% 무시",
-      "weight": 0.06383
+      "weight": 0.06383,
+      "grade": "L"
     },
     {
-      "name": "보스 몬스터 공격 시 데미지 : +35%",
-      "weight": 0.08511
+      "name": "보스 몬스터 데미지 +35%",
+      "weight": 0.08511,
+      "grade": "L"
     },
     {
-      "name": "보스 몬스터 공격 시 데미지 : +40%",
-      "weight": 0.04255
+      "name": "보스 몬스터 데미지 +40%",
+      "weight": 0.04255,
+      "grade": "L"
     }
   ]
 }

@@ -1,252 +1,313 @@
 {
   "firstOption": [
     {
-      "name": "STR : +9%",
-      "weight": 10.8108
+      "name": "STR +9%",
+      "weight": 10.8108,
+      "grade": "L"
     },
     {
-      "name": "DEX : +9%",
-      "weight": 10.8108
+      "name": "DEX +9%",
+      "weight": 10.8108,
+      "grade": "L"
     },
     {
-      "name": "INT : +9%",
-      "weight": 10.8108
+      "name": "INT +9%",
+      "weight": 10.8108,
+      "grade": "L"
     },
     {
-      "name": "LUK : +9%",
-      "weight": 10.8108
+      "name": "LUK +9%",
+      "weight": 10.8108,
+      "grade": "L"
     },
     {
-      "name": "공격력 : +9%",
-      "weight": 5.4054
+      "name": "공격력 +9%",
+      "weight": 5.4054,
+      "grade": "L"
     },
     {
-      "name": "마력 : +9%",
-      "weight": 5.4054
+      "name": "마력 +9%",
+      "weight": 5.4054,
+      "grade": "L"
     },
     {
-      "name": "크리티컬 확률 : +9%",
-      "weight": 5.4054
+      "name": "크리티컬 확률 +9%",
+      "weight": 5.4054,
+      "grade": "L"
     },
     {
-      "name": "데미지 : +9%",
-      "weight": 5.4054
+      "name": "데미지 +9%",
+      "weight": 5.4054,
+      "grade": "L"
     },
     {
-      "name": "올스탯 : +6%",
-      "weight": 8.1081
+      "name": "올스탯 +6%",
+      "weight": 8.1081,
+      "grade": "L"
     },
     {
-      "name": "공격력 : +32",
-      "weight": 5.4054
+      "name": "공격력 +32",
+      "weight": 5.4054,
+      "grade": "L"
     },
     {
-      "name": "마력 : +32",
-      "weight": 5.4054
+      "name": "마력 +32",
+      "weight": 5.4054,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 20% 무시",
-      "weight": 8.1081
+      "weight": 8.1081,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 40% 무시",
-      "weight": 8.1081
+      "weight": 8.1081,
+      "grade": "L"
     }
   ],
   "secondOption": [
     {
-      "name": "STR : +6%",
-      "weight": 10
+      "name": "STR +6%",
+      "weight": 10,
+      "grade": "U"
     },
     {
-      "name": "DEX : +6%",
-      "weight": 10
+      "name": "DEX +6%",
+      "weight": 10,
+      "grade": "U"
     },
     {
-      "name": "INT : +6%",
-      "weight": 10
+      "name": "INT +6%",
+      "weight": 10,
+      "grade": "U"
     },
     {
-      "name": "LUK : +6%",
-      "weight": 10
+      "name": "LUK +6%",
+      "weight": 10,
+      "grade": "U"
     },
     {
-      "name": "공격력 : +6%",
-      "weight": 6
+      "name": "공격력 +6%",
+      "weight": 6,
+      "grade": "U"
     },
     {
-      "name": "마력 : +6%",
-      "weight": 6
+      "name": "마력 +6%",
+      "weight": 6,
+      "grade": "U"
     },
     {
-      "name": "크리티컬 확률 : +6%",
-      "weight": 8
+      "name": "크리티컬 확률 +6%",
+      "weight": 8,
+      "grade": "U"
     },
     {
-      "name": "데미지 : +6%",
-      "weight": 6
+      "name": "데미지 +6%",
+      "weight": 6,
+      "grade": "U"
     },
     {
-      "name": "올스탯 : +4%",
-      "weight": 8
+      "name": "올스탯 +4%",
+      "weight": 8,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 20% 무시",
-      "weight": 8
+      "weight": 8,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 40% 무시",
-      "weight": 8
+      "weight": 8,
+      "grade": "U"
     },
     {
-      "name": "STR : +9%",
-      "weight": 1.08108
+      "name": "STR +9%",
+      "weight": 1.08108,
+      "grade": "L"
     },
     {
-      "name": "DEX : +9%",
-      "weight": 1.08108
+      "name": "DEX +9%",
+      "weight": 1.08108,
+      "grade": "L"
     },
     {
-      "name": "INT : +9%",
-      "weight": 1.08108
+      "name": "INT +9%",
+      "weight": 1.08108,
+      "grade": "L"
     },
     {
-      "name": "LUK : +9%",
-      "weight": 1.08108
+      "name": "LUK +9%",
+      "weight": 1.08108,
+      "grade": "L"
     },
     {
-      "name": "공격력 : +9%",
-      "weight": 0.5405
+      "name": "공격력 +9%",
+      "weight": 0.5405,
+      "grade": "L"
     },
     {
-      "name": "마력 : +9%",
-      "weight": 0.5405
+      "name": "마력 +9%",
+      "weight": 0.5405,
+      "grade": "L"
     },
     {
-      "name": "크리티컬 확률 : +9%",
-      "weight": 0.5405
+      "name": "크리티컬 확률 +9%",
+      "weight": 0.5405,
+      "grade": "L"
     },
     {
-      "name": "데미지 : +9%",
-      "weight": 0.5405
+      "name": "데미지 +9%",
+      "weight": 0.5405,
+      "grade": "L"
     },
     {
-      "name": "올스탯 : +6%",
-      "weight": 0.8108
+      "name": "올스탯 +6%",
+      "weight": 0.8108,
+      "grade": "L"
     },
     {
-      "name": "공격력 : +32",
-      "weight": 0.5405
+      "name": "공격력 +32",
+      "weight": 0.5405,
+      "grade": "L"
     },
     {
-      "name": "마력 : +32",
-      "weight": 0.5405
+      "name": "마력 +32",
+      "weight": 0.5405,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 20% 무시",
-      "weight": 0.8108
+      "weight": 0.8108,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 40% 무시",
-      "weight": 0.8108
+      "weight": 0.8108,
+      "grade": "L"
     }
   ],
   "thirdOption": [
     {
-      "name": "STR : +6%",
-      "weight": 11
+      "name": "STR +6%",
+      "weight": 11,
+      "grade": "U"
     },
     {
-      "name": "DEX : +6%",
-      "weight": 11
+      "name": "DEX +6%",
+      "weight": 11,
+      "grade": "U"
     },
     {
-      "name": "INT : +6%",
-      "weight": 11
+      "name": "INT +6%",
+      "weight": 11,
+      "grade": "U"
     },
     {
-      "name": "LUK : +6%",
-      "weight": 11
+      "name": "LUK +6%",
+      "weight": 11,
+      "grade": "U"
     },
     {
-      "name": "공격력 : +6%",
-      "weight": 6.6
+      "name": "공격력 +6%",
+      "weight": 6.6,
+      "grade": "U"
     },
     {
-      "name": "마력 : +6%",
-      "weight": 6.6
+      "name": "마력 +6%",
+      "weight": 6.6,
+      "grade": "U"
     },
     {
-      "name": "크리티컬 확률 : +6%",
-      "weight": 8.8
+      "name": "크리티컬 확률 +6%",
+      "weight": 8.8,
+      "grade": "U"
     },
     {
-      "name": "데미지 : +6%",
-      "weight": 6.6
+      "name": "데미지 +6%",
+      "weight": 6.6,
+      "grade": "U"
     },
     {
-      "name": "올스탯 : +4%",
-      "weight": 8.8
+      "name": "올스탯 +4%",
+      "weight": 8.8,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 20% 무시",
-      "weight": 8.8
+      "weight": 8.8,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 40% 무시",
-      "weight": 8.8
+      "weight": 8.8,
+      "grade": "U"
     },
     {
-      "name": "STR : +9%",
-      "weight": 0.1081
+      "name": "STR +9%",
+      "weight": 0.1081,
+      "grade": "L"
     },
     {
-      "name": "DEX : +9%",
-      "weight": 0.1081
+      "name": "DEX +9%",
+      "weight": 0.1081,
+      "grade": "L"
     },
     {
-      "name": "INT : +9%",
-      "weight": 0.1081
+      "name": "INT +9%",
+      "weight": 0.1081,
+      "grade": "L"
     },
     {
-      "name": "LUK : +9%",
-      "weight": 0.1081
+      "name": "LUK +9%",
+      "weight": 0.1081,
+      "grade": "L"
     },
     {
-      "name": "공격력 : +9%",
-      "weight": 0.05405
+      "name": "공격력 +9%",
+      "weight": 0.05405,
+      "grade": "L"
     },
     {
-      "name": "마력 : +9%",
-      "weight": 0.05405
+      "name": "마력 +9%",
+      "weight": 0.05405,
+      "grade": "L"
     },
     {
-      "name": "크리티컬 확률 : +9%",
-      "weight": 0.05405
+      "name": "크리티컬 확률 +9%",
+      "weight": 0.05405,
+      "grade": "L"
     },
     {
-      "name": "데미지 : +9%",
-      "weight": 0.05405
+      "name": "데미지 +9%",
+      "weight": 0.05405,
+      "grade": "L"
     },
     {
-      "name": "올스탯 : +6%",
-      "weight": 0.08108
+      "name": "올스탯 +6%",
+      "weight": 0.08108,
+      "grade": "L"
     },
     {
-      "name": "공격력 : +32",
-      "weight": 0.05405
+      "name": "공격력 +32",
+      "weight": 0.05405,
+      "grade": "L"
     },
     {
-      "name": "마력 : +32",
-      "weight": 0.05405
+      "name": "마력 +32",
+      "weight": 0.05405,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 20% 무시",
-      "weight": 0.08108
+      "weight": 0.08108,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 40% 무시",
-      "weight": 0.08108
+      "weight": 0.08108,
+      "grade": "L"
     }
   ]
 }

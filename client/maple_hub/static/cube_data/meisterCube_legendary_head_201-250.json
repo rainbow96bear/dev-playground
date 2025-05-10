@@ -1,252 +1,313 @@
 {
   "firstOption": [
     {
-      "name": "STR : +13%",
-      "weight": 6.06061
+      "name": "STR +13%",
+      "weight": 6.06061,
+      "grade": "L"
     },
     {
-      "name": "DEX : +13%",
-      "weight": 6.06061
+      "name": "DEX +13%",
+      "weight": 6.06061,
+      "grade": "L"
     },
     {
-      "name": "INT : +13%",
-      "weight": 6.06061
+      "name": "INT +13%",
+      "weight": 6.06061,
+      "grade": "L"
     },
     {
-      "name": "LUK : +13%",
-      "weight": 6.06061
+      "name": "LUK +13%",
+      "weight": 6.06061,
+      "grade": "L"
     },
     {
-      "name": "최대 HP : +13%",
-      "weight": 9.09091
+      "name": "최대 HP +13%",
+      "weight": 9.09091,
+      "grade": "L"
     },
     {
-      "name": "최대 MP : +13%",
-      "weight": 9.09091
+      "name": "최대 MP +13%",
+      "weight": 9.09091,
+      "grade": "L"
     },
     {
-      "name": "올스탯 : +10%",
-      "weight": 6.06061
+      "name": "올스탯 +10%",
+      "weight": 6.06061,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 20% 무시",
-      "weight": 9.09091
+      "weight": 9.09091,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 40% 무시",
-      "weight": 9.09091
+      "weight": 9.09091,
+      "grade": "L"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +40%",
-      "weight": 9.09091
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +40%",
+      "weight": 9.09091,
+      "grade": "L"
     },
     {
-      "name": "모든 스킬의 재사용 대기시간 : -1초(10초 이하는 5%감소, 5초 미만으로 감소 불가)",
-      "weight": 9.09091
+      "name": "스킬 재사용 대기시간 -1초",
+      "weight": 9.09091,
+      "grade": "L"
     },
     {
-      "name": "모든 스킬의 재사용 대기시간 : -2초(10초 이하는 10%감소, 5초 미만으로 감소 불가)",
-      "weight": 6.06061
+      "name": "스킬 재사용 대기시간 -2초",
+      "weight": 6.06061,
+      "grade": "L"
     },
     {
       "name": "\u003c쓸만한 어드밴스드 블레스\u003e 스킬 사용 가능",
-      "weight": 9.09091
+      "weight": 9.09091,
+      "grade": "L"
     }
   ],
   "secondOption": [
     {
-      "name": "STR : +10%",
-      "weight": 7.677
+      "name": "STR +10%",
+      "weight": 7.677,
+      "grade": "U"
     },
     {
-      "name": "DEX : +10%",
-      "weight": 7.677
+      "name": "DEX +10%",
+      "weight": 7.677,
+      "grade": "U"
     },
     {
-      "name": "INT : +10%",
-      "weight": 7.677
+      "name": "INT +10%",
+      "weight": 7.677,
+      "grade": "U"
     },
     {
-      "name": "LUK : +10%",
-      "weight": 7.677
+      "name": "LUK +10%",
+      "weight": 7.677,
+      "grade": "U"
     },
     {
-      "name": "최대 HP : +10%",
-      "weight": 11.5154
+      "name": "최대 HP +10%",
+      "weight": 11.5154,
+      "grade": "U"
     },
     {
-      "name": "최대 MP : +10%",
-      "weight": 11.5154
+      "name": "최대 MP +10%",
+      "weight": 11.5154,
+      "grade": "U"
     },
     {
-      "name": "올스탯 : +7%",
-      "weight": 3.8385
+      "name": "올스탯 +7%",
+      "weight": 3.8385,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 20% 무시",
-      "weight": 11.5154
+      "weight": 11.5154,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 40% 무시",
-      "weight": 11.5154
+      "weight": 11.5154,
+      "grade": "U"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +30%",
-      "weight": 11.5154
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +30%",
+      "weight": 11.5154,
+      "grade": "U"
     },
     {
       "name": "\u003c쓸만한 미스틱 도어\u003e 스킬 사용 가능",
-      "weight": 7.677
+      "weight": 7.677,
+      "grade": "U"
     },
     {
-      "name": "STR : +13%",
-      "weight": 0.0121
+      "name": "STR +13%",
+      "weight": 0.0121,
+      "grade": "L"
     },
     {
-      "name": "DEX : +13%",
-      "weight": 0.0121
+      "name": "DEX +13%",
+      "weight": 0.0121,
+      "grade": "L"
     },
     {
-      "name": "INT : +13%",
-      "weight": 0.0121
+      "name": "INT +13%",
+      "weight": 0.0121,
+      "grade": "L"
     },
     {
-      "name": "LUK : +13%",
-      "weight": 0.0121
+      "name": "LUK +13%",
+      "weight": 0.0121,
+      "grade": "L"
     },
     {
-      "name": "최대 HP : +13%",
-      "weight": 0.01815
+      "name": "최대 HP +13%",
+      "weight": 0.01815,
+      "grade": "L"
     },
     {
-      "name": "최대 MP : +13%",
-      "weight": 0.01815
+      "name": "최대 MP +13%",
+      "weight": 0.01815,
+      "grade": "L"
     },
     {
-      "name": "올스탯 : +10%",
-      "weight": 0.0121
+      "name": "올스탯 +10%",
+      "weight": 0.0121,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 20% 무시",
-      "weight": 0.01815
+      "weight": 0.01815,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 40% 무시",
-      "weight": 0.01815
+      "weight": 0.01815,
+      "grade": "L"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +40%",
-      "weight": 0.01815
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +40%",
+      "weight": 0.01815,
+      "grade": "L"
     },
     {
-      "name": "모든 스킬의 재사용 대기시간 : -1초(10초 이하는 5%감소, 5초 미만으로 감소 불가)",
-      "weight": 0.01815
+      "name": "스킬 재사용 대기시간 -1초",
+      "weight": 0.01815,
+      "grade": "L"
     },
     {
-      "name": "모든 스킬의 재사용 대기시간 : -2초(10초 이하는 10%감소, 5초 미만으로 감소 불가)",
-      "weight": 0.0121
+      "name": "스킬 재사용 대기시간 -2초",
+      "weight": 0.0121,
+      "grade": "L"
     },
     {
       "name": "\u003c쓸만한 어드밴스드 블레스\u003e 스킬 사용 가능",
-      "weight": 0.01815
+      "weight": 0.01815,
+      "grade": "L"
     }
   ],
   "thirdOption": [
     {
-      "name": "STR : +10%",
-      "weight": 7.677
+      "name": "STR +10%",
+      "weight": 7.677,
+      "grade": "U"
     },
     {
-      "name": "DEX : +10%",
-      "weight": 7.677
+      "name": "DEX +10%",
+      "weight": 7.677,
+      "grade": "U"
     },
     {
-      "name": "INT : +10%",
-      "weight": 7.677
+      "name": "INT +10%",
+      "weight": 7.677,
+      "grade": "U"
     },
     {
-      "name": "LUK : +10%",
-      "weight": 7.677
+      "name": "LUK +10%",
+      "weight": 7.677,
+      "grade": "U"
     },
     {
-      "name": "최대 HP : +10%",
-      "weight": 11.5154
+      "name": "최대 HP +10%",
+      "weight": 11.5154,
+      "grade": "U"
     },
     {
-      "name": "최대 MP : +10%",
-      "weight": 11.5154
+      "name": "최대 MP +10%",
+      "weight": 11.5154,
+      "grade": "U"
     },
     {
-      "name": "올스탯 : +7%",
-      "weight": 3.8385
+      "name": "올스탯 +7%",
+      "weight": 3.8385,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 20% 무시",
-      "weight": 11.5154
+      "weight": 11.5154,
+      "grade": "U"
     },
     {
       "name": "피격 시 5% 확률로 데미지의 40% 무시",
-      "weight": 11.5154
+      "weight": 11.5154,
+      "grade": "U"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +30%",
-      "weight": 11.5154
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +30%",
+      "weight": 11.5154,
+      "grade": "U"
     },
     {
       "name": "\u003c쓸만한 미스틱 도어\u003e 스킬 사용 가능",
-      "weight": 7.677
+      "weight": 7.677,
+      "grade": "U"
     },
     {
-      "name": "STR : +13%",
-      "weight": 0.0121
+      "name": "STR +13%",
+      "weight": 0.0121,
+      "grade": "L"
     },
     {
-      "name": "DEX : +13%",
-      "weight": 0.0121
+      "name": "DEX +13%",
+      "weight": 0.0121,
+      "grade": "L"
     },
     {
-      "name": "INT : +13%",
-      "weight": 0.0121
+      "name": "INT +13%",
+      "weight": 0.0121,
+      "grade": "L"
     },
     {
-      "name": "LUK : +13%",
-      "weight": 0.0121
+      "name": "LUK +13%",
+      "weight": 0.0121,
+      "grade": "L"
     },
     {
-      "name": "최대 HP : +13%",
-      "weight": 0.01815
+      "name": "최대 HP +13%",
+      "weight": 0.01815,
+      "grade": "L"
     },
     {
-      "name": "최대 MP : +13%",
-      "weight": 0.01815
+      "name": "최대 MP +13%",
+      "weight": 0.01815,
+      "grade": "L"
     },
     {
-      "name": "올스탯 : +10%",
-      "weight": 0.0121
+      "name": "올스탯 +10%",
+      "weight": 0.0121,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 20% 무시",
-      "weight": 0.01815
+      "weight": 0.01815,
+      "grade": "L"
     },
     {
       "name": "피격 시 10% 확률로 데미지의 40% 무시",
-      "weight": 0.01815
+      "weight": 0.01815,
+      "grade": "L"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +40%",
-      "weight": 0.01815
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +40%",
+      "weight": 0.01815,
+      "grade": "L"
     },
     {
-      "name": "모든 스킬의 재사용 대기시간 : -1초(10초 이하는 5%감소, 5초 미만으로 감소 불가)",
-      "weight": 0.01815
+      "name": "스킬 재사용 대기시간 -1초",
+      "weight": 0.01815,
+      "grade": "L"
     },
     {
-      "name": "모든 스킬의 재사용 대기시간 : -2초(10초 이하는 10%감소, 5초 미만으로 감소 불가)",
-      "weight": 0.0121
+      "name": "스킬 재사용 대기시간 -2초",
+      "weight": 0.0121,
+      "grade": "L"
     },
     {
       "name": "\u003c쓸만한 어드밴스드 블레스\u003e 스킬 사용 가능",
-      "weight": 0.01815
+      "weight": 0.01815,
+      "grade": "L"
     }
   ]
 }

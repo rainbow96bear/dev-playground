@@ -1,156 +1,193 @@
 {
   "firstOption": [
     {
-      "name": "STR : +6%",
-      "weight": 14.8148
+      "name": "STR +6%",
+      "weight": 14.8148,
+      "grade": "L"
     },
     {
-      "name": "DEX : +6%",
-      "weight": 14.8148
+      "name": "DEX +6%",
+      "weight": 14.8148,
+      "grade": "L"
     },
     {
-      "name": "INT : +6%",
-      "weight": 14.8148
+      "name": "INT +6%",
+      "weight": 14.8148,
+      "grade": "L"
     },
     {
-      "name": "LUK : +6%",
-      "weight": 14.8148
+      "name": "LUK +6%",
+      "weight": 14.8148,
+      "grade": "L"
     },
     {
-      "name": "최대 HP : +6%",
-      "weight": 14.8148
+      "name": "최대 HP +6%",
+      "weight": 14.8148,
+      "grade": "L"
     },
     {
-      "name": "최대 MP : +6%",
-      "weight": 14.8148
+      "name": "최대 MP +6%",
+      "weight": 14.8148,
+      "grade": "L"
     },
     {
-      "name": "올스탯 : +3%",
-      "weight": 11.1111
+      "name": "올스탯 +3%",
+      "weight": 11.1111,
+      "grade": "L"
     }
   ],
   "secondOption": [
     {
-      "name": "STR : +3%",
-      "weight": 11.25
+      "name": "STR +3%",
+      "weight": 11.25,
+      "grade": "U"
     },
     {
-      "name": "DEX : +3%",
-      "weight": 11.25
+      "name": "DEX +3%",
+      "weight": 11.25,
+      "grade": "U"
     },
     {
-      "name": "INT : +3%",
-      "weight": 11.25
+      "name": "INT +3%",
+      "weight": 11.25,
+      "grade": "U"
     },
     {
-      "name": "LUK : +3%",
-      "weight": 11.25
+      "name": "LUK +3%",
+      "weight": 11.25,
+      "grade": "U"
     },
     {
-      "name": "최대 HP : +3%",
-      "weight": 13.5
+      "name": "최대 HP +3%",
+      "weight": 13.5,
+      "grade": "U"
     },
     {
-      "name": "최대 MP : +3%",
-      "weight": 13.5
+      "name": "최대 MP +3%",
+      "weight": 13.5,
+      "grade": "U"
     },
     {
-      "name": "올스탯 : +2%",
-      "weight": 9
+      "name": "올스탯 +2%",
+      "weight": 9,
+      "grade": "U"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +10%",
-      "weight": 9
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +10%",
+      "weight": 9,
+      "grade": "U"
     },
     {
-      "name": "STR : +6%",
-      "weight": 1.4815
+      "name": "STR +6%",
+      "weight": 1.4815,
+      "grade": "L"
     },
     {
-      "name": "DEX : +6%",
-      "weight": 1.4815
+      "name": "DEX +6%",
+      "weight": 1.4815,
+      "grade": "L"
     },
     {
-      "name": "INT : +6%",
-      "weight": 1.4815
+      "name": "INT +6%",
+      "weight": 1.4815,
+      "grade": "L"
     },
     {
-      "name": "LUK : +6%",
-      "weight": 1.4815
+      "name": "LUK +6%",
+      "weight": 1.4815,
+      "grade": "L"
     },
     {
-      "name": "최대 HP : +6%",
-      "weight": 1.4815
+      "name": "최대 HP +6%",
+      "weight": 1.4815,
+      "grade": "L"
     },
     {
-      "name": "최대 MP : +6%",
-      "weight": 1.4815
+      "name": "최대 MP +6%",
+      "weight": 1.4815,
+      "grade": "L"
     },
     {
-      "name": "올스탯 : +3%",
-      "weight": 1.1111
+      "name": "올스탯 +3%",
+      "weight": 1.1111,
+      "grade": "L"
     }
   ],
   "thirdOption": [
     {
-      "name": "STR : +3%",
-      "weight": 12.375
+      "name": "STR +3%",
+      "weight": 12.375,
+      "grade": "U"
     },
     {
-      "name": "DEX : +3%",
-      "weight": 12.375
+      "name": "DEX +3%",
+      "weight": 12.375,
+      "grade": "U"
     },
     {
-      "name": "INT : +3%",
-      "weight": 12.375
+      "name": "INT +3%",
+      "weight": 12.375,
+      "grade": "U"
     },
     {
-      "name": "LUK : +3%",
-      "weight": 12.375
+      "name": "LUK +3%",
+      "weight": 12.375,
+      "grade": "U"
     },
     {
-      "name": "최대 HP : +3%",
-      "weight": 14.85
+      "name": "최대 HP +3%",
+      "weight": 14.85,
+      "grade": "U"
     },
     {
-      "name": "최대 MP : +3%",
-      "weight": 14.85
+      "name": "최대 MP +3%",
+      "weight": 14.85,
+      "grade": "U"
     },
     {
-      "name": "올스탯 : +2%",
-      "weight": 9.9
+      "name": "올스탯 +2%",
+      "weight": 9.9,
+      "grade": "U"
     },
     {
-      "name": "HP 회복 아이템 및 회복 스킬 효율 : +10%",
-      "weight": 9.9
+      "name": "HP 회복 아이템 및 회복 스킬 효율 +10%",
+      "weight": 9.9,
+      "grade": "U"
     },
     {
-      "name": "STR : +6%",
-      "weight": 0.1481
+      "name": "STR +6%",
+      "weight": 0.1481,
+      "grade": "L"
     },
     {
-      "name": "DEX : +6%",
-      "weight": 0.1481
+      "name": "DEX +6%",
+      "weight": 0.1481,
+      "grade": "L"
     },
     {
-      "name": "INT : +6%",
-      "weight": 0.1481
+      "name": "INT +6%",
+      "weight": 0.1481,
+      "grade": "L"
     },
     {
-      "name": "LUK : +6%",
-      "weight": 0.1481
+      "name": "LUK +6%",
+      "weight": 0.1481,
+      "grade": "L"
     },
     {
-      "name": "최대 HP : +6%",
-      "weight": 0.1481
+      "name": "최대 HP +6%",
+      "weight": 0.1481,
+      "grade": "L"
     },
     {
-      "name": "최대 MP : +6%",
-      "weight": 0.1481
+      "name": "최대 MP +6%",
+      "weight": 0.1481,
+      "grade": "L"
     },
     {
-      "name": "올스탯 : +3%",
-      "weight": 0.1111
+      "name": "올스탯 +3%",
+      "weight": 0.1111,
+      "grade": "L"
     }
   ]
 }

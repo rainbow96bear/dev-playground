@@ -1,240 +1,298 @@
 {
   "firstOption": [
     {
-      "name": "STR : +4%",
-      "weight": 11.1111
+      "name": "STR +4%",
+      "weight": 11.1111,
+      "grade": "E"
     },
     {
-      "name": "DEX : +4%",
-      "weight": 11.1111
+      "name": "DEX +4%",
+      "weight": 11.1111,
+      "grade": "E"
     },
     {
-      "name": "INT : +4%",
-      "weight": 11.1111
+      "name": "INT +4%",
+      "weight": 11.1111,
+      "grade": "E"
     },
     {
-      "name": "LUK : +4%",
-      "weight": 11.1111
+      "name": "LUK +4%",
+      "weight": 11.1111,
+      "grade": "E"
     },
     {
-      "name": "최대 HP : +4%",
-      "weight": 16.6667
+      "name": "최대 HP +4%",
+      "weight": 16.6667,
+      "grade": "E"
     },
     {
-      "name": "최대 MP : +4%",
-      "weight": 16.6667
+      "name": "최대 MP +4%",
+      "weight": 16.6667,
+      "grade": "E"
     },
     {
-      "name": "방어력 : +4%",
-      "weight": 16.6667
+      "name": "방어력 +4%",
+      "weight": 16.6667,
+      "grade": "E"
     },
     {
-      "name": "올스탯 : +2%",
-      "weight": 5.5556
+      "name": "올스탯 +2%",
+      "weight": 5.5556,
+      "grade": "E"
     }
   ],
   "secondOption": [
     {
-      "name": "STR : +8",
-      "weight": 4.5351
+      "name": "STR +8",
+      "weight": 4.5351,
+      "grade": "R"
     },
     {
-      "name": "DEX : +8",
-      "weight": 4.5351
+      "name": "DEX +8",
+      "weight": 4.5351,
+      "grade": "R"
     },
     {
-      "name": "INT : +8",
-      "weight": 4.5351
+      "name": "INT +8",
+      "weight": 4.5351,
+      "grade": "R"
     },
     {
-      "name": "LUK : +8",
-      "weight": 4.5351
+      "name": "LUK +8",
+      "weight": 4.5351,
+      "grade": "R"
     },
     {
-      "name": "최대 HP : +70",
-      "weight": 6.8027
+      "name": "최대 HP +70",
+      "weight": 6.8027,
+      "grade": "R"
     },
     {
-      "name": "최대 MP : +70",
-      "weight": 6.8027
+      "name": "최대 MP +70",
+      "weight": 6.8027,
+      "grade": "R"
     },
     {
-      "name": "방어력 : +70",
-      "weight": 6.8027
+      "name": "방어력 +70",
+      "weight": 6.8027,
+      "grade": "R"
     },
     {
-      "name": "STR : +2%",
-      "weight": 4.5351
+      "name": "STR +2%",
+      "weight": 4.5351,
+      "grade": "R"
     },
     {
-      "name": "DEX : +2%",
-      "weight": 4.5351
+      "name": "DEX +2%",
+      "weight": 4.5351,
+      "grade": "R"
     },
     {
-      "name": "INT : +2%",
-      "weight": 4.5351
+      "name": "INT +2%",
+      "weight": 4.5351,
+      "grade": "R"
     },
     {
-      "name": "LUK : +2%",
-      "weight": 4.5351
+      "name": "LUK +2%",
+      "weight": 4.5351,
+      "grade": "R"
     },
     {
-      "name": "최대 HP : +2%",
-      "weight": 6.8027
+      "name": "최대 HP +2%",
+      "weight": 6.8027,
+      "grade": "R"
     },
     {
-      "name": "최대 MP : +2%",
-      "weight": 6.8027
+      "name": "최대 MP +2%",
+      "weight": 6.8027,
+      "grade": "R"
     },
     {
-      "name": "방어력 : +2%",
-      "weight": 6.8027
+      "name": "방어력 +2%",
+      "weight": 6.8027,
+      "grade": "R"
     },
     {
-      "name": "올스탯 : +4",
-      "weight": 4.5351
+      "name": "올스탯 +4",
+      "weight": 4.5351,
+      "grade": "R"
     },
     {
       "name": "4초 당 14의 HP 회복",
-      "weight": 6.8027
+      "weight": 6.8027,
+      "grade": "R"
     },
     {
       "name": "4초 당 14의 MP 회복",
-      "weight": 6.8027
+      "weight": 6.8027,
+      "grade": "R"
     },
     {
-      "name": "STR : +4%",
-      "weight": 0.5291
+      "name": "STR +4%",
+      "weight": 0.5291,
+      "grade": "E"
     },
     {
-      "name": "DEX : +4%",
-      "weight": 0.5291
+      "name": "DEX +4%",
+      "weight": 0.5291,
+      "grade": "E"
     },
     {
-      "name": "INT : +4%",
-      "weight": 0.5291
+      "name": "INT +4%",
+      "weight": 0.5291,
+      "grade": "E"
     },
     {
-      "name": "LUK : +4%",
-      "weight": 0.5291
+      "name": "LUK +4%",
+      "weight": 0.5291,
+      "grade": "E"
     },
     {
-      "name": "최대 HP : +4%",
-      "weight": 0.7937
+      "name": "최대 HP +4%",
+      "weight": 0.7937,
+      "grade": "E"
     },
     {
-      "name": "최대 MP : +4%",
-      "weight": 0.7937
+      "name": "최대 MP +4%",
+      "weight": 0.7937,
+      "grade": "E"
     },
     {
-      "name": "방어력 : +4%",
-      "weight": 0.7937
+      "name": "방어력 +4%",
+      "weight": 0.7937,
+      "grade": "E"
     },
     {
-      "name": "올스탯 : +2%",
-      "weight": 0.2646
+      "name": "올스탯 +2%",
+      "weight": 0.2646,
+      "grade": "E"
     }
   ],
   "thirdOption": [
     {
-      "name": "STR : +8",
-      "weight": 4.5351
+      "name": "STR +8",
+      "weight": 4.5351,
+      "grade": "R"
     },
     {
-      "name": "DEX : +8",
-      "weight": 4.5351
+      "name": "DEX +8",
+      "weight": 4.5351,
+      "grade": "R"
     },
     {
-      "name": "INT : +8",
-      "weight": 4.5351
+      "name": "INT +8",
+      "weight": 4.5351,
+      "grade": "R"
     },
     {
-      "name": "LUK : +8",
-      "weight": 4.5351
+      "name": "LUK +8",
+      "weight": 4.5351,
+      "grade": "R"
     },
     {
-      "name": "최대 HP : +70",
-      "weight": 6.8027
+      "name": "최대 HP +70",
+      "weight": 6.8027,
+      "grade": "R"
     },
     {
-      "name": "최대 MP : +70",
-      "weight": 6.8027
+      "name": "최대 MP +70",
+      "weight": 6.8027,
+      "grade": "R"
     },
     {
-      "name": "방어력 : +70",
-      "weight": 6.8027
+      "name": "방어력 +70",
+      "weight": 6.8027,
+      "grade": "R"
     },
     {
-      "name": "STR : +2%",
-      "weight": 4.5351
+      "name": "STR +2%",
+      "weight": 4.5351,
+      "grade": "R"
     },
     {
-      "name": "DEX : +2%",
-      "weight": 4.5351
+      "name": "DEX +2%",
+      "weight": 4.5351,
+      "grade": "R"
     },
     {
-      "name": "INT : +2%",
-      "weight": 4.5351
+      "name": "INT +2%",
+      "weight": 4.5351,
+      "grade": "R"
     },
     {
-      "name": "LUK : +2%",
-      "weight": 4.5351
+      "name": "LUK +2%",
+      "weight": 4.5351,
+      "grade": "R"
     },
     {
-      "name": "최대 HP : +2%",
-      "weight": 6.8027
+      "name": "최대 HP +2%",
+      "weight": 6.8027,
+      "grade": "R"
     },
     {
-      "name": "최대 MP : +2%",
-      "weight": 6.8027
+      "name": "최대 MP +2%",
+      "weight": 6.8027,
+      "grade": "R"
     },
     {
-      "name": "방어력 : +2%",
-      "weight": 6.8027
+      "name": "방어력 +2%",
+      "weight": 6.8027,
+      "grade": "R"
     },
     {
-      "name": "올스탯 : +4",
-      "weight": 4.5351
+      "name": "올스탯 +4",
+      "weight": 4.5351,
+      "grade": "R"
     },
     {
       "name": "4초 당 14의 HP 회복",
-      "weight": 6.8027
+      "weight": 6.8027,
+      "grade": "R"
     },
     {
       "name": "4초 당 14의 MP 회복",
-      "weight": 6.8027
+      "weight": 6.8027,
+      "grade": "R"
     },
     {
-      "name": "STR : +4%",
-      "weight": 0.5291
+      "name": "STR +4%",
+      "weight": 0.5291,
+      "grade": "E"
     },
     {
-      "name": "DEX : +4%",
-      "weight": 0.5291
+      "name": "DEX +4%",
+      "weight": 0.5291,
+      "grade": "E"
     },
     {
-      "name": "INT : +4%",
-      "weight": 0.5291
+      "name": "INT +4%",
+      "weight": 0.5291,
+      "grade": "E"
     },
     {
-      "name": "LUK : +4%",
-      "weight": 0.5291
+      "name": "LUK +4%",
+      "weight": 0.5291,
+      "grade": "E"
     },
     {
-      "name": "최대 HP : +4%",
-      "weight": 0.7937
+      "name": "최대 HP +4%",
+      "weight": 0.7937,
+      "grade": "E"
     },
     {
-      "name": "최대 MP : +4%",
-      "weight": 0.7937
+      "name": "최대 MP +4%",
+      "weight": 0.7937,
+      "grade": "E"
     },
     {
-      "name": "방어력 : +4%",
-      "weight": 0.7937
+      "name": "방어력 +4%",
+      "weight": 0.7937,
+      "grade": "E"
     },
     {
-      "name": "올스탯 : +2%",
-      "weight": 0.2646
+      "name": "올스탯 +2%",
+      "weight": 0.2646,
+      "grade": "E"
     }
   ]
 }

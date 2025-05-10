@@ -1,272 +1,338 @@
 {
   "firstOption": [
     {
-      "name": "STR : +7%",
-      "weight": 6.6667
+      "name": "STR +7%",
+      "weight": 6.6667,
+      "grade": "E"
     },
     {
-      "name": "DEX : +7%",
-      "weight": 6.6667
+      "name": "DEX +7%",
+      "weight": 6.6667,
+      "grade": "E"
     },
     {
-      "name": "INT : +7%",
-      "weight": 6.6667
+      "name": "INT +7%",
+      "weight": 6.6667,
+      "grade": "E"
     },
     {
-      "name": "LUK : +7%",
-      "weight": 6.6667
+      "name": "LUK +7%",
+      "weight": 6.6667,
+      "grade": "E"
     },
     {
-      "name": "최대 HP : +7%",
-      "weight": 10
+      "name": "최대 HP +7%",
+      "weight": 10,
+      "grade": "E"
     },
     {
-      "name": "최대 MP : +7%",
-      "weight": 10
+      "name": "최대 MP +7%",
+      "weight": 10,
+      "grade": "E"
     },
     {
-      "name": "방어력 : +7%",
-      "weight": 10
+      "name": "방어력 +7%",
+      "weight": 10,
+      "grade": "E"
     },
     {
-      "name": "올스탯 : +4%",
-      "weight": 3.3333
+      "name": "올스탯 +4%",
+      "weight": 3.3333,
+      "grade": "E"
     },
     {
       "name": "피격 시 20% 확률로 26의 데미지 무시",
-      "weight": 10
+      "weight": 10,
+      "grade": "E"
     },
     {
       "name": "피격 시 20% 확률로 39의 데미지 무시",
-      "weight": 10
+      "weight": 10,
+      "grade": "E"
     },
     {
       "name": "피격 시 30% 확률로 53의 데미지 무시",
-      "weight": 10
+      "weight": 10,
+      "grade": "E"
     },
     {
-      "name": "피격 후 무적시간 : +1초",
-      "weight": 10
+      "name": "피격 후 무적시간 +1초",
+      "weight": 10,
+      "grade": "E"
     }
   ],
   "secondOption": [
     {
-      "name": "STR : +13",
-      "weight": 5.291
+      "name": "STR +13",
+      "weight": 5.291,
+      "grade": "R"
     },
     {
-      "name": "DEX : +13",
-      "weight": 5.291
+      "name": "DEX +13",
+      "weight": 5.291,
+      "grade": "R"
     },
     {
-      "name": "INT : +13",
-      "weight": 5.291
+      "name": "INT +13",
+      "weight": 5.291,
+      "grade": "R"
     },
     {
-      "name": "LUK : +13",
-      "weight": 5.291
+      "name": "LUK +13",
+      "weight": 5.291,
+      "grade": "R"
     },
     {
-      "name": "최대 HP : +125",
-      "weight": 7.9365
+      "name": "최대 HP +125",
+      "weight": 7.9365,
+      "grade": "R"
     },
     {
-      "name": "최대 MP : +125",
-      "weight": 7.9365
+      "name": "최대 MP +125",
+      "weight": 7.9365,
+      "grade": "R"
     },
     {
-      "name": "방어력 : +125",
-      "weight": 7.9365
+      "name": "방어력 +125",
+      "weight": 7.9365,
+      "grade": "R"
     },
     {
-      "name": "STR : +4%",
-      "weight": 5.291
+      "name": "STR +4%",
+      "weight": 5.291,
+      "grade": "R"
     },
     {
-      "name": "DEX : +4%",
-      "weight": 5.291
+      "name": "DEX +4%",
+      "weight": 5.291,
+      "grade": "R"
     },
     {
-      "name": "INT : +4%",
-      "weight": 5.291
+      "name": "INT +4%",
+      "weight": 5.291,
+      "grade": "R"
     },
     {
-      "name": "LUK : +4%",
-      "weight": 5.291
+      "name": "LUK +4%",
+      "weight": 5.291,
+      "grade": "R"
     },
     {
-      "name": "최대 HP : +4%",
-      "weight": 7.9365
+      "name": "최대 HP +4%",
+      "weight": 7.9365,
+      "grade": "R"
     },
     {
-      "name": "최대 MP : +4%",
-      "weight": 7.9365
+      "name": "최대 MP +4%",
+      "weight": 7.9365,
+      "grade": "R"
     },
     {
-      "name": "방어력 : +4%",
-      "weight": 7.9365
+      "name": "방어력 +4%",
+      "weight": 7.9365,
+      "grade": "R"
     },
     {
-      "name": "올스탯 : +6",
-      "weight": 5.291
+      "name": "올스탯 +6",
+      "weight": 5.291,
+      "grade": "R"
     },
     {
-      "name": "STR : +7%",
-      "weight": 0.3175
+      "name": "STR +7%",
+      "weight": 0.3175,
+      "grade": "E"
     },
     {
-      "name": "DEX : +7%",
-      "weight": 0.3175
+      "name": "DEX +7%",
+      "weight": 0.3175,
+      "grade": "E"
     },
     {
-      "name": "INT : +7%",
-      "weight": 0.3175
+      "name": "INT +7%",
+      "weight": 0.3175,
+      "grade": "E"
     },
     {
-      "name": "LUK : +7%",
-      "weight": 0.3175
+      "name": "LUK +7%",
+      "weight": 0.3175,
+      "grade": "E"
     },
     {
-      "name": "최대 HP : +7%",
-      "weight": 0.4762
+      "name": "최대 HP +7%",
+      "weight": 0.4762,
+      "grade": "E"
     },
     {
-      "name": "최대 MP : +7%",
-      "weight": 0.4762
+      "name": "최대 MP +7%",
+      "weight": 0.4762,
+      "grade": "E"
     },
     {
-      "name": "방어력 : +7%",
-      "weight": 0.4762
+      "name": "방어력 +7%",
+      "weight": 0.4762,
+      "grade": "E"
     },
     {
-      "name": "올스탯 : +4%",
-      "weight": 0.1587
+      "name": "올스탯 +4%",
+      "weight": 0.1587,
+      "grade": "E"
     },
     {
       "name": "피격 시 20% 확률로 26의 데미지 무시",
-      "weight": 0.4762
+      "weight": 0.4762,
+      "grade": "E"
     },
     {
       "name": "피격 시 20% 확률로 39의 데미지 무시",
-      "weight": 0.4762
+      "weight": 0.4762,
+      "grade": "E"
     },
     {
       "name": "피격 시 30% 확률로 53의 데미지 무시",
-      "weight": 0.4762
+      "weight": 0.4762,
+      "grade": "E"
     },
     {
-      "name": "피격 후 무적시간 : +1초",
-      "weight": 0.4762
+      "name": "피격 후 무적시간 +1초",
+      "weight": 0.4762,
+      "grade": "E"
     }
   ],
   "thirdOption": [
     {
-      "name": "STR : +13",
-      "weight": 5.291
+      "name": "STR +13",
+      "weight": 5.291,
+      "grade": "R"
     },
     {
-      "name": "DEX : +13",
-      "weight": 5.291
+      "name": "DEX +13",
+      "weight": 5.291,
+      "grade": "R"
     },
     {
-      "name": "INT : +13",
-      "weight": 5.291
+      "name": "INT +13",
+      "weight": 5.291,
+      "grade": "R"
     },
     {
-      "name": "LUK : +13",
-      "weight": 5.291
+      "name": "LUK +13",
+      "weight": 5.291,
+      "grade": "R"
     },
     {
-      "name": "최대 HP : +125",
-      "weight": 7.9365
+      "name": "최대 HP +125",
+      "weight": 7.9365,
+      "grade": "R"
     },
     {
-      "name": "최대 MP : +125",
-      "weight": 7.9365
+      "name": "최대 MP +125",
+      "weight": 7.9365,
+      "grade": "R"
     },
     {
-      "name": "방어력 : +125",
-      "weight": 7.9365
+      "name": "방어력 +125",
+      "weight": 7.9365,
+      "grade": "R"
     },
     {
-      "name": "STR : +4%",
-      "weight": 5.291
+      "name": "STR +4%",
+      "weight": 5.291,
+      "grade": "R"
     },
     {
-      "name": "DEX : +4%",
-      "weight": 5.291
+      "name": "DEX +4%",
+      "weight": 5.291,
+      "grade": "R"
     },
     {
-      "name": "INT : +4%",
-      "weight": 5.291
+      "name": "INT +4%",
+      "weight": 5.291,
+      "grade": "R"
     },
     {
-      "name": "LUK : +4%",
-      "weight": 5.291
+      "name": "LUK +4%",
+      "weight": 5.291,
+      "grade": "R"
     },
     {
-      "name": "최대 HP : +4%",
-      "weight": 7.9365
+      "name": "최대 HP +4%",
+      "weight": 7.9365,
+      "grade": "R"
     },
     {
-      "name": "최대 MP : +4%",
-      "weight": 7.9365
+      "name": "최대 MP +4%",
+      "weight": 7.9365,
+      "grade": "R"
     },
     {
-      "name": "방어력 : +4%",
-      "weight": 7.9365
+      "name": "방어력 +4%",
+      "weight": 7.9365,
+      "grade": "R"
     },
     {
-      "name": "올스탯 : +6",
-      "weight": 5.291
+      "name": "올스탯 +6",
+      "weight": 5.291,
+      "grade": "R"
     },
     {
-      "name": "STR : +7%",
-      "weight": 0.3175
+      "name": "STR +7%",
+      "weight": 0.3175,
+      "grade": "E"
     },
     {
-      "name": "DEX : +7%",
-      "weight": 0.3175
+      "name": "DEX +7%",
+      "weight": 0.3175,
+      "grade": "E"
     },
     {
-      "name": "INT : +7%",
-      "weight": 0.3175
+      "name": "INT +7%",
+      "weight": 0.3175,
+      "grade": "E"
     },
     {
-      "name": "LUK : +7%",
-      "weight": 0.3175
+      "name": "LUK +7%",
+      "weight": 0.3175,
+      "grade": "E"
     },
     {
-      "name": "최대 HP : +7%",
-      "weight": 0.4762
+      "name": "최대 HP +7%",
+      "weight": 0.4762,
+      "grade": "E"
     },
     {
-      "name": "최대 MP : +7%",
-      "weight": 0.4762
+      "name": "최대 MP +7%",
+      "weight": 0.4762,
+      "grade": "E"
     },
     {
-      "name": "방어력 : +7%",
-      "weight": 0.4762
+      "name": "방어력 +7%",
+      "weight": 0.4762,
+      "grade": "E"
     },
     {
-      "name": "올스탯 : +4%",
-      "weight": 0.1587
+      "name": "올스탯 +4%",
+      "weight": 0.1587,
+      "grade": "E"
     },
     {
       "name": "피격 시 20% 확률로 26의 데미지 무시",
-      "weight": 0.4762
+      "weight": 0.4762,
+      "grade": "E"
     },
     {
       "name": "피격 시 20% 확률로 39의 데미지 무시",
-      "weight": 0.4762
+      "weight": 0.4762,
+      "grade": "E"
     },
     {
       "name": "피격 시 30% 확률로 53의 데미지 무시",
-      "weight": 0.4762
+      "weight": 0.4762,
+      "grade": "E"
     },
     {
-      "name": "피격 후 무적시간 : +1초",
-      "weight": 0.4762
+      "name": "피격 후 무적시간 +1초",
+      "weight": 0.4762,
+      "grade": "E"
     }
   ]
 }
