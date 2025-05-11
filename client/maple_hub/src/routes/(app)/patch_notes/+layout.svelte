@@ -1,5 +1,5 @@
 <script lang="ts">
-  import "./+layout.css"
+  import "./+layout.css";
   export let data;
 
   const sortedFiles = [...data.files].sort((a, b) =>
@@ -26,36 +26,68 @@
   }
 </script>
 
-<slot></slot>
-<section class="patch-notes-container">
-  <h1 class="patch-notes-title">📋 패치 노트 목록</h1>
-
-  <ul class="patch-notes-list">
-    {#each paginatedFiles as file}
+<div class="container">
+  <slot></slot>
+  <section class="patch-notes-container">
+    <h1 class="patch-notes-title">📋 패치 노트 목록</h1>
+    
+    <p class="intro-text">
+      사이트의 최신 업데이트 및 패치 내역을 확인하세요. 이곳에서는 버전별로 주요 변경 사항을 제공하며, 각 패치에 대한 세부 정보를 빠르게 찾아볼 수 있습니다.
+    </p>
+    
+    <ul class="patch-notes-list">
+      {#each paginatedFiles as file}
       <li class="patch-note-card">
-        <a href={`/patch_notes/${file.replace('.md', '')}`} class="patch-note-link">
-          <div class="version-number">📦 버전 {file.replace('.md', '')}</div>
-        </a>
-      </li>
+        <a
+        href={`/patch_notes/${file.replace('.md', '')}`}
+        class="patch-note-link"
+        aria-label={`버전 ${file.replace('.md', '')}의 패치 노트`}
+        >
+        <div class="version-number">📦 버전 {file.replace('.md', '')}</div>
+      </a>
+    </li>
     {/each}
   </ul>
-
-  <div class="pagination">
-    <button on:click={() => goToPage(currentPage - 1)} disabled={currentPage === 1}>
-      이전
-    </button>
-
-    {#each Array(totalPages) as _, i}
-      <button
-        class:active-page={currentPage === i + 1}
-        on:click={() => goToPage(i + 1)}
-      >
-        {i + 1}
+  
+  <div class="pagination" role="navigation" aria-label="페이지 네비게이션">
+    <button
+    on:click={() => goToPage(currentPage - 1)}
+    disabled={currentPage === 1}
+    aria-disabled={currentPage === 1 ? 'true' : 'false'}
+    >
+    이전
+  </button>
+  
+  {#each Array(totalPages) as _, i}
+  <button
+  class:active-page={currentPage === i + 1}
+  on:click={() => goToPage(i + 1)}
+  aria-current={currentPage === i + 1 ? 'page' : undefined}
+  >
+  {i + 1}
       </button>
-    {/each}
-
-    <button on:click={() => goToPage(currentPage + 1)} disabled={currentPage === totalPages}>
+      {/each}
+      
+      <button
+      on:click={() => goToPage(currentPage + 1)}
+      disabled={currentPage === totalPages}
+      aria-disabled={currentPage === totalPages ? 'true' : 'false'}
+      >
       다음
     </button>
   </div>
 </section>
+</div>
+
+<!-- Meta Tags and Head (SEO Optimization) -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="패치 노트 목록과 주요 변경 사항을 확인하세요. 사이트의 최신 업데이트와 변경 사항을 제공합니다.">
+  <meta name="author" content="웹사이트 개발자 이름">
+  <meta property="og:title" content="사이트 이름 - 패치 노트 목록">
+  <meta property="og:description" content="사이트의 패치 노트를 확인하고 최신 버전의 업데이트를 바로 찾아보세요.">
+  <meta property="og:image" content="사이트의 이미지 URL">
+  <meta property="og:url" content="사이트 URL">
+  <title>패치 노트 목록</title>
+</head>

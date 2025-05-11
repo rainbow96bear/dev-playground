@@ -101,3 +101,30 @@ th {
 	font-size: 1.2rem;
 	text-align: center;
 }
+
+.patch-note-container {
+	margin: 20px;
+}
+
+.patch-note-title {
+	font-size: 1.8rem;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+.content {
+	padding: 20px;
+	background-color: #f9f9f9;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.patch-note-separator {
+	margin-top: 20px;
+	border-top: 2px solid #ccc;
+}
+
+.no-content {
+	font-size: 1.2rem;
+	color: #777;
+}

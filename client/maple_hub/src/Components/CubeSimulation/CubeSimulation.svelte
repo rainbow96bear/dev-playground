@@ -1,21 +1,44 @@
 <script lang="ts">
+  /**
+   * MapleStory Cube Simulator
+   * 
+   * This component simulates the cube system from MapleStory,
+   * allowing users to test different cube types on equipment items
+   * and see potential stat outcomes.
+   * 
+   * @author MapleStory Cube Simulator Team
+   * @version 1.2.0
+   * @license MIT
+   */
+
+  // Import cube images
   import redCubeImg from "$lib/assets/redCube.png";
   import blackCubeImg from "$lib/assets/blackCube.png";
   import masterCubeImg from "$lib/assets/masterCube.png";
   import meisterCubeImg from "$lib/assets/meisterCube.png";
   import editionalCubeImg from "$lib/assets/editionalCube.png";
   import whiteEditionalCubeImg from "$lib/assets/whiteEditionalCube.png";
-  import {GradeUpProbability, MaxCeiling} from "$lib/constants/cube";
+  
+  // Import constants and utilities
+  import { GradeUpProbability, MaxCeiling } from "$lib/constants/cube";
   import { onMount } from 'svelte';
   import { InternalAPI } from '$lib/api';
-  import {slotMap} from "$lib/constants/equipment"
+  import { slotMap } from "$lib/constants/equipment";
 
+  // Props
   export let selectedItem;
   
+  // State variables
   let cube = null;
-  let equipmentType = "weapon"
+  let equipmentType = "weapon";
   let levelRange = "120-200";
+  let isLoading = false;
+  let errorMessage = "";
+  let successMessage = "";
   
+  /**
+   * Mapping for potential grades in Korean to English
+   */
   const PotentialOptionToEng = {
     "레어": "rare",
     "에픽": "epic",
@@ -23,33 +46,53 @@
     "레전드리": "legendary"
   };
   
+  /**
+   * Available cube options with metadata
+   */
   const cubeOptions = [
-    { id: "redCube", name: "레드 큐브", image: redCubeImg },
-    { id: "blackCube", name: "블랙 큐브", image: blackCubeImg },
-    { id: "masterCube", name: "장인의 큐브", image: masterCubeImg },
-    { id: "meisterCube", name: "명장의 큐브", image: meisterCubeImg },
-    { id: "editionalCube", name: "에디셔널 큐브", image: editionalCubeImg },
-    { id: "whiteEditionalCube", name: "화이트 에디셔널 큐브", image: whiteEditionalCubeImg },
+    { id: "redCube", name: "레드 큐브", image: redCubeImg, description: "일반적인 등급 상승 큐브" },
+    { id: "blackCube", name: "블랙 큐브", image: blackCubeImg, description: "이전 잠재능력으로 복구 가능한 고급 큐브" },
+    { id: "masterCube", name: "장인의 큐브", image: masterCubeImg, description: "장인이 만든 등급 상승 큐브" },
+    { id: "meisterCube", name: "명장의 큐브", image: meisterCubeImg, description: "명장이 만든 프리미엄 큐브" },
+    { id: "editionalCube", name: "에디셔널 큐브", image: editionalCubeImg, description: "에디셔널 잠재능력을 재설정하는 큐브" },
+    { id: "whiteEditionalCube", name: "화이트 에디셔널 큐브", image: whiteEditionalCubeImg, description: "고급 에디셔널 잠재능력 큐브" },
   ];
   
   let selectedCubeId = cubeOptions[0].id;
   let itemImage = "";
   let itemName = "선택된 아이템 없음";
   let fileName = "";
+  
+  /**
+   * Fetches cube data from the API
+   * @returns {Promise<Object|null>} The cube data or null if not found
+   */
   const fetchCubeData = async () => {
+    isLoading = true;
+    errorMessage = "";
+    
     try {
       const res = await InternalAPI(`/v1/cube/${fileName}`);
+      isLoading = false;
+      
       if (res.status === 404) {
+        errorMessage = "큐브 데이터를 찾을 수 없습니다.";
         cube = null;
         return null;
       }
-        return await res;
+      
+      return await res;
     } catch (error) {
-      console.error('Cube 데이터를 가져오는 데 실패했습니다:', error);
+      isLoading = false;
+      console.error('큐브 데이터를 가져오는 데 실패했습니다:', error);
+      errorMessage = "큐브 데이터를 불러오는 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요.";
       return null;
     }
   };
   
+  /**
+   * Updates cube data based on selected cube type and item grade
+   */
   const updateCubeData = async () => {
     const actualCubeType = 
       selectedCubeId === "mesoEditionalCube" || selectedCubeId === "whiteEditionalCube"
@@ -58,6 +101,7 @@
 
     const grade = GRADES[currentGradeIndex];
     const gradeEng = PotentialOptionToEng[grade];
+    
     if (!gradeEng) {
       cube = null;
       return;
@@ -69,11 +113,13 @@
       try {
         cube = await fetchCubeData();
       } catch (error) {
-        console.error('Cube 데이터를 가져오는 데 실패했습니다:', error);
+        console.error('큐브 데이터를 가져오는 데 실패했습니다:', error);
+        errorMessage = "큐브 데이터를 불러오는 중 오류가 발생했습니다.";
       }
     }
   };
   
+  // Cube rank tracking for each cube type and grade
   let cubeRanks = {
     redCube: { rare: 0, epic: 0, unique: 0, legendary: 0 },
     blackCube: { rare: 0, epic: 0, unique: 0, legendary: 0 },
@@ -108,44 +154,29 @@
   
   let currentGradeIndex = 1;
 
+  // Update item info when item changes
   $: if (selectedItem) {
     updateItemInfo(selectedItem);
   }
 
+  // Update max rank when cube or grade changes
   $: {
     updateMaxRank(selectedCubeId, currentGradeIndex);
   }
 
+  /**
+   * Updates item information when a new item is selected
+   * @param {Object} item - The selected item object
+   */
   function updateItemInfo(item) {
     if (!item) return;
     
     itemImage = item.item_icon || "";
     itemName = item.item_name || "미확인 아이템";
     equipmentType = slotMap[item.item_equipment_part] ?? "weapon";
-    levelRange = !item.item_base_option.base_equipment_level ? "0-9" :
-    item.item_base_option.base_equipment_level === 10 ? "10" :
-    item.item_base_option.base_equipment_level >= 11 && item.item_base_option.base_equipment_level <= 19 ? "11-19" :
-    item.item_base_option.base_equipment_level === 20 ? "20" :
-    item.item_base_option.base_equipment_level >= 21 && item.item_base_option.base_equipment_level <= 29 ? "21-29" :
-    item.item_base_option.base_equipment_level === 30 ? "30" :
-    item.item_base_option.base_equipment_level >= 31 && item.item_base_option.base_equipment_level <= 39 ? "31-39" :
-    item.item_base_option.base_equipment_level === 40 ? "40" :
-    item.item_base_option.base_equipment_level >= 41 && item.item_base_option.base_equipment_level <= 49 ? "41-49" :
-    item.item_base_option.base_equipment_level === 50 ? "50" :
-    item.item_base_option.base_equipment_level >= 51 && item.item_base_option.base_equipment_level <= 59 ? "51-59" :
-    item.item_base_option.base_equipment_level === 60 ? "60" :
-    item.item_base_option.base_equipment_level >= 61 && item.item_base_option.base_equipment_level <= 69 ? "61-69" :
-    item.item_base_option.base_equipment_level === 70 ? "70" :
-    item.item_base_option.base_equipment_level >= 71 && item.item_base_option.base_equipment_level <= 79 ? "71-79" :
-    item.item_base_option.base_equipment_level === 80 ? "80" :
-    item.item_base_option.base_equipment_level >= 81 && item.item_base_option.base_equipment_level <= 89 ? "81-89" :
-    item.item_base_option.base_equipment_level === 90 ? "90" :
-    item.item_base_option.base_equipment_level >= 91 && item.item_base_option.base_equipment_level <= 99 ? "91-99" :
-    item.item_base_option.base_equipment_level === 100 ? "100" :
-    item.item_base_option.base_equipment_level >= 101 && item.item_base_option.base_equipment_level <= 109 ? "101-109" :
-    item.item_base_option.base_equipment_level === 110 ? "110" :
-    item.item_base_option.base_equipment_level >= 111 && item.item_base_option.base_equipment_level <= 119 ? "111-119" :
-    item.item_base_option.base_equipment_level >= 120 && item.item_base_option.base_equipment_level <= 200 ? "120-200" : "201-250";
+    
+    // Calculate level range based on equipment level
+    levelRange = getLevelRange(item.item_base_option?.base_equipment_level || 0);
     
     const isAdditionalCube = selectedCubeId === "editionalCube" || selectedCubeId === "whiteEditionalCube";
     
@@ -191,25 +222,62 @@
     }
     
     updateMaxRank(selectedCubeId, currentGradeIndex);
-    
     updateCubeData();
   }
 
-  function selectCube(cubeId: string) {
-    console.log(selectedCubeId)
-    console.log(cubeId)
+  /**
+   * Determines level range string based on equipment level
+   * @param {number} level - Equipment base level
+   * @returns {string} Level range string
+   */
+  function getLevelRange(level) {
+    if (!level) return "0-9";
+    if (level === 10) return "10";
+    if (level >= 11 && level <= 19) return "11-19";
+    if (level === 20) return "20";
+    if (level >= 21 && level <= 29) return "21-29";
+    if (level === 30) return "30";
+    if (level >= 31 && level <= 39) return "31-39";
+    if (level === 40) return "40";
+    if (level >= 41 && level <= 49) return "41-49";
+    if (level === 50) return "50";
+    if (level >= 51 && level <= 59) return "51-59";
+    if (level === 60) return "60";
+    if (level >= 61 && level <= 69) return "61-69";
+    if (level === 70) return "70";
+    if (level >= 71 && level <= 79) return "71-79";
+    if (level === 80) return "80";
+    if (level >= 81 && level <= 89) return "81-89";
+    if (level === 90) return "90";
+    if (level >= 91 && level <= 99) return "91-99";
+    if (level === 100) return "100";
+    if (level >= 101 && level <= 109) return "101-109";
+    if (level === 110) return "110";
+    if (level >= 111 && level <= 119) return "111-119";
+    if (level >= 120 && level <= 200) return "120-200";
+    return "201-250";
+  }
+
+  /**
+   * Selects a cube to use
+   * @param {string} cubeId - The ID of the selected cube
+   */
+  function selectCube(cubeId) {
     selectedCubeId = cubeId;
-    //큐브 id가 whiteEditionalCube인 경우 천장은 whiteEditionalCube로 옵션 확률은 editionalCube로
     
     if (selectedItem) {
       updateItemInfo(selectedItem);
     }
     
     updateMaxRank(selectedCubeId, currentGradeIndex);
-    
     updateCubeData();
   }
   
+  /**
+   * Updates the maximum rank for the selected cube and grade
+   * @param {string} cubeId - The ID of the selected cube
+   * @param {number} gradeIdx - The index of the current grade
+   */
   function updateMaxRank(cubeId, gradeIdx) {
     const gradeKey = getInternalGradeKey(GRADES[gradeIdx]);
     const cubeMaxCeiling = MaxCeiling[cubeId];
@@ -221,66 +289,99 @@
     }
   }
   
+  /**
+   * Gets the internal grade key for a grade name
+   * @param {string} gradeName - The grade name in Korean
+   * @returns {string} The internal grade key
+   */
   function getInternalGradeKey(gradeName) {
     return GRADE_MAP[gradeName] || "rare";
   }
   
+  /**
+   * Applies a cube to the selected item
+   */
   async function applyCube() {
     if (!selectedItem) {
+      errorMessage = "선택된 아이템이 없습니다.";
       return;
     }
 
-    let gradeKey = getInternalGradeKey(GRADES[currentGradeIndex]);
-    const cubeProb = GradeUpProbability[selectedCubeId];
-    // 등급업 시도
-    let isRankUp = false;
-    if (cubeRanks[selectedCubeId][gradeKey] === undefined) {
-      cubeRanks[selectedCubeId][gradeKey] = 0;
-    }
-    if (maxRank != 0) {
-      cubeRanks[selectedCubeId][gradeKey] += 1;
-    }
+    isLoading = true;
+    errorMessage = "";
+    successMessage = "";
 
-    if (cubeRanks[selectedCubeId][gradeKey] >= maxRank && maxRank != 0) {
-      isRankUp = true;
-    } else {
-      const roll = Math.random();
-      if (roll < cubeProb[gradeKey]) {
+    try {
+      let gradeKey = getInternalGradeKey(GRADES[currentGradeIndex]);
+      const cubeProb = GradeUpProbability[selectedCubeId];
+      
+      // 등급업 시도
+      let isRankUp = false;
+      if (cubeRanks[selectedCubeId][gradeKey] === undefined) {
+        cubeRanks[selectedCubeId][gradeKey] = 0;
+      }
+      
+      if (maxRank != 0) {
+        cubeRanks[selectedCubeId][gradeKey] += 1;
+      }
+
+      if (cubeRanks[selectedCubeId][gradeKey] >= maxRank && maxRank != 0) {
         isRankUp = true;
+      } else {
+        const roll = Math.random();
+        if (roll < cubeProb[gradeKey]) {
+          isRankUp = true;
+        }
       }
-    }
-    // 등급업 처리
-    if (isRankUp) {
-      handleRankUp()
-      await updateCubeData(); // 새로운 등급의 옵션 정보 갱신
-    }
-
-    // 등급 정보 업데이트 후 옵션 생성
-    gradeKey = getInternalGradeKey(GRADES[currentGradeIndex]); // 새 등급 기준으로 키 다시 계산
-    const newOptions = generateNewPotentialOptions(); // 새로운 등급 기준으로 옵션 뽑기
-
-    // 옵션 적용
-    if (selectedCubeId === "editionalCube" || selectedCubeId === "whiteEditionalCube") {
-      for (let i = 0; i < newOptions.length; i++) {
-        const optionKey = `additional_potential_option_${i + 1}`;
-        const optionGradeKey = `additional_potential_option_${i + 1}_grade`;
-        selectedItem[optionKey] = newOptions[i].name;
-        selectedItem[optionGradeKey] = newOptions[i].grade || "R";
+      
+      // 등급업 처리
+      if (isRankUp) {
+        handleRankUp();
+        await updateCubeData(); // 새로운 등급의 옵션 정보 갱신
       }
-    } else {
-      for (let i = 0; i < newOptions.length; i++) {
-        const optionKey = `potential_option_${i + 1}`;
-        const optionGradeKey = `potential_option_${i + 1}_grade`;
-        selectedItem[optionKey] = newOptions[i].name;
-        selectedItem[optionGradeKey] = newOptions[i].grade || "R";
-      }
-    }
 
-    potentialStats = newOptions.map(option => option.name || option);
-    potentialGrades = newOptions.map(option => option.grade || "R");
+      // 등급 정보 업데이트 후 옵션 생성
+      gradeKey = getInternalGradeKey(GRADES[currentGradeIndex]); // 새 등급 기준으로 키 다시 계산
+      const newOptions = generateNewPotentialOptions(); // 새로운 등급 기준으로 옵션 뽑기
+
+      // 옵션 적용
+      if (selectedCubeId === "editionalCube" || selectedCubeId === "whiteEditionalCube") {
+        for (let i = 0; i < newOptions.length; i++) {
+          const optionKey = `additional_potential_option_${i + 1}`;
+          const optionGradeKey = `additional_potential_option_${i + 1}_grade`;
+          selectedItem[optionKey] = newOptions[i].name;
+          selectedItem[optionGradeKey] = newOptions[i].grade || "R";
+        }
+      } else {
+        for (let i = 0; i < newOptions.length; i++) {
+          const optionKey = `potential_option_${i + 1}`;
+          const optionGradeKey = `potential_option_${i + 1}_grade`;
+          selectedItem[optionKey] = newOptions[i].name;
+          selectedItem[optionGradeKey] = newOptions[i].grade || "R";
+        }
+      }
+
+      potentialStats = newOptions.map(option => option.name || option);
+      potentialGrades = newOptions.map(option => option.grade || "R");
+      
+      successMessage = "잠재능력이 성공적으로 재설정되었습니다.";
+      
+      // Clear success message after 3 seconds
+      setTimeout(() => {
+        successMessage = "";
+      }, 3000);
+      
+    } catch (error) {
+      console.error("큐브 적용 중 오류가 발생했습니다:", error);
+      errorMessage = "큐브 적용 중 오류가 발생했습니다. 다시 시도해주세요.";
+    } finally {
+      isLoading = false;
+    }
   }
 
-  
+  /**
+   * Handles rank up when applying a cube
+   */
   function handleRankUp() {
     const oldGrade = GRADES[currentGradeIndex];
     const oldGradeKey = getInternalGradeKey(oldGrade);
@@ -301,41 +402,59 @@
     }
     
     currentGradeIndex += 1;
-    
     updateMaxRank(selectedCubeId, currentGradeIndex);
   }
 
+  /**
+   * Gets a random option from a list of options based on weights
+   * @param {Array} options - The list of options with weights
+   * @returns {Object} The selected option
+   */
   function getRandomOption(options) {
     if (!options || options.length === 0) {
-      return "옵션 없음";
+      return { name: "옵션 없음", grade: "R" };
     }
     
     const totalWeight = options.reduce((sum, option) => sum + option.weight, 0);
-    
     const random = Math.random() * totalWeight;
     
     let weightSum = 0;
     for (const option of options) {
       weightSum += option.weight;
       if (random < weightSum) {
-        return {name: option.name, grade: option.grade || "R"};
+        return { name: option.name, grade: option.grade || "R" };
       }
     }
     
-    return {name: options[0].name, grade: options[0].grade || "R"};
+    return { name: options[0].name, grade: options[0].grade || "R" };
   }
   
-  const generateNewPotentialOptions = ()=> {
+  /**
+   * Generates new potential options based on the current cube data
+   * @returns {Array} The new potential options
+   */
+  const generateNewPotentialOptions = () => {
     if (!cube) {
       console.warn("큐브 데이터가 없어 잠재능력을 생성할 수 없습니다.");
-      return ["큐브 데이터를 불러올 수 없습니다.", "옵션을 생성할 수 없습니다.", "다시 시도해주세요."];
+      return [
+        { name: "큐브 데이터를 불러올 수 없습니다.", grade: "R" },
+        { name: "옵션을 생성할 수 없습니다.", grade: "R" },
+        { name: "다시 시도해주세요.", grade: "R" }
+      ];
     }
+    
     const firstOption = getRandomOption(cube.content.firstOption);
     const secondOption = getRandomOption(cube.content.secondOption);
     const thirdOption = getRandomOption(cube.content.thirdOption);
     
     return [firstOption, secondOption, thirdOption];
   }
+  
+  /**
+   * Gets the CSS class for a grade
+   * @param {string} grade - The grade name
+   * @returns {string} The CSS class name
+   */
   const getGradeClass = (grade) => {
     if (!grade) return "cubeRare";
     
@@ -354,8 +473,13 @@
     return "cubeRare"; // 기본값
   }
 
+  /**
+   * Gets the icon class for a grade
+   * @param {string} grade - The grade name
+   * @returns {string} The icon class name
+   */
   const GradeIcon = (grade) => {
-    if (!grade) return "R";
+    if (!grade) return "rareIcon";
     
     if (grade === "R" || grade === "레어" || grade.toLowerCase().includes("rare")) {
       return "rareIcon";
@@ -370,8 +494,13 @@
     return "rareIcon"; // 기본값
   }
 
+  /**
+   * Gets the standardized grade name
+   * @param {string} grade - The grade name
+   * @returns {string} The standardized grade name
+   */
   const getGrade = (grade) => {
-    if (!grade) return "R";
+    if (!grade) return "rare";
     
     if (grade === "R" || grade === "레어" || grade.toLowerCase().includes("rare")) {
       return "rare";
@@ -386,23 +515,34 @@
     return "rare"; // 기본값
   }
 
+  /**
+   * Checks if a cube is applicable to the selected item
+   * @param {Object} item - The selected item
+   * @returns {boolean} Whether the cube is applicable
+   */
   const isCubeApplicable = (item) => {
     if (!item) return false;
-    let grade ;
+    
+    let grade;
     if (selectedCubeId === "editionalCube" || selectedCubeId === "whiteEditionalCube") {
       grade = getGrade(item.additional_potential_option_grade);
-    }else {
+    } else {
       grade = getGrade(item.potential_option_grade);
     }
+    
     const cubeProb = GradeUpProbability[selectedCubeId];
     return cubeProb[grade] !== -1;
   }
 
+  /**
+   * Component initialization
+   */
   onMount(() => {
     if (selectedItem) {
       updateItemInfo(selectedItem);
     }
     
+    // Initialize cube ranks
     Object.keys(cubeRanks).forEach(cubeId => {
       Object.keys(GRADE_MAP).forEach(grade => {
         const gradeKey = getInternalGradeKey(grade);
@@ -414,26 +554,59 @@
   });
 </script>
 
-<div class="maple-potential-container">
+<svelte:head>
+  <!-- SEO Meta Tags -->
+  <title>MapleStory Cube Simulator | 잠재능력 시뮬레이터</title>
+  <meta name="description" content="MapleStory 큐브 시뮬레이터로 다양한 큐브의 잠재능력과 등급업 시뮬레이션을 체험해보세요." />
+  <meta name="keywords" content="MapleStory, 메이플스토리, 큐브, 시뮬레이터, 잠재능력, 레드 큐브, 블랙 큐브, 에디셔널 큐브" />
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="MapleStory Cube Simulator | 잠재능력 시뮬레이터" />
+  <meta property="og:description" content="MapleStory 큐브 시뮬레이터로 다양한 큐브의 잠재능력과 등급업 시뮬레이션을 체험해보세요." />
+  <meta property="og:type" content="website" />
+</svelte:head>
+
+<div class="maple-potential-container" itemscope itemtype="https://schema.org/SoftwareApplication">
+  <meta itemprop="name" content="MapleStory Cube Simulator" />
+  <meta itemprop="description" content="MapleStory 큐브 시뮬레이터로 다양한 큐브의 잠재능력과 등급업 시뮬레이션을 체험해보세요." />
+  <meta itemprop="applicationCategory" content="Game Simulator" />
+  <meta itemprop="operatingSystem" content="Web" />
+  <meta itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+    <meta itemprop="price" content="0" />
+    <meta itemprop="priceCurrency" content="USD" />
+    <meta itemprop="availability" content="https://schema.org/OnlineOnly" />
+  
+  <!-- Cube Selection Panel -->
   <div class="cubeListBox">
     <header class="potential-header">
       <h2 class="header-title">CUBE</h2>
     </header>
+    
     <section class="cube-selection-section" aria-labelledby="cube-selection-title">
-      <h3 id="cube-selection-title" class="sr-only">큐브 종류 선택</h3>
-      <ul class="cubeList">
+      <h3 id="cube-selection-title" class="section-subtitle visuallyHidden">Select a cube type to apply</h3>
+      
+      <ul class="cubeList" role="radiogroup" aria-label="큐브 종류 선택">
         {#each cubeOptions as cube}
         <li>
           <button 
             class="cubeSelectButton" 
             class:selected={selectedCubeId === cube.id}
             title={cube.name} 
-            aria-label={cube.name}
+            aria-label={`${cube.name}: ${cube.description}`}
             aria-pressed={selectedCubeId === cube.id}
+            role="radio"
+            aria-checked={selectedCubeId === cube.id}
             on:click={() => selectCube(cube.id)}
           >
             <div class="buttonContent">
-              <img src={cube.image} alt="" class="cubeIcon" width="24" height="24" loading="lazy" />
+              <img 
+                src={cube.image} 
+                alt={cube.name} 
+                class="cubeIcon" 
+                width="24" 
+                height="24" 
+                loading="lazy" 
+              />
               <span class="cubeText">{cube.name}</span>
             </div>
             {#if selectedCubeId === cube.id}
@@ -443,26 +616,40 @@
         </li>
         {/each}
       </ul>
+      
+      <!-- Cube Description -->
+        <div class="cube-description visuallyHidden">
+          <h4 class="sr-only">선택한 큐브 정보</h4>
+          <p class="description-text">
+            {cubeOptions.find(c => c.id === selectedCubeId)?.description || "설명 없음"}
+          </p>
+        </div>
     </section>
   </div>
+  
+  <!-- Potential/Item Panel -->
   <div class="cubeSimulationBox">
     <header class="potential-header">
       <h2 class="header-title">POTENTIAL</h2>
     </header>
+    
     <section class="item-section" aria-labelledby="item-title">
+      <!-- Item Display -->
       <div class="item-preview">
         <div class="item-box">
           {#if itemImage}
-            <img src={itemImage} alt={itemName} class="item-image"/>
+            <img src={itemImage} alt={itemName} class="item-image" width="64" height="64" />
           {:else}
-            <div class="no-item-placeholder">선택된 아이템 없음</div>
+            <div class="no-item-placeholder" aria-label="아이템을 선택해주세요">선택된 아이템 없음</div>
           {/if}
         </div>
         
         <h3 id="item-title" class="item-name">{itemName}</h3>
         
-        <div class="progress-container" aria-label="잠재능력 등급 진행률">
-          <span class="progress-label">RANK UP</span>
+        <!-- Progress Bar -->
+        <div class="progress-container" role="progressbar" aria-label="잠재능력 등급 진행률"
+             aria-valuenow={currentRank} aria-valuemin="0" aria-valuemax={maxRank}>
+          <span class="progress-label">RANK UP PROGRESS</span>
           <div class="progress-bar">
             <div class="progress-fill" style="width: {(currentRank / maxRank) * 100}%"></div>
           </div>
@@ -470,29 +657,33 @@
         </div>
       </div>
       
-      {#if selectedItem}
-        {#if selectedCubeId === "editionalCube" || selectedCubeId === "whiteEditionalCube"}
-          <div class="grade {getGradeClass(selectedItem.additional_potential_option_grade)}" 
-               role="tab" aria-selected="true" id="tab-grade">
-            {selectedItem.additional_potential_option_grade || "레어"}
-          </div>
+      <!-- Grade Display -->
+      <div class="grade-container">
+        {#if selectedItem}
+          {#if selectedCubeId === "editionalCube" || selectedCubeId === "whiteEditionalCube"}
+            <div class="grade {getGradeClass(selectedItem.additional_potential_option_grade)}" 
+                role="status" aria-label="현재 에디셔널 잠재능력 등급">
+              {selectedItem.additional_potential_option_grade || "레어"}
+            </div>
+          {:else}
+            <div class="grade {getGradeClass(selectedItem.potential_option_grade)}" 
+                 role="status" aria-label="현재 잠재능력 등급">
+              {selectedItem.potential_option_grade || "레어"}
+            </div>
+          {/if}
         {:else}
-          <div class="grade {getGradeClass(selectedItem.potential_option_grade)}" 
-               role="tab" aria-selected="true" id="tab-grade">
-            {selectedItem.potential_option_grade || "레어"}
+          <div class="grade cubeRare" role="status" aria-label="기본 잠재능력 등급">
+            레어
           </div>
         {/if}
-      {:else}
-        <div class="grade cubeRare" role="tab" aria-selected="true" id="tab-grade">
-          레어
-        </div>
-      {/if}
+      </div>
       
+      <!-- Potential Stats Display -->
       <div class="potential-info">
-        <div class="potentail-title">
+        <h4 class="potential-title">
           {selectedCubeId === "editionalCube" || selectedCubeId === "whiteEditionalCube" ? "에디셔널 잠재능력" : "잠재능력"}
-        </div>
-        <div class="stats-container" role="tabpanel" aria-labelledby="tab-rare">
+        </h4>
+        <div class="stats-container" role="region" aria-label="잠재능력 옵션">
           {#each potentialStats as stat, i}
             <div class="stat-row">
               <span class="stat-icon-dot {GradeIcon(potentialGrades[i])}" aria-hidden="true">
@@ -503,13 +694,48 @@
           {/each}
         </div>
       </div>
+      
+      <!-- Action Buttons -->
       <div class="action-buttons">
-        <button class="action-button apply-button" on:click={applyCube} 
-        disabled={!selectedItem || !isCubeApplicable(selectedItem)}>재설정하기</button>
+        <button 
+          class="action-button apply-button" 
+          on:click={applyCube} 
+          disabled={!selectedItem || !isCubeApplicable(selectedItem) || isLoading}
+          aria-busy={isLoading}
+        >
+          {isLoading ? '처리 중...' : '재설정하기'}
+        </button>
       </div>
+      
+      <!-- Status Messages -->
+      {#if errorMessage}
+        <div class="status-message error-message" role="alert">
+          <span class="message-icon">⚠️</span>
+          <span class="message-text">{errorMessage}</span>
+        </div>
+      {/if}
+      
+      {#if successMessage}
+        <div class="status-message success-message" role="status">
+          <span class="message-icon">✓</span>
+          <span class="message-text">{successMessage}</span>
+        </div>
+      {/if}
+      
+
     </section>
   </div>
 </div>
+      <!-- Info Panel -->
+      <div class="info-panel visuallyHidden">
+        <h4 class="info-title">큐브 사용법</h4>
+        <ol class="info-steps">
+          <li>원하는 큐브 종류를 선택하세요.</li>
+          <li>잠재능력을 부여할 아이템을 선택하세요.</li>
+          <li>재설정 버튼을 클릭하여 잠재능력을 변경하세요.</li>
+          <li>등급 상승 확률은 큐브 종류와 현재 등급에 따라 달라집니다.</li>
+        </ol>
+      </div>
 
 <style>
   .maple-potential-container {

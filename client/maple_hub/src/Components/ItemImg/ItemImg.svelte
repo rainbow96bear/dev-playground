@@ -1,11 +1,11 @@
 <script lang="ts">
   export let itemImage: string | null = null;
-  export let alt: string = "장비 이미지";
+  export let alt: string = "캐릭터가 착용한 장비 이미지";
 </script>
 
 {#if itemImage}
-  <figure class="gradientBox" role="img" aria-label={alt}>
-    <img class="iconImage" src={itemImage} alt={alt} />
+  <figure class="gradientBox">
+    <img class="iconImage" src={itemImage} alt={alt} loading="lazy" />
     <div class="shadow" aria-hidden="true"></div>
     <figcaption class="sr-only">{alt}</figcaption>
   </figure>

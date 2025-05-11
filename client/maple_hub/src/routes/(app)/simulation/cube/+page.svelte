@@ -1,13 +1,10 @@
 <script lang="ts">
-  import SearchBox from "$Components/SearchBox/SearchBox.svelte"
-  import EquipmentScreen from "$Components/Equipment/EquipmentScreen.svelte"
+  import SearchBox from "$Components/SearchBox/SearchBox.svelte";
+  import EquipmentScreen from "$Components/Equipment/EquipmentScreen.svelte";
   import CubeSimulation from "$Components/CubeSimulation/CubeSimulation.svelte";
   import { InternalAPI } from '$lib/api';
   import { onMount } from 'svelte';
 
-  import "./+page.css"
-  
-  // 타입 명시로 코드 품질 향상
   let characterInfo: any = null;
   let characterEquipments: any = null;
   let androidInfo: any = null;
@@ -15,21 +12,18 @@
   let isLoading: boolean = false;
   let errorMessage: string = "";
 
-  // 캐릭터 장비 정보 가져오기
   const fetchEquipments = async (characterName: string) => {
     if (!characterName) return;
-    
+
     try {
       isLoading = true;
       errorMessage = "";
-      
-      // API 호출 시 오류 처리 추가
-      const resCharacterInfo = await InternalAPI(`/v1/nexon/characterInfo/${characterName}`);
-      const resCharacterEquipments = await InternalAPI(
-        `/v1/nexon/characterInfo/${characterName}/equipmentsInfo`
-      );
-      const resAndroidInfo = await InternalAPI(`/v1/nexon/characterInfo/${characterName}/androidInfo`);
-    
+      const [resCharacterInfo, resCharacterEquipments, resAndroidInfo] = await Promise.all([
+        InternalAPI(`/v1/nexon/characterInfo/${characterName}`),
+        InternalAPI(`/v1/nexon/characterInfo/${characterName}/equipmentsInfo`),
+        InternalAPI(`/v1/nexon/characterInfo/${characterName}/androidInfo`)
+      ]);
+
       characterInfo = resCharacterInfo.data;
       characterEquipments = resCharacterEquipments.data;
       androidInfo = resAndroidInfo.data;
@@ -44,22 +38,29 @@
   const handleSelectItem = (item: any) => {
     itemInfo = item;
   };
-
-  onMount(() => {
-    // 필요한 초기화 로직
-  });
 </script>
 
 <svelte:head>
-  <!-- SEO 최적화 -->
-  <title>메이플스토리 큐브 시뮬레이터 | 장비 최적화 도구</title>
-  <meta name="description" content="메이플스토리 캐릭터의 장비 정보를 확인하고 큐브 시뮬레이션을 통해 최적의 잠재능력을 찾아보세요." />
-  <meta name="keywords" content="메이플스토리, 큐브 시뮬레이터, 장비 최적화, 잠재능력, 게임 도구" />
+  <title>메이플스토리 큐브 시뮬레이터 - 장비 정보와 잠재능력 분석</title>
+  <meta name="description" content="메이플스토리 캐릭터 장비 정보를 불러오고, 큐브 시뮬레이션을 통해 최적의 잠재능력을 찾아보세요. 빠르고 직관적인 큐브 시뮬레이터!" />
+  <meta name="keywords" content="메이플스토리, 큐브, 장비, 시뮬레이터, 잠재능력, 메이플 큐브 시뮬" />
 </svelte:head>
 
 <main class="cubePage">
+  <header>
+    <h1>메이플스토리 큐브 시뮬레이터</h1>
+    <p class="page-description">
+      캐릭터 장비 정보를 불러오고 잠재능력 옵션을 시뮬레이션하세요.
+    </p>
+  </header>
+
+  <!-- 광고 슬롯 -->
+  <div class="ad-slot" aria-hidden="true" style="margin: 1rem 0;"></div>
+
+  <!-- 검색 박스 -->
   <SearchBox on:search={(e) => fetchEquipments(e.detail.characterName)} />
 
+  <!-- 로딩 / 에러 메시지 -->
   {#if isLoading}
     <div class="loading-indicator" aria-live="polite">
       <p>캐릭터 정보를 불러오는 중입니다...</p>
@@ -70,10 +71,11 @@
     </div>
   {/if}
 
+  <!-- 콘텐츠 영역 -->
   <div class="contentWrapper">
     {#if characterInfo}
       <section class="equipment-section" aria-label="캐릭터 장비 정보">
-        <h2 class="title">장비 정보</h2>
+        <h2>장비 정보</h2>
         <EquipmentScreen
           {characterInfo}
           equippedItems={characterEquipments?.item_equipment}
@@ -81,34 +83,65 @@
           selectItem={handleSelectItem}
         />
       </section>
+
+      <!-- 광고 슬롯 -->
+      <div class="ad-slot" aria-hidden="true" style="margin: 1rem 0;"></div>
     {/if}
-    
-    <section class="simulator-section" aria-label="큐브 시뮬레이션">
-      <h2 class="title">큐브 시뮬레이터</h2>
+
+    <section class="simulator-section" aria-label="큐브 시뮬레이터">
+      <h2>큐브 시뮬레이션</h2>
       <CubeSimulation selectedItem={itemInfo} />
     </section>
   </div>
 
+  <!-- 콘텐츠 설명 영역 -->
   <section class="info-section">
-    <h2>큐브 시뮬레이션 가이드</h2>
+    <h2>큐브 시뮬레이터 사용법</h2>
     <p>
-      메이플스토리 큐브 시뮬레이터는 실제 게임에서 큐브를 사용하기 전에 
-      다양한 잠재능력 옵션을 미리 테스트해볼 수 있는 도구입니다.
-      원하는 캐릭터의 장비를 불러와 시뮬레이션을 진행해보세요.
+      이 도구는 메이플스토리 내에서 큐브를 사용하기 전, 다양한 잠재능력 조합을 미리 실험해볼 수 있는 시뮬레이터입니다.
     </p>
-    <div class="guide-cards">
-      <div class="guide-card">
-        <h3>시작하기</h3>
-        <p>캐릭터 이름을 입력하고 검색하여 장비 정보를 불러옵니다.</p>
-      </div>
-      <div class="guide-card">
-        <h3>장비 선택</h3>
-        <p>장비 화면에서 큐브를 적용할 아이템을 선택합니다.</p>
-      </div>
-      <div class="guide-card">
-        <h3>시뮬레이션</h3>
-        <p>다양한 큐브 옵션을 적용하여 최적의 잠재능력을 찾아보세요.</p>
-      </div>
-    </div>
+    <ol>
+      <li>캐릭터 이름을 입력하고 장비 정보를 검색하세요.</li>
+      <li>장비 중 하나를 선택하여 시뮬레이션할 수 있습니다.</li>
+      <li>다양한 큐브를 적용하여 최적의 옵션을 찾아보세요.</li>
+    </ol>
   </section>
 </main>
+
+<style>
+  .cubePage {
+    padding: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .page-description {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 1rem;
+  }
+
+  .contentWrapper {
+    margin-top: 1.5rem;
+  }
+
+  .info-section {
+    margin-top: 2rem;
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .info-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .info-section ol {
+    padding-left: 1.25rem;
+  }
+</style>

@@ -9,20 +9,21 @@
 		if (characterName.trim()) {
 			dispatch('search', { characterName });
 		}
-		characterName = ""
+		characterName = "";
 	};
 </script>
 
-<form class="search" on:submit={handleSubmit}>
-	<label for="characterName" class="sr-only"></label>
+<form class="search" on:submit={handleSubmit} role="search" aria-label="캐릭터 검색">
+	<label for="characterName" class="sr-only">캐릭터 이름 입력</label>
 	<input
 		id="characterName"
 		type="text"
 		bind:value={characterName}
-		placeholder="캐릭터를 검색하세요"
+		placeholder="예: 타락파워전사, 도적"
 		autocomplete="off"
+		required
 	/>
-	<button id="searchButton" type="submit">검색</button>
+	<button id="searchButton" type="submit" aria-label="검색 버튼">검색</button>
 </form>
 
 <style>
@@ -68,5 +69,16 @@
 
 	#searchButton:hover {
 		background: #0056b3;
+	}
+
+	.sr-only {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		border: 0;
 	}
 </style>

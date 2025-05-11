@@ -1,0 +1,90 @@
+.character_info_box {
+	border-radius: 10px;
+	box-shadow:
+		0 4px 6px rgba(0, 0, 0, 0.1),
+		0 1px 3px rgba(0, 0, 0, 0.08);
+	background-color: #fdfdfd;
+	padding: 20px;
+	margin: 15px auto;
+	width: 100%;
+	transition:
+		transform 0.2s ease,
+		box-shadow 0.2s ease;
+}
+
+.character_info_box:hover {
+	box-shadow:
+		0 8px 12px rgba(0, 0, 0, 0.15),
+		0 4px 6px rgba(0, 0, 0, 0.1); /* 더 강한 명암 효과 */
+}
+
+.characterInfoSearchBox {
+	width: 100%;
+}
+
+.characterInfoCharacterInfo {
+	width: 100%;
+}
+.characterInfoEquipmentsInfo {
+	width: 100%;
+}
+
+.function_button_box {
+	padding: 10px 0px;
+}
+
+.function_button_box button {
+	color: var(--mushroom4);
+	background-color: rgb(255, 240, 155);
+	padding: 5px 10px;
+	border: 2px solid var(--mushroom2);
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+.function_button_box .selected {
+	background-color: var(--mushroom4);
+	color: #fff;
+	border-color: var(--mushroom3);
+}
+
+.hidden {
+	display: none;
+}
+
+.character_info_box {
+	padding: 20px;
+	font-size: 1rem;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.function_button_box {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 20px;
+}
+
+.function_button_box button.selected {
+	background-color: #007bff;
+	color: white;
+}
+
+.function_button_box button {
+	padding: 10px 15px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	font-size: 1rem;
+	border-radius: 5px;
+}
+
+header h1 {
+	font-size: 2rem;
+	color: #222;
+	margin-bottom: 0.5rem;
+}
+
+header p {
+	color: #555;
+	font-size: 1rem;
+}
