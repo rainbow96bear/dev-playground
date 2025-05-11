@@ -37,13 +37,20 @@ export const GET: RequestHandler = async () => {
 		// 모든 페이지 합치기
 		const allPages = [...pages, ...patchPages];
 
-		const sitemap =
-			`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${allPages
-				.map(
-					(page) =>
-						`\n<url><loc>${baseUrl}${page.path}</loc><lastmod>${nowDay}</lastmod><priority>${page.priority}</priority><changefreq>${page.changefreq}</changefreq></url>`
-				)
-				.join('')}\n</urlset>`.trim();
+		// XML 형식의 사이트맵 생성
+		const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${allPages
+	.map(
+		(page) => `  <url>
+    <loc>${baseUrl}${page.path}</loc>
+    <lastmod>${nowDay}</lastmod>
+    <changefreq>${page.changefreq}</changefreq>
+    <priority>${page.priority}</priority>
+  </url>`
+	)
+	.join('\n')}
+</urlset>`;
 
 		return new Response(sitemap, {
 			headers: {
