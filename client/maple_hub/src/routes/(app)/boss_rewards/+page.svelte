@@ -175,44 +175,44 @@
 
               <div class="difficulties">
                {#each boss.difficulties as data, i}
-  {@const difficultyKey = i}
-  {@const selectedStone = getSelectedStone(boss.id, difficultyKey)}
-  {@const selected = isSelected(boss.id, difficultyKey)}
+                  {@const difficultyKey = i}
+                  {@const selectedStone = getSelectedStone(boss.id, difficultyKey)}
+                  {@const selected = isSelected(boss.id, difficultyKey)}
 
-  <div class="difficulty-row {selected ? 'selected' : ''}">
-    <label class="difficulty-main">
-      <input
-        type="checkbox"
-        checked={selected}
-        on:change={() => toggleSelection(boss.id, difficultyKey)}
-        class="difficulty-checkbox"
-      />
-    </label>
-    <span class="difficulty-badge {getDifficultyColor(data.name)}">
-      {data.name}
-    </span>
-    <div class="party-size-selector">
-      <label class="party-size-label">
-        클리어 인원:
-        <select
-          on:change={(e) => updatePartySize(boss.id, difficultyKey, parseInt(e.target.value))}
-          class="party-size-select"
-          value={selectedStone ? selectedStone.actualPartySize : 1}
-        >
-          {#each getPartySizeOptions(data.maxPartySize) as size}
-            <option value={size}>{size}명</option>
-          {/each}
-        </select>
-      </label>
-    </div>
-    <span class="difficulty-price">
-      {selected && selectedStone
-        ? Math.floor(data.price / selectedStone.actualPartySize).toLocaleString()
-        : Math.floor(data.price / data.maxPartySize).toLocaleString()
-      } 메소
-    </span>
-  </div>
-{/each}
+                  <div class="difficulty-row {selected ? 'selected' : ''}">
+                    <label class="difficulty-main">
+                      <input
+                        type="checkbox"
+                        checked={selected}
+                        on:change={() => toggleSelection(boss.id, difficultyKey)}
+                        class="difficulty-checkbox"
+                      />
+                    </label>
+                    <span class="difficulty-badge {getDifficultyColor(data.name)}">
+                      {data.name}
+                    </span>
+                    <div class="party-size-selector">
+                      <label class="party-size-label">
+                        클리어 인원:
+                        <select
+                          on:change={(e) => updatePartySize(boss.id, difficultyKey, parseInt(e.target.value))}
+                          class="party-size-select"
+                          value={selectedStone ? selectedStone.actualPartySize : 1}
+                        >
+                          {#each getPartySizeOptions(data.maxPartySize) as size}
+                            <option value={size}>{size}명</option>
+                          {/each}
+                        </select>
+                      </label>
+                    </div>
+                    <span class="difficulty-price">
+                      {selected && selectedStone
+                        ? Math.floor(data.price / selectedStone.actualPartySize).toLocaleString()
+                        : Math.floor(data.price / data.maxPartySize).toLocaleString()
+                      } 메소
+                    </span>
+                  </div>
+                {/each}
               </div>
             </article>
           {/each}
@@ -220,7 +220,6 @@
       </section>
     </div>
 
-    <!-- 우측: 계산 결과 영역 -->
     <div class="right-panel">
       <section class="result-section">
         <div class="result-header">
@@ -254,7 +253,6 @@
               </div>
             {/each}
           </div>
-        <!-- {/if} -->
       </section>
     </div>
   </div>
