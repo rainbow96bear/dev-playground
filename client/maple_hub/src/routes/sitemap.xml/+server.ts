@@ -5,7 +5,7 @@ export const prerender = true; // 정적 생성으로 변경
 const baseUrl = 'https://maplebox.netlify.app';
 
 export const GET: RequestHandler = async () => {
-	const nowDay = new Date().toISOString(); // 시간까지 포함하는 것이 더 정확
+	const nowDay = new Date().toISOString().split('T')[0]; // 시간까지 포함하는 것이 더 정확
 
 	try {
 		const patchVersions = ['0.0.5', '0.0.4', '0.0.3', '0.0.2', '0.0.1'];
