@@ -29,6 +29,7 @@
 			큐브 시뮬레이션
 		  </button>
 		</li>
+		<li><button on:click={() => { toggle(); goto("/boss_rewards"); }}>결정석 계산기</button></li>
 		<li><button on:click={() => { toggle(); goto("/games"); }}>미니게임</button></li>
 		<li><button on:click={() => { toggle(); goto("/patch_notes"); }}>패치노트</button></li>
 	  </ul>

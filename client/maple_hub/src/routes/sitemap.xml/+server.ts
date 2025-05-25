@@ -16,6 +16,7 @@ export const GET: RequestHandler = async () => {
 			{ path: '/', priority: 1.0, changefreq: 'daily' },
 			{ path: '/character/info', priority: 0.9, changefreq: 'monthly' },
 			{ path: '/simulation/cube', priority: 0.9, changefreq: 'monthly' },
+			{ path: '/boss_rewards', priority: 0.9, changefreq: 'monthly' },
 			{ path: '/games', priority: 0.6, changefreq: 'weekly' },
 			{ path: '/games/applegame', priority: 0.6, changefreq: 'monthly' },
 			{ path: '/patch_notes', priority: 0.7, changefreq: 'weekly' },
