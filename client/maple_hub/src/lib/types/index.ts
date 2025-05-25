@@ -165,3 +165,26 @@ type CachedData<T> = {
 	timestamp: number;
 	ttl: number;
 };
+
+  type Difficulty = {
+  price: number;
+  maxPartySize: number;
+  isWeekly: boolean;
+  category: 'weekly' | 'daily';
+};
+
+type Boss = {
+  id: string;
+  name: string;
+  image: string;
+  difficulties: {
+    [difficultyName: string]: Difficulty;
+  };
+};
+
+    type SelectedStone = {
+    bossId: string;
+    difficulty: string;
+    actualPartySize: number; // 실제 클리어 인원
+    maxPartySize: number; // 최대 파티 인원
+  };
