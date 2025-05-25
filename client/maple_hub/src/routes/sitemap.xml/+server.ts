@@ -1,11 +1,11 @@
 import type { RequestHandler } from './$types';
 
-export const prerender = false;
+export const prerender = true; // 정적 생성으로 변경
 
 const baseUrl = 'https://maplebox.netlify.app';
 
 export const GET: RequestHandler = async () => {
-	const nowDay = new Date().toISOString().split('T')[0];
+	const nowDay = new Date().toISOString(); // 시간까지 포함하는 것이 더 정확
 
 	try {
 		const patchVersions = ['0.0.5', '0.0.4', '0.0.3', '0.0.2', '0.0.1'];
@@ -13,17 +13,17 @@ export const GET: RequestHandler = async () => {
 
 		// 기본 페이지
 		const pages = [
-			{ path: '/', priority: 1.0, changefreq: 'daily' },
-			{ path: '/character/info', priority: 0.9, changefreq: 'monthly' },
-			{ path: '/simulation/cube', priority: 0.9, changefreq: 'monthly' },
-			{ path: '/boss_rewards', priority: 0.9, changefreq: 'monthly' },
-			{ path: '/games', priority: 0.6, changefreq: 'weekly' },
-			{ path: '/games/applegame', priority: 0.6, changefreq: 'monthly' },
-			{ path: '/patch_notes', priority: 0.7, changefreq: 'weekly' },
-			{ path: '/privacy', priority: 0.8, changefreq: 'yearly' },
+			{ path: '/', priority: '1.0', changefreq: 'daily' },
+			{ path: '/character/info', priority: '0.9', changefreq: 'monthly' },
+			{ path: '/simulation/cube', priority: '0.9', changefreq: 'monthly' },
+			{ path: '/boss_rewards', priority: '0.9', changefreq: 'monthly' },
+			{ path: '/games', priority: '0.6', changefreq: 'weekly' },
+			{ path: '/games/applegame', priority: '0.6', changefreq: 'monthly' },
+			{ path: '/patch_notes', priority: '0.7', changefreq: 'weekly' },
+			{ path: '/privacy', priority: '0.8', changefreq: 'yearly' },
 			...characterNames.map((name) => ({
 				path: `/character/info/${encodeURIComponent(name)}`,
-				priority: 0.8,
+				priority: '0.8',
 				changefreq: 'monthly'
 			}))
 		];
@@ -31,7 +31,7 @@ export const GET: RequestHandler = async () => {
 		// 패치 노트 상세 페이지 추가
 		const patchPages = patchVersions.map((version) => ({
 			path: `/patch_notes/${version}`,
-			priority: 0.9,
+			priority: '0.9',
 			changefreq: 'monthly'
 		}));
 
@@ -54,13 +54,20 @@ ${allPages
 </urlset>`;
 
 		return new Response(sitemap, {
+			status: 200,
 			headers: {
 				'Content-Type': 'application/xml; charset=UTF-8',
-				'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate'
+				'Cache-Control': 'public, max-age=3600'
+				// 'X-Robots-Tag': 'noindex' 제거 - 사이트맵은 검색엔진이 찾을 수 있어야 함
 			}
 		});
 	} catch (err) {
 		console.error('사이트맵 생성 실패:', err);
-		return new Response('사이트맵 생성에 실패했습니다.', { status: 500 });
+		return new Response('Internal Server Error', { 
+			status: 500,
+			headers: {
+				'Content-Type': 'text/plain; charset=UTF-8'
+			}
+		});
 	}
 };
