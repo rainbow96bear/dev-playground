@@ -57,8 +57,8 @@ ${allPages
 			status: 200,
 			headers: {
 				'Content-Type': 'application/xml; charset=UTF-8',
-				'Cache-Control': 'public, max-age=3600'
-				// 'X-Robots-Tag': 'noindex' 제거 - 사이트맵은 검색엔진이 찾을 수 있어야 함
+				'Cache-Control': 'public, max-age=3600',
+				'X-Robots-Tag': 'index, follow'
 			}
 		});
 	} catch (err) {

@@ -2,6 +2,7 @@ export const GET = async () => {
 	return new Response(
 		`User-agent: *
 Allow: /
+Allow: /sitemap.xml
 Sitemap: https://maplebox.netlify.app/sitemap.xml`,
 		{
 			headers: {
