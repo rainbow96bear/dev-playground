@@ -57,10 +57,6 @@ ${allPages
 			status: 200,
 			headers: {
 				'Content-Type': 'application/xml; charset=UTF-8',
-				'Cache-Control': 'public, max-age=3600',
-				'X-Robots-Tag': 'index, follow'
-
-				'Content-Type': 'application/xml; charset=UTF-8',
 				'Cache-Control': 'no-cache, no-store, must-revalidate',
 				'Pragma': 'no-cache',
 				'Expires': '0',
