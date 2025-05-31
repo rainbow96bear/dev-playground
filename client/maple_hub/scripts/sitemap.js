@@ -28,7 +28,7 @@ const pages = [
   }))
 ];
 
-const escapeXml = (str: string) =>
+const escapeXml = (str) =>
   str
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
