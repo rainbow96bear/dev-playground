@@ -5,7 +5,6 @@ const baseUrl = 'https://maplebox.netlify.app';
 const nowDay = new Date().toISOString().split('T')[0];
 
 const patchVersions = ['0.0.5', '0.0.4', '0.0.3', '0.0.2', '0.0.1'];
-const characterNames = ['도적', '아델', '방미헤', '베베', '나이트로드', '패스파인더', '섀도어'];
 
 const pages = [
   { path: '/', priority: '1.0', changefreq: 'daily' },
@@ -16,11 +15,6 @@ const pages = [
   { path: '/games/applegame', priority: '0.6', changefreq: 'monthly' },
   { path: '/patch_notes', priority: '0.7', changefreq: 'weekly' },
   { path: '/privacy', priority: '0.8', changefreq: 'yearly' },
-  ...characterNames.map((name) => ({
-    path: `/character/info/${name}`,
-    priority: '0.8',
-    changefreq: 'monthly',
-  })),
   ...patchVersions.map((version) => ({
     path: `/patch_notes/${version}`,
     priority: '0.9',
