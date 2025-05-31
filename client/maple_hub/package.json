@@ -5,7 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
-		"build:file-list": "node scripts/build_file_list.js/sitemap.ts",
+		"build:file-list": "node scripts/build_file_list.js",
 		"build:sitemap": "node scripts/sitemap.ts",
 		"build": "npm run build:file-list && build:sitemap && vite build",
 		"preview": "vite preview",
