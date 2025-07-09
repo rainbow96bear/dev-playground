@@ -39,6 +39,7 @@
 	"dependencies": {
 		"@sveltejs/adapter-netlify": "^4.4.0",
 		"axios": "^1.7.9",
+		"dropcss": "^1.0.16",
 		"marked": "^15.0.7"
 	}
 }

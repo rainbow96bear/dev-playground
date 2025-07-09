@@ -7,7 +7,11 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: adapter(),
+		adapter: adapter({
+       edge: false,
+       split: true
+     }),
+		inlineStyleThreshold: Infinity,
 		alias: {
 			$lib: path.resolve('src/lib'),
 			$styles: path.resolve('src/styles'),
