@@ -3,11 +3,6 @@
   publish = "build"
 
 [[headers]]
-  for = "/*"
-  [headers.values]
-    Content-Encoding = "gzip"
-    
-[[headers]]
   for = "/sitemap.xml"
   [headers.values]
     Content-Type = "application/xml; charset=utf-8"
